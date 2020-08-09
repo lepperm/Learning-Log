@@ -3,7 +3,9 @@ layout: post
 title: "Learning Log Inception"
 date: 2020-08-08 17:45:58 -0400
 author: Max Lepper
-categories: jekyll learning
+categories: [blog]
+tags: [learning, jekyll, organization]
+summary: A summary post for how we got here, the reason for this site, and my hopes for how it develops
 ---
 
 This is my first post ever about working towards web development. There is a bit of backstory associated with it that may be interesting to someone, or hopefully at least to my future self in a few years from now.
