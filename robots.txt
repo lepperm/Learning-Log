@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://maxlepper.gitlab.io/learning-log/sitemap.xml
