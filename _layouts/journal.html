@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+  <h2>Summary</h2>
+  <h3>&nbsp;&nbsp;&nbsp;&nbsp;{{page.excerpt}}</h3>
+  <div>Skills used:<ul>
+    {% for focusskill in page.focusskills %}
+      <li>
+        <a class="focusSkill" href="/learning-log/tag/{{ focusskill }}"> {{ focusskill }}</a>
+      </li>
+    {% endfor %}</ul>
+  </div>
+  <div>References: <ul>
+    {% for reference in page.references %}
+      <li>
+        <a class="extRef" href="{{ reference }}"> {{ reference }}</a>
+      </li>
+    {% endfor %}</ul>
+  </div>
+  <div>Approx. time:&nbsp;
+  {% if page.approxtime != "" %}
+    <span>
+    {% if page.approxtime >= 1440 %}
+      {{page.approxtime | divided_by: 1440}} days&nbsp;
+    {% endif %}
+    {% if page.approxtime >= 60 %}
+      {{page.approxtime | modulo: 1440 | divided_by: 60}} hours&nbsp;
+    {% endif %}
+    {% assign minutesLeft = page.approxtime | modulo: 60 %}
+    {% if minutesLeft > 0 %}
+      {{ minutesLeft }} minutes
+    {% endif %}
+    </span>
+  {% else %}
+    Unsure
+  {% endif %}
+  </div>
+  <hr />
+  <h2>Entry</h2>
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

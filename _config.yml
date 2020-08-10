@@ -14,29 +14,45 @@
 #
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# you will see them accessed via {{ site.title }}, {{ site.author.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
 title: Learning Log
-author: Max Lepper
-email: incoming+maxlepper-learning-log-20414833-issue-@incoming.gitlab.com
-gitlab: maxlepper
-linkedin: maxllepper
+author:
+  name: Max Lepper
+  email: incoming+maxlepper-learning-log-20414833-issue-@incoming.gitlab.com
 description: >- # this means to ignore newlines until "baseurl:"
   My personal learning and skill development log. Please check out my portfolio site here: https://maxlepper.me/
 baseurl: "/learning-log" # the subpath of your site, e.g. /blog
 url: "https://maxlepper.gitlab.io/learning-log" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Build settings
-theme: minima # https://github.com/jekyll/minima
+show_excerpts: true
 
+google_analytics: UA-174987278-1
+
+# Theme
+theme: minima # https://github.com/jekyll/minima
 minima:
   skin: dark
+  date_format: "%b %-d, %Y"
+  social_links:
+    github: lepperm
+    linkedin: maxlepper
+    twitter: codepixels1
+    gitlab:
+      - username: maxlepper
+        instance: gitlab.com
 # On my local PC, the Minima theme assets can be found at \Programs\Ruby27-x64\lib\ruby\gems\2.7.0\gems\minima-2.5.1
 # To modify, copy assets to the site directory and override
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+# - jekyll-menus # Currently considering jekyll-menus to handle nesting navigation https://github.com/forestryio/jekyll-menus
+# - jekyll-archives # https://github.com/jekyll/jekyll-archives
+# - jekyll-seo-tag # Already used?? Need to look into what may be bundled https://github.com/jekyll/jekyll-seo-tag
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
