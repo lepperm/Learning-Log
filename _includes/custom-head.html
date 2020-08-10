@@ -1,0 +1,17 @@
+{% comment %}
+  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
+
+  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
+  2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
+
+Add in skill tags while removing duplicates, some default site tags
+page.description | truncate: 160 else site.descri...
+iconifier.net
+
+{% endcomment %}
+
+{% if page.tags %}
+<meta name="keywords" content="Max Lepper, learning log, {{ page.tags | join: ', ' | escape}}"/>
+{% else %}
+<meta name="keywords" content="Max Lepper, learning log, blog, web development"/>
+{% endif %}
