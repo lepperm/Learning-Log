@@ -56,7 +56,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 			{% if post.tags contains tag %}
 			<li>
 				<h3>
-					<a href="{{ post.url }}">
+					<a href="{{site.baseurl}}{{ post.url }}">
 					{{ post.title }}&nbsp;&nbsp;||&nbsp;&nbsp;
 					<small>{{ post.date | date: '%b %-d, %Y' }}</small>
 					</a>

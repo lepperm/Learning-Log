@@ -56,7 +56,7 @@ The purpose of this snippet is to list all your posts posted with a certain cate
 			{% if post.categories contains category %}
 			<li>
 				<h3>
-					<a href="{{ post.url }}">
+					<a href="{{site.baseurl}}{{ post.url }}">
 						{{ post.title }}
 						<small>{{ post.date | date: '%b %-d, %Y' }}</small>
 					</a>

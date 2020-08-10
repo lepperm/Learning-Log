@@ -30,16 +30,16 @@ layout: default
       </li>
     {% endfor %}</ul>
   </div>
-  <div>Approx. time:&nbsp;
-  {% if page.approxtime != "" %}
+  <div>Time spent:&nbsp;
+  {% if page.timespent != "" %}
     <span>
-    {% if page.approxtime >= 1440 %}
-      {{page.approxtime | divided_by: 1440}} days&nbsp;
+    {% if page.timespent >= 1440 %}
+      {{page.timespent | divided_by: 1440}} days&nbsp;
     {% endif %}
-    {% if page.approxtime >= 60 %}
-      {{page.approxtime | modulo: 1440 | divided_by: 60}} hours&nbsp;
+    {% if page.timespent >= 60 %}
+      {{page.timespent | modulo: 1440 | divided_by: 60}} hours&nbsp;
     {% endif %}
-    {% assign minutesLeft = page.approxtime | modulo: 60 %}
+    {% assign minutesLeft = page.timespent | modulo: 60 %}
     {% if minutesLeft > 0 %}
       {{ minutesLeft }} minutes
     {% endif %}
