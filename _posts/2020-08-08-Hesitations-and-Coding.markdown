@@ -1,5 +1,5 @@
 ---
-layout: journal
+layout: post
 title: "Hesitations and Coding"
 date: 2020-08-08 23:32:24 -0400
 author: Max Lepper
