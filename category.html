@@ -3,57 +3,57 @@ layout: default
 title: Categories
 ---
 
-{% comment %}
+{%- comment -%}
 =======================
 The following part extracts all the categories from your posts and sort categories, so that you do not need to manually collect your categories to a place.
 =======================
-{% endcomment %}
-{% assign rawcats = "" %}
-{% for post in site.posts %}
-	{% assign ccats = post.categories | join:'|' | append:'|' %}
-	{% assign rawcats = rawcats | append:ccats %}
-{% endfor %}
-{% assign rawcats = rawcats | split:'|' | sort %}
+{%- endcomment -%}
+{%- assign rawcats = "" -%}
+{%- for post in site.posts -%}
+	{%- assign ccats = post.categories | join:'|' | append:'|' -%}
+	{%- assign rawcats = rawcats | append:ccats -%}
+{%- endfor -%}
+{%- assign rawcats = rawcats | split:'|' | sort -%}
 
-{% comment %}
+{%- comment -%}
 =======================
 The following part removes dulpicated categories and invalid categories like blank category.
 =======================
-{% endcomment %}
-{% assign categories = "" %}
-{% for category in rawcats %}
-	{% if category != "" %}
-		{% if categories == "" %}
-			{% assign categories = category | split:'|' %}
-		{% endif %}
-		{% unless categories contains category %}
-			{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
+{%- endcomment -%}
+{%- assign categories = "" -%}
+{%- for category in rawcats -%}
+	{%- if category != "" -%}
+		{%- if categories == "" -%}
+			{%- assign categories = category | split:'|' -%}
+		{%- endif -%}
+		{%- unless categories contains category -%}
+			{%- assign categories = categories | join:'|' | append:'|' | append:category | split:'|' -%}
+		{%- endunless -%}
+	{%- endif -%}
+{%- endfor -%}
 
-{% comment %}
+{%- comment -%}
 =======================
 The purpose of this snippet is to list all the categories you have in your site.
 =======================
-{% endcomment %}
+{%- endcomment -%}
 <h1>Categories</h1>
-{% for category in categories %}
+{%- for category in categories -%}
 	<a href="#{{ category | slugify }}"> {{ category }} </a>
-{% endfor %}
+{%- endfor -%}
 
 <hr>
 
-{% comment %}
+{%- comment -%}
 =======================
 The purpose of this snippet is to list all your posts posted with a certain category.
 =======================
-{% endcomment %}
-{% for category in categories %}
+{%- endcomment -%}
+{%- for category in categories -%}
 	<h2 id="{{ category | slugify }}">{{ category }}</h2>
 	<ul>
-		{% for post in site.posts %}
-			{% if post.categories contains category %}
+		{%- for post in site.posts -%}
+			{%- if post.categories contains category -%}
 			<li>
 				<h3>
 					<a href="{{site.baseurl}}{{ post.url }}">
@@ -62,7 +62,7 @@ The purpose of this snippet is to list all your posts posted with a certain cate
 					</a>
 				</h3>
 			</li>
-			{% endif %}
-		{% endfor %}
+			{%- endif -%}
+		{%- endfor -%}
 	</ul>
-{% endfor %}
+{%- endfor -%}

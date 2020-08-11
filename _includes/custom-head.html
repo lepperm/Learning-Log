@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment -%}
   Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
 
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
@@ -8,10 +8,10 @@ Add in skill tags while removing duplicates, some default site tags
 page.description | truncate: 160 else site.descri...
 iconifier.net
 
-{% endcomment %}
+{%- endcomment -%}
 
-{% if page.tags %}
+{%- if page.tags -%}
 <meta name="keywords" content="Max Lepper, learning log, {{ page.tags | join: ', ' | escape}}"/>
-{% else %}
+{%- else -%}
 <meta name="keywords" content="Max Lepper, learning log, blog, web development"/>
-{% endif %}
+{%- endif -%}

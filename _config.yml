@@ -52,7 +52,6 @@ plugins:
   - jekyll-sitemap
 # - jekyll-menus # Currently considering jekyll-menus to handle nesting navigation https://github.com/forestryio/jekyll-menus
 # - jekyll-archives # https://github.com/jekyll/jekyll-archives
-# - jekyll-seo-tag # Already used?? Need to look into what may be bundled https://github.com/jekyll/jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
