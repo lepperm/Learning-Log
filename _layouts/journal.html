@@ -14,16 +14,16 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
       &nbsp;&nbsp;&nbsp;&nbsp;
-      {%- include time-to-read.html -%}
+      {%- include time-to-read.html output="text" wordsource=content -%}
     </p>
     {%- include share-buttons.html -%}
   </header>
   <h2>Summary</h2>
-  <h3>&nbsp;&nbsp;&nbsp;&nbsp;{{page.excerpt}}</h3>
+  <h3>{{page.excerpt}}</h3>
   <div>Skills used:<ul>
-    {%- for focusskill in page.focusskills -%}
+    {%- for skill in page.skills -%}
       <li>
-        <a class="focusSkill" href="/learning-log/tag#{{ focusskill }}"> {{ focusskill }}</a>
+        <a class="skill" href="/learning-log/tag#{{ skill }}"> {{ skill }}</a>
       </li>
     {%- endfor -%}</ul>
   </div>
@@ -36,18 +36,7 @@ layout: default
   </div>
   <div>Time spent:&nbsp;
   {%- if page.timespent != "" -%}
-    <span>
-    {%- if page.timespent >= 1440 -%}
-      {{page.timespent | divided_by: 1440}} days&nbsp;
-    {%- endif -%}
-    {%- if page.timespent >= 60 -%}
-      {{page.timespent | modulo: 1440 | divided_by: 60}} hours&nbsp;
-    {%- endif -%}
-    {%- assign minutesLeft = page.timespent | modulo: 60 -%}
-    {%- if minutesLeft > 0 -%}
-      {{ minutesLeft }} minutes
-    {%- endif -%}
-    </span>
+      {%- include min-to-time.html timeVal=page.timespent verbose=true -%}
   {%- else -%}
     Unsure
   {%- endif -%}

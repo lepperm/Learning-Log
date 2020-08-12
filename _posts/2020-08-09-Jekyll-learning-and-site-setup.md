@@ -5,9 +5,9 @@ date: 2020-08-09 23:33:17 -0400
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]
-excerpt: LOG - Adding tags, categories, search, and fundamentals
+excerpt: Adding tags, categories, search, and fundamentals
 references: ["https://github.com/jekyll/minima/", "https://github.com/jekyll/", "https://jekyllrb.com/docs/", "https://github.com/christian-fei/Simple-Jekyll-Search", "https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"]
-focusskills: [jekyll, liquid, scss, yaml]
+skills: [jekyll, liquid, scss, yaml]
 timespent: 150
 ---
 

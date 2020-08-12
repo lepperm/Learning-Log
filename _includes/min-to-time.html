@@ -1,0 +1,31 @@
+{%- if include.timeVal != "" -%}
+  <span>
+    {%- if include.timeVal >= 1440 -%}
+      {{include.timeVal | divided_by: 1440}}
+      {%- if include.verbose -%}
+        &nbsp;days&nbsp;
+      {%- else -%}
+        &nbsp;d&nbsp;
+      {%- endif -%}
+    {%- endif -%}
+    {%- if include.timeVal >= 60 -%}
+      {{include.timeVal | modulo: 1440 | divided_by: 60}}
+      {%- if include.verbose -%}
+        &nbsp;hours&nbsp;
+      {%- else -%}
+        &nbsp;h&nbsp;
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign minutesLeft = include.timeVal | modulo: 60 -%}
+    {%- if minutesLeft > 0 -%}
+      {{ minutesLeft }}
+      {%- if include.verbose -%}
+        &nbsp;minutes&nbsp;
+      {%- else -%}
+        &nbsp;m&nbsp;
+      {%- endif -%}
+    {%- endif -%}
+  </span>
+{%- else -%}
+  <span>Unsure</span>
+{%- endif -%}

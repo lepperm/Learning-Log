@@ -2,11 +2,13 @@
 layout: page
 title: Search
 permalink: /search/
+jsfiles:
+- urlQuery.js
 ---
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-  <input type="text" id="search-input" autofocus="autofocus" placeholder="search..." />
+  <input type="text" id="query" autofocus="autofocus" placeholder="search..." />
   <ul id="results-container"></ul>
 </div>
 
@@ -16,7 +18,7 @@ permalink: /search/
 <!-- Configuration -->
 <script>
   SimpleJekyllSearch({
-    searchInput: document.getElementById("search-input"),
+    searchInput: document.getElementById("query"),
     resultsContainer: document.getElementById("results-container"),
     searchResultTemplate:
       '<div><a href="{url}"><h2>{title}</h2></a><span>{excerpt}</span><span>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;</span><span>{date}</span></div>',

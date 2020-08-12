@@ -5,9 +5,9 @@ date: 2020-08-10 23:34:22 -0400
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]
-excerpt: LOG - Practice with Liquid, adding social media buttons, time to read
+excerpt: Practice with Liquid, adding social media buttons, time to read
 references: ["https://devhints.io/jekyll", "https://shopify.github.io/liquid/", "https://jekyllcodex.org/without-plugins/", "https://www.sureoak.com/seo-tools"]
-focusskills: [jekyll, liquid, seo]
+skills: [jekyll, liquid, seo]
 timespent: 220
 ---
 

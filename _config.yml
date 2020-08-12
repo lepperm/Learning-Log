@@ -52,6 +52,7 @@ plugins:
   - jekyll-sitemap
 # - jekyll-menus # Currently considering jekyll-menus to handle nesting navigation https://github.com/forestryio/jekyll-menus
 # - jekyll-archives # https://github.com/jekyll/jekyll-archives
+# - jekyll-assets # https://github.com/envygeeks/jekyll-assets/blob/master/README.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
