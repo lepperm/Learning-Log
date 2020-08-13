@@ -11,6 +11,8 @@ skills: [jekyll, liquid, seo]
 timespent: 220
 ---
 
+## Entry
+
 Today started out with the new log pages totally broken on the live site - whoops! It ended up being a number of small issues and things I didn't entirely understand while setting up the site, but the key takeaway was to use baseurl in the config to counteract the site being hosted at a subpage on GitLab Pages. There were a few different issues related to this that I encountered and was able to resolve, now that the issue was more visible.
 
 I am interested in technical performance as well as SEO, so I did some learning into how Jekyll handles things. There were a few small tweaks and I played around with a dynamic head element to add tags from the post (even though tags don't really do anything for Google).

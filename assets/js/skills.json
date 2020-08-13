@@ -1,0 +1,56 @@
+---
+---
+
+[
+  {% assign rawskills = "" | split: ',' %}
+  {% assign rawtimes = "" | split: ',' %}
+  {% assign skills = "" | split: ',' %}
+
+  {%- for post in site.posts -%}
+
+    {%- if post.skills != nil -%}
+      {%- assign rawskills = rawskills | concat: post.skills -%}
+      {%- for pskill in post.skills -%}
+        {%- assign rawtimes = rawtimes | push: post.timespent -%}
+      {%- endfor -%}
+    {%- endif -%}
+
+    {%- for rskill in rawskills -%}
+      {%- if rskill != "" -%}
+        {%- if skills == "" -%}
+          {%- assign skills = skills | push: rskill -%}
+        {%- endif -%}
+        {%- unless skills contains rskill -%}
+          {%- assign skills = skills | push: rskill -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- endfor -%}
+
+    {%- for skill in skills -%}
+      {%- assign skillCount = "" -%}
+      {%- assign skillTime = "" -%}
+      {%- assign prettyTime = "" -%}
+      {%- for rskill in rawskills -%}
+        {%- if skill == rskill -%}
+          {% assign position = forloop.index0 %}
+          {%- assign skillCount = skillCount | plus: 1 -%}
+          {%- assign skillTime = skillTime | plus: rawtimes[position] -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- capture prettyTime -%}
+        {%- include min-to-time.html timeVal=skillTime verbose=false -%}
+      {%- endcapture -%}
+      {%- assign prettyTime = prettyTime | strip_newlines | strip_html | replace: '&nbsp;', ' ' | strip -%}
+      
+      {
+        "name"        : "{{ skill }}",
+        "category"     : "TBD",
+        "progression"  : "TBD",
+        "entries"      : "{{ skillCount }}",
+        "time"         : "{{ prettyTime }}",
+        "lastused"     : "TBD"
+      }    
+    {%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+]

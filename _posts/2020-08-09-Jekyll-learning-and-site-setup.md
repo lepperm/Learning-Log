@@ -11,6 +11,8 @@ skills: [jekyll, liquid, scss, yaml]
 timespent: 150
 ---
 
+## Entry
+
 This weekend was particularly busy, and I have not made as much progress setting up this site as hoped. However, there is a site, and it is live with working CI, so it's a great first few steps! The little bit of free time I had this evening was largely devoted to learning more about how Jekyll works.
 
 My first concern is how to aggregate posts, as I feel like that will be essential for core functionality, and critical if I want to generate some kind of stats eventually (probably). To this end, I followed the information from [this repo]({{page.references[3]}}) on how to implement instant search for the site, which will be a great help for now. Next, [this blog]({{page.references[4]}}) was followed to create the Tag and Category pages and learn how these interactions work. Some adjustments and formatting changes were made, but largely this was reused.

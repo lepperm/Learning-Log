@@ -11,11 +11,13 @@ skills: [liquid, jekyll, javascript]
 timespent: 265
 ---
 
+## Entry
+
 Yesterday, I had intended to get started on my Skills page but ran out of time. Fortunately, all of my practice with Liquid had mentally prepped me for how to go about exposing the data from my journal logs! I had a rough draft of the data I wanted to start with in mind already, so with [the Liquid syntax]({{page.references[0]}}) and [Jekyll's filters]({{page.references[1]}}) on-hand, I got to work.
 
 Referencing the Tag page from Sunday, I quickly figured out how to keep my data as arrays instead of strings. Lucky timing on my part that it works, now! The issue of multi-dimensional arrays became an issue shortly afterwards. Fortunately, access to both clean and dirty arrays allows me to gain a few different insights from my posts, so this works out great.
 
-While parsing each log page, individual arrays for skills and time are populated so that their indexes match up. Using a cleaned copy of the skill array to search the dirty skill array allows me to get total post counts, total time, and potentially other data that I could add in the future. Now, I need to fiure out how to sort both lists.
+While parsing each log page, individual arrays for skills and time are populated so that their indexes match up. Using a cleaned copy of the skill array to search the dirty skill array allows me to get total post counts, total time, and potentially other data that I could add in the future. Now, I need to figure out how to sort both lists.
 
 Right now, I am assigning the full reported period of time to each skill, as I try to only list pools of skills that I am working on. Additionally, measuring time for every individual skill would be costly in itself, and inherently inaccurate in a similar sense from the other direction in that I'm rarely ever working with just one thing for a long stretch of time. Maybe this will prove to be a bad call on my part, but I am hoping that the big trends will yield far more meaningful results.
 

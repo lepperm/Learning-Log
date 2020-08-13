@@ -18,7 +18,7 @@ As someone starting out towards professional web development, I was blown away b
 
 Trying to stick to official documentation whenever possible has served me quite well to this point, as far as foundational understanding. When that fails, Stack Overflow and GitLab/GitHub issue pages have been an excellent source of insight and understanding of where problems come from and how/if they have been resolved, or what the developers intend.
 
-Moving forward, and with the sheer quantity of information and learning required to grow and build skills, my intent with this log is to chronical major learning sources both for record keeping and future reference. Searching towards this end, I came across [this repository](https://github.com/Syknapse/My-Learning-Tracker) from [Skynapse](https://github.com/Syknapse) on GitHub and was really inspired to implement something similar.
+Moving forward, and with the sheer quantity of information and learning required to grow and build skills, my intent with this log is to chronicle major learning sources both for record keeping and future reference. Searching towards this end, I came across [this repository](https://github.com/Syknapse/My-Learning-Tracker) from [Skynapse](https://github.com/Syknapse) on GitHub and was really inspired to implement something similar.
 
 ## Process
 
@@ -26,7 +26,7 @@ I am already using Markdown for nearly all of my personal documents and document
 
 A stand-alone site would be an excellent way to reduce the barrier to entry, give me more control over the formatting and appearance, and also help benefit my public development ecosystem in general through use of SEO and project/site backlinks.
 
-Learning Ruby and the related environment is perhaps adding additional learning stress that doesn't directly benefit my more immediate React/Redux/Firebase stack objective. Even so, I currently feel like it will ultimately result in less maintenance and overhead and allow me to very rapidly produce content, and my comfort with GitLab CI/CD will allow me to deploy the site with my first contentful commit.
+Learning Ruby and the related environment is perhaps adding additional learning stress that doesn't directly benefit my more immediate React/Redux/Firebase stack objective. Even so, I currently feel like it will ultimately result in less maintenance and overhead and allow me to very rapidly produce content, and my comfort with GitLab CI/CD will allow me to deploy the site with my first content-containing commit.
 
 ## Planning
 

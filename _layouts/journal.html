@@ -41,11 +41,11 @@ layout: default
     Unsure
   {%- endif -%}
   </div>
-  <hr />
-  <h2>Entry</h2>
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {%- include prev-next-posts.html -%}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

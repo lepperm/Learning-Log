@@ -3,21 +3,20 @@ layout: page
 title: Search
 permalink: /search/
 jsfiles:
-- urlQuery.js
+- /learning-log/assets/js/url-query.js
+- /learning-log/assets/js/search-script.js
+cssfiles:
 ---
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-  <input type="text" id="query" autofocus="autofocus" placeholder="search..." />
+  <input type="text" id="query" autofocus="autofocus" placeholder="Search all posts and skills..." />
   <ul id="results-container"></ul>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<script src="../assets/js/search-script.js" type="text/javascript"></script>
-
-<!-- Configuration -->
+<!-- Search configuration and auto-search from url query -->
 <script>
-  SimpleJekyllSearch({
+  let sjs = SimpleJekyllSearch({
     searchInput: document.getElementById("query"),
     resultsContainer: document.getElementById("results-container"),
     searchResultTemplate:
@@ -25,4 +24,15 @@ jsfiles:
     noResultsText: "<h2>No result found!</h2>",
     json: "../assets/js/search.json",
   });
+
+  window.onload = init;
+  async function init(){
+    let getQuery = await UrlQuery(window, document, undefined);
+    try {
+      console.log("Query value: " + getQuery);
+      sjs.search(getQuery);
+    }
+    catch(err) {
+    }
+  }
 </script>

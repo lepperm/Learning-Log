@@ -50,8 +50,9 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-# - jekyll-menus # Currently considering jekyll-menus to handle nesting navigation https://github.com/forestryio/jekyll-menus
+# - jekyll-menus # considering to handle nesting navigation https://github.com/forestryio/jekyll-menus
 # - jekyll-archives # https://github.com/jekyll/jekyll-archives
+# - jekyll-datapage-generator # maybe used to dynamically create skill pages? https://github.com/avillafiorita/jekyll-datapage_gen
 # - jekyll-assets # https://github.com/envygeeks/jekyll-assets/blob/master/README.md
 
 # Exclude from processing.

@@ -1,59 +1,9 @@
 ---
 layout: default
 title: Skills
+jsfiles:
+cssfiles:
 ---
-
-{% assign debug = false %}
-
-{%- comment -%}
-=======================
-First, extract all skills and times from all journal logs
-=======================
-{%- endcomment -%}
-{% assign rawskills = "" | split: ',' %}
-{% assign rawtimes = "" | split: ',' %}
-{%- for post in site.posts -%}
-  {%- if post.skills != nil -%}
-    {%- assign rawskills = rawskills | concat: post.skills -%}
-    {%- for pskill in post.skills -%}
-      {%- if debug -%}
-        &nbsp;&nbsp;{{pskill}} -> {{ post.timespent | inspect}}<br/>
-      {%- endif -%}
-      {%- assign rawtimes = rawtimes | push: post.timespent -%}
-    {%- endfor -%}
-    {%- if debug -%}
-      Post skills =>{{ post.skills | inspect}}<br/>
-      Post time => {{ post.timespent | inspect}}<br/>
-      rawskills => {{ rawskills | inspect}}<br/>
-      rawtimes => {{ rawtimes | inspect}}<br/>
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{%- comment -%}
-=======================
-The following part removes dulpicated tags and invalid tags like blank tag.
-=======================
-{%- endcomment -%}
-{% assign skills = "" | split: ',' %}
-{%- for skill in rawskills -%}
-  {%- if debug -%}
-    Skills => {{ skills | inspect}}<br/>
-    Checking skill =>{{ skill }}<br/>
-  {%- endif -%}
-	{%- if skill != "" -%}
-		{%- if skills == "" -%}
-			{%- assign skills = skills | push: skill -%}
-		{%- endif -%}
-		{%- unless skills contains skill -%}
-			{%- assign skills = skills | push: skill -%}
-		{%- endunless -%}
-  {%- endif -%}
-{%- endfor -%}
-{%- if debug -%}
-  Skills => {{ skills | inspect}}<br/>
-{%- endif -%}
-
 
 <div>
   <header class="post-header">
@@ -63,33 +13,30 @@ The following part removes dulpicated tags and invalid tags like blank tag.
     <caption>Skills Overview</caption>
     <tr>
       <th scope="col">Skill</th>
+      <th scope="col">Category</th>
       <th scope="col">Progression</th>
       <th scope="col"># of Entries</th>
-      <th scope="col">Related Time</th>
+      <th scope="col">Use Time</th>
+      <th scope="col">Last Used</th>
     </tr>
-    {%- for skill in skills -%}
-      {%- assign skillCount = "" -%}
-      {%- assign skillTime = "" -%}
-      {%- for rskill in rawskills -%}
-        {%- if skill == rskill -%}
-          {% assign position = forloop.index0 %}
-          {%- assign skillCount = skillCount | plus: 1 -%}
-          {%- assign skillTime = skillTime | plus: rawtimes[position] -%}
-        {%- endif -%}
-      {%- endfor -%}
-      {%- if debug -%}
-        {{skill}} => count: {{skillCount}}, tinme: {{skillTime}}<br/>
-      {%- endif-%}
 
+    {% for skillEntry in site.data.skills %}
+      <!-- Cannot access the data in site.data.skills, some kind of import issue -->
+      {% assign skillArray = skillEntry | strip_newlines | remove: '\' %}{{ skillArray | inspect }}
+      {% assign skills = skillArray | split: ',' %}
+      {% assign skill = skillArray[1] %}
+      <script>console.log("skill " + skill[0]);</script>
       <tr>
-        <td scope="col">{{skill}}</td>
-        <td scope="col">Progression</td>
+        <td scope="col">{{ skill.name }}</td>
+        <td scope="col">{{ skill.category }}</td>
+        <td scope="col">{{ skill.progression }}</td>
         <td scope="col">
-          <a href="{{site.baseurl}}{{ post.url }}/search/?query={{skill}}">
-            {{skillCount}}
+          <a href="{{site.baseurl}}{{ post.url }}/search/?query={{ skill.name }}">
+            {{ skill.entries }}
           </a>
         </td>
-        <td scope="col">{%- include min-to-time.html timeVal=skillTime verbose=false -%}</td>
+        <td scope="col">{{ skill.time }}</td>
+        <td scope="col">{{ skill.lastused }}</td>
       </tr>
     {%- endfor -%}
   </table>

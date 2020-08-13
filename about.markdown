@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Learning Log is a hub for information and statistics chronicalling my web development journey. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Here, you can find:
+- Logs of what I am working on
+- An overview of skills I am working to develop
+- My progress towards mastering skills and the resources being used to get there
+- Statistics for my skills and this site
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for this site on GitLab:  
+[Learning Log - GitLab](https://gitlab.com/maxlepper/learning-log)
 
-
-[jekyll-organization]: https://github.com/jekyll
+You can find my personal portfolio website here:  
+[Max Lepper - Portfolio](https://maxlepper.me)

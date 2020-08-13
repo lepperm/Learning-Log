@@ -4,16 +4,16 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 
-Add in skill tags while removing duplicates, some default site tags
-page.description | truncate: 160 else site.descri...
-iconifier.net
+  Add in skill tags while removing duplicates, some default site tags
+  page.description | truncate: 160 else site.descri...
+  iconifier.net
 
 {%- endcomment -%}
 
 {%- if page.tags -%}
-<meta name="keywords" content="Max Lepper, learning log, {{ page.tags | join: ', ' | escape}}"/>
+  <meta name="keywords" content="Max Lepper, learning log, {{ page.tags | join: ', ' | escape}}"/>
 {%- else -%}
-<meta name="keywords" content="Max Lepper, learning log, blog, web development"/>
+  <meta name="keywords" content="Max Lepper, learning log, blog, web development"/>
 {%- endif -%}
 
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d983f28e-d4fd-44db-b8a4-86386070549a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
