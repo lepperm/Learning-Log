@@ -2,6 +2,7 @@
 layout: journal
 title: "Creating my Skill Summary page"
 date: 2020-08-11 20:06:54 -0400
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [liquid]

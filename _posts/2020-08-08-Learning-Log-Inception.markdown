@@ -2,6 +2,7 @@
 layout: post
 title: "Learning Log Inception"
 date: 2020-08-08 17:45:58 -0400
+published: true
 author: Max Lepper
 categories: [blog]
 tags: [learning, jekyll, organization]

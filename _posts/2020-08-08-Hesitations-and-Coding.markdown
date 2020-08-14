@@ -2,6 +2,7 @@
 layout: post
 title: "Hesitations and Coding"
 date: 2020-08-08 23:32:24 -0400
+published: true
 author: Max Lepper
 categories: [blog]
 tags: [mentality]

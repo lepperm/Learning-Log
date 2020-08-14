@@ -2,6 +2,7 @@
 layout: journal
 title: "Jekyll learning and site setup"
 date: 2020-08-09 23:33:17 -0400
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]

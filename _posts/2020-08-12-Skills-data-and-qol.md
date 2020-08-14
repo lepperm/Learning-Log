@@ -2,6 +2,7 @@
 layout: journal
 title: "Skills Data and Quality of Life Improvements"
 date: 2020-08-12 23:24:16 -0400
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [javascript, liquid]

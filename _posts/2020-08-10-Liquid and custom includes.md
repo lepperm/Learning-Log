@@ -2,6 +2,7 @@
 layout: journal
 title: "Liquid and Custom Includes"
 date: 2020-08-10 23:34:22 -0400
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]
