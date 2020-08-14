@@ -16,20 +16,20 @@ In response, he told me something that I had never consciously considered:
 
 > No one will die if the site isn't perfect.
 
-Now, bear with me. This will probably seem really confusing to people who are already established web developers, or software learners, or people who make applications for fun or as a hobby. But for me, I have been doing industrial application development for over half a decade. Prior to the past few months, this has been my only intensive development experience outside of a few pet projects and macros that I still haven't posted.
+Now, bear with me. This will probably seem really confusing to people who are already established web developers, or software learners, or people who make applications for fun or as a hobby. But for me, I have been doing industrial application development for over half a decade. Prior to the past few months, this has been my only intensive non-industrial development experience outside of a few pet projects and macros that I still haven't posted.
 
-In my role, things like versioning and documentation weren't really done prior to me trying to implement the practices, and pushing for engagement among the rest of the team has been fraught with mixed consistency over the years. Finding the latest version of a project may mean having to find the right laptop bag, with the right USB thumb drive, in the right folder three levels deep with nondescript names. The threat of losing or using incorrect software was astoundingly high, and I am still working to restore and assimilate projects into our repository as they are encountered.
+In my role, things like versioning and documentation weren't really done prior to me trying to implement the practices, and pushing for engagement among the rest of the team has been fraught with mixed consistency over the years. Finding the latest version of a project may mean having to find the right laptop bag, with the right USB thumb drive, in the right folder three levels deep with nondescript names. The threat of losing or using incorrect software was astoundingly high, and I am still working to restore and assimilate projects into our repository as they are encountered. Using incorrect or outdated applications may result in mechanical damage, unexpected equipment behavior, unsafe operating conditions, and of course the threat of just not working anymore.
 
 But the **real** issue is that I develop applications for industrial equipment, specifically mobile industrial vehicles - think things like cement trucks, piling excavators, rock crushers, and utility trucks. Operators work in close proximity to large moving components under hydraulic power, which can easily move around heavy loads of raw materials and wouldn't so much as falter in contact with a human. Incorrect code, incomplete testing, and unconsidered possibilities or interactions could cost someone's life. When builds are deployed, _that's it_ - the vehicle is in the customer's hands with minimal on-unit testing and headed across the country, and any software changes or corrections could take months to deploy with extra expense and downtime. The omnipresent threat of human harm is a consideration that haunts my every line of code and build release.
 
 Thankfully, I have never received any reports of injuries, and I have safely caught bugs during on-site development through my testing processes. Thinking this way for so many years has absolutely tinted how I look at "live" code, however. I am so much more comfortable slapping together a repository for a pet project or I'm learning than I am making changes to a live site that currently works well and may be used by other people.
 
-But my friend was right:
-No one will die.
-No users will be seriously impacted.
-No money or clients will be lost.
-No one will get sued (probably).
-If the live site gets deployed and is mangled beyond repair somehow, we can just roll back the commits, and everything will be back to normal in seconds.
+But my friend was right:  
+No one will die.  
+No users will be seriously impacted.  
+No money or clients will be lost.  
+No one will get sued (probably).  
+If the live site gets deployed and is mangled beyond repair somehow, we can just roll back the commits, and everything will be back to normal in seconds.  
 
 It seems obvious now, but looking at it this way blew my mind.
 

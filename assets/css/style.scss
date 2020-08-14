@@ -9,10 +9,17 @@ html {
 }
 
 #search-container input{
-  width: 100%;
+  width: 90%;
   border: 2px solid #6EBDFF;
   border-radius: 10px;
   background-color: #353535;
   color: #bbbbbb;
   padding: 10px;
+}
+
+.nullAnchor{
+  pointer-events: none;
+  cursor: default;
+  color: inherit;
+  text-decoration: inherit;
 }

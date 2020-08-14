@@ -11,6 +11,7 @@
       "excerpt"    : "{{ post.excerpt | strip_html | escape }}",
       "url"        : "{{ site.baseurl }}{{ post.url }}",
       "category"   : "{{ post.categories | join: ', '}}",
+      "datetime"   : "{{ post.date }}",
       "date"       : "{{ post.date | date: '%b %-d, %Y'}}",
       "timespent"  : "{{ post.timespent }}",
       "words"      : "{{ post.content | strip_html | replace: '-', '' | number_of_words }}",

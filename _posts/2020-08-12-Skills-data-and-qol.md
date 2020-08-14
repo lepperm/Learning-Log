@@ -5,7 +5,7 @@ date: 2020-08-12 23:24:16 -0400
 author: Max Lepper
 categories: [journal]
 tags: [javascript, liquid]
-excerpt: Working towards richer skills data, Search improvements, javascript loading framework, QoL improvements
+excerpt: Working towards richer skills data, search improvements, javascript loading framework, QoL improvements
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await", "https://javascript.info/async-await", "https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll", "https://jekyllrb.com/docs/datafiles/"]
 skills: [javascript, liquid, jekyll, markdown, html, css]
 timespent: 445
@@ -20,7 +20,7 @@ timespent: 445
 - [x] Spell checking!
 - [x] Extract stats from all posts
 - [x] Perform skills aggregation to json output
-- [ ] Update skills to populate from json
+- [ ] <span title="Task to be added to next entry">=></span> Update skills to populate from json
 
 ## Entry
 
@@ -30,6 +30,22 @@ Curious to see how certain Jekyll values are exposed, I implemented a quick prev
 
 My about page was the template default, so it was time to change that. I wrote up a little blurb with links to GitLab and my portfolio, and passed over all my posts to spell check myself. The past three months has had me staring at computer screens for 13-17 hours every day, so my eyes have been struggling, and I haven't been good about my [eye exercises](https://gitlab.com/maxlepper/eye-helper) like I should... 😬 I was surprised at how many spelling errors from the past 4 days I had completely overlooked, despite it being a pet-peeve! Shout-out to my wife who can spot spelling errors like a hawk in 0.2 seconds, I hope reading these posts is less triggering going forward, haha!
 
-My search JSON object is created by extracting all the front matter data from each post. The skill page is partially functional right now, but I would really like to have more detailed information in a sortable format. Existing logic could be mostly moved into the skills.json file and populated correctly after some minor adjustments. As of this writing, however, I'm not exactly sure how to get the data back OUT of the JSON and into the skills table. When I put the JSON into data, I don't seem to be able to access it, possibly because it contains Liquid syntax, but I'm not entirely positive about that.
+My search JSON object is created by extracting all the Front Matter data from each post. The Skill page is partially functional right now, but I would really like to have more detailed information in a sortable format. Existing logic could be mostly moved into the skills.json file and populated correctly after some minor adjustments. As of this writing, however, I'm not exactly sure how to get the data back OUT of the JSON and into the skills table. 
 
-With a non-Liquid JSON, it looks like site.data can access the data. So now the question will be, can I use files from assets or includes like a _data source, OR, can I copy the generated JSON object from build to a _data directory. Additionally, I am having a very difficult time actually using the data, as it comes in with a heavy helping of "\" characters and I cannot seem to strip them for the data access to work. Looks like it will have to sit broken for another day, unfortunately.
+It appears that storing the skills.json in the "_data" folder doesn't get generated in "_site" on build, possibly because it contains Liquid syntax, but I'm not entirely positive about that. My thinking was that any file with a YAML opening space was hit on compile, but I probably missed something somewhere.
+
+With a non-Liquid JSON via copying the generated skills.js from my assets/js/ folder into my root "_data" folder, it looks like site.data.skills now can pull in the information...to an extent. So now the question will be, can I use files from assets or includes like a _data source, OR, can I automate copying the generated JSON object from build to a _data directory.
+
+The raw data comes in as:
+
+```
+{"name"=>"javascript", "category"=>"TBD", "progression"=>"TBD", "entries"=>"2", "time"=>"11 h 50 m", "lastused"=>"TBD"} {"name"=>"liquid", ...}
+```
+
+When I try to jsonify the data, I get:
+
+```
+"{\"name\":\"javascript\",\"category\":\"TBD\",\"progression\":\"TBD\",\"entries\":\"2\",\"time\":\"11 h 50 m\",\"lastused\":\"TBD\"}" "{\"name\":\"liquid\",\...}
+```
+
+For whatever reason, I cannot seem to access this data, although everything I'm reading makes it look super simple. Looks like it will have to sit broken for another day, unfortunately.

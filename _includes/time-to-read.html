@@ -1,9 +1,15 @@
-{%- capture words -%}
-  {{ include.wordsource | strip_html | replace: '-', '' }}
-{%- endcapture -%}
-{%- assign wordcount = words | number_of_words -%}
-{%- assign wordmin = wordcount | divided_by: 200.0 -%}
-{%- assign minutes = wordmin | round -%}
+{%- if include.rawcount -%}
+  {%- assign wordcount = include.rawcount -%}
+  {%- assign wordmin = wordcount | divided_by: 200.0 -%}
+  {%- assign minutes = wordmin | round -%}
+{%- else -%}
+  {%- capture words -%}
+    {{ include.wordsource | strip_html | replace: '-', '' }}
+  {%- endcapture -%}
+  {%- assign wordcount = words | number_of_words -%}
+  {%- assign wordmin = wordcount | divided_by: 200.0 -%}
+  {%- assign minutes = wordmin | round -%}
+{%- endif -%}
 
 {% assign output = include.output %}
 {% case output %}

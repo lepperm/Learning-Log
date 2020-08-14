@@ -13,7 +13,7 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      <br/>
       {%- include time-to-read.html output="text" wordsource=content -%}
     </p>
     {%- include share-buttons.html -%}
@@ -23,7 +23,7 @@ layout: default
   <div>Skills used:<ul>
     {%- for skill in page.skills -%}
       <li>
-        <a class="skill" href="/learning-log/tag#{{ skill }}"> {{ skill }}</a>
+        <a class="skill" href="/learning-log/skills#{{ skill }}"> {{ skill }}</a>
       </li>
     {%- endfor -%}</ul>
   </div>

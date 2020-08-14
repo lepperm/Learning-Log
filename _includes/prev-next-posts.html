@@ -1,7 +1,28 @@
-<div class="post-prev-next" style='display: flex; flex-direction: row; justify-content: space-between;'>
+<style>
+  .post-prev-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .arrow{
+    white-space:nowrap; 
+    overflow:hidden;
+  }
+
+  .arrow_prev{
+    padding-left: 0.5em;
+  }
+
+  .arrow_next{
+    padding-right: 0.5em;
+  }
+</style>
+
+<div class="post-prev-next">
   <div>
     {%- if page.previous != nil -%}
-      <a class="arrow_prev" href="{{ site.baseurl }}{{ page.previous.url }}" style='padding-left: 0.5em; white-space: nowrap; overflow:hidden;'>&#8592;&nbsp;{{ page.previous.title }}</a>
+      <a class="arrow arrow_prev" href="{{ site.baseurl }}{{ page.previous.url }}">&#8592;&nbsp;{{ page.previous.title }}</a>
     {%- endif -%}
   </div>
   {%- if (page.previous != nil) and (page.next != nil) -%}
@@ -9,7 +30,7 @@
   {%- endif %}
   <div>
     {%- if page.next != nil -%}
-      <a class="arrow_next" href="{{ site.baseurl }}{{ page.next.url }}" style='padding-right: 0.5em; white-space: nowrap; overflow:hidden;'>{{ page.next.title }}&nbsp;&#8594;</a>
+      <a class="arrow arrow_next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}&nbsp;&#8594;</a>
     {%- endif -%}
   </div>
 </div>

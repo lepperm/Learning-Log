@@ -23,8 +23,8 @@ layout: default
             {%- if forloop.last == false -%}, {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      {%- include time-to-read.html -%}
+      <br/>
+      {%- include time-to-read.html output="text" wordsource=content -%}
     </p>
     {%- include share-buttons.html -%}
   </header>

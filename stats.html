@@ -1,0 +1,173 @@
+---
+layout: default
+title: Stats
+jsfiles:
+cssfiles:
+---
+
+<div>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+  <body>
+
+    {%- comment -%}
+    =======================
+    Reuse all extracted data from our generated search.json file for use on this page
+    =======================
+    {%- endcomment -%}
+
+    {%- assign layouts = '' | split: ','-%}
+    {%- assign dates = '' | split: ',' -%}
+    {%- assign times = '' | split: ',' -%}
+    {%- assign wordcount = '' | split: ',' -%}
+    {%- assign reflist = '' | split: ',' -%}
+
+    {% for stat in site.data.search %}
+
+      {%- if stat.layout != "" -%}
+        {%- if layouts == "" -%}
+          {%- assign layouts = layouts | push: stat.layout -%}
+        {%- else -%}
+          {%- assign layouts = layouts | push: stat.layout -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if stat.datetime != "" -%}
+        {%- if dates == "" -%}
+          {%- assign dates = dates | push: stat.datetime -%}
+        {%- else -%}
+          {%- assign dates = dates | push: stat.datetime -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if stat.timespent != "" -%}
+        {%- if times == "" -%}
+          {%- assign times = times | push: stat.timespent -%}
+        {%- else -%}
+          {%- assign times = times | push: stat.timespent -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if stat.words != "" -%}
+        {%- if wordcount == "" -%}
+          {%- assign wordcount = wordcount | push: stat.words -%}
+        {%- else -%}
+          {%- assign wordcount = wordcount | push: stat.words -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- if stat.references != "" -%}
+        {%- assign references = stat.references | split: ',' -%}
+        {%- if reflist == "" -%}
+          {%- assign reflist = reflist | concat: references -%}
+        {%- else -%}
+          {%- assign reflist = reflist | concat: references -%}
+        {%- endif -%}
+      {%- endif -%}
+
+    {%- endfor -%}
+
+    {%- comment -%}
+    =======================
+    Actual data output to the page
+    =======================
+    {%- endcomment -%}
+
+    <h2>
+      Total Posts By Type
+    </h2>
+
+    {%- assign layoutCounts = '' | split: ',' -%}
+    {%- assign uniqLayouts = layouts | uniq -%}
+    {%- for uniqLayout in uniqLayouts -%}
+      {%- assign layoutCount = 0 -%}
+      {%- for layout in layouts -%}
+        {%- if layout == uniqLayout -%}
+          {%- assign layoutCount = layoutCount | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- assign layoutCounts = layoutCounts | push: layoutCount -%}
+    {%- endfor -%}
+
+    <ul>
+    {%- for dispLayout in uniqLayouts -%}
+      {% assign position = forloop.index0 %}
+        <li>
+          <strong>{{ dispLayout | capitalize }}s:</strong>&nbsp;&nbsp;&nbsp;
+          {{ layoutCounts[position] }}
+        </li>
+    {%- endfor -%}
+    </ul>
+
+    <br/><br/>
+    <h2>
+      Total Words Typed
+    </h2>
+
+    {%- for counts in wordcount -%}
+      {%- assign wordSum = wordSum | plus:counts -%}
+    {%- endfor -%}
+
+    <ul>
+      <li>
+        <strong>{{ wordSum }}</strong> total words typed across all posts
+      </li>
+      <li>
+        That's roughly <strong>{%- include time-to-read.html output="time" rawcount=wordSum -%}</strong> minutes of reading
+      </li>
+    </ul>
+
+    <br/><br/>
+    <h2>
+      Total Time Logged
+    </h2>
+
+    {%- for time in times -%}
+      {%- assign timeSum = timeSum | to_integer | plus:time -%}
+    {%- endfor -%}
+
+    {%- capture prettyTotalTime -%}
+      {%- include min-to-time.html timeVal=timeSum verbose=true -%}
+    {%- endcapture -%}
+
+    <ul>
+      <li>
+        <strong>{{ prettyTotalTime }}</strong> of time has been logged to skill development on this site
+      </li>
+    </ul>
+
+    <br/><br/>
+    <h2>
+      Average Time Between Posts
+    </h2>
+
+    <ul>
+      <li>
+        <strong>TBD</strong>
+      </li>
+    </ul>
+
+    {{ dates | inspect }}
+
+    <br/><br/>
+    <h2>
+      Top Used References
+    </h2>
+
+    <ol>
+      <li>
+        TBD
+      </li>
+      <li>
+        TBD
+      </li>
+      <li>
+        TBD
+      </li>
+    </ol>
+
+    {{ reflist | inspect }}
+
+  </body>
+</div>
