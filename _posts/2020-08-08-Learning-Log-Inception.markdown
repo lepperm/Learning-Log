@@ -2,6 +2,7 @@
 layout: post
 title: "Learning Log Inception"
 date: 2020-08-08 17:45:58 -0400
+modified_date:
 published: true
 author: Max Lepper
 categories: [blog]

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Stats
+exclude: false
 jsfiles:
 cssfiles:
 ---
@@ -142,32 +143,96 @@ cssfiles:
       Average Time Between Posts
     </h2>
 
+    {%- comment -%}
+    =======================
+    Discard dateDiff values over 10 years old
+    This may eventually be an issue???
+    =======================
+    {%- endcomment -%}
+
+    {%- assign sortDates = dates | sort -%}
+    {%- assign dateDiffs = '' | split: "," -%}
+    {%- for date in dates -%}
+      {%- assign nextPosition = forloop.index0 | plus: 1 -%}
+      {%- assign date1 = date | date: '%s' -%}
+      {%- assign date2 = dates[nextPosition] | date: '%s' -%}
+      {%- assign dateDiff = date1 | minus: date2 -%}
+      <script>console.log("{{dateDiff}}");</script>
+      {%- if dateDiff < 315569520 -%}
+        <script>console.log("added");</script>
+        {%- assign dateDiffs = dateDiffs | push: dateDiff -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- for diff in dateDiffs -%}
+      {%- assign diffSum = diffSum | to_integer | plus:diff -%}
+    {%- endfor -%}
+    <script>console.log("{{diffSum}}");</script>
+
+    {%- assign aveDiv = dateDiffs | size -%}
+    <script>console.log("{{aveDiv}}");</script>
+    {%- if aveDiv > 0 -%}
+      {%- assign diffAve = diffSum | divided_by: aveDiv -%}
+      <script>console.log("{{diffAve}}");</script>
+      {%- assign diffAve = diffAve | divided_by: 60 -%}
+      <script>console.log("{{diffAve}}");</script>
+    {%- endif -%}
+
+    {%- capture prettyDiffTime -%}
+      {%- include min-to-time.html timeVal=diffAve verbose=true -%}
+    {%- endcapture -%}
+
     <ul>
       <li>
-        <strong>TBD</strong>
+        One post is published approximately every <strong>{{ prettyDiffTime }}</strong>
       </li>
     </ul>
 
-    {{ dates | inspect }}
+
 
     <br/><br/>
     <h2>
       Top Used References
     </h2>
 
-    <ol>
-      <li>
-        TBD
-      </li>
-      <li>
-        TBD
-      </li>
-      <li>
-        TBD
-      </li>
-    </ol>
+    {%- assign topRefs = 0 -%}
 
-    {{ reflist | inspect }}
+    {%- comment -%}
+    =======================
+    I need to figure out how to sort these two independent 
+    arrays together before this will work correctly
+    =======================
+    {%- endcomment -%}
+
+    {%- assign uniqReflist = reflist | uniq -%}
+    {%- assign refCounts = '' | split: ',' -%}
+    {%- assign uniqReflist = reflist | uniq -%}
+    {%- for uniqRef in uniqReflist -%}
+      {%- assign refCount = 0 -%}
+      {%- for ref in reflist -%}
+        {%- if ref == uniqRef -%}
+          {%- assign refCount = refCount | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- assign refCounts = refCounts | push: refCount -%}
+    {%- endfor -%}
+
+    <ol>
+      {%- if topRefs == 0 -%}
+        <li>
+          <strong>TBD</strong>
+        </li>
+      {%- else -%}
+        {%- for dispRefs in uniqReflist limit:topRefs -%}
+          {% assign position = forloop.index0 %}
+            <li>
+              <a href={{ dispRefs }}>{{ dispRefs | truncate: 40 }}</a>
+              &nbsp;&nbsp;-&nbsp;&nbsp;
+              Referenced <strong>{{ refCounts[position] }}</strong> times in logs
+            </li>
+        {%- endfor -%}
+      {%- endif -%}
+    </ol>
 
   </body>
 </div>

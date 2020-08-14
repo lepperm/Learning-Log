@@ -1,0 +1,27 @@
+<script>
+  window.onload = init;
+
+  async function init(){
+
+    // Set noCrisp to true to prevent loading the Crisp plugin
+    if(typeof noCrisp === 'undefined' || !noCrisp){
+      window.$crisp=[];window.CRISP_WEBSITE_ID="d983f28e-d4fd-44db-b8a4-86386070549a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    }
+
+    // Create a sjs object and set searchActive to true to enable url querying of search results, requires loading js files
+    if (typeof searchActive === 'boolean' && searchActive) {
+
+      async function searchQuery() {
+        const getQuery = await UrlQuery(window, document, undefined);
+        try {
+          sjs.search(getQuery);
+        }
+        catch(err) {
+          console.log("ERROR: Attempted to query for " + getQuery + " but issue caught was => " + err);
+        }  
+      }
+
+      searchQuery();
+    }
+  }
+</script>

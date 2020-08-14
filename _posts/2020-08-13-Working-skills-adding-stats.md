@@ -20,8 +20,8 @@ timespent: 305
 - [x] Extract stats from all posts
 - [x] Post to ask about automating moving my compiled JSON to _data, or what the right way to handle this would be (https://stackoverflow.com/questions/63400845/how-can-i-use-a-liquid-generated-json-as-a-data-site-data-object-in-jekyll)
 - [x] Create a stats page to summarize stats from the entire blog
-- [ ] <span title="Task to be added to next entry">=></span> Change previous and next arrows to flex objects and have them resize and wrap correctly
-- [ ] <span title="Task to be added to next entry">=></span> Modify date, author, time to read, word count, and social media sharing to flex objects and have them resize and wrap correctly
+- [ ] <span title="Task to be added to next entry">=></span> Change previous and next arrows to wrap correctly
+- [ ] <span title="Task to be added to next entry">=></span> Modify date, author, time to read, word count, and social media sharing to wrap correctly
 - [ ] <span title="Task to be added to next entry">=></span> Look into GitLab Pages `GET https://gitlab.com/users/sign_in 503` error in console on each page load (https://gitter.im/gitlab/gitlab#)
 
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Skills
+exclude: false
 jsfiles:
 cssfiles:
 ---
@@ -20,7 +21,8 @@ cssfiles:
       <th scope="col">Last Used</th>
     </tr>
 
-    {% for skill in site.data.skills %}
+    {%- assign sortSkills = site.data.skills -%}
+    {% for skill in sortSkills %}
 
       {%- assign skilltime = skill.time | to_integer -%}
       {%- capture prettyTime -%}

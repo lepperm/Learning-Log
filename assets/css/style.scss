@@ -15,6 +15,7 @@ html {
   background-color: #353535;
   color: #bbbbbb;
   padding: 10px;
+  outline: none;
 }
 
 .nullAnchor{
@@ -22,4 +23,44 @@ html {
   cursor: default;
   color: inherit;
   text-decoration: inherit;
+}
+
+.dt-published, .dt-modified, .author-span, .time-to-read {
+  white-space: nowrap;
+}
+
+.post-prev-next {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.post-prev-next a{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: inherit;
+}
+
+.post-prev-next a button{
+  width: 45%;
+  flex: 1 1 100%;
+  margin: 1.2em;
+  padding: 1.2em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #79b8ff;
+  background-color: #353535;
+  color: inherit;
+  outline: none;
+}
+
+.post-prev-next .arrow_prev{
+  float: left;
+}
+
+.post-prev-next .arrow_next{
+  float: right;
 }

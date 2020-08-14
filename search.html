@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Search
+exclude: false
 permalink: /search/
 jsfiles:
 - /learning-log/assets/js/url-query.js
@@ -25,14 +26,5 @@ cssfiles:
     json: "../assets/js/search.json",
   });
 
-  window.onload = init;
-  async function init(){
-    let getQuery = await UrlQuery(window, document, undefined);
-    try {
-      console.log("Query value: " + getQuery);
-      sjs.search(getQuery);
-    }
-    catch(err) {
-    }
-  }
+  let searchActive = true;
 </script>
