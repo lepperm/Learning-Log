@@ -12,7 +12,7 @@ skills: [jekyll, liquid, seo]
 timespent: 220
 ---
 
-## Entry
+## Journal
 
 Today started out with the new log pages totally broken on the live site - whoops! It ended up being a number of small issues and things I didn't entirely understand while setting up the site, but the key takeaway was to use baseurl in the config to counteract the site being hosted at a subpage on GitLab Pages. There were a few different issues related to this that I encountered and was able to resolve, now that the issue was more visible.
 

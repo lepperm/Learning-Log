@@ -23,32 +23,39 @@ layout: default
     </p>
     {%- include share-buttons.html -%}
   </header>
-  <h2>Summary</h2>
-  <h3>{{page.excerpt}}</h3>
-  <div>Skills used:<ul>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <h2>Skills used:</h2>
+  <ul>
     {%- for skill in page.skills -%}
       <li>
         <a class="skill" href="/learning-log/skills#{{ skill }}"> {{ skill }}</a>
       </li>
-    {%- endfor -%}</ul>
-  </div>
-  <div>References: <ul>
+    {%- endfor -%}
+  </ul>
+
+  <h2>Time spent:</h2>
+  <ul>
+    <li>
+      {%- if page.timespent != "" -%}
+          {%- include min-to-time.html timeVal=page.timespent verbose=true -%}
+      {%- else -%}
+        Unsure
+      {%- endif -%}
+    </li>
+  </ul>
+
+  <h2>References:</h2>
+  <ul>
     {%- for reference in page.references -%}
       <li>
         <a class="extRef" href="{{ reference }}"> {{ reference }}</a>
       </li>
-    {%- endfor -%}</ul>
-  </div>
-  <div>Time spent:&nbsp;
-  {%- if page.timespent != "" -%}
-      {%- include min-to-time.html timeVal=page.timespent verbose=true -%}
-  {%- else -%}
-    Unsure
-  {%- endif -%}
-  </div>
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+    {%- endfor -%}
+  </ul>
 
   {%- include prev-next-posts.html -%}
 

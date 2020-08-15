@@ -12,18 +12,7 @@ skills: [javascript, liquid, jekyll, markdown, html, css]
 timespent: 445
 ---
 
-## Tasks
-
-- [x] Update journal format to optionally include tasks (manual headers?)
-- [x] Make post search auto-populate results with url query
-- [x] Previous and next post links at the bottom of each post
-- [x] Write a proper About page with external links
-- [x] Spell checking!
-- [x] Extract stats from all posts
-- [x] Perform skills aggregation to json output
-- [ ] <span title="Task to be added to next entry">=></span> Update skills to populate from json
-
-## Entry
+## Journal
 
 When I left off yesterday, I was able to extract a query from the search url, but not automatically load the results. Suspecting a timing/execution issue, I poked around a bit to confirm. My thought is to use an async method to first grab the query and then pass a search parameter to simple-jeykll-search. This was a great excuse for a refresher so I took some time to [learn]({{page.references[3]}}) [more]({{page.references[4]}}). In the process of tinkering with structure and the script placements, auto-search began working earlier than expected. Making the call async/await was very straight-forward, however, so I implemented it just to ensure that any valid search query will be fetched in the future.
 
@@ -50,3 +39,14 @@ When I try to jsonify the data, I get:
 ```
 
 For whatever reason, I cannot seem to access this data, although everything I'm reading makes it look super simple. Looks like it will have to sit broken for another day, unfortunately.
+
+## Tasks
+
+- [x] Update journal format to optionally include tasks (manual headers?)
+- [x] Make post search auto-populate results with url query
+- [x] Previous and next post links at the bottom of each post
+- [x] Write a proper About page with external links
+- [x] Spell checking!
+- [x] Extract stats from all posts
+- [x] Perform skills aggregation to json output
+- [ ] <span title="Task to be added to next entry">=></span> Update skills to populate from json

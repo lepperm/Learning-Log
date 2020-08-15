@@ -12,7 +12,7 @@ skills: [jekyll, liquid, scss, yaml]
 timespent: 150
 ---
 
-## Entry
+## Journal
 
 This weekend was particularly busy, and I have not made as much progress setting up this site as hoped. However, there is a site, and it is live with working CI, so it's a great first few steps! The little bit of free time I had this evening was largely devoted to learning more about how Jekyll works.
 

@@ -14,10 +14,10 @@ cssfiles:
     <caption>Skills Overview</caption>
     <tr>
       <th scope="col">Skill</th>
-      <th scope="col">Category</th>
-      <th scope="col">Progression</th>
-      <th scope="col"># of Entries</th>
       <th scope="col">Use Time</th>
+      <th scope="col"># of Entries</th>
+      <th scope="col">Progression</th>
+      <th scope="col">Category</th>
       <th scope="col">Last Used</th>
     </tr>
 
@@ -32,14 +32,14 @@ cssfiles:
 
       <tr>
         <td scope="col"><a id={{ skill.name }} class="nullAnchor">{{ skill.name }}</a></td>
-        <td scope="col">{{ skill.category }}</td>
-        <td scope="col">{{ skill.progression }}</td>
+        <td scope="col">{{ prettyTime }}</td>
         <td scope="col">
           <a href="{{site.baseurl}}{{ post.url }}/search/?query={{ skill.name }}">
             {{ skill.entries }}
           </a>
         </td>
-        <td scope="col">{{ prettyTime }}</td>
+        <td scope="col">{{ skill.progression }}</td>
+        <td scope="col">{{ skill.category }}</td>
         <td scope="col">{{ skill.lastused }}</td>
       </tr>
     {%- endfor -%}

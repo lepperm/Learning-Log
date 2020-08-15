@@ -12,7 +12,7 @@ skills: [liquid, jekyll, javascript]
 timespent: 265
 ---
 
-## Entry
+## Journal
 
 Yesterday, I had intended to get started on my Skills page but ran out of time. Fortunately, all of my practice with Liquid had mentally prepped me for how to go about exposing the data from my journal logs! I had a rough draft of the data I wanted to start with in mind already, so with [the Liquid syntax]({{page.references[0]}}) and [Jekyll's filters]({{page.references[1]}}) on-hand, I got to work.
 

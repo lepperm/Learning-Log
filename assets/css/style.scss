@@ -8,6 +8,38 @@ html {
   scroll-behavior: smooth;
 }
 
+th {
+  text-align: center;
+}
+
+#badges{
+  cursor: pointer;
+  text-decoration: inherit;
+  text-decoration-line: none;
+}
+
+#badges button{
+  border: 3px solid #365f80;
+  border-radius: 5px;
+  background-color: #365f80;
+  color: #bbbbbb;
+  padding: 2px;
+  outline: none;
+  margin: .4em;
+  pointer-events: none;
+}
+
+#badges svg{
+  fill: #1b3041;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#badges text{
+  vertical-align: middle;
+  display: inline-block;
+}
+
 #search-container input{
   width: 90%;
   border: 2px solid #6EBDFF;
