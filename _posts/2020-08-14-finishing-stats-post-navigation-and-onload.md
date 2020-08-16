@@ -32,7 +32,7 @@ My journal content was rearranged to put the log content first, and then the sum
 
 - [x] <span title="Task carried over from previous day">=X</span> Change previous and next arrows to wrap correctly
 - [x] <span title="Task carried over from previous day">=X</span> Modify date, author, time to read, word count, and social media sharing to wrap correctly
-- [ ] <span title="Task to be added to next entry">=></span> Look into GitLab Pages `GET https://gitlab.com/users/sign_in 503` error in console on each page load (https://gitter.im/gitlab/gitlab#)
+- [ ] <span title="Task to be added to next entry">=></span> Look into GitLab Pages `GET https://gitlab.com/users/sign_in 503` error in console on each page load [(https://gitter.im/gitlab/gitlab#)](https://gitter.im/gitlab/gitlab#)
 - [x] Finish processing initial list of stats for Stats page
 - [x] Add anchor-linked CSS to Category and Tag buttons on their respective pages
 - [x] "No results found" on certain skill searches, troubleshoot

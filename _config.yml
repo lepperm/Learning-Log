@@ -35,6 +35,7 @@ google_analytics: UA-174987278-1
 collections:
   skills:
     output: true
+    permalink: /:collection/:name
 
 # Theme
 theme: minima # https://github.com/jekyll/minima
@@ -44,7 +45,6 @@ minima:
   social_links:
     github: lepperm
     linkedin: maxlepper
-    twitter: codepixels1
     gitlab:
       - username: maxlepper
         instance: gitlab.com

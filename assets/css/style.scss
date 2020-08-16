@@ -13,9 +13,9 @@ th {
 }
 
 #badges{
-  cursor: pointer;
   text-decoration: inherit;
   text-decoration-line: none;
+  cursor: pointer;
 }
 
 #badges button{
@@ -52,9 +52,9 @@ th {
 
 .nullAnchor{
   pointer-events: none;
-  cursor: default;
   color: inherit;
   text-decoration: inherit;
+  cursor: default;
 }
 
 .dt-published, .dt-modified, .author-span, .time-to-read {
@@ -71,8 +71,8 @@ th {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 .post-prev-next a button{
@@ -85,6 +85,7 @@ th {
   border-radius: 5px;
   border-color: #79b8ff;
   background-color: #353535;
+  cursor: pointer;
   color: inherit;
   outline: none;
 }

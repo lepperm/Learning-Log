@@ -39,4 +39,4 @@ To start generating site statistics, I decided to hijack the JSON object created
 - [x] Create a stats page to summarize stats from the entire blog
 - [ ] <span title="Task to be added to next entry">=></span> Change previous and next arrows to wrap correctly
 - [ ] <span title="Task to be added to next entry">=></span> Modify date, author, time to read, word count, and social media sharing to wrap correctly
-- [ ] <span title="Task to be added to next entry">=></span> Look into GitLab Pages `GET https://gitlab.com/users/sign_in 503` error in console on each page load (https://gitter.im/gitlab/gitlab#)
+- [ ] <span title="Task to be added to next entry">=></span> Look into GitLab Pages `GET https://gitlab.com/users/sign_in 503` error in console on each page load [(https://gitter.im/gitlab/gitlab#)](https://gitter.im/gitlab/gitlab#)
