@@ -1,4 +1,5 @@
 ---
+layout: progression
 name: Gulp
 category: Task Runner
 mainsite: https://gulpjs.com/

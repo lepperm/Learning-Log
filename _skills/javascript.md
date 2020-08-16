@@ -1,4 +1,5 @@
 ---
+layout: progression
 name: Javascript
 category: Scripting Language
 mainsite: 

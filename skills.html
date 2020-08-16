@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Skills
 exclude: false
 permalink: /skills/
@@ -8,11 +8,7 @@ cssfiles:
 ---
 
 <div>
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-  </header>
   <table>
-    <caption>Skills Overview</caption>
     <tr>
       <th scope="col">Skill</th>
       <th scope="col">Use Time</th>
@@ -22,8 +18,9 @@ cssfiles:
       <th scope="col">Last Used</th>
     </tr>
 
-    {%- assign sortSkills = site.data.skills -%}
-    {% for skill in sortSkills %}
+    {%- assign sortSkills = site.data.skills | sort: "time" | reverse -%}
+
+    {%- for skill in sortSkills -%}
 
       {%- assign skilltime = skill.time | to_integer -%}
       {%- capture prettyTime -%}
@@ -31,8 +28,21 @@ cssfiles:
       {%- endcapture -%}
       {%- assign prettyTime = prettyTime | strip_newlines | strip_html | replace: '&nbsp;', ' ' | strip -%}
 
+      {%- assign foundSkill = nil -%}
+      {%- for skillPage in site.skills -%}
+        {%- assign skillPN = skillPage.name | downcase -%}
+        {%- if skill.name == skillPN -%}
+          {%- assign foundSkill = skillPage -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+
       <tr>
-        <td scope="col"><a id={{ skill.name }} class="nullAnchor">{{ skill.name }}</a></td>
+        {%- if foundSkill != nil -%}
+          <td scope="col"><a id={{ skill.name }} href={{site.baseurl}}{{foundSkill.url}}>{{ skill.name }}</a></td>
+        {%- else -%}
+          <td scope="col"><a id={{ skill.name }} class="nullAnchor">{{ skill.name }}</a></td>
+        {%- endif -%}
         <td scope="col">{{ prettyTime }}</td>
         <td scope="col">
           <a href="{{site.baseurl}}{{ post.url }}/search/?query={{ skill.name }}">
@@ -46,4 +56,3 @@ cssfiles:
     {%- endfor -%}
   </table>
 </div>
-

@@ -1,4 +1,5 @@
 ---
+layout: progression
 name: Firebase
 category: Database
 mainsite: https://firebase.google.com/

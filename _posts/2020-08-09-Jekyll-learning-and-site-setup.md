@@ -8,7 +8,7 @@ categories: [journal]
 tags: [jekyll]
 excerpt: Adding tags, categories, search, and fundamentals
 references: ["https://github.com/jekyll/minima/", "https://github.com/jekyll/", "https://jekyllrb.com/docs/", "https://github.com/christian-fei/Simple-Jekyll-Search", "https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"]
-skills: [jekyll, liquid, scss, yaml]
+skills: [jekyll, liquid, css, yaml]
 timespent: 150
 ---
 

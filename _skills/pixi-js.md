@@ -1,4 +1,5 @@
 ---
+layout: progression
 name: Pixi.JS
 category: Rendering Engine
 mainsite: https://www.pixijs.com/

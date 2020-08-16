@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Categories
 exclude: false
 permalink: /categories/
@@ -41,7 +41,7 @@ The following part removes dulpicated categories and invalid categories like bla
 The purpose of this snippet is to list all the categories you have in your site.
 =======================
 {%- endcomment -%}
-<h1>Categories</h1>
+
 {%- for category in categories -%}
 	<a href="#{{ category | slugify }}" id="badges">
 		<button>
@@ -59,7 +59,7 @@ The purpose of this snippet is to list all your posts posted with a certain cate
 =======================
 {%- endcomment -%}
 {%- for category in categories -%}
-	<h2 id="{{ category | slugify }}">{{ category }}</h2>
+	<h2 id="{{ category | slugify }}">{{ category | capitalize }}</h2>
 	<ul>
 		{%- for post in site.posts -%}
 			{%- if post.categories contains category -%}

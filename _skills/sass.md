@@ -1,4 +1,5 @@
 ---
+layout: progression
 name: Sass
 category: Extension language
 mainsite: https://sass-lang.com/

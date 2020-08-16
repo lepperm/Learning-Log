@@ -8,17 +8,39 @@
       window.$crisp=[];window.CRISP_WEBSITE_ID="d983f28e-d4fd-44db-b8a4-86386070549a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
     }
 
+    // Set queryActive to true to enable url querying, requires loading js files
+    if (typeof queryActive === 'boolean' && queryActive) {
+
+      async function getQuery() {
+        const getQuery = await UrlQuery(window, document, undefined);
+        try {
+          let query = getQuery;
+          let queryString = query.join();
+          document.getElementById('query').value = queryString;
+        }
+        catch(err) {
+          console.log("ERROR: Attempted to query for " + query + " but issue caught was => " + err);
+        }
+      }
+
+      getQuery();
+    }
+
     // Create a sjs object and set searchActive to true to enable url querying of search results, requires loading js files
     if (typeof searchActive === 'boolean' && searchActive) {
 
       async function searchQuery() {
         const getQuery = await UrlQuery(window, document, undefined);
         try {
-          sjs.search(getQuery);
+          let query = getQuery[0];
+          document.getElementById('query').value = query;
+          setTimeout(function(){
+            sjs.search(document.getElementById('query').value);
+          }, 0);
         }
         catch(err) {
-          console.log("ERROR: Attempted to query for " + getQuery + " but issue caught was => " + err);
-        }  
+          console.log("ERROR: Attempted to query for " + query + " but issue caught was => " + err);
+        }
       }
 
       searchQuery();
