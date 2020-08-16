@@ -5,36 +5,36 @@
       "name"        : "javascript",
       "category"     : "TBD",
       "progression"  : "TBD",
-      "entries"      : "4",
-      "time"         : "1345",
+      "entries"      : "6",
+      "time"         : "1890",
       "lastused"     : "TBD"
     },{
       "name"        : "liquid",
       "category"     : "TBD",
       "progression"  : "TBD",
-      "entries"      : "6",
-      "time"         : "1715",
+      "entries"      : "8",
+      "time"         : "2260",
       "lastused"     : "TBD"
     },{
       "name"        : "jekyll",
       "category"     : "TBD",
       "progression"  : "TBD",
-      "entries"      : "6",
-      "time"         : "1715",
+      "entries"      : "8",
+      "time"         : "2260",
       "lastused"     : "TBD"
     },{
       "name"        : "html",
       "category"     : "TBD",
       "progression"  : "TBD",
-      "entries"      : "3",
-      "time"         : "1080",
+      "entries"      : "5",
+      "time"         : "1625",
       "lastused"     : "TBD"
     },{
       "name"        : "css",
       "category"     : "TBD",
       "progression"  : "TBD",
-      "entries"      : "3",
-      "time"         : "1080",
+      "entries"      : "6",
+      "time"         : "1775",
       "lastused"     : "TBD"
     },{
       "name"        : "markdown",
@@ -49,13 +49,6 @@
       "progression"  : "TBD",
       "entries"      : "1",
       "time"         : "220",
-      "lastused"     : "TBD"
-    },{
-      "name"        : "scss",
-      "category"     : "TBD",
-      "progression"  : "TBD",
-      "entries"      : "1",
-      "time"         : "150",
       "lastused"     : "TBD"
     },{
       "name"        : "yaml",
