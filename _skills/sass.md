@@ -3,10 +3,19 @@ layout: progression
 name: Sass
 category: Extension language
 mainsite: https://sass-lang.com/
-progression: 
-entries: 
-time: 
-lastused: 
+progression: 0/1
 ---
 
-https://sass-lang.com/guide
+## Progression
+
+| Learning Item | Type | Date Completed |
+| ------------- | ---- | -------------- |
+|  |  |  |
+
+## Quick Reference
+
+TBD
+
+## Resources
+
+- [https://sass-lang.com/guide](https://sass-lang.com/guide)

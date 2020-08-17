@@ -1,8 +1,8 @@
 ---
 layout: progression
-name: Pixi.JS
-category: Library
-mainsite: https://www.pixijs.com/
+name: Material-UI
+category: Framework
+mainsite: https://material-ui.com/
 progression: 0/0
 ---
 

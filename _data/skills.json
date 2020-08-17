@@ -1,60 +1,69 @@
 [
   
   
+  
   {
-      "name"        : "javascript",
-      "category"     : "TBD",
-      "progression"  : "TBD",
+      "name"         : "javascript",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "7",
+      "time"         : "2090",
+      "dateslogged"  : "2020-08-16 21:33:38 -04002020-08-16 06:54:32 -04002020-08-15 23:41:11 -04002020-08-14 22:37:31 -04002020-08-13 23:41:23 -04002020-08-12 23:24:16 -04002020-08-11 20:06:54 -0400",
+      "lastlogged"   : "2020-08-16 21:33:38 -0400"
+    },{
+      "name"         : "liquid",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "9",
+      "time"         : "2460",
+      "dateslogged"  : "2020-08-16 21:33:38 -04002020-08-16 06:54:32 -04002020-08-15 23:41:11 -04002020-08-14 22:37:31 -04002020-08-13 23:41:23 -04002020-08-12 23:24:16 -04002020-08-11 20:06:54 -04002020-08-10 23:34:22 -04002020-08-09 23:33:17 -0400",
+      "lastlogged"   : "2020-08-16 21:33:38 -0400"
+    },{
+      "name"         : "jekyll",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "9",
+      "time"         : "2460",
+      "dateslogged"  : "2020-08-16 21:33:38 -04002020-08-16 06:54:32 -04002020-08-15 23:41:11 -04002020-08-14 22:37:31 -04002020-08-13 23:41:23 -04002020-08-12 23:24:16 -04002020-08-11 20:06:54 -04002020-08-10 23:34:22 -04002020-08-09 23:33:17 -0400",
+      "lastlogged"   : "2020-08-16 21:33:38 -0400"
+    },{
+      "name"         : "html",
+      "category"     : "-",
+      "progression"  : "-",
       "entries"      : "6",
-      "time"         : "1890",
-      "lastused"     : "TBD"
+      "time"         : "1825",
+      "dateslogged"  : "2020-08-16 21:33:38 -04002020-08-16 06:54:32 -04002020-08-15 23:41:11 -04002020-08-14 22:37:31 -04002020-08-13 23:41:23 -04002020-08-12 23:24:16 -0400",
+      "lastlogged"   : "2020-08-16 21:33:38 -0400"
     },{
-      "name"        : "liquid",
-      "category"     : "TBD",
-      "progression"  : "TBD",
-      "entries"      : "8",
-      "time"         : "2260",
-      "lastused"     : "TBD"
+      "name"         : "css",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "7",
+      "time"         : "1975",
+      "dateslogged"  : "2020-08-16 21:33:38 -04002020-08-16 06:54:32 -04002020-08-15 23:41:11 -04002020-08-14 22:37:31 -04002020-08-13 23:41:23 -04002020-08-12 23:24:16 -04002020-08-09 23:33:17 -0400",
+      "lastlogged"   : "2020-08-16 21:33:38 -0400"
     },{
-      "name"        : "jekyll",
-      "category"     : "TBD",
-      "progression"  : "TBD",
-      "entries"      : "8",
-      "time"         : "2260",
-      "lastused"     : "TBD"
-    },{
-      "name"        : "html",
-      "category"     : "TBD",
-      "progression"  : "TBD",
-      "entries"      : "5",
-      "time"         : "1625",
-      "lastused"     : "TBD"
-    },{
-      "name"        : "css",
-      "category"     : "TBD",
-      "progression"  : "TBD",
-      "entries"      : "6",
-      "time"         : "1775",
-      "lastused"     : "TBD"
-    },{
-      "name"        : "markdown",
-      "category"     : "TBD",
-      "progression"  : "TBD",
+      "name"         : "markdown",
+      "category"     : "-",
+      "progression"  : "-",
       "entries"      : "1",
       "time"         : "445",
-      "lastused"     : "TBD"
+      "dateslogged"  : "2020-08-12 23:24:16 -0400",
+      "lastlogged"   : "2020-08-12 23:24:16 -0400"
     },{
-      "name"        : "seo",
-      "category"     : "TBD",
-      "progression"  : "TBD",
+      "name"         : "seo",
+      "category"     : "-",
+      "progression"  : "-",
       "entries"      : "1",
       "time"         : "220",
-      "lastused"     : "TBD"
+      "dateslogged"  : "2020-08-10 23:34:22 -0400",
+      "lastlogged"   : "2020-08-10 23:34:22 -0400"
     },{
-      "name"        : "yaml",
-      "category"     : "TBD",
-      "progression"  : "TBD",
+      "name"         : "yaml",
+      "category"     : "-",
+      "progression"  : "-",
       "entries"      : "1",
       "time"         : "150",
-      "lastused"     : "TBD"
+      "dateslogged"  : "2020-08-09 23:33:17 -0400",
+      "lastlogged"   : "2020-08-09 23:33:17 -0400"
     }]

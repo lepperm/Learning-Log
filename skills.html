@@ -15,10 +15,10 @@ cssfiles:
       <th scope="col"># of Entries</th>
       <th scope="col">Progression</th>
       <th scope="col">Category</th>
-      <th scope="col">Last Used</th>
+      <th scope="col">Last Logged</th>
     </tr>
 
-    {%- assign sortSkills = site.data.skills | sort: "time" | reverse -%}
+    {%- assign sortSkills = site.data.skills | sort: "name" -%}
 
     {%- for skill in sortSkills -%}
 
@@ -29,10 +29,14 @@ cssfiles:
       {%- assign prettyTime = prettyTime | strip_newlines | strip_html | replace: '&nbsp;', ' ' | strip -%}
 
       {%- assign foundSkill = nil -%}
+      {%- assign foundProg = nil -%}
+      {%- assign foundCat = nil -%}
       {%- for skillPage in site.skills -%}
         {%- assign skillPN = skillPage.name | downcase -%}
         {%- if skill.name == skillPN -%}
           {%- assign foundSkill = skillPage -%}
+          {%- assign foundProg = skillPage.progression -%}
+          {%- assign foundCat = skillPage.category -%}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
@@ -49,9 +53,14 @@ cssfiles:
             {{ skill.entries }}
           </a>
         </td>
-        <td scope="col">{{ skill.progression }}</td>
-        <td scope="col">{{ skill.category }}</td>
-        <td scope="col">{{ skill.lastused }}</td>
+        {%- if foundSkill != nil -%}
+          <td scope="col">{{ foundProg }}</td>
+          <td scope="col">{{ foundCat }}</td>
+        {%- else -%}
+          <td scope="col">{{ skill.progression }}</td>
+          <td scope="col">{{ skill.category }}</td>
+        {%- endif -%}
+        <td scope="col">{{ skill.lastlogged | date: '%b %-d, %Y' }}</td>
       </tr>
     {%- endfor -%}
   </table>

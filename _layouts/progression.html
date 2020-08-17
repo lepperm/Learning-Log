@@ -1,15 +1,26 @@
 ---
-layout: default
+layout: page
 ---
 
 <article class="post">
 
   {%- include load-scripts.html -%}
   {%- include onload.html -%}
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  <div>
+    {%- if page.mainsite != null -%}
+      <p>
+          <a href={{ page.mainsite }}>Visit the main site</a>
+      </p>
+    {%- endif -%}
+    {%- if page.category != null -%}
+      <p>
+        <strong>Category:</strong>
+        <ul>
+          <li>{{ page.category }}</li>
+        </ul>
+      </p>
+    {%- endif -%}
+  </div>
 
   <div class="post-content">
     {{ content }}

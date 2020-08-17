@@ -71,6 +71,22 @@ Actual data output to the page
 {%- endcomment -%}
 
 <h2>
+  Top Logged Skills
+</h2>
+
+{%- assign sortSkills = site.data.skills | sort: "time" | reverse -%}
+
+<ol>
+  {%- for skill in sortSkills limit:5-%}
+    <li>
+      <a href="/learning-log/skills#{{ skill.name }}" >
+        <strong>{{ skill.name }}</strong>
+      </a>
+    </li>
+  {%- endfor -%}
+</ol>
+
+<h2>
   Total Time Logged
 </h2>
 
@@ -171,19 +187,21 @@ This may eventually be an issue???
 {%- for dispLayout in uniqLayouts -%}
   {% assign position = forloop.index0 %}
     <li>
-      <strong>{{ dispLayout | capitalize }}s:</strong>&nbsp;&nbsp;&nbsp;
-      {{ layoutCounts[position] }}
+      <a href="/learning-log/categories#{{ dispLayout }}" >
+        <strong>{{ dispLayout | capitalize }}s:</strong>
+      </a>
+      &nbsp;&nbsp;&nbsp;{{ layoutCounts[position] }}
     </li>
 {%- endfor -%}
 </ul>
 
 <br/><br/>
-<div hidden>
+
 <h2>
   Top Used References
 </h2>
 
-{%- assign topRefs = 0 -%}
+{%- assign topRefs = 5 -%}
 
 {%- comment -%}
 =======================
@@ -202,23 +220,24 @@ arrays together before this will work correctly
       {%- assign refCount = refCount | plus: 1 -%}
     {%- endif -%}
   {%- endfor -%}
-  {%- assign refCounts = refCounts | push: refCount -%}
+  {%- assign refString = refCount | append: "," -%}
+  {%- assign refString = refString | append: uniqRef -%}
+  {%- assign refCounts = refCounts | push: refString -%}
+  {%- assign refCounts = refCounts | sort | reverse -%}
 {%- endfor -%}
-
 <ol>
   {%- if topRefs == 0 -%}
     <li>
       <strong>TBD</strong>
     </li>
   {%- else -%}
-    {%- for dispRefs in uniqReflist limit:topRefs -%}
-      {% assign position = forloop.index0 %}
+    {%- for dispRefs in refCounts limit:topRefs -%}
+      {% assign splitRefs = dispRefs | split: "," %}
         <li>
-          <a href={{ dispRefs }}>{{ dispRefs | truncate: 40 }}</a>
+          <a href={{ splitRefs[1] }}>{{ splitRefs[1] | truncate: 40 }}</a>
           &nbsp;&nbsp;-&nbsp;&nbsp;
-          Referenced <strong>{{ refCounts[position] }}</strong> times in logs
+          Referenced <strong>{{ splitRefs[0] }}</strong> times
         </li>
     {%- endfor -%}
   {%- endif -%}
 </ol>
-</div>

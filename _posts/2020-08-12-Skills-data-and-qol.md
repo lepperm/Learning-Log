@@ -29,13 +29,13 @@ With a non-Liquid JSON via copying the generated skills.js from my assets/js/ fo
 The raw data comes in as:
 
 ```
-{"name"=>"javascript", "category"=>"TBD", "progression"=>"TBD", "entries"=>"2", "time"=>"11 h 50 m", "lastused"=>"TBD"} {"name"=>"liquid", ...}
+{"name"=>"javascript", "category"=>"TBD", "progression"=>"TBD", "entries"=>"2", "time"=>"11 h 50 m", "lastlogged"=>"TBD"} {"name"=>"liquid", ...}
 ```
 
 When I try to jsonify the data, I get:
 
 ```
-"{\"name\":\"javascript\",\"category\":\"TBD\",\"progression\":\"TBD\",\"entries\":\"2\",\"time\":\"11 h 50 m\",\"lastused\":\"TBD\"}" "{\"name\":\"liquid\",\...}
+"{\"name\":\"javascript\",\"category\":\"TBD\",\"progression\":\"TBD\",\"entries\":\"2\",\"time\":\"11 h 50 m\",\"lastlogged\":\"TBD\"}" "{\"name\":\"liquid\",\...}
 ```
 
 For whatever reason, I cannot seem to access this data, although everything I'm reading makes it look super simple. Looks like it will have to sit broken for another day, unfortunately.
