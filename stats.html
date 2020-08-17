@@ -106,12 +106,14 @@ Actual data output to the page
 
 <br/><br/>
 <h2>
-  Total Words Typed
+  Words
 </h2>
 
 {%- for counts in wordcount -%}
   {%- assign wordSum = wordSum | plus:counts -%}
 {%- endfor -%}
+
+{%- assign aveSum = wordSum | divided_by: wordcount.size -%}
 
 <ul>
   <li>
@@ -119,6 +121,9 @@ Actual data output to the page
   </li>
   <li>
     That's roughly <strong>{%- include time-to-read.html output="time" rawcount=wordSum -%}</strong> minutes of reading
+  </li>
+  <li>
+    Each post is an average length of <strong>{{ aveSum }}</strong> words each
   </li>
 </ul>
 
