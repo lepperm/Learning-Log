@@ -8,29 +8,19 @@ progression: 0/1
 
 ## Progression
 
-| Progress | Learning Item | Type | Project | Date Completed |
-| -------- | ------------- | ---- | ------- | -------------- |
-|  | [Intro to React](https://reactjs.org/tutorial/tutorial.html) | Project |  |  |
+[Complete]: {{site.baseurl}}/assets/images/check-circle-outline.svg "Complete"
+[In Progress]: {{site.baseurl}}/assets/images/cog.svg "In progress"
+[Soon]: {{site.baseurl}}/assets/images/alarm.svg "Soon"
+[Not Started]: "Not Started"
 
-
-### Key
-
-Progress:
 - Blank = Not started
+- Blank = Starting soon
 - Gear = In progress
 - Check = Complete
 
-Learning Item:
-- The name and link of the item
-
-Type:
-- Course
-- Book
-- Project
-- Milestone
-
-Project:
-- Link to a related project, if applicable
+| Progress | Learning Item | Type | Project | Date Completed |
+| :------: | ------------- | ---- | ------- | -------------- |
+| ![Complete][Complete] | [Intro to React](https://reactjs.org/tutorial/tutorial.html) | Project |  |  |
 
 ## Quick Reference
 
@@ -39,3 +29,7 @@ TBD
 ## Resources
 
 - [https://reactjsexample.com/](https://reactjsexample.com/)
+
+### Progression Table Key
+
+{%- include skill-key.md -%}
