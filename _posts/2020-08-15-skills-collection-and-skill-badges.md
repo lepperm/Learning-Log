@@ -22,7 +22,7 @@ The Gitter chat for my 503 issue seems to be moving forward with more new issues
 
 Today was a pretty busy day, so I didn't get around to much else. My backlog in Todoist is getting pretty lengthy, however, so I am hoping to power through things tomorrow. I need to get
 
-## Tasks
+## Tasklist
 
 - [x] <span title="Task carried over from previous day">=X</span> Look into GitLab Pages `GET https://gitlab.com/users/sign_in 503` error in console on each page load [(https://gitter.im/gitlab/gitlab#)](https://gitter.im/gitlab/gitlab#)
 - [x] Add permalinks to main pages to resolve skill anchor linking

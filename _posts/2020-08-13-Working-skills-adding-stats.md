@@ -29,7 +29,7 @@ Watching the console log on my live site, I noticed a 503 error related to GitLa
 
 To start generating site statistics, I decided to hijack the JSON object created for `jekyll-simple-search` and include a bit more data in a more flexible format. Using what I learned for the skills data, I was able to generate multiple arrays of similar data, and start generating some simple statistics. Right now, the loops are made up of repeated code, so I will need to find a way to make it more reusable. There seem to be a few different types of json array patterns I have been running into with Liquid, so I may possibly try to capture some of those as includes. I assume it would probably take an `include` statement wrapped in a `capture`...this might need some experimenting!
 
-## Tasks
+## Tasklist
 
 - [x] <span title="Task carried over from previous day">=X</span> Update skills to populate from json
 - [x] Make each skill entry in the table an anchor that looks like regular text

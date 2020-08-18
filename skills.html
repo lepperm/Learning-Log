@@ -43,7 +43,13 @@ cssfiles:
 
       <tr>
         {%- if foundSkill != nil -%}
-          <td scope="col"><a id={{ skill.name }} href={{site.baseurl}}{{foundSkill.url}}>{{ skill.name }}</a></td>
+          <td scope="col"><a id={{ skill.name }} href={{site.baseurl}}{{foundSkill.url}}>
+            {%- if foundSkill.fullName != nil -%}
+              {{ foundSkill.fullName }}
+            {%- else -%}
+              {{ skill.name }}
+            {%- endif -%}
+          </a></td>
         {%- else -%}
           <td scope="col"><a id={{ skill.name }} class="nullAnchor">{{ skill.name }}</a></td>
         {%- endif -%}

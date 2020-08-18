@@ -72,7 +72,7 @@ Feeling a bit defeated from getting distracted all night instead of powering thr
 
 I wanted to have a few simple graphs and charts on here, and had bumped into Mermaid in the past few days. I took some time to try and implement it, but was ultimately concerned with how much lag time it introduced to display a fairly simple pie chart.
 
-## Tasks
+## Tasklist
 
 - [x] Make a post with an image and responsive styling
 - [x] Figure out how to sort Skills alphabetically

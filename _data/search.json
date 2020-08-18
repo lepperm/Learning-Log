@@ -1,10 +1,23 @@
 [{
       "layout"     : "journal",
+      "title"      : "Updating Postcards in AGWSU",
+      "tags"       : "react",
+      "skills"     : "react, agile-pm, devops",
+      "excerpt"    : "Back into React with pair-programming for AGWSU, and project maintenance and schedule tasks",
+      "url"        : "/learning-log/journal/2020/08/17/updating-postcards-in-agwsu.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-17 22:41:17 -0400",
+      "date"       : "Aug 17, 2020",
+      "timespent"  : "395",
+      "words"      : "463",
+      "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"
+    },{
+      "layout"     : "journal",
       "title"      : "Stabilizing Learning Log and Back to React",
       "tags"       : "javascript, liquid",
       "skills"     : "javascript, liquid, jekyll, html, css",
       "excerpt"    : "Reflecting on the past 3 months of web development and a few last improvements for Learning Log before switching back to other projects.",
-      "url"        : "/learning-log/journal/2020/08/16/stabilizing-learning-log-and-back-to-react.html",
+      "url"        : "/learning-log/journal/2020/08/16/stabilizing-learning-log-and-back-to-react-Copy.html",
       "category"   : "journal",
       "datetime"   : "2020-08-16 21:33:38 -0400",
       "date"       : "Aug 16, 2020",
@@ -140,31 +153,5 @@
       "date"       : "Aug 8, 2020",
       "timespent"  : "",
       "words"      : "557",
-      "references" : ""
-    },{
-      "layout"     : "post",
-      "title"      : "Welcome to Jekyll!",
-      "tags"       : "reference",
-      "skills"     : "",
-      "excerpt"    : "A preserved clone of the default post for reference",
-      "url"        : "/learning-log/example/2020/08/08/welcome-to-jekyll.html",
-      "category"   : "example",
-      "datetime"   : "2020-08-08 01:32:58 -0400",
-      "date"       : "Aug 8, 2020",
-      "timespent"  : "",
-      "words"      : "175",
-      "references" : ""
-    },{
-      "layout"     : "page",
-      "title"      : "About",
-      "tags"       : "reference",
-      "skills"     : "",
-      "excerpt"    : "A preserved clone of the default About for reference",
-      "url"        : "/learning-log/example/2020/08/08/about.html",
-      "category"   : "example",
-      "datetime"   : "2020-08-08 01:32:58 -0400",
-      "date"       : "Aug 8, 2020",
-      "timespent"  : "",
-      "words"      : "52",
       "references" : ""
     }]

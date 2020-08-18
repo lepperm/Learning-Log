@@ -1,6 +1,7 @@
 ---
 layout: progression
 name: Gulp
+fullName: 
 category: Task Runner
 mainsite: https://gulpjs.com/
 progression: 0/0

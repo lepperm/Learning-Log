@@ -1,6 +1,7 @@
 ---
 layout: progression
 name: Javascript
+fullName: 
 category: Scripting Language
 mainsite: 
 progression: 0/0

@@ -28,7 +28,7 @@ The Stats page got a little more work, with the average post time stat coming to
 
 My journal content was rearranged to put the log content first, and then the summary information second. This may be presenting information to users that is more expected first, and then additional and less relevant-seeming summary data further down the page.
 
-## Tasks
+## Tasklist
 
 - [x] <span title="Task carried over from previous day">=X</span> Change previous and next arrows to wrap correctly
 - [x] <span title="Task carried over from previous day">=X</span> Modify date, author, time to read, word count, and social media sharing to wrap correctly

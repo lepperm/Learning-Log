@@ -1,6 +1,7 @@
 ---
 layout: progression
 name: Firebase
+fullName: 
 category: Database
 mainsite: https://firebase.google.com/
 progression: 0/0

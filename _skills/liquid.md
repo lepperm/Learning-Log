@@ -1,6 +1,7 @@
 ---
 layout: progression
 name: Liquid
+fullName: 
 category: Template Language
 mainsite: https://shopify.github.io/liquid/
 progression: 0/0

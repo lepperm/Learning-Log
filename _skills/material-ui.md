@@ -1,6 +1,7 @@
 ---
 layout: progression
 name: Material-UI
+fullName: 
 category: Framework
 mainsite: https://material-ui.com/
 progression: 0/0

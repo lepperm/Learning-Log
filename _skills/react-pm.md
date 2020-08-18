@@ -1,10 +1,10 @@
 ---
 layout: progression
-name: Sass
-fullName: 
-category: Extension language
-mainsite: https://sass-lang.com/
-progression: 0/1
+name: Agile-PM
+fullName: Agile Project Management
+category: Project Management
+mainsite: 
+progression: 0/0
 ---
 
 ## Progression
@@ -18,11 +18,10 @@ progression: 0/1
 
 {%- include skill-key.md -%}
 
-
 ## Quick Reference
 
 TBD
 
 ## Resources
 
-- [https://sass-lang.com/guide](https://sass-lang.com/guide)
+- TBD

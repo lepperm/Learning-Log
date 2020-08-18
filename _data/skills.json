@@ -3,6 +3,30 @@
   
   
   {
+      "name"         : "react",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "1",
+      "time"         : "395",
+      "dateslogged"  : "2020-08-17 22:41:17 -0400",
+      "lastlogged"   : "2020-08-17 22:41:17 -0400"
+    },{
+      "name"         : "agile-pm",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "1",
+      "time"         : "395",
+      "dateslogged"  : "2020-08-17 22:41:17 -0400",
+      "lastlogged"   : "2020-08-17 22:41:17 -0400"
+    },{
+      "name"         : "devops",
+      "category"     : "-",
+      "progression"  : "-",
+      "entries"      : "1",
+      "time"         : "395",
+      "dateslogged"  : "2020-08-17 22:41:17 -0400",
+      "lastlogged"   : "2020-08-17 22:41:17 -0400"
+    },{
       "name"         : "javascript",
       "category"     : "-",
       "progression"  : "-",

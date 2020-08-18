@@ -1,6 +1,7 @@
 ---
 layout: progression
 name: Pixi.JS
+fullName: 
 category: Library
 mainsite: https://www.pixijs.com/
 progression: 0/0

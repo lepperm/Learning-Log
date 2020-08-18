@@ -4,6 +4,7 @@ title: Stats
 exclude: false
 permalink: /stats/
 jsfiles:
+- /learning-log/assets/js/mermaid.min.js
 cssfiles:
 ---
 
@@ -22,44 +23,24 @@ Reuse all extracted data from our generated search.json file for use on this pag
 {% for stat in site.data.search %}
 
   {%- if stat.layout != "" -%}
-    {%- if layouts == "" -%}
-      {%- assign layouts = layouts | push: stat.layout -%}
-    {%- else -%}
-      {%- assign layouts = layouts | push: stat.layout -%}
-    {%- endif -%}
+    {%- assign layouts = layouts | push: stat.layout -%}
   {%- endif -%}
 
   {%- if stat.datetime != "" -%}
-    {%- if dates == "" -%}
-      {%- assign dates = dates | push: stat.datetime -%}
-    {%- else -%}
-      {%- assign dates = dates | push: stat.datetime -%}
-    {%- endif -%}
+    {%- assign dates = dates | push: stat.datetime -%}
   {%- endif -%}
 
   {%- if stat.timespent != "" -%}
-    {%- if times == "" -%}
-      {%- assign times = times | push: stat.timespent -%}
-    {%- else -%}
-      {%- assign times = times | push: stat.timespent -%}
-    {%- endif -%}
+    {%- assign times = times | push: stat.timespent -%}
   {%- endif -%}
 
   {%- if stat.words != "" -%}
-    {%- if wordcount == "" -%}
-      {%- assign wordcount = wordcount | push: stat.words -%}
-    {%- else -%}
-      {%- assign wordcount = wordcount | push: stat.words -%}
-    {%- endif -%}
+    {%- assign wordcount = wordcount | push: stat.words -%}
   {%- endif -%}
 
   {%- if stat.references != "" -%}
     {%- assign references = stat.references | split: ',' -%}
-    {%- if reflist == "" -%}
-      {%- assign reflist = reflist | concat: references -%}
-    {%- else -%}
-      {%- assign reflist = reflist | concat: references -%}
-    {%- endif -%}
+    {%- assign reflist = reflist | concat: references -%}
   {%- endif -%}
 
 {%- endfor -%}
@@ -85,6 +66,16 @@ Actual data output to the page
     </li>
   {%- endfor -%}
 </ol>
+
+<script>mermaid.initialize({startOnLoad:true});</script>
+<!-- https://mermaid-js.github.io/mermaid/#/theming -->
+<div class="mermaid">
+  %%{init: {'theme': 'dark'}}%%
+  pie title Skill Breakdown
+    {% for skill in sortSkills %}
+    "{{skill.name}}" : {{skill.time}}
+    {% endfor %}
+</div>
 
 <h2>
   Total Time Logged
@@ -126,6 +117,55 @@ Actual data output to the page
     Each post is an average length of <strong>{{ aveSum }}</strong> words each
   </li>
 </ul>
+
+{%- comment -%}
+=======================
+The following section analyzes the word content of all posts for Readability Ease
+https://readabilityformulas.com/flesch-reading-ease-readability-formula.php
+My method is most likely pretty inaccurate, due to this being a coding blog
+Seems like that would figure, huh? Whoops.
+=======================
+{%- endcomment -%}
+
+{%- assign ReadabilityEase = 0.0 -%}
+{%- assign ASL = 0.0 -%}
+{%- assign ASW = 0.0 -%}
+
+{%- assign allContent = '' | split: ',' -%}
+{%- assign splitContent = '' | split: ',' -%}
+{%- for post in site.posts -%}
+  {%- assign postContent = post.content | strip_html | strip_newlines | strip | normalize_whitespace -%}
+  {%- assign splitContent = postContent | split: "Tasklist" -%}
+  {%- assign isolatedContent = splitContent[0] -%}
+  {%- if isolatedContent contains "[" -%}
+    {%- assign extractedContent = p.content | split: "[" | last | split: "]" | first -%}
+  {%- else -%}
+    {%- assign extractedContent = isolatedContent -%}
+  {%- endif -%}
+  {%- assign cleanedContent = extractedContent | replace: "...", " " | replace: "[", "" | replace: "]", "" | replace: "(", "" | replace: ")", "" | replace: "/", " " | replace: "\", " " | replace: "_", ""| replace: ":", "" | replace: ",", "" | remove_first: "Journal" -%}
+  {%- assign allContent = allContent | push: cleanedContent -%}
+{%- endfor -%}
+{%- assign bigContent = allContent | array_to_sentence_string: " " -%}
+{%- assign allSentences = bigContent | split: '.' -%}
+{%- assign sentenceSum = allSentences.size -%}
+
+{%- assign ASL = wordSum | divided_by: sentenceSum -%}
+{%- assign ASLf = ASL | times: 1.015 -%}
+
+{%- comment -%}
+vvvvv   Currently stopped below   vvvvv
+{%- endcomment -%}
+
+{%- assign syllableCount = 0 -%}
+{%- assign allWords = bigContent | replace: '.', ' ' | split: ' ' -%}
+{%- for word in allWords -%}
+  {%- assign letters = word | split: '' -%}
+  {%- assign vowels = 'aeiouy' -%}
+{%- endfor -%}
+{%- assign ASW = syllableSum | divided_by: wordSum -%}
+{%- assign ASWf = ASW | times: 84.6 -%}
+
+{%- assign ReadabilityEase = 206.835 | minus: ASLf | minus: ASWf -%}
 
 <br/><br/>
 <h2>

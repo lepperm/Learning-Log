@@ -40,7 +40,7 @@ When I try to jsonify the data, I get:
 
 For whatever reason, I cannot seem to access this data, although everything I'm reading makes it look super simple. Looks like it will have to sit broken for another day, unfortunately.
 
-## Tasks
+## Tasklist
 
 - [x] Update journal format to optionally include tasks (manual headers?)
 - [x] Make post search auto-populate results with url query
