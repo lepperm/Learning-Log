@@ -2,7 +2,7 @@
 layout: journal
 title: "Stats Updates, Style, and Skill Progression Data"
 date: 2020-08-18 22:41:19 -0400
-published: false
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [sass, markdown]
