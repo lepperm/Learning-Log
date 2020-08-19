@@ -9,9 +9,15 @@ progression: 0/1
 
 ## Progression
 
-| Progress              | Learning Item    | Type    | Project | Date Completed |
-| :-------------------: | ---------------- | ------- | ------- | -------------- |
-| ![Complete][Complete] | [Intro to React] | Project |         |                |
+| Status    | Learning Item    | Type    | Project | Date Completed |
+| :-------: | ---------------- | :-----: | ------- | -------------- |
+| ![OK][OK] | [Intro to React] | Project |         |                |
+
+[//]: # Reference Links for Progress Options
+[OK]: Item is completed
+[IP]: In Progress, item is underway but not finished. If there is a way to indicate progress, include in Status
+[UN]: Up Next, item to be started next when selecting learning material
+[NS]: Not Started, item is in the backlog
 
 [//]: # Reference Links for items
 [Intro to React]:https://reactjs.org/tutorial/tutorial.html

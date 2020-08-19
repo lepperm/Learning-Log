@@ -1,12 +1,12 @@
 ---
 layout: journal
-title: "Title name"
-date: 2021-01-01 22:00:00 -0400
+title: "Log Template"
+date: 2020-01-01 22:00:00 -0400
 published: false
 author: Max Lepper
 categories: [journal]
 tags: [tbd]
-excerpt: TBD
+excerpt: A template page for log files
 references: ["https://gitlab.com/maxlepper"]
 skills: [tbd]
 timespent: 0

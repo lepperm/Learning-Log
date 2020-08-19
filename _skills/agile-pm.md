@@ -1,9 +1,9 @@
 ---
 layout: progression
-name: Gulp
-fullName: 
-category: Task Runner
-mainsite: https://gulpjs.com/
+name: Agile-PM
+fullName: Agile Project Management
+category: Project Management
+mainsite: 
 progression: 0/0
 ---
 
@@ -26,7 +26,6 @@ progression: 0/0
 ### Key
 
 {% include skill-key.md %}
-
 
 ## Quick Reference
 

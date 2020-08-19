@@ -24,7 +24,7 @@ timespent: 415
   display: flex;
 }
 .text {
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 .image {
   width: 80%;
@@ -37,7 +37,7 @@ timespent: 415
 
   .text {
     width: 50%;
-    padding-right: 1em;
+    padding-right: 1.5em;
   }
 
   .image {

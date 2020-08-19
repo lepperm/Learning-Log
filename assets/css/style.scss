@@ -4,6 +4,15 @@
 @import "minima/skins/{{ site.minima.skin | default: 'dark' }}";
 @import "minima/initialize";
 
+$text-color: #bbbbbb;
+$link-color: #79b8ff;
+$badge-inactive: #365f80;
+$badge-active:#3f7db1;
+$svg-inactive: #1e3547;
+$svg-active:#274c6b;
+$container-bg: #353535;
+$container-border: #79b8ff;
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,24 +24,37 @@ th {
 #badges{
   text-decoration: inherit;
   text-decoration-line: none;
-  cursor: pointer;
 }
 
 #badges button{
-  border: 3px solid #365f80;
+  background-color: $badge-inactive;
+  border: 3px solid $badge-inactive;
   border-radius: 5px;
-  background-color: #365f80;
-  color: #bbbbbb;
+  color: $text-color;
   padding: 2px;
   outline: none;
   margin: .4em;
-  pointer-events: none;
+  transition: border 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+#badges button:hover{
+  border: 3px solid $badge-active;
+  background-color: $badge-active;
 }
 
 #badges svg{
-  fill: #1b3041;
   vertical-align: middle;
   display: inline-block;
+}
+
+#badges svg path{
+  fill: $svg-inactive;
+  transition: fill 0.3s;
+}
+
+#badges button:hover svg path{
+  fill: $svg-active;
 }
 
 #badges text{
@@ -40,21 +62,35 @@ th {
   display: inline-block;
 }
 
+.nav-icon {
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+
+.nav-icon svg path {
+  fill: $badge-active;
+  transition: fill 0.3s;
+}
+
+.nav-icon svg:hover path {
+  fill: $link-color;
+  animation: bounce 1s;
+}
+
 #search-container input{
   width: 90%;
-  border: 2px solid #6EBDFF;
+  border: 2px solid $container-border;
   border-radius: 10px;
-  background-color: #353535;
-  color: #bbbbbb;
+  background-color: $container-bg;
+  color: $text-color;
   padding: 10px;
   outline: none;
 }
 
 .nullAnchor{
-  pointer-events: none;
   color: inherit;
-  text-decoration: inherit;
-  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .dt-published, .dt-modified, .author-span, .time-to-read {
@@ -83,8 +119,8 @@ th {
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
-  border-color: #79b8ff;
-  background-color: #353535;
+  border-color: $container-border;
+  background-color: $container-bg;
   cursor: pointer;
   color: inherit;
   outline: none;
@@ -96,4 +132,21 @@ th {
 
 .post-prev-next .arrow_next{
   float: right;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
 }

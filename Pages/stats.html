@@ -8,6 +8,33 @@ jsfiles:
 cssfiles:
 ---
 
+<h2 id="toc">
+  Contents
+</h2>
+<ol>
+  <li>
+    <a href="#top-skills">Top Logged Skills</a>
+  </li>
+  <li>
+    <a href="#skill-pie">Logged Skills Distribution</a>
+  </li>
+  <li>
+    <a href="#total-time">Total Time Logged</a>
+  </li>
+  <li>
+    <a href="#words">Words</a>
+  </li>
+  <li>
+    <a href="#ave-post-time">Average Time Between Posts</a>
+  </li>
+  <li>
+    <a href="#posts-by-type">Total Posts By Type</a>
+  </li>
+  <li>
+    <a href="#top-references">Top Used References</a>
+  </li>
+</ol>
+
 {%- comment -%}
 =======================
 Reuse all extracted data from our generated search.json file for use on this page
@@ -51,8 +78,9 @@ Actual data output to the page
 =======================
 {%- endcomment -%}
 
-<h2>
+<h2 id="top-skills">
   Top Logged Skills
+  {%- include return-to-top.html target="toc" -%}
 </h2>
 
 {%- assign sortSkills = site.data.skills | sort: "time" | reverse -%}
@@ -67,18 +95,53 @@ Actual data output to the page
   {%- endfor -%}
 </ol>
 
-<script>mermaid.initialize({startOnLoad:true});</script>
-<!-- https://mermaid-js.github.io/mermaid/#/theming -->
-<div class="mermaid">
-  %%{init: {'theme': 'dark'}}%%
-  pie title Skill Breakdown
-    {% for skill in sortSkills %}
-    "{{skill.name}}" : {{skill.time}}
-    {% endfor %}
-</div>
 
-<h2>
+<h2 id="skill-pie">
+  Logged Skills Distribution
+  {%- include return-to-top.html target="toc" -%}
+</h2>
+
+{%- assign allSkillTime = 0 -%}
+{%- for skill in sortSkills -%}
+  {%- assign allSkillTime = allSkillTime | plus: skill.time -%}
+{%- endfor -%}
+{%- assign allSkillTime = allSkillTime | times: 1.0 -%}
+
+{%- assign percThreshold = 0.034 -%}
+{%- assign skillNameCluster = '' -%}
+{%- assign skillTimeCluster = 0 -%}
+
+{%- include mermaid-init.html -%}
+<div class="mermaid">
+  pie
+    {%- for skill in sortSkills -%}
+      {%- assign skillperc = skill.time | divided_by: allSkillTime  -%}
+      {%- if skillperc <= percThreshold -%}
+        {% if skillNameCluster == '' %}
+          {%- assign skillNameCluster = skillNameCluster | append: skill.name -%}
+        {% else %}
+          {%- assign skillNameCluster = skillNameCluster | append: ", " | append: skill.name -%}
+        {% endif %}
+        {%- assign skillTimeCluster = skillTimeCluster | plus: skill.time -%}
+      {% else %}
+        {% assign skillint = skillperc | times: 100 | round %}
+        "{{skillint}}% - {{skill.name}}" : {{skill.time}}
+      {% endif %}
+    {%- endfor -%}
+    {% if skillTimeCluster > 0 %}
+      {%- assign skillclusterperc = skillTimeCluster | divided_by: allSkillTime | times: 100 | round -%}
+      "{{skillclusterperc}}% - other*" : {{skillTimeCluster}}
+    {% endif %}
+</div>
+{% if skillTimeCluster > 0 %}
+  <div style="float:right">
+    *{{skillNameCluster}}
+  </div>
+{% endif %}
+
+<h2 id="total-time">
   Total Time Logged
+  {%- include return-to-top.html target="toc" -%}
 </h2>
 
 {%- for time in times -%}
@@ -96,8 +159,9 @@ Actual data output to the page
 </ul>
 
 <br/><br/>
-<h2>
+<h2 id="words">
   Words
+  {%- include return-to-top.html target="toc" -%}
 </h2>
 
 {%- for counts in wordcount -%}
@@ -168,8 +232,9 @@ vvvvv   Currently stopped below   vvvvv
 {%- assign ReadabilityEase = 206.835 | minus: ASLf | minus: ASWf -%}
 
 <br/><br/>
-<h2>
+<h2 id="ave-post-time">
   Average Time Between Posts
+  {%- include return-to-top.html target="toc" -%}
 </h2>
 
 {%- comment -%}
@@ -212,8 +277,9 @@ This may eventually be an issue???
 </ul>
 
 <br/><br/>
-<h2>
+<h2 id="posts-by-type">
   Total Posts By Type
+  {%- include return-to-top.html target="toc" -%}
 </h2>
 
 {%- assign layoutCounts = '' | split: ',' -%}
@@ -242,8 +308,9 @@ This may eventually be an issue???
 
 <br/><br/>
 
-<h2>
+<h2 id="top-references">
   Top Used References
+  {%- include return-to-top.html target="toc" -%}
 </h2>
 
 {%- assign topRefs = 5 -%}

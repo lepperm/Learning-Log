@@ -1,0 +1,6 @@
+{%- assign target = '' -%}
+{%- if include.target -%}
+  {%- assign target = include.target -%}
+{%- endif -%}
+
+<a href="#{{target}}" class="nav-icon">{%- include icons/arrow-up-circle-outline.svg -%}</a>
