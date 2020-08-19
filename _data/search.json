@@ -1,16 +1,16 @@
 [{
       "layout"     : "journal",
-      "title"      : "Stats Updates and Skill Progression Data",
-      "tags"       : "liquid",
-      "skills"     : "sass, liquid, javascript",
-      "excerpt"    : "Powering up my Stats pie chart and pulling in progression and course data to my skill collection entries",
+      "title"      : "Stats Updates, Style, and Skill Progression Data",
+      "tags"       : "sass, markdown",
+      "skills"     : "sass, liquid, javascript, markdown",
+      "excerpt"    : "Powering up my Stats pie chart, improving my CSS, and pulling in progression and course data to my skill collection entries",
       "url"        : "/learning-log/journal/2020/08/18/stats-updates-and-skill-progression-data.html",
       "category"   : "journal",
       "datetime"   : "2020-08-18 22:41:19 -0400",
       "date"       : "Aug 18, 2020",
-      "timespent"  : "200",
-      "words"      : "93",
-      "references" : "https://gitlab.com/maxlepper"
+      "timespent"  : "275",
+      "words"      : "511",
+      "references" : "https://sass-lang.com/documentation/variables, http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html"
     },{
       "layout"     : "journal",
       "title"      : "Updating Postcards in AGWSU",

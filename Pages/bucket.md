@@ -9,7 +9,7 @@ cssfiles:
 
 My Bucket is a list of "Real Developer" activities, initially copied and inspired by [this post from Ginny Fahs](https://blog.prototypr.io/wondering-if-youre-a-real-developer-yet-try-making-a-bucket-list-281275482155). The items are in no particular order, but they are all activities that I would one day like to complete!
 
-## Activity Bucket
+## Activity Bucket <a id="activities"></a>
 
 - [x] Open the computer’s terminal
 - [x] Use a text editor (bonus points if you have a specific reason for choosing it)
@@ -34,9 +34,10 @@ My Bucket is a list of "Real Developer" activities, initially copied and inspire
 - [ ] Attend a development conference
 - [ ] When people ask what you do, respond saying you’re a developer :)
 
-## Project Bucket
+## Project Bucket <a id="projects"></a>
 
 - [ ] Revenue-generating online shop
 - [ ] Home bar inventory management and drink queuing web dashboard and frontend with inventory and expense statistics and forecasting
 - [ ] Machine learning image classification model to transcribe my own handwriting
 - [ ] Incremental idle resource management game
+- [ ] A self-contained web animation

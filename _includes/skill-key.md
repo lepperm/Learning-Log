@@ -17,6 +17,8 @@
 - Book
 - Project
 - Milestone
+- Official Docs
+- Blog
 
 **Project:**
 - Link to a related project, if applicable

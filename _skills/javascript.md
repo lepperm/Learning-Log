@@ -9,9 +9,10 @@ progression: 0/0
 
 ## Progression
 
-| Status    | Learning Item    | Type    | Project | Date Completed |
-| :-------: | ---------------- | :-----: | ------- | -------------- |
-|           |                  |         |         |                |
+| Status | Learning Item | Type  | Related Project | Date Completed |
+| :----: | ------------- | :---: | --------------- | -------------- |
+|        |               |       |                 |                |
+{: #prog-table}
 
 [//]: # Reference Links for Progress Options
 [OK]: Item is completed

@@ -9,9 +9,10 @@ progression: 0/1
 
 ## Progression
 
-| Status    | Learning Item    | Type    | Project | Date Completed |
-| :-------: | ---------------- | :-----: | ------- | -------------- |
-| ![OK][OK] | [Intro to React] | Project |         |                |
+|  Status   | Learning Item    |  Type   | Related Project | Date Completed |
+| :-------: | ---------------- | :-----: | --------------- | -------------- |
+| ![OK][OK] | [Intro to React] | Project |                 |                |
+{: #prog-table}
 
 [//]: # Reference Links for Progress Options
 [OK]: Item is completed
