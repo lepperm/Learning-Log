@@ -1,38 +1,21 @@
----
+--- 
 layout: progression
 name: Sass
-fullName: 
-category: Extension language
+fullname: Sass
 mainsite: https://sass-lang.com/
-progression: 0/0
+category: Extension language
+progressionEntries: 
+  - 
+    id:
+    status:
+    name:
+    item:
+    type:
+    relproj:
+    relprojlink:
+    datecomp:
+resources: 
+  - 
+    refname: Official Markdown Syntax
+    reflink: https://sass-lang.com/guide
 ---
-
-## Progression
-
-| Status | Learning Item | Type  | Related Project | Date Completed |
-| :----: | ------------- | :---: | --------------- | -------------- |
-|        |               |       |                 |                |
-{: #prog-table}
-
-[//]: # Reference Links for Progress Options
-[OK]: Item is completed
-[IP]: In Progress, item is underway but not finished. If there is a way to indicate progress, include in Status
-[UN]: Up Next, item to be started next when selecting learning material
-[NS]: Not Started, item is in the backlog
-
-[//]: # Reference Links for items
-[Ref item]:https://url.here
-
-
-### Key
-
-{% include skill-key.md %}
-
-
-## Quick Reference
-
-TBD
-
-## Resources
-
-- [https://sass-lang.com/guide](https://sass-lang.com/guide)

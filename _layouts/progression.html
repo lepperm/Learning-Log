@@ -7,6 +7,16 @@ layout: default
   {%- include load-scripts.html -%}
   {%- include onload.html -%}
 
+  {%- capture OKimg -%}
+    {{site.baseurl}}/assets/images/icons/check-circle-outline.svg
+  {%- endcapture -%}
+  {%- capture IPimg -%}
+    {{site.baseurl}}/assets/images/icons/cog.svg
+  {%- endcapture -%}
+  {%- capture UNimg -%}
+    {{site.baseurl}}/assets/images/icons/update.svg
+  {%- endcapture -%}
+
   <header class="post-header">
     {%- if page.fullName != nil -%}
       <h1 class="post-title">{{ page.fullName | escape }}</h1>
@@ -17,12 +27,10 @@ layout: default
 
   <div class="post-content">
 
-    {%- include load-scripts.html -%}
-    {%- include onload.html -%}
     <div>
       {%- if page.mainsite != null -%}
         <p>
-            <a href={{ page.mainsite }}>Visit the main site</a>
+          <a href={{ page.mainsite }}>Visit the main site</a>
         </p>
       {%- endif -%}
       {%- if page.category != null -%}
@@ -35,8 +43,112 @@ layout: default
       {%- endif -%}
     </div>
 
-    <div class="post-content">
-      {{ content }}
-    </div>
+    {%- if page.progressionEntries != null -%}
+      <h2>Progression</h2>
+      <div>
+        <table id="prog-table">
+          <tr>
+            <th>ID</th>
+            <th>Status</th>
+            <th>Learning Item</th>
+            <th>Type</th>
+            <th>Related Project</th>
+            <th>Date Completed</th>
+          </tr>
+          {%- for entry in page.progressionEntries -%}
+            <tr>
+
+              {%- if entry.id != null -%}
+                <td style="text-align:center"><a id={{ entry.id }} class="nullAnchor">{{ entry.id }}</a></td>
+              {%- else -%}
+                <td></td>
+              {%- endif -%}
+
+              {%- if entry.status != null -%}
+
+                {% assign statusImg = '' %}
+                {% assign statusAlt = '' %}
+                {% case entry.status %}
+                  {% when "OK" %}
+                    {% assign statusImg = OKimg %}
+                    {% assign statusAlt = 'Complete' %}
+                  {% when "IP" %}
+                    {% assign statusImg = IPimg %}
+                    {% assign statusAlt = 'In progress' %}
+                  {% when "UN" %}
+                    {% assign statusImg = UNimg %}
+                    {% assign statusAlt = 'Up next' %}
+                  {% else %}
+                    {% assign statusAlt = 'Not Started' %}
+                {% endcase %}
+                
+                <td style="text-align:center">
+                  {%- if statusImg != '' -%}
+                    <img src='{{statusImg}}' alt='{{statusAlt}}' title='{{statusAlt}}'>
+                  {%- else -%}
+                    <span>{{statusAlt}}</span>
+                  {%- endif -%}
+                </td>
+              {%- else -%}
+                <td style="text-align:center"><span>Not Started</span></td>
+              {%- endif -%}
+
+              {%- if entry.item != null -%}
+                <td>
+                  <a href="{{entry.item}}">{{ entry.name }}</a>
+                </td>
+              {%- else -%}
+                <td>{{ entry.name }}</td>
+              {%- endif -%}
+
+              {%- if entry.type != null -%}
+                <td>{{ entry.type }}</td>
+              {%- else -%}
+                <td></td>
+              {%- endif -%}
+
+              {%- if entry.relproj != null -%}
+                <td>
+                  <a href="{{entry.relprojlink}}">{{ entry.relproj }}</a>
+                </td>
+              {%- else -%}
+                <td></td>
+              {%- endif -%}
+
+              {%- if entry.datecomp != null -%}
+                <td>{{ entry.datecomp }}</td>
+              {%- else -%}
+                <td></td>
+              {%- endif -%}
+            </tr>
+          {%- endfor -%}
+        </table>
+      </div>
+    {%- endif -%}
+
+    {% assign content = page.content | strip_newlines %}
+    {%- if page.content != '' -%}
+      <div>
+        {{ page.content }}
+      </div>
+    {%- endif -%}
+
+    {%- if page.resources != null -%}
+      <h2>Resources</h2>
+      <div>
+        <ul>
+          {%- for resource in page.resources -%}
+            <li>
+              {%- if resource.reflink != null -%}
+                <a href="{{resource.reflink}}">{{ resource.refname }}</a>
+              {%- else -%}
+                {{ resource.refname }}
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+
   </div>
 </article>

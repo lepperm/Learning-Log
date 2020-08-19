@@ -21,6 +21,10 @@ th {
   text-align: center;
 }
 
+svg {
+  fill: $text-color;
+}
+
 #badges{
   text-decoration: inherit;
   text-decoration-line: none;
@@ -74,7 +78,20 @@ th {
 
 .nav-icon svg:hover path {
   fill: $link-color;
+}
+
+.bounce svg:hover path {
   animation: bounce 1s;
+}
+
+.inlineElem {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.inlineElem svg{
+  vertical-align: middle;
+  display: inline-block;
 }
 
 #search-container input{

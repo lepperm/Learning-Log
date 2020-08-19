@@ -1,0 +1,75 @@
+---
+layout: page
+title: Objectives
+exclude: true
+permalink: /todo/
+jsfiles:
+cssfiles:
+---
+
+The following learning items are marked as active:
+
+{%- comment -%}
+=======================
+Collect data from all skill pages
+=======================
+{%- endcomment -%}
+
+{%- for skillPage in site.skills -%}
+
+  {%- if skillPage.progressionEntries != null -%}
+
+    {%- assign itemsIP = '' | split: ',' -%}
+    {%- assign itemsUN = '' | split: ',' -%}
+
+    {%- for progEntries in skillPage.progressionEntries -%}
+
+      {%- if progEntries.status == 'IP' -%}
+        {%- assign itemsIP = itemsIP | push:progEntries.id -%}
+      {%- elsif progEntries.status == 'UN' -%}
+        {%- assign itemsUN = itemsUN | push:progEntries.id -%}
+      {%- endif -%}
+
+    {%- endfor -%}
+
+    {%- if itemsIP.size > 0 or itemsUN.size > 0 -%}
+      <h3>{{ skillPage.fullname }}</h3>
+
+      {%- if itemsIP.size > 0-%}
+        In Progress:
+        <ul>
+          {%- for item in itemsIP -%}
+            {%- assign itemInt = item | to_integer -%}
+            {% assign taskIPs = skillPage.progressionEntries | where: "id", itemInt %}
+
+            {%- for taskIP in taskIPs -%}
+              <li>
+                <a href="{{ taskIP.item }}" target="_blank" class="nav-icon inlineElem" alt="Open in new window" title="Open in new window">{%- include icons/open-in-new.svg -%}</a>
+                <text class="inlineElem">&nbsp;&nbsp;{{ taskIP.name }}&nbsp;&nbsp;</text>
+                <a href="{{ site.baseurl }}/skills/{{ skillPage.name }}#{{ taskIP.id }}" class="nav-icon" alt="Jump to skill entry" title="Jump to skill entry">{%- include icons/link-variant.svg -%}</a>
+              </li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- if itemsUN.size > 0-%}
+        Up Next:
+        <ul>
+          {%- for item in itemsUN -%}
+            {%- assign itemInt = item | to_integer -%}
+            {% assign taskUNs = skillPage.progressionEntries | where: "id", itemInt %}
+
+            {%- for taskUN in taskUNs -%}
+              <li>
+                <a href="{{ taskUN.item }}" target="_blank" class="nav-icon inlineElem" alt="Open in new window" title="Open in new window">{%- include icons/open-in-new.svg -%}</a>
+                <text class="inlineElem">&nbsp;&nbsp;{{ taskUN.name }}&nbsp;&nbsp;</text>
+                <a href="{{ site.baseurl }}/skills/{{ skillPage.name }}#{{ taskUN.id }}" class="nav-icon" alt="Jump to skill entry" title="Jump to skill entry">{%- include icons/link-variant.svg -%}</a>
+              </li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

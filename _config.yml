@@ -36,6 +36,9 @@ collections:
   skills:
     output: true
     permalink: /:collection/:name
+  skillsOld:
+    output: true
+    permalink: /:collection/:name
 
 # Theme
 theme: minima # https://github.com/jekyll/minima
@@ -56,7 +59,6 @@ plugins:
   - jekyll-sitemap
 # - jekyll-compose # Command plugin to help with writing posts https://github.com/jekyll/jekyll-compose
 # - jekyll-archives # https://github.com/jekyll/jekyll-archives
-# - jekyll-datapage-generator # maybe used to dynamically create skill pages? https://github.com/avillafiorita/jekyll-datapage_gen
 # - jekyll-assets # https://github.com/envygeeks/jekyll-assets/blob/master/README.md
 
 # Exclude from processing.

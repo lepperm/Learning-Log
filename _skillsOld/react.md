@@ -1,5 +1,5 @@
 ---
-layout: progression
+layout: progressionOld
 name: React
 fullName: React
 category: Library
@@ -20,6 +20,11 @@ progression: 0/1
 [UN]: Up Next, item to be started next when selecting learning material
 [NS]: Not Started, item is in the backlog
 
+[OK]: {{site.baseurl}}/assets/images/icons/check-circle-outline.svg "Complete"
+[IP]: {{site.baseurl}}/assets/images/icons/cog.svg "In progress"
+[UN]: {{site.baseurl}}/assets/images/icons/update.svg "Up next"
+[NS]: "Not Started"
+
 [//]: # Reference Links for items
 [Intro to React]:https://reactjs.org/tutorial/tutorial.html
 
@@ -30,7 +35,3 @@ TBD
 ## Resources
 
 - [https://reactjsexample.com/](https://reactjsexample.com/)
-
-### Progression Table Key
-
-{% include skill-key.md %}

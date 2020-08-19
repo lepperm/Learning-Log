@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  {%- include load-scripts.html -%}
+  {%- include onload.html -%}
+
+  <header class="post-header">
+    {%- if page.fullName != nil -%}
+      <h1 class="post-title">{{ page.fullName | escape }}</h1>
+    {%- else -%}
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    {%- endif -%}
+  </header>
+
+  <div class="post-content">
+
+    <div>
+      {%- if page.mainsite != null -%}
+        <p>
+            <a href={{ page.mainsite }}>Visit the main site</a>
+        </p>
+      {%- endif -%}
+      {%- if page.category != null -%}
+        <p>
+          <strong>Category:</strong>
+          <ul>
+            <li>{{ page.category }}</li>
+          </ul>
+        </p>
+      {%- endif -%}
+    </div>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</article>

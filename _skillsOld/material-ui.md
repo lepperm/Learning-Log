@@ -1,9 +1,9 @@
 ---
-layout: progression
-name: Firebase
+layout: progressionOld
+name: Material-UI
 fullName: 
-category: Database
-mainsite: https://firebase.google.com/
+category: Framework
+mainsite: https://material-ui.com/
 progression: 0/0
 ---
 
@@ -20,14 +20,13 @@ progression: 0/0
 [UN]: Up Next, item to be started next when selecting learning material
 [NS]: Not Started, item is in the backlog
 
+[OK]: {{site.baseurl}}/assets/images/icons/check-circle-outline.svg "Complete"
+[IP]: {{site.baseurl}}/assets/images/icons/cog.svg "In progress"
+[UN]: {{site.baseurl}}/assets/images/icons/update.svg "Up next"
+[NS]: "Not Started"
+
 [//]: # Reference Links for items
 [Ref item]:https://url.here
-
-
-### Key
-
-{% include skill-key.md %}
-
 
 ## Quick Reference
 

@@ -35,8 +35,20 @@ cssfiles:
         {%- assign skillPN = skillPage.name | downcase -%}
         {%- if skill.name == skillPN -%}
           {%- assign foundSkill = skillPage -%}
-          {%- assign foundProg = skillPage.progression -%}
-          {%- assign foundCat = skillPage.category -%}
+          {%- assign foundCat = foundSkill.category -%}
+          
+          {%- if foundSkill.progressionEntries != null -%}
+            {%- assign progSize = foundSkill.progressionEntries.size -%}
+            {%- assign progDone = 0 -%}
+            {%- for progEntries in foundSkill.progressionEntries -%}
+              {%- if progEntries.status == 'OK' -%}
+                {%- assign progDone = progDone | plus:1 -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- assign foundProg = progDone | append:'/' | append: progSize -%}
+          {%- else -%}
+            {%- assign foundProg = '-' -%}
+          {%- endif -%}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
