@@ -1,13 +1,26 @@
 ---
 layout: page
 title: Search
-exclude: false
+exclude: true
 permalink: /search/
 jsfiles:
 - /learning-log/assets/js/url-query.js
 - /learning-log/assets/js/search-script.js
 cssfiles:
 ---
+
+<div class="post-prev-next nav-btn-smaller">
+    <a href="{{ site.baseurl }}/tags/">
+      <button class="arrow_prev">
+        View all by Tags
+      </button>
+    </a>
+    <a href="{{ site.baseurl }}/categories/">
+      <button class="arrow_next">
+        View all by Categories
+      </button>
+    </a>
+</div>
 
 <!-- Html Elements for Search -->
 <div id="search-container">

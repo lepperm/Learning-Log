@@ -1,16 +1,16 @@
 [{
       "layout"     : "journal",
-      "title"      : "Log Template",
+      "title"      : "Progression Polish, Skill Cleanliness, and Navbar Search",
       "tags"       : "yaml",
-      "skills"     : "liquid, markdown, yaml, sass",
-      "excerpt"    : "A template page for log files",
-      "url"        : "/learning-log/journal/2020/08/19/TBD.html",
+      "skills"     : "liquid, markdown, yaml, sass, html, javascript",
+      "excerpt"    : "Creating an entirely different skill collection structure, fully-automated skill collection output pages, an automated learning task collection system, and cleaning up the navigation bar.",
+      "url"        : "/learning-log/journal/2020/08/19/progression-polish-skill-cleanliness-and-navbar-search.html",
       "category"   : "journal",
-      "datetime"   : "2020-08-19 22:00:00 -0400",
+      "datetime"   : "2020-08-19 23:58:51 -0400",
       "date"       : "Aug 19, 2020",
-      "timespent"  : "215",
-      "words"      : "390",
-      "references" : "https://github.com/avillafiorita/jekyll-datapage_gen, https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one, https://shopify.github.io/liquid/tags/iteration/, https://materialdesignicons.com/"
+      "timespent"  : "340",
+      "words"      : "566",
+      "references" : "https://github.com/avillafiorita/jekyll-datapage_gen, https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one, https://shopify.github.io/liquid/tags/iteration/, https://materialdesignicons.com/, https://jekyllrb.com/docs/liquid/filters/"
     },{
       "layout"     : "journal",
       "title"      : "Stats Updates, Style, and Skill Progression Data",

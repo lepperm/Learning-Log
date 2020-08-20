@@ -31,6 +31,18 @@
               {%- endif -%}
             {% endunless %}
           {%- endfor -%}
+          <input type="text" id="hdr-query" placeholder="Search..." />
+          <script>
+            let input = document.getElementById("hdr-query");
+
+            input.addEventListener("keyup", function(event) {
+              if (event.keyCode === 13) {
+                event.preventDefault();
+                let query = document.getElementById('hdr-query').value;
+                window.location.href = '{{ site.baseurl }}/search/?query=' + query;
+              }
+            });
+          </script>
         </div>
       </nav>
     {%- endif -%}

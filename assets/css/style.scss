@@ -95,12 +95,23 @@ svg {
 }
 
 #search-container input{
-  width: 90%;
+  width: 93%;
   border: 2px solid $container-border;
   border-radius: 10px;
   background-color: $container-bg;
   color: $text-color;
   padding: 10px;
+  margin-left: calc(3.5% - 12px);
+  outline: none;
+}
+
+#hdr-query{
+  width:8em;
+  border: 2px solid $container-border;
+  border-radius: 5px;
+  background-color: $container-bg;
+  color: $text-color;
+  padding: 5px;
   outline: none;
 }
 
@@ -141,6 +152,11 @@ svg {
   cursor: pointer;
   color: inherit;
   outline: none;
+}
+
+.nav-btn-smaller a button {
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 .post-prev-next .arrow_prev{

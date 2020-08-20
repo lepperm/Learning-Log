@@ -7,7 +7,7 @@ category: Markup language
 progressionEntries: 
   - 
     id: 1
-    status: UN
+    status: OK
     name: Markdown Tips & Tricks 1
     item: http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html
     type: Blog
@@ -16,7 +16,7 @@ progressionEntries:
     datecomp: 8/18/2020
   - 
     id: 2
-    status: IP
+    status: OK
     name: Markdown Tips & Tricks 2
     item: http://blog.virtuacreative.com.br/markdown-tips-tricks-part2.html
     type: Blog
