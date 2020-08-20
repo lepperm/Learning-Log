@@ -116,7 +116,11 @@ layout: default
               {%- endif -%}
 
               {%- if entry.datecomp != null -%}
-                <td>{{ entry.datecomp }}</td>
+                {%- if entry.datelink != null -%}
+                  <td><a href="{{entry.datelink}}">{{ entry.datecomp }}</a></td>
+                {%- else -%}
+                  <td>{{ entry.datecomp }}</td>
+                {%- endif -%}
               {%- else -%}
                 <td></td>
               {%- endif -%}

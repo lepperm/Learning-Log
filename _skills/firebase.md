@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: Sass
-fullname: Sass
-mainsite: https://sass-lang.com/
-category: Extension language
+name: Firebase
+fullname: Google Firebase
+mainsite: https://firebase.google.com/
+category: Database
 progressionEntries: 
   - 
     id:
@@ -17,6 +17,6 @@ progressionEntries:
     datelink: 
 resources: 
   - 
-    refname: Official Markdown Syntax
-    reflink: https://sass-lang.com/guide
+    refname: 
+    reflink: 
 ---

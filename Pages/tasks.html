@@ -7,7 +7,13 @@ jsfiles:
 cssfiles:
 ---
 
-<div id="todoIntro"></div>
+{%- comment -%}
+=======================
+Variables to control task collection
+=======================
+{%- endcomment -%}
+
+{%- assign suggSample = 3 -%}
 
 {%- comment -%}
 =======================
@@ -27,17 +33,83 @@ Collect data from all skill pages
 
     {%- for progEntries in skillPage.progressionEntries -%}
 
-      {%- if progEntries.status == 'IP' -%}
+      {%- assign entryStatus = progEntries.status | upcase -%}
+
+      {%- if entryStatus == 'IP' -%}
         {%- assign itemsIP = itemsIP | push:progEntries.id -%}
-      {%- elsif progEntries.status == 'UN' -%}
+      {%- elsif entryStatus == 'UN' -%}
         {%- assign itemsUN = itemsUN | push:progEntries.id -%}
-      {%- elsif progEntries.status == 'NS' -%}
+      {%- elsif entryStatus == 'NS' -%}
         {%- assign unstartedTask = skillPage.name | append: "," | append: progEntries.id | append: "," | append: progEntries.name -%}
         {%- assign openTasks = openTasks | push:unstartedTask -%}
       {%- endif -%}
 
     {%- endfor -%}
 
+    {%- for item in itemsIP -%}
+      {%- assign todoCounter = todoCounter | plus: 1 -%}
+    {%- endfor -%}
+    {%- for item in itemsUN -%}
+      {%- assign todoCounter = todoCounter | plus: 1 -%}
+    {%- endfor -%}
+
+    <script>console.log("first loop: {{skillPage.name}} - {{todoCounter}} - {{itemsIP}} - {{itemsUN}}")</script>
+
+    {% if forloop.last == true %}
+      <div id="todoIntro">
+        {%- if todoCounter == 0 -%}
+          No tasks currently marked as up next!<br/><br/>
+      
+          {%- assign randomTasks = openTasks | sample: suggSample -%}
+          {%- if randomTasks != nil -%}
+            <script>console.log("random: {{randomTasks}}")</script>
+            <div>Why not try starting one of these?</div>
+            <ul>
+              {%- assign orandomTasks = randomTasks | sort -%}
+              {%- for randomTask in orandomTasks -%}
+                {%- assign splitTask = randomTask | split:"," -%}
+                {%- assign rskillName = splitTask[0] -%}
+                {%- assign rtaskID = splitTask[1] -%}
+                {%- assign rtaskName = splitTask[2] -%}
+                <li>
+                  <a href="{{ site.baseurl }}/skills/{{ rskillName }}#{{ rtaskID }}">
+                    {{rskillName}} #{{rtaskID}}: {{ rtaskName }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        {%- else -%}
+          The following {{todoCounter}} learning items are marked as active:
+        {%- endif -%}
+      </div>
+    {% endif %}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- for skillPage in site.skills -%}
+
+  {%- if skillPage.progressionEntries != null -%}
+
+    {%- assign itemsIP = '' | split: ',' -%}
+    {%- assign itemsUN = '' | split: ',' -%}
+
+    {%- for progEntries in skillPage.progressionEntries -%}
+
+      {%- assign entryStatus = progEntries.status | upcase -%}
+
+      {%- if entryStatus == 'IP' -%}
+        {%- assign itemsIP = itemsIP | push:progEntries.id -%}
+      {%- elsif entryStatus == 'UN' -%}
+        {%- assign itemsUN = itemsUN | push:progEntries.id -%}
+      {%- elsif entryStatus == 'NS' -%}
+        {%- assign unstartedTask = skillPage.name | append: "," | append: progEntries.id | append: "," | append: progEntries.name -%}
+        {%- assign openTasks = openTasks | push:unstartedTask -%}
+      {%- endif -%}
+
+    {%- endfor -%}
+
+    <script>console.log("second loop: {{skillPage.name}} - {{itemsIP}} - {{itemsUN}}")</script>
     {%- if itemsIP.size > 0 or itemsUN.size > 0 -%}
       <h3>{{ skillPage.fullname }}</h3>
 
@@ -45,12 +117,11 @@ Collect data from all skill pages
         In Progress:
         <ul>
           {%- for item in itemsIP -%}
-            {%- assign todoCounter = todoCounter | plus: 1 -%}
             {% assign taskIPs = skillPage.progressionEntries | where: "id", item %}
 
             {%- for taskIP in taskIPs -%}
               <li>
-                <a href="{{ taskIP.item }}" target="_blank" class="nav-icon inlineElem" alt="Open in new window" title="Open in new window">{%- include icons/open-in-new.svg -%}</a>
+                <a href="{{ taskIP.item }}" class="nav-icon inlineElem" alt="Go to task site" title="Go to task site">{%- include icons/open-in-new.svg -%}</a>
                 <text class="inlineElem">&nbsp;&nbsp;{{ taskIP.name }}&nbsp;&nbsp;</text>
                 <a href="{{ site.baseurl }}/skills/{{ skillPage.name }}#{{ taskIP.id }}" class="nav-icon" alt="Jump to skill entry" title="Jump to skill entry">{%- include icons/link-variant.svg -%}</a>
               </li>
@@ -63,12 +134,11 @@ Collect data from all skill pages
         Up Next:
         <ul>
           {%- for item in itemsUN -%}
-            {%- assign todoCounter = todoCounter | plus: 1 -%}
             {% assign taskUNs = skillPage.progressionEntries | where: "id", item %}
 
             {%- for taskUN in taskUNs -%}
               <li>
-                <a href="{{ taskUN.item }}" target="_blank" class="nav-icon inlineElem" alt="Open in new window" title="Open in new window">{%- include icons/open-in-new.svg -%}</a>
+                <a href="{{ taskUN.item }}" class="nav-icon inlineElem" alt="Go to task site" title="Go to task site">{%- include icons/open-in-new.svg -%}</a>
                 <text class="inlineElem">&nbsp;&nbsp;{{ taskUN.name }}&nbsp;&nbsp;</text>
                 <a href="{{ site.baseurl }}/skills/{{ skillPage.name }}#{{ taskUN.id }}" class="nav-icon" alt="Jump to skill entry" title="Jump to skill entry">{%- include icons/link-variant.svg -%}</a>
               </li>
@@ -79,32 +149,3 @@ Collect data from all skill pages
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
-{%- if todoCounter == 0 -%}
-  <script>
-    const todoIntroDiv = document.getElementById("todoIntro");
-    const suggList = document.createElement('ul');
-    todoIntroDiv.innerHTML = "No tasks currently marked as up next! Why not try setting one now?";
-    todoIntroDiv.appendChild(suggList);
-
-    {%- assign randomTasks = openTasks | sample: 1 -%}
-    {%- for randomTask in randomTasks -%}
-      {%- assign splitTask = randomTasks | split:"," -%}
-      {%- assign rskillName = splitTask[0] -%}
-      {%- assign rtaskID = splitTask[1] -%}
-      {%- assign rtaskName = splitTask[2] -%}
-
-      let suggBul = document.createElement('li');
-      let suggLink = document.createElement('a');
-      let suggText = document.createTextNode("{{rskillName}} item # {{rtaskID}}: {{ rtaskName }}");
-      suggLink.setAttribute('href', "{{ site.baseurl }}/skills/{{ rskillName }}#{{ rtaskID }}");
-      suggLink.appendChild(suggText);
-      suggBul.appendChild(suggLink);
-      suggList.appendChild(suggBul);
-    {%- endfor -%}
-  </script>
-
-{%- else -%}
-  <script>
-    document.getElementById("todoIntro").innerHTML = "The following {{todoCounter}} learning items are marked as active:"
-  </script>
-{%- endif -%}

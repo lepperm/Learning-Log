@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: Sass
-fullname: Sass
-mainsite: https://sass-lang.com/
-category: Extension language
+name: Liquid
+fullname: Liquid
+mainsite: https://shopify.github.io/liquid/
+category: Template Language
 progressionEntries: 
   - 
     id:
@@ -17,6 +17,6 @@ progressionEntries:
     datelink: 
 resources: 
   - 
-    refname: Official Markdown Syntax
-    reflink: https://sass-lang.com/guide
+    refname: 
+    reflink: 
 ---

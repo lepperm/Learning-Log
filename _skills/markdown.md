@@ -14,6 +14,7 @@ progressionEntries:
     relproj: Learning Log
     relprojlink: https://maxlepper.gitlab.io/learning-log/
     datecomp: 8/18/2020
+    datelink: 
   - 
     id: 2
     status: OK
@@ -23,6 +24,7 @@ progressionEntries:
     relproj: Learning Log
     relprojlink: https://maxlepper.gitlab.io/learning-log/
     datecomp: 8/18/2020
+    datelink: 
 resources: 
   - 
     refname: Official Markdown Syntax

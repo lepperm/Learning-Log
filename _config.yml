@@ -24,7 +24,7 @@ author:
   email: incoming+maxlepper-learning-log-20414833-issue-@incoming.gitlab.com
   site: https://maxlepper.me
 description: >- # this means to ignore newlines until "baseurl:"
-  Max Lepper's Skill and Web Development Journal
+  Max Lepper's Web Development Skill Journal
 baseurl: "/learning-log" # the subpath of your site, e.g. /blog
 url: "https://maxlepper.gitlab.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # permalink: /:slugified_categories/:year/:month/:day/:title
