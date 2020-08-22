@@ -32,6 +32,9 @@ resources:
   - 
     refname: Markdown Tips & Tricks
     reflink: http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html
+  - 
+    refname: Kramdown Syntax (The Markdown renderer for Jekyll)
+    reflink: https://kramdown.gettalong.org/syntax.html
 ---
 
 ## Quick Reference
