@@ -7,15 +7,92 @@ jsfiles:
 cssfiles:
 ---
 
+<script>
+  function sortInd(elem, dir)  {
+    let headers = document.getElementsByTagName("TH");
+    for(var i=0; i<headers.length; i++) {
+        headers[i].classList.remove('sortingBy');
+        headers[i].classList.remove('sortAsc');
+        headers[i].classList.remove('sortDesc');
+    }
+    elem.classList.add('sortingBy');
+    if (dir == 'desc') {
+      elem.classList.add('sortAsc');
+    } else {
+      elem.classList.add('sortDesc');
+    }
+  }
+
+  function sortTable(n, type, elem) {
+    let table, rows, switching, i, x, xr, y, yr, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("skillsTable");
+    switching = true;
+    dir = "asc";
+
+    while (switching) {
+      switching = false;
+      rows = table.rows;
+
+      for (i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+        x = rows[i].getElementsByTagName("TD")[n];
+        xr = x.getAttribute('data-raw');
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+        yr = y.getAttribute('data-raw');
+
+        if (dir == "asc") {
+          if (type == "int") {
+            if (Number(xr) > Number(yr)) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        else if (dir == "desc") {
+          if (type == "int") {
+            if (Number(xr) < Number(yr)) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+      }
+
+      if (shouldSwitch) {
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        switchcount ++;
+      } else {
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
+    }
+    sortInd(elem, dir);
+  }
+</script>
+  
+
 <div>
-  <table>
-    <tr>
-      <th scope="col">Skill</th>
-      <th scope="col">Use Time</th>
-      <th scope="col"># of Entries</th>
-      <th scope="col">Progression</th>
-      <th scope="col">Category</th>
-      <th scope="col">Last Logged</th>
+  <table id="skillsTable">
+    <tr id='headerRow'>
+      <th scope="col" class="sortingBy sortDesc" onclick="sortTable(0,'text',this);">Skill<br/><i></i></th>
+      <th scope="col" onclick="sortTable(1,'int',this);">Use Time<br/><i></i></th>
+      <th scope="col" onclick="sortTable(2,'int',this);"># of Entries<br/><i></i></th>
+      <th scope="col" onclick="sortTable(3,'int',this);">Progression<br/><i></i></th>
+      <th scope="col" onclick="sortTable(4,'text',this);">Category<br/><i></i></th>
+      <th scope="col" onclick="sortTable(5,'int',this);">Last Logged<br/><i></i></th>
     </tr>
 
     {%- assign sortSkills = site.data.skills | sort: "name" -%}
@@ -36,22 +113,33 @@ cssfiles:
         {%- if skill.name == skillPN -%}
           {%- assign foundSkill = skillPage -%}
           {%- assign foundCat = foundSkill.category -%}
-          
+
           {%- if foundSkill.progressionEntries != null -%}
             {%- assign progSize = foundSkill.progressionEntries.size -%}
             {%- assign progDone = 0 -%}
+            {%- assign progSortPerc = 0.0 -%}
             {%- for progEntries in foundSkill.progressionEntries -%}
               {%- if progEntries.status == 'OK' -%}
                 {%- assign progDone = progDone | plus:1 -%}
               {%- endif -%}
             {%- endfor -%}
             {%- assign foundProg = progDone | append:'/' | append: progSize -%}
+            {%- assign progSortPerc = progDone | times: 1.0 -%}
+            {%- assign progSortPerc = progSortPerc | divided_by: progSize -%}
+            {%- if progSortPerc == 0.0 -%}
+              {%- assign progSortPerc = 0.0001 -%}
+            {%- endif -%}
           {%- else -%}
             {%- assign foundProg = '-' -%}
+            {%- assign progSortPerc = 0.0 -%}
           {%- endif -%}
           {%- break -%}
         {%- endif -%}
       {%- endfor -%}
+
+      {%- assign todayS = site.time | date: '%s' -%}
+      {%- assign loggedS = skill.lastlogged  | date: '%s' -%}
+      {%- assign recentTime = todayS | minus: loggedS -%}
 
       <tr>
         {%- if foundSkill != nil -%}
@@ -65,20 +153,22 @@ cssfiles:
         {%- else -%}
           <td scope="col"><a id={{ skill.name }} class="nullAnchor">{{ skill.name }}</a></td>
         {%- endif -%}
-        <td scope="col">{{ prettyTime }}</td>
-        <td scope="col">
+
+        <td scope="col" data-raw='{{ skilltime }}'>{{ prettyTime }}</td>
+        <td scope="col" data-raw='{{ skill.entries }}'>
           <a href="{{site.baseurl}}{{ post.url }}/search/?query={{ skill.name }}">
             {{ skill.entries }}
           </a>
         </td>
+
         {%- if foundSkill != nil -%}
-          <td scope="col">{{ foundProg }}</td>
+          <td scope="col" data-raw='{{ progSortPerc }}'>{{ foundProg }}</td>
           <td scope="col">{{ foundCat }}</td>
         {%- else -%}
-          <td scope="col">{{ skill.progression }}</td>
-          <td scope="col">{{ skill.category }}</td>
+          <td scope="col" data-raw='0.0'>-</td>
+          <td scope="col" data-raw=''>-</td>
         {%- endif -%}
-        <td scope="col">{{ skill.lastlogged | date: '%b %-d, %Y' }}</td>
+        <td scope="col" data-raw='{{ recentTime }}'>{{ skill.lastlogged | date: '%b %-d, %Y' }}</td>
       </tr>
     {%- endfor -%}
   </table>

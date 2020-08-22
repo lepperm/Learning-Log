@@ -12,6 +12,9 @@ $svg-inactive: #1e3547;
 $svg-active:#274c6b;
 $container-bg: #353535;
 $container-border: #79b8ff;
+$sort-header: #365f80;
+$sort-text: #bbbbbb;
+$sort-arrow: #79b8ff;
 
 html {
   scroll-behavior: smooth;
@@ -23,6 +26,28 @@ th {
 
 svg {
   fill: $text-color;
+}
+
+.sortingBy {
+  background-color: $sort-header;
+  color: $sort-text;
+}
+
+.sortingBy i {
+  border: solid $sort-arrow;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.sortAsc i{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.sortDesc i{
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
 #badges{

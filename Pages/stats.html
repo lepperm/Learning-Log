@@ -36,6 +36,16 @@ cssfiles:
 
 {%- comment -%}
 =======================
+Variables to control stat collection
+=======================
+{%- endcomment -%}
+
+{%- assign loggedSkillsCt = 5 -%}
+{%- assign percThreshold = 0.034 -%}
+{%- assign topRefCt = 5 -%}
+
+{%- comment -%}
+=======================
 Reuse all extracted data from our generated search.json file for use on this page
 =======================
 {%- endcomment -%}
@@ -85,7 +95,7 @@ Actual data output to the page
 {%- assign sortSkills = site.data.skills | sort: "time" | reverse -%}
 
 <ol>
-  {%- for skill in sortSkills limit:5-%}
+  {%- for skill in sortSkills limit:loggedSkillsCt-%}
     <li>
       <a href="/learning-log/skills#{{ skill.name }}" >
         <strong>{{ skill.name }}</strong>
@@ -106,7 +116,6 @@ Actual data output to the page
 {%- endfor -%}
 {%- assign allSkillTime = allSkillTime | times: 1.0 -%}
 
-{%- assign percThreshold = 0.034 -%}
 {%- assign skillNameCluster = '' -%}
 {%- assign skillTimeCluster = 0 -%}
 
@@ -269,11 +278,137 @@ This may eventually be an issue???
   {%- include min-to-time.html timeVal=diffAve verbose=true -%}
 {%- endcapture -%}
 
+{%- assign streakDates = '' | split: ',' -%}
+{% for stat in site.data.search %}
+  {%- if stat.datetime != "" -%}
+    {%- assign streakDate = stat.datetime | date: '%Y%j' -%}
+    {%- assign streakDates = streakDates | push: streakDate -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign streakDates = streakDates | sort -%}
+
+{%- assign streak = false -%}
+{%- assign streakCounter = 0 -%}
+{%- assign streaks = '' | split: ',' -%}
+{%- assign gaps = '' | split: ',' -%}
+
+{%- for sDate in streakDates -%}
+  {% if forloop.last %}
+    {% if streak == true %}
+      {%- assign streaks = streaks | push: streakCounter -%}
+    {% endif %}
+  {% elsif forloop.first != true %}
+    {%- assign lastPostIndex = forloop.index0 | minus: 1 -%}
+    {%- assign lastPost = streakDates[lastPostIndex] -%}
+    {%- assign postDiff = sDate | minus: lastPost -%}
+
+    {% if postDiff <= 1 %}
+      {% if streak == false %}
+        {%- assign streak = true -%}
+        {%- assign streakCounter = 1 -%}
+      {% elsif streak == true %}
+        {%- assign streakCounter = streakCounter | plus: 1 -%}
+      {% endif %}
+    {% else %}
+      {%- assign gaps = gaps | push: postDiff -%}
+      {% if streak == true %}
+        {%- assign streaks = streaks | push: streakCounter -%}
+        {%- assign streak = false -%}
+        {%- assign streakCounter = 0 -%}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{%- endfor -%}
+
+{%- assign streaks = streaks | sort | reverse -%}
+{%- assign gaps = gaps | sort | reverse -%}
+
 <ul>
   <li>
     One post is published approximately every <strong>{{ prettyDiffTime }}</strong>
   </li>
+  
+  <li id="lastPosting" hidden="true">
+    The latest entry was posted approximately <strong id="lastPostingTime"></strong> ago
+  </li>
+
+  {% if streaks[0] != nil %}
+    <li>
+      The longest daily posting streak lasted <strong>{{streaks[0]}}</strong> days!
+    </li>
+  {% endif %}
+
+  {% if gaps[0] != nil %}
+    <li>
+      The longest gap between posts was <strong>{{gaps[0]}}</strong> days
+    </li>
+  {%- else -%}
+    <li>
+      <strong>I have not yet missed a single day of posts!</strong> We'll see how long that lasts!
+    </li>
+  {% endif %}
+
+  {% if streak %}
+    <li>
+      <strong>There is an active streak right now!</strong> Want to sign up for my <a href='{{ site.baseurl }}/feed.xml''>RSS feed</a>? 😊
+    </li>
+  {% endif %}
 </ul>
+
+{%- assign latestDates = sortDates | reverse -%}
+{%- assign latestDate = latestDates[0] | date: '%s' -%}
+{%- assign latestMS = latestDate | times: 1000 -%}
+
+{%- assign latestFallback = latestDates[1] | date: '%s' -%}
+{%- assign fallbackMS = latestFallback | times: 1000 -%}
+
+<script>
+  // since we can't capture the current time with Liquid,
+  // we need to determine the time difference with javascript,
+  // and then inject the new time into the lastPostingTime element
+  // while unhiding the hidden flag on the parent elem
+
+  function msToTime(time) {
+    let temptime = (time - (time % 1000)) / 1000;
+    let secs = temptime % 60;
+    temptime = (temptime - secs) / 60;
+    let mins = temptime % 60;
+    temptime = (temptime - mins) / 60;
+    let hrs = temptime % 24;
+    let dys = (temptime - hrs) / 24;
+
+    let dysStr = dys > 0 ? dys + ' days' : null;
+    let hrsStr = hrs > 0 ? hrs + ' hours' : null;
+    let minsStr = mins > 0 ? mins + ' minutes' : null;
+    let secsStr = secs > 0 ? secs + ' seconds' : null;
+
+    let timeArr = [dysStr, hrsStr, minsStr, secsStr];
+    let truncArr = timeArr.filter(Boolean);
+    let lastIndex = truncArr.length - 1;
+    
+    truncArr[lastIndex] = lastIndex > 0 ? 'and ' + truncArr[lastIndex] : truncArr[lastIndex];
+
+    return timeStr = truncArr.join(", ");
+  }
+  
+  let currentTime = Date.now();
+  let ref = {{ latestMS }};
+  let timeDiff = currentTime - ref;
+
+  // When I'm editing or have a future post, this will let us reference one post further back
+  if (timeDiff < 0) {
+    ref = {{ fallbackMS }};
+    timeDiff = currentTime - ref;
+  }
+
+  if (timeDiff > 0) {
+    let bulElem = document.getElementById("lastPosting");
+    let timeElem = document.getElementById("lastPostingTime");
+    bulElem.removeAttribute("hidden");
+    timeElem.innerHTML = msToTime(timeDiff);
+  }
+</script>
 
 <br/><br/>
 <h2 id="posts-by-type">
@@ -312,15 +447,6 @@ This may eventually be an issue???
   {%- include return-to-top.html target="toc" -%}
 </h2>
 
-{%- assign topRefs = 5 -%}
-
-{%- comment -%}
-=======================
-I need to figure out how to sort these two independent
-arrays together before this will work correctly
-=======================
-{%- endcomment -%}
-
 {%- assign uniqReflist = reflist | uniq -%}
 {%- assign refCounts = '' | split: ',' -%}
 {%- assign uniqReflist = reflist | uniq -%}
@@ -342,7 +468,7 @@ arrays together before this will work correctly
       <strong>TBD</strong>
     </li>
   {%- else -%}
-    {%- for dispRefs in refCounts limit:topRefs -%}
+    {%- for dispRefs in refCounts limit:topRefCt -%}
       {% assign splitRefs = dispRefs | split: "," %}
         <li>
           <a href={{ splitRefs[1] }}>{{ splitRefs[1] | truncate: 40 }}</a>

@@ -17,7 +17,7 @@ progressionEntries:
     datelink: https://gitlab.com/maxlepper/tic-tac-react/-/commit/24de5a9dd6c80a2082efd247ce82eef4d88114ca
   - 
     id: 2
-    status: NS
+    status: IP
     name: Intro to React - Extra Credit (4/6)
     item: https://reactjs.org/tutorial/tutorial.html#wrapping-up
     type: Project

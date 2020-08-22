@@ -7,13 +7,17 @@ jsfiles:
 cssfiles:
 ---
 
+<h2>Learning Items</h2>
+
 {%- comment -%}
 =======================
 Variables to control task collection
 =======================
 {%- endcomment -%}
 
-{%- assign suggSample = 3 -%}
+{%- assign suggSkillSample = 3 -%}
+{%- assign suggTaskSample = 4 -%}
+{%- assign suggSplitEven = true -%}
 
 {%- comment -%}
 =======================
@@ -22,7 +26,9 @@ Collect data from all skill pages
 {%- endcomment -%}
 
 {%- assign todoCounter = 0 -%}
+{%- assign tasksPicked = 0 -%}
 {%- assign openTasks = '' | split: ',' -%}
+{%- assign openTaskSkills = '' | split: ',' -%}
 
 {%- for skillPage in site.skills -%}
 
@@ -30,6 +36,7 @@ Collect data from all skill pages
 
     {%- assign itemsIP = '' | split: ',' -%}
     {%- assign itemsUN = '' | split: ',' -%}
+    {%- assign itemsNS = false -%}
 
     {%- for progEntries in skillPage.progressionEntries -%}
 
@@ -40,6 +47,7 @@ Collect data from all skill pages
       {%- elsif entryStatus == 'UN' -%}
         {%- assign itemsUN = itemsUN | push:progEntries.id -%}
       {%- elsif entryStatus == 'NS' -%}
+        {%- assign itemsNS = true -%}
         {%- assign unstartedTask = skillPage.name | append: "," | append: progEntries.id | append: "," | append: progEntries.name -%}
         {%- assign openTasks = openTasks | push:unstartedTask -%}
       {%- endif -%}
@@ -53,29 +61,73 @@ Collect data from all skill pages
       {%- assign todoCounter = todoCounter | plus: 1 -%}
     {%- endfor -%}
 
-    <script>console.log("first loop: {{skillPage.name}} - {{todoCounter}} - {{itemsIP}} - {{itemsUN}}")</script>
+    {%- if itemsNS -%}
+      {%- assign openTaskSkills = openTaskSkills | push: skillPage -%}
+    {%- endif -%}
 
     {% if forloop.last == true %}
       <div id="todoIntro">
         {%- if todoCounter == 0 -%}
           No tasks currently marked as up next!<br/><br/>
-      
-          {%- assign randomTasks = openTasks | sample: suggSample -%}
-          {%- if randomTasks != nil -%}
-            <script>console.log("random: {{randomTasks}}")</script>
+
+          {%- assign suggTaskLimit = suggTaskSample -%}
+
+          {%- if suggSplitEven -%}
+            {%- assign floatSkillSample = suggSkillSample | times: 1.0 -%}
+            {%- assign perSkillLimit = suggTaskSample | divided_by:floatSkillSample -%}
+            {%- assign suggTaskLimit = perSkillLimit | round -%}
+          {%- endif-%}
+
+          {%- assign cleanedTaskSkills = openTaskSkills | uniq | sort: "name" -%}
+          {%- assign randomTaskSkills = cleanedTaskSkills | sample: suggSkillSample -%}
+
+          {%- if randomTaskSkills != nil -%}
             <div>Why not try starting one of these?</div>
             <ul>
-              {%- assign orandomTasks = randomTasks | sort -%}
-              {%- for randomTask in orandomTasks -%}
-                {%- assign splitTask = randomTask | split:"," -%}
-                {%- assign rskillName = splitTask[0] -%}
-                {%- assign rtaskID = splitTask[1] -%}
-                {%- assign rtaskName = splitTask[2] -%}
-                <li>
-                  <a href="{{ site.baseurl }}/skills/{{ rskillName }}#{{ rtaskID }}">
-                    {{rskillName}} #{{rtaskID}}: {{ rtaskName }}
-                  </a>
-                </li>
+              {%- for randomTaskSkill in randomTaskSkills -%}
+
+                {%- assign sTasks = '' | split:"," -%}
+
+                {%- for openTask in openTasks -%}
+                  {% if openTask contains randomTaskSkill.name %}
+                    {%- assign splitTask = openTask | split:"," -%}
+                    {%- assign sTaskID = splitTask[1] | to_integer -%}
+                    {%- assign sTaskName = splitTask[2] -%}
+
+                    {% if sTaskID < 10 %}
+                      {%- assign sTaskID = "0" | append:sTaskID -%}
+                    {%- endif-%}
+
+                    {%- assign sTask = sTaskID | append:"," | append:sTaskName -%}
+                    {%- assign sTasks = sTasks | push:sTask -%}
+                  {% endif %}
+                {%- endfor -%}
+
+                {%- assign sTasks = sTasks | sort -%}
+
+                {% if tasksPicked < suggTaskSample %}
+                  <strong>{{randomTaskSkill.name}}</strong>
+                {% endif %}
+
+                {% if tasksPicked < suggTaskSample %}
+                  <script>console.log("check: {{tasksPicked}} < {{suggTaskSample}} ")</script>
+                  {%- assign skillTPicked = 0 -%}
+                  {%- for sampleTask in sTasks -%}
+                    {%- if skillTPicked < suggTaskLimit and tasksPicked < suggTaskSample -%}
+                      {%- assign sampTask = sampleTask | split:"," -%}
+                      {%- assign sampleTaskID = sampTask[0] -%}
+                      {%- assign sampleTaskName = sampTask[1] -%}
+                      <li>
+                        <a href="{{ site.baseurl }}/skills/{{ randomTaskSkill.name }}#{{ sampleTaskID }}">
+                          {{randomTaskSkill.name}} #{{sampleTaskID}}: {{ sampleTaskName }}
+                        </a>
+                      </li>
+                      {%- assign tasksPicked = tasksPicked | plus: 1 -%}
+                      {%- assign skillTPicked = skillTPicked | plus: 1 -%}
+                      <script>console.log("now: {{tasksPicked}}, {{skillTPicked}}")</script>
+                    {%- endif -%}
+                  {%- endfor -%}
+                {% endif %}
               {%- endfor -%}
             </ul>
           {%- endif -%}
@@ -109,7 +161,7 @@ Collect data from all skill pages
 
     {%- endfor -%}
 
-    <script>console.log("second loop: {{skillPage.name}} - {{itemsIP}} - {{itemsUN}}")</script>
+    <!--<script>console.log("second loop: {{skillPage.name}} - {{itemsIP}} - {{itemsUN}}")</script>-->
     {%- if itemsIP.size > 0 or itemsUN.size > 0 -%}
       <h3>{{ skillPage.fullname }}</h3>
 
@@ -149,3 +201,77 @@ Collect data from all skill pages
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
+
+
+<h2>Blogs</h2>
+
+<div id="lastPostingTime"></div>
+
+{%- assign dates = '' | split: ',' -%}
+
+{% for stat in site.data.search %}
+  {%- if stat.datetime != "" -%}
+    {%- assign dates = dates | push: stat.datetime -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign dates = dates | sort | reverse -%}
+
+{%- if dates.size > 0 -%}
+  {%- assign date = dates[0] | date: '%s' -%}
+  {%- assign dateMS = date | times: 1000 -%}
+{%- endif -%}
+
+<script>  
+  let currentTime = Date.now();
+  let ref = {{ dateMS }};
+  let timeDiff = currentTime - ref;
+  const todayDiff = 86400000; // ms in a day
+
+  if (timeDiff < 0) {
+    timeDiff = timeDiff * -1; //normalize
+  }
+
+  const timeElem = document.getElementById("lastPostingTime");
+
+  if (timeDiff > todayDiff) {
+    timeElem.innerHTML = "There has been no blog posted today.<br/><br/>Try drafting up a post covering what projects you are currently working on!";
+  } else {
+    timeElem.innerHTML = "I found a blog posted within the past 24 hours. Great work!";
+  }
+</script>
+
+
+{%- assign lonerSkills = '' | split:',' -%}
+{%- assign sortSkills = site.data.skills | sort: "name" -%}
+
+{%- for skill in sortSkills -%}
+  {%- for skillPage in site.skills -%}
+    {%- assign skillFound = false -%}
+    {%- assign skillPN = skillPage.name | downcase -%}
+
+    {%- if skill.name == skillPN -%}
+      {%- assign skillFound = true -%}
+      {% break %}
+    {%- endif -%}
+
+    {%- if forloop.last == true -%}
+      {%- if skillFound == false -%}
+        {%- assign lonerSkills = lonerSkills | push:skill.name -%}
+      {%- endif -%}
+    {%- endif -%}
+
+  {%- endfor -%}
+{%- endfor -%}
+
+{% if lonerSkills.size > 0 %}
+  <h2 id="skillHeader">Skills</h2>
+  <div>The following skills have log entries and time associated, but no matching progression datasheet:</div>
+  <ul>
+    {%- for lonerSkill in lonerSkills -%}
+      <li>
+        {{ lonerSkill }}
+      </li>
+    {%- endfor -%}
+  </ul>
+{% endif %}

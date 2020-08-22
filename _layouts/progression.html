@@ -56,75 +56,86 @@ layout: default
             <th>Date Completed</th>
           </tr>
           {%- for entry in page.progressionEntries -%}
-            <tr>
 
-              {%- if entry.id != null -%}
-                <td style="text-align:center"><a id={{ entry.id }} class="nullAnchor">{{ entry.id }}</a></td>
-              {%- else -%}
-                <td></td>
+            {% assign printRow = true %}
+            {% if forloop.first == true %}
+              {% assign printRow = true %}
+            {%- else -%}
+              {%- if entry.status == null -%}
+                {% assign printRow = false %}
               {%- endif -%}
+            {%- endif -%}
 
-              {%- if entry.status != null -%}
+            {%- if printRow -%}
+              <tr>
 
-                {% assign statusImg = '' %}
-                {% assign statusAlt = '' %}
-                {% case entry.status %}
-                  {% when "OK" %}
-                    {% assign statusImg = OKimg %}
-                    {% assign statusAlt = 'Complete' %}
-                  {% when "IP" %}
-                    {% assign statusImg = IPimg %}
-                    {% assign statusAlt = 'In progress' %}
-                  {% when "UN" %}
-                    {% assign statusImg = UNimg %}
-                    {% assign statusAlt = 'Up next' %}
-                  {% else %}
-                    {% assign statusAlt = 'Not Started' %}
-                {% endcase %}
-                
-                <td style="text-align:center">
-                  {%- if statusImg != '' -%}
-                    <img src='{{statusImg}}' alt='{{statusAlt}}' title='{{statusAlt}}'>
-                  {%- else -%}
-                    <span>{{statusAlt}}</span>
-                  {%- endif -%}
-                </td>
-              {%- else -%}
-                <td style="text-align:center"><span>Not Started</span></td>
-              {%- endif -%}
-
-              {%- if entry.item != null -%}
-                <td>
-                  <a href="{{entry.item}}">{{ entry.name }}</a>
-                </td>
-              {%- else -%}
-                <td>{{ entry.name }}</td>
-              {%- endif -%}
-
-              {%- if entry.type != null -%}
-                <td>{{ entry.type }}</td>
-              {%- else -%}
-                <td></td>
-              {%- endif -%}
-
-              {%- if entry.relproj != null -%}
-                <td>
-                  <a href="{{entry.relprojlink}}">{{ entry.relproj }}</a>
-                </td>
-              {%- else -%}
-                <td></td>
-              {%- endif -%}
-
-              {%- if entry.datecomp != null -%}
-                {%- if entry.datelink != null -%}
-                  <td><a href="{{entry.datelink}}">{{ entry.datecomp }}</a></td>
+                {%- if entry.id != null -%}
+                  <td style="text-align:center"><a id={{ entry.id }} class="nullAnchor">{{ entry.id }}</a></td>
                 {%- else -%}
-                  <td>{{ entry.datecomp }}</td>
+                  <td></td>
                 {%- endif -%}
-              {%- else -%}
-                <td></td>
-              {%- endif -%}
-            </tr>
+
+                {%- if entry.status != null -%}
+                  {% assign statusImg = '' %}
+                  {% assign statusAlt = '' %}
+                  {% case entry.status %}
+                    {% when "OK" %}
+                      {% assign statusImg = OKimg %}
+                      {% assign statusAlt = 'Complete' %}
+                    {% when "IP" %}
+                      {% assign statusImg = IPimg %}
+                      {% assign statusAlt = 'In progress' %}
+                    {% when "UN" %}
+                      {% assign statusImg = UNimg %}
+                      {% assign statusAlt = 'Up next' %}
+                    {% else %}
+                      {% assign statusAlt = 'Not Started' %}
+                  {% endcase %}
+                  
+                  <td style="text-align:center">
+                    {%- if statusImg != '' -%}
+                      <img src='{{statusImg}}' alt='{{statusAlt}}' title='{{statusAlt}}'>
+                    {%- else -%}
+                      <span>{{statusAlt}}</span>
+                    {%- endif -%}
+                  </td>
+                {%- else -%}
+                  <td style="text-align:center"><span>Not Started</span></td>
+                {%- endif -%}
+
+                {%- if entry.item != null -%}
+                  <td>
+                    <a href="{{entry.item}}">{{ entry.name }}</a>
+                  </td>
+                {%- else -%}
+                  <td>{{ entry.name }}</td>
+                {%- endif -%}
+
+                {%- if entry.type != null -%}
+                  <td>{{ entry.type }}</td>
+                {%- else -%}
+                  <td></td>
+                {%- endif -%}
+
+                {%- if entry.relproj != null -%}
+                  <td>
+                    <a href="{{entry.relprojlink}}">{{ entry.relproj }}</a>
+                  </td>
+                {%- else -%}
+                  <td></td>
+                {%- endif -%}
+
+                {%- if entry.datecomp != null -%}
+                  {%- if entry.datelink != null -%}
+                    <td><a href="{{entry.datelink}}">{{ entry.datecomp }}</a></td>
+                  {%- else -%}
+                    <td>{{ entry.datecomp }}</td>
+                  {%- endif -%}
+                {%- else -%}
+                  <td></td>
+                {%- endif -%}
+              </tr>
+            {%- endif -%}
           {%- endfor -%}
         </table>
       </div>

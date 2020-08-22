@@ -1,5 +1,31 @@
 [{
       "layout"     : "journal",
+      "title"      : "Supercharging the Skills Table, Tasks, and Stats",
+      "tags"       : "javascript",
+      "skills"     : "html, javascript, css, liquid",
+      "excerpt"    : "Adding snappy header sorting to the Skills table, adding even more Stats into the stats page, and making sure my Tasks page always has work for me ready to go.",
+      "url"        : "/learning-log/journal/2020/08/21/supercharging-skills-tasks-and-stats.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-21 23:46:02 -0400",
+      "date"       : "Aug 21, 2020",
+      "timespent"  : "460",
+      "words"      : "1070",
+      "references" : "https://www.w3schools.com/howto/howto_js_sort_table.asp, http://www.javascriptkit.com/dhtmltutors/customattributes.shtml, http://alanwsmith.com/jekyll-liquid-date-formatting-examples, https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll, https://www.w3schools.com/howto/howto_css_arrows.asp, https://css-tricks.com/snippets/css/css-triangle/, https://shopify.dev/docs/themes/liquid/reference/objects/for-loops, https://shopify.github.io/liquid/basics/operators/, https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages, https://github.com/philnash/jekyll-gzip"
+    },{
+      "layout"     : "journal",
+      "title"      : "Task Suggestions and Converting Skills",
+      "tags"       : "liquid",
+      "skills"     : "liquid, html, javascript",
+      "excerpt"    : "Suggesting new tasks with an empty backlog, and pulling all skills over to the new format.",
+      "url"        : "/learning-log/journal/2020/08/20/task-suggestions-and-converting-skills.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-20 23:01:42 -0400",
+      "date"       : "Aug 20, 2020",
+      "timespent"  : "180",
+      "words"      : "355",
+      "references" : "https://shopify.dev/docs/themes/liquid/reference/objects/for-loops"
+    },{
+      "layout"     : "journal",
       "title"      : "Progression Polish, Skill Cleanliness, and Navbar Search",
       "tags"       : "yaml",
       "skills"     : "liquid, markdown, yaml, sass, html, javascript",
@@ -61,7 +87,7 @@
       "datetime"   : "2020-08-16 06:54:32 -0400",
       "date"       : "Aug 16, 2020",
       "timespent"  : "415",
-      "words"      : "630",
+      "words"      : "637",
       "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc, https://www.w3schools.com/css/css3_flexbox.asp, https://www.w3schools.com/howto/howto_js_sort_table.asp"
     },{
       "layout"     : "journal",

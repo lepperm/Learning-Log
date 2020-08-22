@@ -58,6 +58,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 # - jekyll-compose # Command plugin to help with writing posts https://github.com/jekyll/jekyll-compose
+# - jekyll-gzip # Seems more full-featured than my CI line, look into and test! https://github.com/philnash/jekyll-gzip
+# - jemoji # https://github.com/jekyll/jemoji
 # - jekyll-archives # https://github.com/jekyll/jekyll-archives
 # - jekyll-assets # https://github.com/envygeeks/jekyll-assets/blob/master/README.md
 

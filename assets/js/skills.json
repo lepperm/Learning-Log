@@ -49,8 +49,6 @@
 
     {
       "name"         : "{{ skill }}",
-      "category"     : "-",
-      "progression"  : "-",
       "entries"      : "{{ skillCount }}",
       "time"         : "{{ skillTime }}",
       "dateslogged"  : "{{ skillDates }}",

@@ -76,6 +76,6 @@ I wanted to have a few simple graphs and charts on here, and had bumped into Mer
 
 - [x] Make a post with an image and responsive styling
 - [x] Figure out how to sort Skills alphabetically
-- [ ] ~~Allow users to re-sort the Skills page with a url query~~
+- [ ] ~~Allow users to re-sort the Skills page with a url query~~ This should be natively possible with JS/HTML
 - [x] Fix timing issue with Search page auto-search
 - [ ] ~~Add a pie chart to stats for skills with Mermaid.~~ Laggy, removing

@@ -6,7 +6,7 @@ mainsite:
 category: Organization
 progressionEntries: 
   - 
-    id:
+    id: 1
     status:
     name:
     item:
@@ -16,7 +16,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 2
     status:
     name:
     item:
@@ -26,7 +26,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 3
     status:
     name:
     item:
@@ -36,7 +36,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 4
     status:
     name:
     item:
@@ -46,7 +46,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 5
     status:
     name:
     item:
@@ -56,7 +56,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 6
     status:
     name:
     item:
@@ -66,7 +66,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 7
     status:
     name:
     item:
@@ -76,7 +76,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 8
     status:
     name:
     item:
@@ -86,7 +86,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 9
     status:
     name:
     item:
@@ -96,7 +96,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 10
     status:
     name:
     item:
@@ -106,7 +106,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 11
     status:
     name:
     item:
@@ -116,7 +116,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 12
     status:
     name:
     item:
@@ -126,7 +126,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 13
     status:
     name:
     item:
@@ -136,7 +136,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 14
     status:
     name:
     item:
@@ -146,7 +146,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 15
     status:
     name:
     item:
@@ -156,7 +156,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 16
     status:
     name:
     item:
@@ -166,7 +166,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 17
     status:
     name:
     item:
@@ -176,7 +176,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 18
     status:
     name:
     item:
@@ -186,7 +186,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 19
     status:
     name:
     item:
@@ -196,7 +196,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 20
     status:
     name:
     item:
@@ -204,47 +204,7 @@ progressionEntries:
     relproj:
     relprojlink:
     datecomp:
-    datelink: 
-  - 
-    id:
-    status:
-    name:
-    item:
-    type:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink: 
-  - 
-    id:
-    status:
-    name:
-    item:
-    type:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink: 
-  - 
-    id:
-    status:
-    name:
-    item:
-    type:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink: 
-  - 
-    id:
-    status:
-    name:
-    item:
-    type:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink: 
+    datelink:  
 resources: 
   - 
     refname: 
