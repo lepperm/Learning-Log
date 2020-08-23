@@ -275,3 +275,47 @@ Collect data from all skill pages
     {%- endfor -%}
   </ul>
 {% endif %}
+
+<div id="improvements">
+  {%- capture bTodo -%}
+    {%- include blog-todo.md -%}
+  {%- endcapture -%}
+  {%- assign emptyTodoCheck = bTodo | strip | strip_newlines -%}
+  {% if emptyTodoCheck != '' %}
+    <h2 id="skillHeader">Blog Improvements</h2>
+    <div>
+      {{ bTodo | markdownify }}
+    </div>
+  {% endif %}
+
+  {%- capture bDone -%}
+    {%- include blog-done.md -%}
+  {%- endcapture -%}
+  {%- assign emptyDoneCheck = bDone | strip | strip_newlines -%}
+  {% if emptyDoneCheck != '' %}
+    <div id="blogDone" hidden=true>
+      <h3>Completed Improvements</h3>
+      <div>
+        {{ bDone | markdownify }}
+      </div>
+      <a id='hideLink' style='cursor:pointer;' onclick="hideDone()">Hide completed ↑</a>
+    </div>
+    <a id='showLink' style='cursor:pointer;' onclick="showDone()">Click here to see completed improvements!</a>
+
+
+    <script>
+      const bDoneElem = document.getElementById("blogDone");
+      const sLinkElem = document.getElementById("showLink");
+
+      function showDone() {
+        bDoneElem.removeAttribute("hidden");
+        sLinkElem.setAttribute("hidden", "true");
+      }
+
+      function hideDone() {
+        bDoneElem.setAttribute("hidden", "true");
+        sLinkElem.removeAttribute("hidden");
+      }
+    </script>
+  {% endif %}
+</div>

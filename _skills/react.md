@@ -25,6 +25,26 @@ progressionEntries:
     relprojlink: https://gitlab.com/maxlepper/tic-tac-react
     datecomp: 
     datelink: 
+  - 
+    id: 3
+    status: UN
+    name: Demystifying React Hooks
+    item: https://dev.to/milu_franz/series/7304
+    type: Blog
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
+  - 
+    id: 4
+    status: NS
+    name: Setting up a React Toolchain
+    item: https://reactjs.org/docs/create-a-new-react-app.html
+    type: Official Docs
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
 resources: 
   - 
     refname: React.js Examples

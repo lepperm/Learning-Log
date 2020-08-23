@@ -6,8 +6,8 @@ published: true
 author: Max Lepper
 categories: [notes]
 tags: [d3]
-excerpt: Attending an online D3 + React workshop
-references: ["https://github.com/imagine-dat/d3-react-tutorial","https://github.com/imagine-dat/d3-react-advanced","http://renestep.com/","https://www.milufranz.com/","https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110","https://codepen.io/ren_estep/pen/eYJwJQr","https://www.milufranz.com/blog/"]
+excerpt: My personal notes and next learning steps from attending an online D3 + React workshop.
+references: ["https://github.com/imagine-dat/d3-react-tutorial","https://github.com/imagine-dat/d3-react-advanced","http://renestep.com/","https://www.milufranz.com/","https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110","https://codepen.io/ren_estep/pen/eYJwJQr","https://dev.to/milu_franz"]
 skills: [d3, react, sass]
 timespent: 160
 ---

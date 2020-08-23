@@ -7,6 +7,10 @@ layout: default
   {%- include load-scripts.html -%}
   {%- include onload.html -%}
 
+  {%- if page.mermaid==true -%}
+    {%- include mermaid-init.html -%}
+  {%- endif -%}
+
   {%- capture OKimg -%}
     {{site.baseurl}}/assets/images/icons/check-circle-outline.svg
   {%- endcapture -%}
@@ -91,7 +95,7 @@ layout: default
                     {% else %}
                       {% assign statusAlt = 'Not Started' %}
                   {% endcase %}
-                  
+
                   <td style="text-align:center">
                     {%- if statusImg != '' -%}
                       <img src='{{statusImg}}' alt='{{statusAlt}}' title='{{statusAlt}}'>

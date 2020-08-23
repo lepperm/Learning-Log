@@ -17,6 +17,6 @@ progressionEntries:
     datelink: 
 resources: 
   - 
-    refname: 
-    reflink: 
+    refname: Liquid `date` uses Ruby strftime formatting
+    reflink: http://www.strfti.me/
 ---
