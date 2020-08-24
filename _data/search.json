@@ -1,5 +1,18 @@
 [{
       "layout"     : "journal",
+      "title"      : "Building Out Progression Pages",
+      "tags"       : "git",
+      "skills"     : "git, liquid",
+      "excerpt"    : "More progress on Git learning and migrating learning items into skills",
+      "url"        : "/learning-log/journal/2020/08/23/building-out-progression-pages.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-23 21:50:51 -0400",
+      "date"       : "Aug 23, 2020",
+      "timespent"  : "235",
+      "words"      : "251",
+      "references" : "https://learngitbranching.js.org/"
+    },{
+      "layout"     : "journal",
       "title"      : "Actually logging some learning!",
       "tags"       : "git",
       "skills"     : "git, liquid, html, javascript, css",

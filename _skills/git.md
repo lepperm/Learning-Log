@@ -8,7 +8,7 @@ progressionEntries:
   - 
     id: 1
     status: IP
-    name: Learn Git Branching (6/34)
+    name: Learn Git Branching (15/34)
     item: https://learngitbranching.js.org/
     type: Tutorial
     relproj:
@@ -71,7 +71,7 @@ By checking out the hash for a commit instead of the label, we can detach the `H
 Referencing commits by their hash isn't always practical, so we can take advantage of relative commits 
 
 `^` - Move upwards one commit at a time  
-`~<num>` - Move upwards a specified number of times
+`~3` - Move upwards a specified number of times (3, in our example)
 
 So saying `git checkout master^` is equivalent to "checkout the first parent of master":
 
@@ -84,3 +84,148 @@ stateDiagram-v2
     end note
 	C1 --> master
 </div>
+
+The force command `-f` can be used for force branches to different locations.
+
+`git branch -f master HEAD~3`:
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+  note left of C1 :master*
+  C1 --> C2
+  C2 --> C3
+  C3 --> C4
+  note left of C4: bugFix
+</div>
+
+## Reversing Changes
+
+`git reset` will move a branch backwards as if the commit had never been made in the first place. This affects the local repository.
+
+`git revert`, on the other hand, will reverse a commit but push them remotely. It does so with a new commit forward in-line that undoes all of the referenced commits changes.
+
+## Moving Work Around
+
+### Cherry-Pick
+
+`git cherry-pick <Commit1> <Commit2> <...>`
+
+`cherry-pick' is a very straightforward way of saying that you would like to copy a series of commits below your current location (HEAD).
+
+`git cherry-pick c2 c4`:
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    note left of C4 :side
+    C1 --> C5
+    C5 --> C2'
+    C2' --> C4'
+   note left of C4' :master*
+</div>
+
+Cherry-pick will take a commit from anywhere in the tree as long as that commit isn't an ancestor of HEAD.
+
+### Interactive Rebase
+
+All interactive rebase means is using the `rebase` command with the `-i` option.
+
+If you include this option, git will open up a UI to show you which commits are about to be copied below the target of the rebase. It also shows their commit hashes and messages, which is great for getting a bearing on what's what. You can do things like reorder, omit, squash, and more!
+
+### Locally Stacked Commits
+
+Using `cherry-pick` and `rebase` can be a great way to push the final results of a laborious bug tracking and fixing hunt, without including all of the debugging along the way.
+
+### Juggling Commits
+
+Let's say you have some changes (newImage) and another set of changes (caption) that are related, so they are stacked on top of each other in your repository (aka one after another).
+
+The tricky thing is that sometimes you need to make a small modification to an earlier commit. In this case, design wants us to change the dimensions of newImage slightly, even though that commit is way back in our history.
+
+We can overcome this difficulty by doing the following:
+
+- We will re-order the commits so the one we want to change is on top with `git rebase -i`
+- We will `git commit --amend` to make the slight modification
+- Then we will re-order the commits back to how they were previously with `git rebase -i`
+- Finally, we will move master to this updated part of the tree
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+  C1 --> C2
+  C2 --> C3
+  note left of C2 :newImage
+  note right of C3 :`git rebase -i c1` switching c3 and c2
+
+  C1 --> C3'
+  C3' --> C2'
+  C3' --> C2''
+  note left of C2'' :`git commit --amend`
+
+  C1 --> C2'''
+  note left of C2''' :`git rebase -i c1` switching c2'' and c3'
+  C2''' --> C3''
+  note right of C3'' :master, caption*
+</div>
+
+This worked out fine, but has the potential to introduce rebase conflicts. Using cherry-pick can be a more concise form of manipulating location.
+
+## Tags
+
+Tags are a way of marking commits as something more permanent than a branch. They do not move as commits are added, and you cannot check out a tag and then complete work in the tag, and checking out a tag will create a detached HEAD. It serves as an anchor in the commit tree to designate a particular spot, such as a milestone or version release.
+
+`git tag v1 C1`:
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+  C1 --> C2
+  note left of C1 :"v1"
+  note left of C2 :master*
+</div>
+
+In our example, we added the tag to C1 explicitly, but the tag will be added to HEAD if a destination is omitted.
+
+### Describe
+
+Because tags serve as such great "anchors" in the codebase, `git describe` can be used to describe where you are relative to the closest "anchor" (aka tag). Git describe can help you get your bearings after you've moved many commits backwards or forwards in history.
+
+Git describe takes the form of:
+
+`git describe <ref>`
+
+Where `<ref>` is anything git can resolve into a commit. If you don't specify a ref, git uses your current location (HEAD).
+
+The output of the command looks like:
+
+`<tag>_<numCommits>_g<hash>`
+
+Where `<tag>` is the closest ancestor tag in history, `<numCommits>` is how many commits away that tag is, and `<hash>` is the hash of the commit being described.
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+  note left of C0 :"v1"
+  C1 --> C2
+  note right of C2 :master
+
+  C1 --> C3
+  note left of C3 :"v2"
+  C3 --> C4
+  note left of C4 :side*
+</div>
+
+- `git describe master` => `v1_2_gC2`, 2 commits from v1, hash C2
+- `git describe side` => `v2_1_gC4`, 1 commits from v2, hash C4
+- `git describe c1` => `v1_1_gC1`, 1 commits from v1, hash C1
+- `git describe v2` => `v2`, v2 is v2 - `describe` is relative to anchors!
+

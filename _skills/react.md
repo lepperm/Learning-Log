@@ -38,6 +38,16 @@ progressionEntries:
   - 
     id: 4
     status: NS
+    name: React Hooks - My Introduction
+    item: https://medium.zenika.com/react-hooks-my-introduction-81b15e6eff20
+    type: Blog
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
+  - 
+    id: 5
+    status: NS
     name: Setting up a React Toolchain
     item: https://reactjs.org/docs/create-a-new-react-app.html
     type: Official Docs

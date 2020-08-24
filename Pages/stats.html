@@ -304,6 +304,15 @@ This may eventually be an issue???
     {%- assign postDiff = sDate | minus: lastPost -%}
 
     {% if postDiff <= 1 %}
+      {% if postDiff == 1 %}
+        {% if streak == false %}
+          {%- assign streak = true -%}
+          {%- assign streakCounter = 1 -%}
+        {% elsif streak == true %}
+          {%- assign streakCounter = streakCounter | plus: 1 -%}
+        {% endif %}
+      {% endif %}
+    {% elsif postDiff >= 365 %}
       {% if streak == false %}
         {%- assign streak = true -%}
         {%- assign streakCounter = 1 -%}
@@ -328,7 +337,7 @@ This may eventually be an issue???
   <li>
     One post is published approximately every <strong>{{ prettyDiffTime }}</strong>
   </li>
-  
+
   <li id="lastPosting" hidden="true">
     The latest entry was posted approximately <strong id="lastPostingTime"></strong> ago
   </li>

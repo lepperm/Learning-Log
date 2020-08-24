@@ -174,7 +174,12 @@ Collect data from all skill pages
             {%- for taskIP in taskIPs -%}
               <li>
                 <a href="{{ taskIP.item }}" class="nav-icon inlineElem" alt="Go to task site" title="Go to task site">{%- include icons/open-in-new.svg -%}</a>
-                <text class="inlineElem">&nbsp;&nbsp;{{ taskIP.name }}&nbsp;&nbsp;</text>
+                <text class="inlineElem">
+                  &nbsp;&nbsp;{{ taskIP.name }}&nbsp;
+                  {%- if taskIP.type -%}
+                    ({{ taskIP.type }})&nbsp;&nbsp;
+                  {%- endif -%}
+                </text>
                 <a href="{{ site.baseurl }}/skills/{{ skillPage.name }}#{{ taskIP.id }}" class="nav-icon" alt="Jump to skill entry" title="Jump to skill entry">{%- include icons/link-variant.svg -%}</a>
               </li>
             {%- endfor -%}
@@ -183,7 +188,7 @@ Collect data from all skill pages
       {%- endif -%}
 
       {%- if itemsUN.size > 0-%}
-        Up Next:
+        Up Next: 
         <ul>
           {%- for item in itemsUN -%}
             {% assign taskUNs = skillPage.progressionEntries | where: "id", item %}
@@ -191,7 +196,12 @@ Collect data from all skill pages
             {%- for taskUN in taskUNs -%}
               <li>
                 <a href="{{ taskUN.item }}" class="nav-icon inlineElem" alt="Go to task site" title="Go to task site">{%- include icons/open-in-new.svg -%}</a>
-                <text class="inlineElem">&nbsp;&nbsp;{{ taskUN.name }}&nbsp;&nbsp;</text>
+                <text class="inlineElem">
+                  &nbsp;&nbsp;{{ taskUN.name }}&nbsp;
+                  {%- if taskUN.type -%}
+                    ({{ taskUN.type }})&nbsp;&nbsp;
+                  {%- endif -%}
+                </text>
                 <a href="{{ site.baseurl }}/skills/{{ skillPage.name }}#{{ taskUN.id }}" class="nav-icon" alt="Jump to skill entry" title="Jump to skill entry">{%- include icons/link-variant.svg -%}</a>
               </li>
             {%- endfor -%}
@@ -222,7 +232,7 @@ Collect data from all skill pages
   {%- assign dateMS = date | times: 1000 -%}
 {%- endif -%}
 
-<script>  
+<script>
   let currentTime = Date.now();
   let ref = {{ dateMS }};
   let timeDiff = currentTime - ref;

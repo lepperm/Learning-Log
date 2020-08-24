@@ -6,11 +6,31 @@ mainsite: https://material-ui.com/
 category: Framework
 progressionEntries: 
   - 
-    id:
-    status:
-    name:
-    item:
-    type:
+    id: 1
+    status: UN
+    name: Composition
+    item: https://material-ui.com/guides/composition/
+    type: Official Docs
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink: 
+  - 
+    id: 2
+    status: NS
+    name: Styles
+    item: https://material-ui.com/styles/basics/
+    type: Official Docs
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink: 
+  - 
+    id: 3
+    status: NS
+    name: Theming (Advanced)
+    item: https://material-ui.com/styles/advanced/
+    type: Official Docs
     relproj:
     relprojlink:
     datecomp:
