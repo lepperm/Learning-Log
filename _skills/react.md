@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: React
+name: react
 fullname: React
 mainsite: https://reactjs.org/
-category: Library
+category: Javascript library
 progressionEntries: 
   - 
     id: 1

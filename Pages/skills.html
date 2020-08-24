@@ -7,6 +7,8 @@ jsfiles:
 cssfiles:
 ---
 
+<div id="letterNav"></div>
+
 <script>
   function sortInd(elem, dir)  {
     let headers = document.getElementsByTagName("TH");
@@ -87,15 +89,37 @@ cssfiles:
 <div>
   <table id="skillsTable">
     <tr id='headerRow'>
-      <th scope="col" class="sortingBy sortDesc" onclick="sortTable(0,'text',this);">Skill<br/><i></i></th>
-      <th scope="col" onclick="sortTable(1,'int',this);">Use Time<br/><i></i></th>
-      <th scope="col" onclick="sortTable(2,'int',this);"># of Entries<br/><i></i></th>
-      <th scope="col" onclick="sortTable(3,'int',this);">Progression<br/><i></i></th>
-      <th scope="col" onclick="sortTable(4,'text',this);">Category<br/><i></i></th>
-      <th scope="col" onclick="sortTable(5,'int',this);">Last Logged<br/><i></i></th>
+      <th scope="col" class="sortable sortingBy sortDesc" id="snameHeader" onclick="sortTable(0,'text',this);">Skill<br/><i></i></th>
+      <th scope="col" class="sortable" onclick="sortTable(1,'int',this);">Use Time<br/><i></i></th>
+      <th scope="col" class="sortable" onclick="sortTable(2,'int',this);"># of Entries<br/><i></i></th>
+      <th scope="col" class="sortable" onclick="sortTable(3,'int',this);">Progression<br/><i></i></th>
+      <th scope="col" class="sortable" onclick="sortTable(4,'text',this);">Category<br/><i></i></th>
+      <th scope="col" class="sortable" onclick="sortTable(5,'int',this);">Last Logged<br/><i></i></th>
     </tr>
 
     {%- assign sortSkills = site.data.skills | sort: "name" -%}
+
+    {%- assign anchorLetters = '' | split: ',' -%}
+
+    {%- assign extraSkills = '' | split:',' -%}
+    {%- for skillPage in site.skills -%}
+      {%- for skill in sortSkills -%}
+
+        {%- assign skillPN = skillPage.name | downcase -%}
+        {%- assign skillFound = false -%}
+
+        {%- if skill.name == skillPN or skillPN == 'to-sort' -%}
+          {%- assign skillFound = true -%}
+          {%- break -%}
+        {%- endif -%}
+
+        {%- if forloop.last == true and skillFound == false -%}
+          {%- assign extraSkills = extraSkills | push:skillPage -%}
+        {%- endif -%}
+
+      {%- endfor -%}
+    {%- endfor -%}
+
 
     {%- for skill in sortSkills -%}
 
@@ -109,7 +133,9 @@ cssfiles:
       {%- assign foundProg = nil -%}
       {%- assign foundCat = nil -%}
       {%- for skillPage in site.skills -%}
+
         {%- assign skillPN = skillPage.name | downcase -%}
+
         {%- if skill.name == skillPN -%}
           {%- assign foundSkill = skillPage -%}
           {%- assign foundCat = foundSkill.category -%}
@@ -141,14 +167,23 @@ cssfiles:
       {%- assign loggedS = skill.lastlogged  | date: '%s' -%}
       {%- assign recentTime = todayS | minus: loggedS -%}
 
+      {%- assign jumpLetter = '' -%}
+
       <tr>
         {%- if foundSkill != nil -%}
           <td scope="col"><a id={{ skill.name }} href={{site.baseurl}}{{foundSkill.url}}>
-            {%- if foundSkill.fullName != nil -%}
-              {{ foundSkill.fullName }}
+            {%- if foundSkill.fullname != nil -%}
+              {%- assign jumpLetter = foundSkill.fullname | slice: 0 | downcase -%}
+              {{ foundSkill.fullname }}
             {%- else -%}
+              {%- assign jumpLetter = skill.name | slice: 0 | downcase -%}
               {{ skill.name }}
             {%- endif -%}
+            {%- if anchorLetters contains jumpLetter -%}
+            {%- else -%}
+              <a id={{jumpLetter}}></a>
+            {%- endif -%}
+            {%- assign anchorLetters = anchorLetters | push: jumpLetter -%}
           </a></td>
         {%- else -%}
           <td scope="col"><a id={{ skill.name }} class="nullAnchor">{{ skill.name }}</a></td>
@@ -162,7 +197,7 @@ cssfiles:
         </td>
 
         {%- if foundSkill != nil -%}
-          <td scope="col" data-raw='{{ progSortPerc }}'>{{ foundProg }}</td>
+          <td scope="col" data-raw='{{ progSortPerc }}'>{{ progSortPerc | times: 100 | round }}% ({{ foundProg }})</td>
           <td scope="col">{{ foundCat }}</td>
         {%- else -%}
           <td scope="col" data-raw='0.0'>-</td>
@@ -171,5 +206,75 @@ cssfiles:
         <td scope="col" data-raw='{{ recentTime }}'>{{ skill.lastlogged | date: '%b %-d, %Y' }}</td>
       </tr>
     {%- endfor -%}
+
+
+    {%- for extraSkill in extraSkills -%}
+
+      {%- if extraSkill.progressionEntries != null -%}
+        {%- assign progSize = extraSkill.progressionEntries.size -%}
+        {%- assign progDone = 0 -%}
+        {%- assign progSortPerc = 0.0 -%}
+        {%- for progEntries in extraSkill.progressionEntries -%}
+          {%- if progEntries.status == 'OK' -%}
+            {%- assign progDone = progDone | plus:1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign exProg = progDone | append:'/' | append: progSize -%}
+        {%- assign progSortPerc = progDone | times: 1.0 -%}
+        {%- assign progSortPerc = progSortPerc | divided_by: progSize -%}
+        {%- if progSortPerc == 0.0 -%}
+          {%- assign progSortPerc = 0.0001 -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign exProg = '-' -%}
+        {%- assign progSortPerc = 0.0 -%}
+      {%- endif -%}
+
+      {%- assign jumpLetter = '' -%}
+
+      <tr>
+        <td scope="col"><a id={{ extraSkill.name }} href={{site.baseurl}}{{extraSkill.url}}>
+          {%- if extraSkill.fullname != nil -%}
+            {%- assign jumpLetter = extraSkill.fullname | slice: 0 | downcase -%}
+            {{ extraSkill.fullname }}
+          {%- else -%}
+            {%- assign jumpLetter = extraSkill.name | slice: 0 | downcase -%}
+            {{ extraSkill.name }}
+          {%- endif -%}
+          {%- if anchorLetters contains jumpLetter -%}
+          {%- else -%}
+            <a id={{jumpLetter}}></a>
+          {%- endif -%}
+          {%- assign anchorLetters = anchorLetters | push: jumpLetter -%}
+        </a></td>
+
+        <td scope="col" data-raw='0'>Not yet logged</td>
+
+        <td scope="col" data-raw='0'>0</td>
+
+        <td scope="col" data-raw='{{ progSortPerc }}'>{{ progSortPerc | times: 100 | round }}% ({{ exProg }})</td>
+
+        <td scope="col">{{ extraSkill.category }}</td>
+
+        <td scope="col" data-raw='0'>-</td>
+      </tr>
+    {%- endfor -%}
   </table>
 </div>
+<script>
+  sortTable(0,'text',document.getElementById("snameHeader"));
+
+  let letterNav = document.getElementById("letterNav");
+
+  {%- assign anchorLettersU = anchorLetters | uniq | sort -%}
+
+  let navContents = '<div class="navContents">'+{% for anchorLetter in anchorLettersU %}
+      {%- if forloop.last == true -%}
+        '<a href="#{{anchorLetter}}">{{ anchorLetter | upcase }}</a>'+'</div>';
+      {%- else -%}
+        '<a href="#{{anchorLetter}}">{{ anchorLetter | upcase }}</a>'+' - '+
+      {%- endif -%}
+    {% endfor %}
+
+  letterNav.innerHTML = navContents;
+</script>

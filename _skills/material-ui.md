@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Material-UI
+name: material-ui
 fullname: Material-UI
 mainsite: https://material-ui.com/
 category: Framework

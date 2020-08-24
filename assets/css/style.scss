@@ -28,6 +28,14 @@ svg {
   fill: $text-color;
 }
 
+.navContents {
+  text-align: center;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
 .sortingBy {
   background-color: $sort-header;
   color: $sort-text;

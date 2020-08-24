@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Python
+name: python
 fullname: Python
 mainsite: https://www.python.org/
 category: Scripting Language

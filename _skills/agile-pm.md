@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Agile-PM
+name: agile-pm
 fullname: Agile Project Management
 mainsite: 
 category: Project Management

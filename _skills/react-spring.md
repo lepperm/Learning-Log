@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: React-Spring
+name: react-spring
 fullname: React-Spring
 mainsite: https://www.react-spring.io/
 category: Animation Library

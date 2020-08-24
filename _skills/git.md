@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Git
+name: git
 fullname: Git
 mainsite: https://git-scm.com/
 category: Version Control
@@ -8,7 +8,7 @@ progressionEntries:
   - 
     id: 1
     status: IP
-    name: Learn Git Branching (15/34)
+    name: Learn Git Branching (27/34)
     item: https://learngitbranching.js.org/
     type: Tutorial
     relproj:
@@ -63,6 +63,17 @@ stateDiagram-v2
 	master --> bugFix:rebase
 </div>
 
+`git rebase c2 c3` can also be used to copy commits below a certain target if specified as a second argument:
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+  C1 --> C2
+  C1 --> C3
+  C2 --> C3':rebase
+</div>
+
 ### HEAD and Relative References
 
 `HEAD` is the symbolic name for the currently checked out commit.
@@ -71,6 +82,7 @@ By checking out the hash for a commit instead of the label, we can detach the `H
 Referencing commits by their hash isn't always practical, so we can take advantage of relative commits 
 
 `^` - Move upwards one commit at a time  
+`^2` - Move upwards one commit at a time, but specifying alternate parents from the immediate parent
 `~3` - Move upwards a specified number of times (3, in our example)
 
 So saying `git checkout master^` is equivalent to "checkout the first parent of master":
@@ -83,6 +95,27 @@ stateDiagram-v2
       HEAD
     end note
 	C1 --> master
+</div>
+
+These navigation commands can be chained together to quickly navigate across the tree:
+
+`git checkout HEAD~^2~2`
+
+<div class="mermaid">
+stateDiagram-v2
+	[*] --> C0
+	C0 --> C1
+  C1 --> C2
+  C2 --> C6
+
+  C0 --> C3
+  note left of C3: master (end)
+  C3 --> C4
+  C4 --> C5
+  C5 --> C6
+
+  C6 --> C7
+  note left of C7: master (start)
 </div>
 
 The force command `-f` can be used for force branches to different locations.
@@ -228,4 +261,81 @@ stateDiagram-v2
 - `git describe side` => `v2_1_gC4`, 1 commits from v2, hash C4
 - `git describe c1` => `v1_1_gC1`, 1 commits from v1, hash C1
 - `git describe v2` => `v2`, v2 is v2 - `describe` is relative to anchors!
+
+### Remote
+
+Remote branches have a required naming convention of `<remote name>/<branch name>`, for example, `origin/master`.
+
+`git clone` is used to create a local copy of a remote repository.
+
+`git fetch` will fetch data from a remote repository. It does this with two main steps:
+- Download the commits present in the remote but missing from local
+- Update where our remote branches point (i.e `origin/master`)
+
+`git fetch` will NOT change anything about your local state.
+
+`git pull` is essentially a macro for `fetch`-ing and `merge`-ing remote changes in a single command.
+
+These two sets of commands accomplish the exact same result:
+- `git fetch; git merge origin/master`
+- `git fetch` with local master checked out
+
+<div class="mermaid">
+stateDiagram-v2
+	C0 --> C1
+  C1 --> C2
+  C1 --> C3
+  C2 --> C4
+  C3 --> C4
+  note right of C3 :origin/master
+  note right of C4 :master*
+
+	rC0 --> rC1
+  rC1 --> rC2
+  rC2 --> rC3
+  note right of rC3 :remote master
+</div>
+
+`git push`, on the other hand, will upload local changes to the remote repository.
+
+This works great, until the Git history diverges. In this case, it is ambiguous how the files should be incorporated. This can be resolved a few different ways.
+
+- By fetching and rebasing: `git fetch; git rebase origin/master; git push`
+- Or, by using a pull with a rebase command: `git pull --rebase; git push`
+
+<div class="mermaid">
+stateDiagram-v2
+	C0 --> C1
+  C1 --> C3
+
+  C1 --> C2
+  C2 --> C3'
+  note right of C3' :master*, origin/master
+
+	rC0 --> rC1
+  rC1 --> rC2
+  rC2 --> rC3'
+  note right of rC3' :remote master
+</div>
+
+- By fetching and merging: `git fetch; git merge origin/master; git push`
+- Or, by using a normal pull: `git pull; git push`
+
+<div class="mermaid">
+stateDiagram-v2
+	C0 --> C1
+  C1 --> C3
+  C1 --> C2
+  C2 --> C4
+  C3 --> C4
+  note right of C4 :master*, origin/master
+
+	rC0 --> rC1
+  rC1 --> rC2
+  rC1 --> rC3
+  rC2 --> rC4
+  rC3 --> rC4
+  note right of rC4 :remote master
+</div>
+
 

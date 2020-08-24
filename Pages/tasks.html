@@ -118,7 +118,7 @@ Collect data from all skill pages
                       {%- assign sampleTaskID = sampTask[0] -%}
                       {%- assign sampleTaskName = sampTask[1] -%}
                       <li>
-                        <a href="{{ site.baseurl }}/skills/{{ randomTaskSkill.name }}#{{ sampleTaskID }}">
+                        <a href="{{ site.baseurl }}/skills/{{ randomTaskSkill.name | downcase }}#{{ sampleTaskID }}">
                           {{randomTaskSkill.name}} #{{sampleTaskID}}: {{ sampleTaskName }}
                         </a>
                       </li>
@@ -292,7 +292,7 @@ Collect data from all skill pages
   {%- endcapture -%}
   {%- assign emptyTodoCheck = bTodo | strip | strip_newlines -%}
   {% if emptyTodoCheck != '' %}
-    <h2 id="skillHeader">Blog Improvements</h2>
+    <h2 id="improvementsHeader">Blog Improvements</h2>
     <div>
       {{ bTodo | markdownify }}
     </div>

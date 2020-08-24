@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Sass
+name: sass
 fullname: Sass
 mainsite: https://sass-lang.com/
 category: Extension language

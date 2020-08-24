@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Gulp
+name: gulp
 fullname: Gulp
 mainsite: https://gulpjs.com/
 category: Task Runner

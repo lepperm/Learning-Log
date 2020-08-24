@@ -1,5 +1,18 @@
 [{
       "layout"     : "journal",
+      "title"      : "More Git Learning and Skill Table Improvements",
+      "tags"       : "git",
+      "skills"     : "git, javascript, html",
+      "excerpt"    : "Working on Git, making Skill table improvements, and some general housecleaning",
+      "url"        : "/learning-log/journal/2020/08/24/more-git-learning-skill-table-improvements.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-24 22:00:00 -0400",
+      "date"       : "Aug 24, 2020",
+      "timespent"  : "240",
+      "words"      : "572",
+      "references" : "https://learngitbranching.js.org/"
+    },{
+      "layout"     : "journal",
       "title"      : "Building Out Progression Pages",
       "tags"       : "git",
       "skills"     : "git, liquid",
@@ -93,7 +106,7 @@
       "layout"     : "journal",
       "title"      : "Updating Postcards in AGWSU",
       "tags"       : "react",
-      "skills"     : "react, agile-pm, devops",
+      "skills"     : "react, agile-pm, gitlab-ci",
       "excerpt"    : "Back into React with pair-programming for AGWSU, and project maintenance and schedule tasks",
       "url"        : "/learning-log/journal/2020/08/17/updating-postcards-in-agwsu.html",
       "category"   : "journal",

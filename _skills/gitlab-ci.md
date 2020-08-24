@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: pixi-js
-fullname: Pixi.JS
-mainsite: https://www.pixijs.com/
-category: Javascript library
+name: gitlab-ci
+fullname: GitLab CI/CD
+mainsite: https://docs.gitlab.com/ee/ci/
+category: DevOps
 progressionEntries: 
   - 
     id:

@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Three.JS
+name: three-js
 fullname: Three.JS
 mainsite: https://threejs.org/
 category: WebGL Wrapper

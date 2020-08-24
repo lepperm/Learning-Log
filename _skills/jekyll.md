@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: liquid
-fullname: Liquid
-mainsite: https://shopify.github.io/liquid/
-category: Template Language
+name: jekyll
+fullname: Jekyll
+mainsite: https://jekyllrb.com/
+category: Static Site Generator
 progressionEntries: 
   - 
     id: 1
@@ -18,8 +18,8 @@ progressionEntries:
 resources: 
   - 
     refname: Official Docs
-    reflink: https://shopify.github.io/liquid/basics/introduction/
+    reflink: https://jekyllrb.com/docs/
   - 
-    refname: Liquid `date` uses Ruby strftime formatting
-    reflink: http://www.strfti.me/
+    refname: Jekyll-specific Liquid Filters
+    reflink: https://jekyllrb.com/docs/liquid/filters/
 ---

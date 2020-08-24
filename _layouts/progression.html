@@ -22,8 +22,8 @@ layout: default
   {%- endcapture -%}
 
   <header class="post-header">
-    {%- if page.fullName != nil -%}
-      <h1 class="post-title">{{ page.fullName | escape }}</h1>
+    {%- if page.fullname != nil -%}
+      <h1 class="post-title">{{ page.fullname | escape }}</h1>
     {%- else -%}
       <h1 class="post-title">{{ page.title | escape }}</h1>
     {%- endif -%}

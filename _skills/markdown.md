@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Markdown
+name: markdown
 fullname: Markdown
 mainsite: https://daringfireball.net/projects/markdown/
 category: Markup language

@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Jest
+name: jest
 fullname: Jest
 mainsite: https://jestjs.io/
 category: Testing Framework

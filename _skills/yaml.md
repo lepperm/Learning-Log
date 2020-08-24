@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: pixi-js
-fullname: Pixi.JS
-mainsite: https://www.pixijs.com/
-category: Javascript library
+name: yaml
+fullname: YAML Ain't Markup Language
+mainsite: https://yaml.org/
+category: Serialization Language
 progressionEntries: 
   - 
     id:

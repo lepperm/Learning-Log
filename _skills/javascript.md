@@ -1,7 +1,7 @@
 --- 
 layout: progression
-name: Javascript
-fullname: Javascript
+name: javascript
+fullname: JavaScript
 mainsite: 
 category: Scripting Language
 progressionEntries: 

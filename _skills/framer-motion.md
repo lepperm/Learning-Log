@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: Framer Motion
+name: framer-motion
 fullname: Framer Motion
 mainsite: https://www.framer.com/motion/
 category: Animation Library

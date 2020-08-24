@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: pixi-js
-fullname: Pixi.JS
-mainsite: https://www.pixijs.com/
-category: Javascript library
+name: CSS
+fullname: Cascading Style Sheets
+mainsite: https://developer.mozilla.org/en-US/docs/Web/CSS
+category: Style Sheet Language
 progressionEntries: 
   - 
     id:

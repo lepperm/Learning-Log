@@ -1,9 +1,9 @@
 --- 
 layout: progression
-name: pixi-js
-fullname: Pixi.JS
-mainsite: https://www.pixijs.com/
-category: Javascript library
+name: html
+fullname: Hypertext Markup Language
+mainsite: https://developer.mozilla.org/en-US/docs/Web/HTML
+category: Markup Language
 progressionEntries: 
   - 
     id:
