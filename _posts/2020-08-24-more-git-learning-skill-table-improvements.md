@@ -1,20 +1,20 @@
 ---
 layout: journal
 title: "More Git Learning and Skill Table Improvements"
-date: 2020-08-24 22:00:00 -0400
-published: false
+date: 2020-08-24 22:27:41 -0400
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [git]
 excerpt: Working on Git, making Skill table improvements, and some general housecleaning
 references: ["https://learngitbranching.js.org/"]
 skills: [git, javascript, html]
-timespent: 240
+timespent: 300
 ---
 
 ## Journal
 
-More progress towards completing the [Git learning course]({{page.references[0]}})! Many of these terms have been familiar to me for a while now, but the simulation and animation really helps explain what happens with each operation.
+I successfully completed the [Git learning course]({{page.references[0]}})! Many of these terms have been familiar to me for a while now, but the simulation and animation really helps explain what happens with each operation.
 
 On the Git skill page and for the key on the Stats page pie chart, Mermaid.js doesn't seem to play very nicely with mobile. I did some research and tried some configuration options, but nothing seemed to change the behavior of the charts at all. While the Git page is a little ugly but still fully functional, the pie chart does not provide enough information to be useful, and I will most likely need to open a ticket unless I can find an existing issue.
 

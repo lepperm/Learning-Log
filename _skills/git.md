@@ -7,13 +7,13 @@ category: Version Control
 progressionEntries: 
   - 
     id: 1
-    status: IP
-    name: Learn Git Branching (27/34)
+    status: OK
+    name: Learn Git Branching (34/34)
     item: https://learngitbranching.js.org/
     type: Tutorial
     relproj:
     relprojlink:
-    datecomp:
+    datecomp: 8/24/2020
     datelink:
   - 
     id: 2
@@ -32,8 +32,15 @@ resources:
   - 
     refname: Atlassian Git tutorials
     reflink: https://www.atlassian.com/git/tutorials
+  - 
+    refname: An irreverent site of obscure Git errors and how to fix them
+    reflink: https://ohshitgit.com/
 ---
 ## Quick Reference
+
+* TOC
+{:toc}
+
 ### Branch
 
 Creating branches:
@@ -338,4 +345,96 @@ stateDiagram-v2
   note right of rC4 :remote master
 </div>
 
+### Rebase vs. Merge
+
+** Rebasing **
+
+Pros:
+- Makes your commit tree look very clean since everything is in a straight line
+
+Cons:
+- Modifies the apparent history of the commit tree
+
+** Merging **
+
+Pros:
+- Preserves all tree history
+
+Cons:
+- Can be very busy
+
+It all comes down to individual and team preference!
+
+### Tracking Remote Branches
+
+When a repository is cloned, native connections are created between identical local and remote branches. However, you can also manually create links between local and remote branches!
+
+`git checkout -b foo origin/master` will create a new local branch `foo` that tracks to the remote `master`.
+
+Similarly, you can use `git branch -u origin/master foo` to have the local branch `foo` track the remote `master`. If `foo` is already checked out, you can omit it from the original command.
+
+### Advanced Push, Fetch, and Pull
+
+#### Advanced Push
+
+`git push <remote> <place>`
+
+`git push origin master`
+
+>Go to the branch named "master" in my repository, grab all the commits, and then go to the branch "master" on the remote named "origin". Place whatever commits are missing on that branch and then tell me when you're done.
+
+You can also optionally change the destination:
+`git push origin <source(local)>:<destination(remote)>`
+
+This is called a "colon refspec," which is a word for a location that git can resolve, like `foo` or `HEAD~1`.
+
+`git push origin foo^:master`
+
+<div class="mermaid">
+stateDiagram-v2
+	C0 --> C1
+  C1 --> C2
+  C2 --> C3
+  note right of C1 :master, origin/master
+  note right of C3 :foo
+
+	rC0 --> rC1
+  note right of rC1 :remote master
+</div>
+
+This command takes 1 commit above `foo` (C2) and pushes it to remote and attaching it to the remote `master`, like this:
+
+<div class="mermaid">
+stateDiagram-v2
+	C0 --> C1
+  C1 --> C2:origin/master tracking remote
+  C2 --> C3
+  note right of C1 :master (unchanged)
+  note right of C2 :origin/master
+  note right of C3 :foo (unchanged)
+
+	rC0 --> rC1
+  rC1 --> rC2: pushing `foo^` (C2)
+  note right of rC2 :remote master
+</div>
+
+You can also specify a new remote branch name as the destination value and the new remote branch will be created.
+
+`<source>` is not tightly controlled, and can be used in some specific ways. `git push origin :foo`, for example, will delete the remote `foo` branch.
+
+#### Advanced Fetch
+
+`fetch` works very similar to push, just in reverse! Unlike `push`, however, the changes are fetched to your local copy of the remote branch by default and NOT your local branch. This is to help prevent losing work. That being said, you can use the `<source(remote)>:<destination(local)>` syntax to force a fetch to a local branch if desired.
+
+You also can't fetch commits onto a branch that is checked out.
+
+Just like `push`, `fetch` will create branches if a specified destination does not already exist.
+
+Also similar to push, an empty `<source>` can be used to _create_ a new local branch. `git fetch origin :bar` will create the local `bar` branch. Seems more complicated than it needs to be, but hey.
+
+#### Advanced Pull
+
+As a reminder, `git pull` is really just shorthand for `git fetch; git merge`, even with all of the extra syntax.
+
+`git pull origin bar~1:bugFix` is equivalent to `git fetch origin bar~1:bugFix; git merge bugFix`
 
