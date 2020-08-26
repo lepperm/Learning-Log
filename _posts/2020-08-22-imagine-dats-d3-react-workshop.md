@@ -238,7 +238,7 @@ First, we're starting with creating a header component and a bubble component.
 
 - Similar to the basic example, we set the viewbox to the width and height of the parent container
 
-![image-20200822112136410]({{site.baseurl}}\assets\images\image-20200822112136410.png)
+![image-20200822112136410]({{site.baseurl}}/assets/images/posts/2020/08/22/image-20200822112136410.png)
 
   > Here, my connection dropped out hard and my browser crashed, so I lost about 3-4 minutes trying to get reconnected.
 
@@ -254,7 +254,7 @@ We're also using CSS variables instead of Sass variables, as they supposedly hav
 
 Recommended using [this codepen]({{page.references[5]}}) if I ever need a spinner.
 
-![image-20200822114330334]({{ site.baseurl }}\assets\images\image-20200822114330334.png)
+![image-20200822114330334]({{ site.baseurl }}/assets/images/posts/2020/08/22/image-20200822114330334.png)
 
 Lots of adding data to components, drawing SVG rectangles, and setting CSS to the finish line.
 

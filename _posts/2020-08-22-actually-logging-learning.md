@@ -23,7 +23,7 @@ Speaking of using the site as a big Liquid sandbox, there are a number of linger
 <div style="text-align: center;">
 (Future post about my task distillation pipelines??)
 {% capture image %}
-![My Karma level in Todoist]({{site.baseurl}}\assets\images\todoist-karma.png "Top 1% of users 3 years running 😎👉👉"){: style="vertical-align: bottom;padding: 1.2em;"}
+![My Karma level in Todoist]({{site.baseurl}}/assets/images/posts/2020/08/22/todoist-karma.png "Top 1% of users 3 years running 😎👉👉"){: style="vertical-align: bottom;padding: 1.2em;"}
 {% endcapture %}
 {{ image | markdownify }}
 </div>

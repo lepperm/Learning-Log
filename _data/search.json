@@ -1,5 +1,18 @@
 [{
       "layout"     : "journal",
+      "title"      : "Pair Programming and Portfolio Progress",
+      "tags"       : "react",
+      "skills"     : "react, redux, firebase, material-ui",
+      "excerpt"    : "Pair programming with Neal on AGWSU and getting back into working on my portfolio",
+      "url"        : "/learning-log/journal/2020/08/25/pair-programming-and-portfolio-progress.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-25 23:08:00 -0400",
+      "date"       : "Aug 25, 2020",
+      "timespent"  : "290",
+      "words"      : "357",
+      "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"
+    },{
+      "layout"     : "journal",
       "title"      : "More Git Learning and Skill Table Improvements",
       "tags"       : "git",
       "skills"     : "git, javascript, html",
@@ -118,10 +131,10 @@
     },{
       "layout"     : "journal",
       "title"      : "Stabilizing Learning Log and Back to React",
-      "tags"       : "javascript, liquid",
+      "tags"       : "javascript, liquid, learning, progress",
       "skills"     : "javascript, liquid, jekyll, html, css",
       "excerpt"    : "Reflecting on the past 3 months of web development and a few last improvements for Learning Log before switching back to other projects.",
-      "url"        : "/learning-log/journal/2020/08/16/stabilizing-learning-log-and-back-to-react-Copy.html",
+      "url"        : "/learning-log/journal/2020/08/16/stabilizing-learning-log-and-back-to-react.html",
       "category"   : "journal",
       "datetime"   : "2020-08-16 21:33:38 -0400",
       "date"       : "Aug 16, 2020",

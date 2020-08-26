@@ -50,7 +50,7 @@ timespent: 415
 It would be really nice to automate setting up and time-stamping these new entries! It is interesting to be kind of working in Ruby but still having not touched any Ruby apart from the initial setup. This has made adoption very easy, but I am sure that also means I'm missing out on some native power. I have also heard about Gulp, and it is high on my list of things to look into more, because I could always do with more automation in my life.
 </div>
 <div class="column image">
-<img src="{{site.baseurl}}/assets/images/programmer-move.jpg" alt="Taking 10 days to automate a 10 minute task - every one of my programmer friends" style="width:100%;"/>
+<img src="{{site.baseurl}}/assets/images/posts/2020/08/16/programmer-move.jpg" alt="Taking 10 days to automate a 10 minute task - every one of my programmer friends" style="width:100%;"/>
 </div>
 </div>
 <br/>

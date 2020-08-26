@@ -14,7 +14,7 @@ timespent: 0
 
 ## Journal
 
-Detail what I did here.
+Detail what I did here. [Ref link]({{page.references[0]}})
 
 ## Tasklist
 

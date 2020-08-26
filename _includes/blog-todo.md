@@ -1,3 +1,7 @@
+**Tasks**
+- [ ] Make Learning Item lists collapsible, truncate list?
+- [ ] Blog Improvements should collapse
+
 **Modularity**
 - [ ] Make the skill collection and data make skill collection and data generic (for example, a languages learning breakdown)
 
