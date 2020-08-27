@@ -23,9 +23,11 @@ Speaking of using the site as a big Liquid sandbox, there are a number of linger
 <div style="text-align: center;">
 (Future post about my task distillation pipelines??)
 {% capture image %}
-![My Karma level in Todoist]({{site.baseurl}}/assets/images/posts/2020/08/22/todoist-karma.png "Top 1% of users 3 years running 😎👉👉"){: style="vertical-align: bottom;padding: 1.2em;"}
+![My Karma level in Todoist]({{site.baseurl}}/assets/images/posts/2020/08/22/todoist-karma.png "Top 1% of users 3 years running 😎👉👉"){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom: 1.2em;"}
 {% endcapture %}
-{{ image | markdownify }}
+<div style="text-align: center;">
+  {{ image | markdownify }}
+</div>
 </div>
 
 In my includes, I created two files, `blog-todo.md` and `blog-done.md`, which I will build out with action items as I generate them. On the Tasks page, I added a mash-up of Liquid, HTML, and JS to selectively include the section dependent on these files containing content, and then controlling hiding and showing the "done" archives.

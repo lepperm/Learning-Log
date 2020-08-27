@@ -2,7 +2,7 @@
 layout: journal
 title: "Pair Programming and Portfolio Progress"
 date: 2020-08-25 23:08:00 -0400
-published: false
+published: true
 author: Max Lepper
 categories: [journal]
 tags: [react]
@@ -25,9 +25,12 @@ Next was to pass the collected and filtered user data to the cards. We quickly d
 Now that everything was plugged into place, we created a test user, logged into the User Requests dashboard, and:
 
 {% capture image %}
-![The nearly-completed user approval console]({{site.baseurl}}/assets/images/posts/2020/08/25/userapproval.png){: style="vertical-align: bottom;padding: 1.2em;"}
+![The nearly-completed user approval console]({{site.baseurl}}/assets/images/posts/2020/08/25/userapproval.png){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom: 1.2em;"}
 {% endcapture %}
-{{ image | markdownify }}
+<div style="text-align: center;">
+  {{ image | markdownify }}
+</div>
+
 
 Ta-da! The user properly populates. An email verification process is in place, as well. All that is left now is to hook up denial with a rejection message, approval, and mass approval with a confirmation modal.
 

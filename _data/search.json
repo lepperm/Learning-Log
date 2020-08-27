@@ -1,5 +1,18 @@
 [{
       "layout"     : "journal",
+      "title"      : "MacOS VirtualBox and Tabliss CSS",
+      "tags"       : "react",
+      "skills"     : "virtualbox, css",
+      "excerpt"    : "Training my wife on VirtualBox, configuring a VM with macOS X, and customizing Tabliss.",
+      "url"        : "/learning-log/journal/2020/08/26/macos-virtualbox-and-tabliss-css.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-26 23:27:31 -0400",
+      "date"       : "Aug 26, 2020",
+      "timespent"  : "105",
+      "words"      : "438",
+      "references" : "https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/, https://tabliss.io/, https://gitlab.com/-/snippets/2009089"
+    },{
+      "layout"     : "journal",
       "title"      : "Pair Programming and Portfolio Progress",
       "tags"       : "react",
       "skills"     : "react, redux, firebase, material-ui",
