@@ -6,15 +6,15 @@ mainsite:
 category: Project Management
 progressionEntries: 
   - 
-    id:
-    status:
-    name:
-    item:
-    type:
+    id: 1
+    status: OK
+    name: Software Product Management Specialization (6/6)
+    item: https://www.coursera.org/specializations/product-management
+    type: Certification
     relproj:
     relprojlink:
-    datecomp:
-    datelink: 
+    datecomp: 05/2020
+    datelink: https://www.coursera.org/account/accomplishments/specialization/certificate/C52P7NEAQXNX
 resources: 
   - 
     refname: 

@@ -5,7 +5,7 @@ date: 2020-08-26 23:27:31 -0400
 published: true
 author: Max Lepper
 categories: [journal]
-tags: [react]
+tags: [css]
 excerpt: Training my wife on VirtualBox, configuring a VM with macOS X, and customizing Tabliss.
 references: ["https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/","https://tabliss.io/","https://gitlab.com/-/snippets/2009089"]
 skills: [virtualbox, css]

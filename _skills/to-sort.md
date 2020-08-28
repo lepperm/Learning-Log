@@ -36,6 +36,16 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
+    id: 4
+    status: OK
+    name: Learning How to Learn - Powerful mental tools to help you master tough subjects
+    item: https://www.coursera.org/learn/learning-how-to-learn
+    type: course
+    relproj:
+    relprojlink:
+    datecomp: 04/2020
+    datelink: 
+  - 
     id: 
     status: NS
     name: Getting Started With Redux

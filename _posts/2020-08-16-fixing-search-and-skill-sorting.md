@@ -58,7 +58,7 @@ Skill progression pages need an output page, so I started a new layout and assig
 
 Not having a coherent order to the skill list, I took another stab at getting sorting working on my JSON data. The [Jekyll docs]({{page.references[1]}}) claim that I am able to reverse sort order in their sort method, but this did not seem to actually work. With a little searching, [this was confirmed]({{page.references[3]}}). I love the last comment on the thread:
 
->It's always best to refer to the only source of truth - the source code
+>“It's always best to refer to the only source of truth - the source code”
 >
 > -- <cite><a href="https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc#comment102259766_52959052">Jack L.</a></cite>
 

@@ -1,7 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Working on a New Blog Post",
+      "tags"       : "writing",
+      "skills"     : "",
+      "excerpt"    : "Spending a few hours writing a new blog post and working on life tasks.",
+      "url"        : "/learning-log/journal/2020/08/27/working-on-new-blog-post.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-27 23:58:20 -0400",
+      "date"       : "Aug 27, 2020",
+      "timespent"  : "0",
+      "words"      : "153",
+      "references" : ""
+    },{
+      "layout"     : "journal",
       "title"      : "MacOS VirtualBox and Tabliss CSS",
-      "tags"       : "react",
+      "tags"       : "css",
       "skills"     : "virtualbox, css",
       "excerpt"    : "Training my wife on VirtualBox, configuring a VM with macOS X, and customizing Tabliss.",
       "url"        : "/learning-log/journal/2020/08/26/macos-virtualbox-and-tabliss-css.html",
