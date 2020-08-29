@@ -9,34 +9,66 @@
       {%- assign hourTxt = "h" -%}
       {%- assign minTxt = "m" -%}
     {%- endif -%}
+
+    {%- assign timesArray = '' | split: ',' -%}
+
     {%- if include.timeVal >= 1440 -%}
       {%- assign dayVal = include.timeVal | divided_by: 1440 -%}
-      {%- assign concat = dayVal | modulo: 1440 -%}
       {%- assign dayVal = dayVal | append: dayTxt -%}
-      {%- if include.verbose and concat > 0 -%}
-        {%- assign dayVal = dayVal | append: ",&nbsp;" -%}
-      {%- elsif concat > 0 -%}
-        {%- assign dayVal = dayVal | append: "&nbsp;" -%}
-      {%- endif -%}
+      {%- assign timesArray = timesArray | push: dayVal -%}
     {%- endif -%}
     {%- if include.timeVal >= 60 -%}
       {%- assign hourVal = include.timeVal | modulo: 1440 | divided_by: 60 -%}
-      {%- assign concat = hourVal | modulo: 60 -%}
       {%- assign hourVal = hourVal | append: hourTxt -%}
-      {%- if include.verbose and concat > 0 -%}
-        {%- assign hourVal = hourVal | append: ",&nbsp;" -%}
-      {%- elsif concat > 0 -%}
-        {%- assign hourVal = hourVal | append: "&nbsp;" -%}
+      {%- assign timesArray = timesArray | push: hourVal -%}
+    {%- endif -%}
+    {%- assign hasMinutes = include.timeVal | modulo: 60 -%}
+    {%- if hasMinutes > 0 -%}
+      {%- assign minutesLeft = include.timeVal | modulo: 60 -%}
+      {%- if minutesLeft > 0 -%}
+        {%- assign minutesLeft = minutesLeft | append: minTxt -%}
+        {%- assign timesArray = timesArray | push: minutesLeft -%}
       {%- endif -%}
     {%- endif -%}
-    {%- assign minutesLeft = include.timeVal | modulo: 60 -%}
-    {%- if minutesLeft > 0 -%}
-      {%- assign minutesLeft = minutesLeft | append: minTxt -%}
-      {%- if include.verbose and include.timeVal >= 60 -%}
-        {%- assign minutesLeft = "and " | append: minutesLeft -%}
-      {%- endif -%}
+
+    {%- assign tempString = '' -%}
+    {%- if timesArray.size >= 3 -%}
+      {%- for time in timesArray -%}
+        {% if forloop.last == true %}
+          {%- if include.verbose -%}
+            {%- assign joiner = ",&nbsp;and&nbsp;" -%}
+          {% else %}
+            {%- assign joiner = "&nbsp;" -%}
+          {%- endif -%}
+          {%- assign tempString = tempString | append: joiner | append:time -%}
+        {% elsif forloop.first == true %}
+          {%- assign tempString = tempString | append:time -%}
+        {% else %}
+          {%- if include.verbose -%}
+            {%- assign joiner = ",&nbsp;" -%}
+          {% else %}
+            {%- assign joiner = "&nbsp;" -%}
+          {%- endif -%}
+          {%- assign tempString = tempString | append: joiner | append:time -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- elsif timesArray.size == 2 -%}
+      {%- for time in timesArray -%}
+        {% if forloop.last == true %}
+          {%- if include.verbose -%}
+            {%- assign joiner = "&nbsp;and&nbsp;" -%}
+          {% else %}
+            {%- assign joiner = "&nbsp;" -%}
+          {%- endif -%}
+          {%- assign tempString = tempString | append: joiner | append:time -%}
+        {% else %}
+          {%- assign tempString = tempString | append:time -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- elsif timesArray.size == 1 -%}
+      {%- assign tempString = timesArray | join:'' -%}
     {%- endif -%}
-    {{ dayVal }}{{ hourVal }}{{ minutesLeft }}
+    {{tempString}}
   </span>
 {%- else -%}
   <span>Unsure</span>

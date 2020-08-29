@@ -7,9 +7,9 @@ author: Max Lepper
 categories: [journal]
 tags: [journal]
 excerpt: Cleaning up some more items around the site, and adding in features related to the upcoming large blog post.
-references: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator","https://learngitbranching.js.org/","https://www.freecodecamp.org/maxlepper","https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week"]
+references: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator","https://learngitbranching.js.org/","https://www.freecodecamp.org/maxlepper","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week"]
 skills: [css, html, liquid]
-timespent: 260
+timespent: 280
 sleep: 310
 workout: 
 ---

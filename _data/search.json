@@ -8,9 +8,9 @@
       "category"   : "journal",
       "datetime"   : "2020-08-28 23:10:57 -0400",
       "date"       : "Aug 28, 2020",
-      "timespent"  : "260",
+      "timespent"  : "280",
       "words"      : "709",
-      "references" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator, https://learngitbranching.js.org/, https://www.freecodecamp.org/maxlepper, https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week",
+      "references" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator, https://learngitbranching.js.org/, https://www.freecodecamp.org/maxlepper, https://shopify.dev/docs/themes/liquid/reference/objects/for-loops, https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week",
       "sleep"      : "310",
       "workout"    : ""
     },{
