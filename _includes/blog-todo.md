@@ -1,5 +1,4 @@
 **Tasks**
-- [ ] Make Learning Item lists collapsible, truncate list?
 - [ ] Blog Improvements should collapse
 
 **Modularity**
@@ -8,8 +7,6 @@
 **Quality and Health**
 - [ ] Improve CSS for cross-browser compatibility
 - [ ] Figure out how to copy compiled `Skills.json` and `Search.json` files to the `_data` folder at build
-- [ ] ~~[Improve Mermaid performance on mobile](https://github.com/mermaid-js/mermaid/issues/1134)~~
-  - Max width parameter doesn't seem to work correctly, and does not work at all on pie charts. No key for the pie chart on mobile at all!
 
 **Brainstorming**
 - [ ] A configurable floating TOC element

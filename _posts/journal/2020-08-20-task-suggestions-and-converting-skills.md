@@ -10,6 +10,8 @@ excerpt: Suggesting new tasks with an empty backlog, and pulling all skills over
 references: ["https://shopify.dev/docs/themes/liquid/reference/objects/for-loops"]
 skills: [liquid, html, javascript]
 timespent: 180
+sleep: 
+workout: 
 ---
 
 ## Journal

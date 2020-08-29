@@ -9,83 +9,6 @@ cssfiles:
 
 <div id="letterNav"></div>
 
-<script>
-  function sortInd(elem, dir)  {
-    let headers = document.getElementsByTagName("TH");
-    for(var i=0; i<headers.length; i++) {
-        headers[i].classList.remove('sortingBy');
-        headers[i].classList.remove('sortAsc');
-        headers[i].classList.remove('sortDesc');
-    }
-    elem.classList.add('sortingBy');
-    if (dir == 'desc') {
-      elem.classList.add('sortAsc');
-    } else {
-      elem.classList.add('sortDesc');
-    }
-  }
-
-  function sortTable(n, type, elem) {
-    let table, rows, switching, i, x, xr, y, yr, shouldSwitch, dir, switchcount = 0;
-    table = document.getElementById("skillsTable");
-    switching = true;
-    dir = "asc";
-
-    while (switching) {
-      switching = false;
-      rows = table.rows;
-
-      for (i = 1; i < (rows.length - 1); i++) {
-        shouldSwitch = false;
-        x = rows[i].getElementsByTagName("TD")[n];
-        xr = x.getAttribute('data-raw');
-        y = rows[i + 1].getElementsByTagName("TD")[n];
-        yr = y.getAttribute('data-raw');
-
-        if (dir == "asc") {
-          if (type == "int") {
-            if (Number(xr) > Number(yr)) {
-              shouldSwitch = true;
-              break;
-            }
-          } else {
-            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-              shouldSwitch = true;
-              break;
-            }
-          }
-        }
-        else if (dir == "desc") {
-          if (type == "int") {
-            if (Number(xr) < Number(yr)) {
-              shouldSwitch = true;
-              break;
-            }
-          } else {
-            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-              shouldSwitch = true;
-              break;
-            }
-          }
-        }
-      }
-
-      if (shouldSwitch) {
-        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-        switching = true;
-        switchcount ++;
-      } else {
-        if (switchcount == 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        }
-      }
-    }
-    sortInd(elem, dir);
-  }
-</script>
-  
-
 <div>
   <table id="skillsTable">
     <tr id='headerRow'>
@@ -264,17 +187,100 @@ cssfiles:
 <script>
   sortTable(0,'text',document.getElementById("snameHeader"));
 
-  let letterNav = document.getElementById("letterNav");
+  function alphaJump(isAlpha) {
+    let letterNav = document.getElementById("letterNav");
+    let alphaSort = document.getElementById("snameHeader");
 
-  {%- assign anchorLettersU = anchorLetters | uniq | sort -%}
+    {%- assign anchorLettersU = anchorLetters | uniq | sort -%}
 
-  let navContents = '<div class="navContents">'+{% for anchorLetter in anchorLettersU %}
-      {%- if forloop.last == true -%}
-        '<a href="#{{anchorLetter}}">{{ anchorLetter | upcase }}</a>'+'</div>';
-      {%- else -%}
-        '<a href="#{{anchorLetter}}">{{ anchorLetter | upcase }}</a>'+' - '+
-      {%- endif -%}
-    {% endfor %}
+    let navContents = '<div class="navContents">'+
+      {% for anchorLetter in anchorLettersU %}
+        {%- if forloop.last == true -%}
+          '<a href="#{{anchorLetter}}">{{ anchorLetter | upcase }}</a>'+'</div>';
+        {%- else -%}
+          '<a href="#{{anchorLetter}}">{{ anchorLetter | upcase }}</a>'+' - '+
+        {%- endif -%}
+      {% endfor %}
 
-  letterNav.innerHTML = navContents;
+    if (isAlpha) {
+      letterNav.innerHTML = navContents;
+    } else {
+      letterNav.innerHTML = '';
+    }
+  }
+
+  function sortInd(elem, dir)  {
+    let headers = document.getElementsByTagName("TH");
+    for(var i=0; i<headers.length; i++) {
+        headers[i].classList.remove('sortingBy');
+        headers[i].classList.remove('sortAsc');
+        headers[i].classList.remove('sortDesc');
+    }
+    elem.classList.add('sortingBy');
+    if (dir == 'desc') {
+      elem.classList.add('sortAsc');
+    } else {
+      elem.classList.add('sortDesc');
+    }
+  }
+
+  function sortTable(n, type, elem) {
+    let table, rows, switching, i, x, xr, y, yr, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("skillsTable");
+    switching = true;
+    dir = "asc";
+
+    while (switching) {
+      switching = false;
+      rows = table.rows;
+
+      for (i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+        x = rows[i].getElementsByTagName("TD")[n];
+        xr = x.getAttribute('data-raw');
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+        yr = y.getAttribute('data-raw');
+
+        if (dir == "asc") {
+          if (type == "int") {
+            if (Number(xr) > Number(yr)) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        else if (dir == "desc") {
+          if (type == "int") {
+            if (Number(xr) < Number(yr)) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+      }
+
+      if (shouldSwitch) {
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        switchcount ++;
+      } else {
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
+      }
+    }
+    sortInd(elem, dir);
+    alphaJump(n == 0 ? true : false);
+  }
 </script>

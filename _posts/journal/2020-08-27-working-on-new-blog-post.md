@@ -10,6 +10,8 @@ excerpt: Spending a few hours writing a new blog post and working on life tasks.
 references: []
 skills: []
 timespent: 0
+sleep: 
+workout: 
 ---
 
 ## Journal

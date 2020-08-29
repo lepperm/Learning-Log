@@ -1,24 +1,42 @@
 {%- if include.timeVal != "" -%}
   <span>
     {%- if include.verbose -%}
-      {%- assign dayTxt = "&nbsp;days,&nbsp;" -%}
-      {%- assign hourTxt = "&nbsp;hours,&nbsp;" -%}
-      {%- assign minTxt = "&nbsp;minutes&nbsp;" -%}
+      {%- assign dayTxt = "&nbsp;days" -%}
+      {%- assign hourTxt = "&nbsp;hours" -%}
+      {%- assign minTxt = "&nbsp;minutes" -%}
     {%- else -%}
-      {%- assign dayTxt = "&nbsp;d&nbsp;" -%}
-      {%- assign hourTxt = "&nbsp;h&nbsp;" -%}
-      {%- assign minTxt = "&nbsp;m&nbsp;" -%}
+      {%- assign dayTxt = "d" -%}
+      {%- assign hourTxt = "h" -%}
+      {%- assign minTxt = "m" -%}
     {%- endif -%}
     {%- if include.timeVal >= 1440 -%}
       {%- assign dayVal = include.timeVal | divided_by: 1440 -%}
-      {{ dayVal | append: dayTxt }}
+      {%- assign concat = dayVal | modulo: 1440 -%}
+      {%- assign dayVal = dayVal | append: dayTxt -%}
+      {%- if include.verbose and concat > 0 -%}
+        {%- assign dayVal = dayVal | append: ",&nbsp;" -%}
+      {%- elsif concat > 0 -%}
+        {%- assign dayVal = dayVal | append: "&nbsp;" -%}
+      {%- endif -%}
     {%- endif -%}
     {%- if include.timeVal >= 60 -%}
       {%- assign hourVal = include.timeVal | modulo: 1440 | divided_by: 60 -%}
-      {{ hourVal | append: hourTxt }}
+      {%- assign concat = hourVal | modulo: 60 -%}
+      {%- assign hourVal = hourVal | append: hourTxt -%}
+      {%- if include.verbose and concat > 0 -%}
+        {%- assign hourVal = hourVal | append: ",&nbsp;" -%}
+      {%- elsif concat > 0 -%}
+        {%- assign hourVal = hourVal | append: "&nbsp;" -%}
+      {%- endif -%}
     {%- endif -%}
     {%- assign minutesLeft = include.timeVal | modulo: 60 -%}
-    {{ minutesLeft | append: minTxt }}
+    {%- if minutesLeft > 0 -%}
+      {%- assign minutesLeft = minutesLeft | append: minTxt -%}
+      {%- if include.verbose and include.timeVal >= 60 -%}
+        {%- assign minutesLeft = "and " | append: minutesLeft -%}
+      {%- endif -%}
+    {%- endif -%}
+    {{ dayVal }}{{ hourVal }}{{ minutesLeft }}
   </span>
 {%- else -%}
   <span>Unsure</span>

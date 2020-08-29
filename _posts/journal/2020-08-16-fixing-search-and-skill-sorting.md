@@ -10,6 +10,8 @@ excerpt: Hooking up skill details, sorting the skill table, fixing query search,
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/", "https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc", "https://www.w3schools.com/css/css3_flexbox.asp", "https://www.w3schools.com/howto/howto_js_sort_table.asp"]
 skills: [javascript, liquid, jekyll, html, css]
 timespent: 415
+sleep: 
+workout: 
 ---
 
 ## Journal

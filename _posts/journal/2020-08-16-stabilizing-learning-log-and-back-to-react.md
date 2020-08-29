@@ -10,6 +10,8 @@ excerpt: Reflecting on the past 3 months of web development and a few last impro
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/"]
 skills: [javascript, liquid, jekyll, html, css]
 timespent: 200
+sleep: 
+workout: 
 ---
 
 ## Journal

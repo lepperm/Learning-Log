@@ -10,6 +10,8 @@ excerpt: Working on Git, making Skill table improvements, and some general house
 references: ["https://learngitbranching.js.org/"]
 skills: [git, javascript, html]
 timespent: 300
+sleep: 
+workout: 
 ---
 
 ## Journal

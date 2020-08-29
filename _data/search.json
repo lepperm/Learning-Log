@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Friday Night Blog Improvement Spree",
+      "tags"       : "journal",
+      "skills"     : "css, html, liquid",
+      "excerpt"    : "Cleaning up some more items around the site, and adding in features related to the upcoming large blog post.",
+      "url"        : "/learning-log/journal/2020/08/28/friday-night-blog-improvement-spree.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-28 23:10:57 -0400",
+      "date"       : "Aug 28, 2020",
+      "timespent"  : "260",
+      "words"      : "709",
+      "references" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator, https://learngitbranching.js.org/, https://www.freecodecamp.org/maxlepper, https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week",
+      "sleep"      : "310",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Working on a New Blog Post",
       "tags"       : "writing",
       "skills"     : "",
@@ -10,7 +25,9 @@
       "date"       : "Aug 27, 2020",
       "timespent"  : "0",
       "words"      : "153",
-      "references" : ""
+      "references" : "",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "MacOS VirtualBox and Tabliss CSS",
@@ -23,7 +40,9 @@
       "date"       : "Aug 26, 2020",
       "timespent"  : "105",
       "words"      : "438",
-      "references" : "https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/, https://tabliss.io/, https://gitlab.com/-/snippets/2009089"
+      "references" : "https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/, https://tabliss.io/, https://gitlab.com/-/snippets/2009089",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Pair Programming and Portfolio Progress",
@@ -36,7 +55,9 @@
       "date"       : "Aug 25, 2020",
       "timespent"  : "290",
       "words"      : "357",
-      "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"
+      "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "More Git Learning and Skill Table Improvements",
@@ -49,7 +70,9 @@
       "date"       : "Aug 24, 2020",
       "timespent"  : "300",
       "words"      : "571",
-      "references" : "https://learngitbranching.js.org/"
+      "references" : "https://learngitbranching.js.org/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Building Out Progression Pages",
@@ -62,7 +85,9 @@
       "date"       : "Aug 23, 2020",
       "timespent"  : "235",
       "words"      : "251",
-      "references" : "https://learngitbranching.js.org/"
+      "references" : "https://learngitbranching.js.org/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Actually logging some learning!",
@@ -75,7 +100,9 @@
       "date"       : "Aug 22, 2020",
       "timespent"  : "120",
       "words"      : "255",
-      "references" : "https://learngitbranching.js.org/"
+      "references" : "https://learngitbranching.js.org/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Imagine.Dat&#39;s D3 + React Workshop",
@@ -88,7 +115,9 @@
       "date"       : "Aug 22, 2020",
       "timespent"  : "160",
       "words"      : "1470",
-      "references" : "https://github.com/imagine-dat/d3-react-tutorial, https://github.com/imagine-dat/d3-react-advanced, http://renestep.com/, https://www.milufranz.com/, https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110, https://codepen.io/ren_estep/pen/eYJwJQr, https://dev.to/milu_franz"
+      "references" : "https://github.com/imagine-dat/d3-react-tutorial, https://github.com/imagine-dat/d3-react-advanced, http://renestep.com/, https://www.milufranz.com/, https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110, https://codepen.io/ren_estep/pen/eYJwJQr, https://dev.to/milu_franz",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Supercharging the Skills Table, Tasks, and Stats",
@@ -101,7 +130,9 @@
       "date"       : "Aug 21, 2020",
       "timespent"  : "460",
       "words"      : "1070",
-      "references" : "https://www.w3schools.com/howto/howto_js_sort_table.asp, http://www.javascriptkit.com/dhtmltutors/customattributes.shtml, http://alanwsmith.com/jekyll-liquid-date-formatting-examples, https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll, https://www.w3schools.com/howto/howto_css_arrows.asp, https://css-tricks.com/snippets/css/css-triangle/, https://shopify.dev/docs/themes/liquid/reference/objects/for-loops, https://shopify.github.io/liquid/basics/operators/, https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages, https://github.com/philnash/jekyll-gzip"
+      "references" : "https://www.w3schools.com/howto/howto_js_sort_table.asp, http://www.javascriptkit.com/dhtmltutors/customattributes.shtml, http://alanwsmith.com/jekyll-liquid-date-formatting-examples, https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll, https://www.w3schools.com/howto/howto_css_arrows.asp, https://css-tricks.com/snippets/css/css-triangle/, https://shopify.dev/docs/themes/liquid/reference/objects/for-loops, https://shopify.github.io/liquid/basics/operators/, https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages, https://github.com/philnash/jekyll-gzip",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Task Suggestions and Converting Skills",
@@ -114,7 +145,9 @@
       "date"       : "Aug 20, 2020",
       "timespent"  : "180",
       "words"      : "355",
-      "references" : "https://shopify.dev/docs/themes/liquid/reference/objects/for-loops"
+      "references" : "https://shopify.dev/docs/themes/liquid/reference/objects/for-loops",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Progression Polish, Skill Cleanliness, and Navbar Search",
@@ -127,7 +160,9 @@
       "date"       : "Aug 19, 2020",
       "timespent"  : "340",
       "words"      : "566",
-      "references" : "https://github.com/avillafiorita/jekyll-datapage_gen, https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one, https://shopify.github.io/liquid/tags/iteration/, https://materialdesignicons.com/, https://jekyllrb.com/docs/liquid/filters/"
+      "references" : "https://github.com/avillafiorita/jekyll-datapage_gen, https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one, https://shopify.github.io/liquid/tags/iteration/, https://materialdesignicons.com/, https://jekyllrb.com/docs/liquid/filters/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Stats Updates, Style, and Skill Progression Data",
@@ -140,7 +175,9 @@
       "date"       : "Aug 18, 2020",
       "timespent"  : "275",
       "words"      : "511",
-      "references" : "https://sass-lang.com/documentation/variables, http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html, https://materialdesignicons.com/"
+      "references" : "https://sass-lang.com/documentation/variables, http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html, https://materialdesignicons.com/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Updating Postcards in AGWSU",
@@ -153,7 +190,9 @@
       "date"       : "Aug 17, 2020",
       "timespent"  : "395",
       "words"      : "463",
-      "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"
+      "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Stabilizing Learning Log and Back to React",
@@ -166,7 +205,9 @@
       "date"       : "Aug 16, 2020",
       "timespent"  : "200",
       "words"      : "585",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Fixing Search and Skill Sorting",
@@ -179,7 +220,9 @@
       "date"       : "Aug 16, 2020",
       "timespent"  : "415",
       "words"      : "637",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc, https://www.w3schools.com/css/css3_flexbox.asp, https://www.w3schools.com/howto/howto_js_sort_table.asp"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc, https://www.w3schools.com/css/css3_flexbox.asp, https://www.w3schools.com/howto/howto_js_sort_table.asp",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Skills Collection and Skill Badges",
@@ -192,7 +235,9 @@
       "date"       : "Aug 15, 2020",
       "timespent"  : "130",
       "words"      : "266",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://jekyllrb.com/docs/permalinks/, https://gitlab.com/gitlab-org/gitlab-pages/-/issues/231, https://jekyllrb.com/docs/collections/"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://jekyllrb.com/docs/permalinks/, https://gitlab.com/gitlab-org/gitlab-pages/-/issues/231, https://jekyllrb.com/docs/collections/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Finishing Stats, Post Navigation, and OnLoad",
@@ -205,7 +250,9 @@
       "date"       : "Aug 14, 2020",
       "timespent"  : "330",
       "words"      : "631",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://jekyllrb.com/docs/permalinks/, https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://jekyllrb.com/docs/permalinks/, https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Working Skills and Adding Stats",
@@ -218,7 +265,9 @@
       "date"       : "Aug 13, 2020",
       "timespent"  : "305",
       "words"      : "521",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/datafiles/, https://www.w3.org/TR/2016/REC-html51-20161101/textlevel-semantics.html#the-a-element, https://jekyllrb.com/docs/liquid/tags/#links, https://stackoverflow.com/users/14096749/max-l, https://stackoverflow.com/questions/63400845/how-can-i-use-a-liquid-generated-json-as-a-data-site-data-object-in-jekyll"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/datafiles/, https://www.w3.org/TR/2016/REC-html51-20161101/textlevel-semantics.html#the-a-element, https://jekyllrb.com/docs/liquid/tags/#links, https://stackoverflow.com/users/14096749/max-l, https://stackoverflow.com/questions/63400845/how-can-i-use-a-liquid-generated-json-as-a-data-site-data-object-in-jekyll",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Skills Data and Quality of Life Improvements",
@@ -231,7 +280,9 @@
       "date"       : "Aug 12, 2020",
       "timespent"  : "445",
       "words"      : "606",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://devhints.io/jekyll, https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await, https://javascript.info/async-await, https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll, https://jekyllrb.com/docs/datafiles/"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://devhints.io/jekyll, https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await, https://javascript.info/async-await, https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll, https://jekyllrb.com/docs/datafiles/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Creating my Skill Summary page",
@@ -244,7 +295,9 @@
       "date"       : "Aug 11, 2020",
       "timespent"  : "265",
       "words"      : "454",
-      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://devhints.io/jekyll, http://blog.emmatosch.com/2016/03/09/using-custom-javascript-in-jekyll-blogs.html"
+      "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://devhints.io/jekyll, http://blog.emmatosch.com/2016/03/09/using-custom-javascript-in-jekyll-blogs.html",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Liquid and Custom Includes",
@@ -257,7 +310,9 @@
       "date"       : "Aug 10, 2020",
       "timespent"  : "220",
       "words"      : "275",
-      "references" : "https://devhints.io/jekyll, https://shopify.github.io/liquid/, https://jekyllcodex.org/without-plugins/, https://www.sureoak.com/seo-tools"
+      "references" : "https://devhints.io/jekyll, https://shopify.github.io/liquid/, https://jekyllcodex.org/without-plugins/, https://www.sureoak.com/seo-tools",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "journal",
       "title"      : "Jekyll learning and site setup",
@@ -270,7 +325,9 @@
       "date"       : "Aug 9, 2020",
       "timespent"  : "150",
       "words"      : "249",
-      "references" : "https://github.com/jekyll/minima/, https://github.com/jekyll/, https://jekyllrb.com/docs/, https://github.com/christian-fei/Simple-Jekyll-Search, https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"
+      "references" : "https://github.com/jekyll/minima/, https://github.com/jekyll/, https://jekyllrb.com/docs/, https://github.com/christian-fei/Simple-Jekyll-Search, https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "post",
       "title"      : "Hesitations and Coding",
@@ -283,7 +340,9 @@
       "date"       : "Aug 8, 2020",
       "timespent"  : "",
       "words"      : "675",
-      "references" : ""
+      "references" : "",
+      "sleep"      : "",
+      "workout"    : ""
     },{
       "layout"     : "post",
       "title"      : "Learning Log Inception",
@@ -296,5 +355,7 @@
       "date"       : "Aug 8, 2020",
       "timespent"  : "",
       "words"      : "557",
-      "references" : ""
+      "references" : "",
+      "sleep"      : "",
+      "workout"    : ""
     }]

@@ -10,11 +10,13 @@ excerpt: Pair programming with Neal on AGWSU and getting back into working on my
 references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"]
 skills: [react, redux, firebase, material-ui]
 timespent: 290
+sleep: 
+workout: 
 ---
 
 ## Journal
 
-Getting on call with Neal for pair programming, he tasked me with working on [the "Implement User Dashboard" issue, #79]({{page.references[2]}}). This component is used by site admins to approve or deny new user sign-ups.
+Getting on call with [Neal](https://gitlab.com/neal.strobl) for pair programming, he tasked me with working on [the "Implement User Dashboard" issue, #79]({{page.references[2]}}). This component is used by site admins to approve or deny new user sign-ups.
 
 He sent me his designs and tasked me with determining which Material-UI elements I needed to import and how they should be assembled. I ended up going with a UserRequestsDashboard and a UserRequestCard element. The user request cards are each mapped to a full-width Grid item. The cards are, surprisingly enough, Cards containing the username and email as Typography tags wrapped in a Grid within the CardContent, with approval and denial Buttons also wrapped in a Grid within the CardActions. From there, I built out the components.
 
@@ -24,13 +26,7 @@ Next was to pass the collected and filtered user data to the cards. We quickly d
 
 Now that everything was plugged into place, we created a test user, logged into the User Requests dashboard, and:
 
-{% capture image %}
-![The nearly-completed user approval console]({{site.baseurl}}/assets/images/posts/2020/08/25/userapproval.png){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom: 1.2em;"}
-{% endcapture %}
-<div style="text-align: center;">
-  {{ image | markdownify }}
-</div>
-
+{% include blog-img.html source="/assets/images/posts/2020/08/25/userapproval.png" alt="The nearly-completed user approval console" %}
 
 Ta-da! The user properly populates. An email verification process is in place, as well. All that is left now is to hook up denial with a rejection message, approval, and mass approval with a confirmation modal.
 

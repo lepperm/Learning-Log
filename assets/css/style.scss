@@ -1,9 +1,11 @@
 ---
 ---
 
+/* Import the base Minima dark theme */
 @import "minima/skins/{{ site.minima.skin | default: 'dark' }}";
 @import "minima/initialize";
 
+/* Color variables */
 $text-color: #bbbbbb;
 $link-color: #79b8ff;
 $badge-inactive: #365f80;
@@ -16,6 +18,7 @@ $sort-header: #365f80;
 $sort-text: #bbbbbb;
 $sort-arrow: #79b8ff;
 
+/* Global elements */
 html {
   scroll-behavior: smooth;
 }
@@ -28,8 +31,11 @@ svg {
   fill: $text-color;
 }
 
-.navContents {
-  text-align: center;
+/* Skills table */
+.nullAnchor{
+  color: inherit;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 .sortable {
@@ -58,6 +64,7 @@ svg {
   -webkit-transform: rotate(-135deg);
 }
 
+/* Tag, Skill, and Category badges */
 #badges{
   text-decoration: inherit;
   text-decoration-line: none;
@@ -99,6 +106,11 @@ svg {
   display: inline-block;
 }
 
+/* Navigation Elements */
+.navContents {
+  text-align: center;
+}
+
 .nav-icon {
   text-decoration: none !important;
   vertical-align: middle;
@@ -127,6 +139,7 @@ svg {
   display: inline-block;
 }
 
+/* Search bars */
 #search-container input{
   width: 93%;
   border: 2px solid $container-border;
@@ -148,16 +161,23 @@ svg {
   outline: none;
 }
 
-.nullAnchor{
-  color: inherit;
-  pointer-events: none;
-  text-decoration: none;
-}
-
+/* Blog Elements */
 .dt-published, .dt-modified, .author-span, .time-to-read {
   white-space: nowrap;
 }
 
+/* Blog images */
+.bimage {
+  text-align: center;
+}
+
+.bimage img {
+  vertical-align: bottom;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+/* Blog navigation */
 .post-prev-next {
   display: flex;
   flex-flow: row nowrap;
@@ -200,6 +220,7 @@ svg {
   float: right;
 }
 
+/* Animations */
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);

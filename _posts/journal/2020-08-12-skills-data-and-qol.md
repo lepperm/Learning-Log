@@ -10,6 +10,8 @@ excerpt: Working towards richer skills data, search improvements, javascript loa
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await", "https://javascript.info/async-await", "https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll", "https://jekyllrb.com/docs/datafiles/"]
 skills: [javascript, liquid, jekyll, markdown, html, css]
 timespent: 445
+sleep: 
+workout: 
 ---
 
 ## Journal

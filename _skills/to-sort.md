@@ -535,6 +535,16 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
+  - 
+    id: 
+    status: NS
+    name: CSS Essential Training 1
+    item: https://www.lynda.com/CSS-tutorials/CSS-Essential-Training/5038219-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aCSS+Essential+Training%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
 resources: 
   - 
     refname:

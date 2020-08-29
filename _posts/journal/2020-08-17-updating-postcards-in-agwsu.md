@@ -10,6 +10,8 @@ excerpt: Back into React with pair-programming for AGWSU, and project maintenanc
 references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"]
 skills: [react, agile-pm, gitlab-ci]
 timespent: 395
+sleep: 
+workout: 
 ---
 
 ## Journal
@@ -20,12 +22,7 @@ After my merge request was accepted, I noticed that our test stage in our CI pip
 
 With our pair-programming session complete, I had to get caught up with my project management, so I took some time to review the Issues list and update my sprint management tool:
 
-{% capture image %}
-![Screenshot of the AGWSU Sprint Tracking Log]({{site.baseurl}}/assets/images/posts/2020/08/17/2020-08-17 15_19_17-BurndownTool.png){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom: 1.2em;"}
-{% endcapture %}
-<div style="text-align: center;">
-  {{ image | markdownify }}
-</div>
+{% include blog-img.html source="/assets/images/posts/2020/08/17/2020-08-17 15_19_17-BurndownTool.png" alt="Screenshot of the AGWSU Sprint Tracking Log" %}
 
 This is just a small snippet of the tool, but it is a full project story management spreadsheet I developed to dynamically inspect compiled stats from various sprints or across a selection of sprints, while tracking time commitments, velocity, the backlog, and helping us to make decisions about where to focus each sprint. AGWSU is on a timeline, of which we are quickly approaching the end, so this data should help us to make realistic decisions about what tasks we can complete.
 

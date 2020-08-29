@@ -10,6 +10,8 @@ excerpt: Creating a collection for detailed per-skill information and changing t
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://gitlab.com/gitlab-org/gitlab-pages/-/issues/231", "https://jekyllrb.com/docs/collections/"]
 skills: [javascript, liquid, jekyll, html, css]
 timespent: 130
+sleep: 
+workout: 
 ---
 
 ## Journal

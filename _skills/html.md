@@ -17,6 +17,6 @@ progressionEntries:
     datelink: 
 resources: 
   - 
-    refname: 
-    reflink: 
+    refname: HTML Tag Reference List
+    reflink: https://www.w3schools.com/TAS/default.ASP
 ---

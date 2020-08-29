@@ -1,0 +1,14 @@
+{%- assign source = '' -%}
+{%- assign alt = '' -%}
+
+{%- if include.source -%}
+  {%- assign source = include.source -%}
+{%- endif -%}
+
+{%- if include.alt -%}
+  {%- assign alt = include.alt -%}
+{%- endif -%}
+
+<div class="bimage">
+  <img src="{{site.baseurl}}{{source}}" alt="{{alt}}" title="{{alt}}" />
+</div>

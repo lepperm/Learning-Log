@@ -10,6 +10,8 @@ excerpt: Creating an entirely different skill collection structure, fully-automa
 references: ["https://github.com/avillafiorita/jekyll-datapage_gen","https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one","https://shopify.github.io/liquid/tags/iteration/","https://materialdesignicons.com/", "https://jekyllrb.com/docs/liquid/filters/"]
 skills: [liquid, markdown, yaml, sass, html, javascript]
 timespent: 340
+sleep: 
+workout: 
 ---
 
 ## Journal

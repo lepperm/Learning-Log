@@ -10,6 +10,8 @@ excerpt: Deep dive into Liquid to generate my Skills page content dynamically fr
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "http://blog.emmatosch.com/2016/03/09/using-custom-javascript-in-jekyll-blogs.html"]
 skills: [liquid, jekyll, javascript]
 timespent: 265
+sleep: 
+workout: 
 ---
 
 ## Journal

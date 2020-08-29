@@ -10,18 +10,15 @@ excerpt: Training my wife on VirtualBox, configuring a VM with macOS X, and cust
 references: ["https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/","https://tabliss.io/","https://gitlab.com/-/snippets/2009089"]
 skills: [virtualbox, css]
 timespent: 105
+sleep: 
+workout: 
 ---
 
 ## Journal
 
 Today was an extremely busy day, so I didn't get much of a chance to do any serious development. During the course of my workday, I encountered a browser plugin called [Tabliss]({{page.references[1]}}), which is a new tab replacement. Unlike other new tab replacement plugins I've used in the past, this was very snappy and modular. The sections are easy to configure, and it natively supports custom CSS! Eager to see what I could cook up, I spent a few minutes adjusting fonts and spacing, and changing links from underline on hover to color change on hover:
 
-{% capture image %}
-![My nice new tabs]({{site.baseurl}}/assets/images/posts/2020/08/26/tabliss_css.png){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom: 1.2em;"}
-{% endcapture %}
-<div style="text-align: center;">
-  {{ image | markdownify }}
-</div>
+{% include blog-img.html source="/assets/images/posts/2020/08/26/tabliss_css.png" alt="My nice new tabs" %}
 
 ```css
 .Time {
@@ -69,12 +66,7 @@ I used VMs in my job all of the time to isolate my development environments, as 
 
 After a lot of searching and numerous bootloop-riddled dead ends, I finally came across [this guide]({{page.references[0]}}). I'm glad that I did, too, as I'm unsure how I was supposed to know to do many of the steps involved. A little while later...
 
-{% capture image %}
-![macOS X up and running in VirtualBox]({{site.baseurl}}/assets/images/posts/2020/08/26/macosVM.png){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom-top: 1.2em;padding-bottom: 1.2em;"}
-{% endcapture %}
-<div style="text-align: center;">
-  {{ image | markdownify }}
-</div>
+{% include blog-img.html source="/assets/images/posts/2020/08/26/macosVM.png" alt="macOS X up and running in VirtualBox" %}
 
 ...and we were up and running! I am excited to get the VM tuned up and to see what all we can do with it.
 

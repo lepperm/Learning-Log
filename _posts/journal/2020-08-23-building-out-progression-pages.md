@@ -10,6 +10,8 @@ excerpt: More progress on Git learning and migrating learning items into skills
 references: ["https://learngitbranching.js.org/"]
 skills: [git, liquid]
 timespent: 235
+sleep: 
+workout: 
 ---
 
 ## Journal

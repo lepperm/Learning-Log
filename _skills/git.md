@@ -25,6 +25,16 @@ progressionEntries:
     relprojlink: 
     datecomp: 
     datelink: 
+  - 
+    id: 3
+    status: NS
+    name: Using Version Control in VS Code
+    item: https://code.visualstudio.com/Docs/editor/versioncontrol
+    type: Official Docs
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
 resources: 
   - 
     refname: Resources to learn Git

@@ -10,6 +10,8 @@ excerpt: Finishing the stats page (sort of), adding some CSS to post-to-post nav
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8"]
 skills: [javascript, liquid, jekyll, html, css]
 timespent: 330
+sleep: 
+workout: 
 ---
 
 ## Journal
