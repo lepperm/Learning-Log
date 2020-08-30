@@ -6,17 +6,27 @@ mainsite: https://sass-lang.com/
 category: Extension language
 progressionEntries: 
   - 
-    id:
-    status:
-    name:
-    item:
-    type:
+    id: 1
+    status: UN
+    name: Getting Sassy With CSS
+    item: http://www.sassshop.com/#/
+    type: Course
     relproj:
     relprojlink:
     datecomp:
-    datelink: 
+    datelink:
+  - 
+    id: 2
+    status: NS
+    name: Sass Basics
+    item: https://sass-lang.com/guide
+    type: Official Docs
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
 resources: 
   - 
     refname: Official Markdown Syntax
     reflink: https://sass-lang.com/guide
----
+--- 

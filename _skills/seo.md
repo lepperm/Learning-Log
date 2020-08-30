@@ -19,4 +19,10 @@ resources:
   - 
     refname: Google PageSpeed Insights
     reflink: https://developers.google.com/speed/pagespeed/insights/
+  - 
+    refname: Google Lighthouse
+    reflink: https://developers.google.com/web/tools/lighthouse
+  - 
+    refname: Google Structured Data Search Results
+    reflink: https://developers.google.com/search/docs/data-types/faqpage
 ---

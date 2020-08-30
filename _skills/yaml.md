@@ -1,7 +1,7 @@
 --- 
 layout: progression
 name: yaml
-fullname: YAML Ain't Markup Language
+fullname: YAML
 mainsite: https://yaml.org/
 category: Serialization Language
 progressionEntries: 
@@ -20,3 +20,5 @@ resources:
     refname: 
     reflink: 
 ---
+
+YAML is short for YAML Ain't Markup Language. Not sure how I feel about that.

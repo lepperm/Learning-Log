@@ -3,6 +3,7 @@
 
 **Skills Table**
 - [x] Add skills that exist in collections but not in the data source populate to the Skills table. Selectively replace missing data.
+- [x] "Larger" skill progression pools should float to the top of their percentage
 
 **Statistics**
 - [x] Streak counter needs to account for rolling over the end of the year
@@ -13,4 +14,4 @@
 - [x] Make Learning Item lists collapsible, truncate list?
 
 Logging of improvements started 8/22/2020.  
-Last updated 8/28/2020.
+Last updated 8/29/2020.

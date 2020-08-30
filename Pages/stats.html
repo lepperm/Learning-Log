@@ -7,6 +7,16 @@ jsfiles:
 cssfiles:
 ---
 
+{%- comment -%}
+=======================
+Variables to control stat collection
+=======================
+{%- endcomment -%}
+
+{%- assign loggedSkillsCt = 5 -%}
+{%- assign percThreshold = 0.034 -%}
+{%- assign topRefCt = 5 -%}
+
 <h2 id="toc">
   Contents
 </h2>
@@ -33,16 +43,6 @@ cssfiles:
     <a href="#top-references">Top Used References</a>
   </li>
 </ol>
-
-{%- comment -%}
-=======================
-Variables to control stat collection
-=======================
-{%- endcomment -%}
-
-{%- assign loggedSkillsCt = 5 -%}
-{%- assign percThreshold = 0.034 -%}
-{%- assign topRefCt = 5 -%}
 
 {%- comment -%}
 =======================
@@ -162,7 +162,7 @@ Actual data output to the page
 
 <ul>
   <li>
-    <strong>{{ prettyTotalTime }}</strong> of time has been logged to skill development on this site
+    <strong>{{ prettyTotalTime }}</strong> has been logged to skill development to date
   </li>
 </ul>
 
@@ -186,7 +186,7 @@ Actual data output to the page
     That's roughly <strong>{%- include time-to-read.html output="time" rawcount=wordSum -%}</strong> minutes of reading
   </li>
   <li>
-    Each post is an average length of <strong>{{ aveSum }}</strong> words each
+    Each post is an average length of <strong>{{ aveSum }}</strong> words
   </li>
 </ul>
 
@@ -335,7 +335,7 @@ This may eventually be an issue???
 
 <ul>
   <li>
-    One post is published approximately every <strong>{{ prettyDiffTime }}</strong>
+    One post is published an average of every <strong>{{ prettyDiffTime }}</strong>
   </li>
 
   <li id="lastPosting" hidden="true">
@@ -480,9 +480,8 @@ This may eventually be an issue???
     {%- for dispRefs in refCounts limit:topRefCt -%}
       {% assign splitRefs = dispRefs | split: "," %}
         <li>
+          (<strong>{{ splitRefs[0] }}</strong> times)&nbsp;&nbsp;-&nbsp;
           <a href={{ splitRefs[1] }}>{{ splitRefs[1] | truncate: 40 }}</a>
-          &nbsp;&nbsp;-&nbsp;&nbsp;
-          Referenced <strong>{{ splitRefs[0] }}</strong> times
         </li>
     {%- endfor -%}
   {%- endif -%}

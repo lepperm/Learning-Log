@@ -4,13 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Learning Log is a hub for information and statistics chronicling my web development journey. 
+Learning Log is my web development education hub, where I chronicle my progression and skill acquisition.
 
 Here, you can find:
-- Logs of what I am working on
+- Logs of my daily learning activities and insight into my problem-solving process
 - An overview of skills I am working to develop
 - My progress towards mastering skills and the resources being used to get there
-- Statistics for my skills and this site
+- Blog posts covering a variety of topics
+- Statistics for my skill development and this site
+- A dynamically generated list of tasks that I am using to guide my learning
 
 You can find the source code for this site on GitLab:  
 [Learning Log - GitLab](https://gitlab.com/maxlepper/learning-log)
@@ -18,4 +20,4 @@ You can find the source code for this site on GitLab:
 You can find my personal portfolio website here:  
 [Max Lepper - Portfolio](https://maxlepper.me) (Early draft, expect this to change drastically!)
 
-This site was heavily inspired by the writing of [Syk Houdeib](https://syknapse.github.io/Syk-Houdeib/) and their awesome [Learning Tracker repo](https://github.com/Syknapse/My-Learning-Tracker/). I can't thank you enough!
+This site was heavily inspired by the writing of [Syk Houdeib](https://syknapse.github.io/Syk-Houdeib/) and their awesome [Learning Tracker repo](https://github.com/Syknapse/My-Learning-Tracker/). I can't thank them enough!

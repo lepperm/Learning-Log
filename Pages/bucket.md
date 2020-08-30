@@ -30,14 +30,14 @@ My Bucket is a list of "Real Developer" activities, initially copied and inspire
 - [ ] Make a machine learning image classification model
 - [ ] Participate in a hackathon
 - [ ] Complete a technical interview
-- [ ] Get paid to code
+- [ ] Get paid to code (electronic controls development doesn't count)
 - [ ] Attend a development conference
-- [ ] When people ask what you do, respond saying you’re a developer :)
+- [ ] When people ask what you do, respond saying you’re a developer 😊
 
 ## Project Bucket <a id="projects"></a>
 
 - [ ] Revenue-generating online shop
-- [ ] Home bar inventory management and drink queuing web dashboard and frontend with inventory and expense statistics and forecasting
 - [ ] Machine learning image classification model to transcribe my own handwriting
 - [ ] Incremental idle resource management game
-- [ ] A self-contained web animation
+- [ ] Web animation using all 2D or 3D graphics generated in the browser
+- [ ] Home bar management and drink queuing web platform with backend dashboard and frontend 'customer' interface, with inventory management, expense statistics, and forecasting

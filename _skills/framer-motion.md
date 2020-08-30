@@ -15,6 +15,16 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink: 
+  - 
+    id: 2
+    status: NS
+    name: Animated Text with Framer Motion
+    item: https://www.framer.com/learn/guide/animated-text/
+    type: Tutorial
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink: 
 resources: 
   - 
     refname: Motion API
