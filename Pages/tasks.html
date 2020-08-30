@@ -7,6 +7,28 @@ jsfiles:
 cssfiles:
 ---
 
+{%- assign lonerSkills = '' | split:',' -%}
+{%- assign sortSkills = site.data.skills | sort: "name" -%}
+
+{%- for skill in sortSkills -%}
+  {%- for skillPage in site.skills -%}
+    {%- assign skillFound = false -%}
+    {%- assign skillPN = skillPage.name | downcase -%}
+
+    {%- if skill.name == skillPN -%}
+      {%- assign skillFound = true -%}
+      {% break %}
+    {%- endif -%}
+
+    {%- if forloop.last == true -%}
+      {%- if skillFound == false -%}
+        {%- assign lonerSkills = lonerSkills | push:skill.name -%}
+      {%- endif -%}
+    {%- endif -%}
+
+  {%- endfor -%}
+{%- endfor -%}
+
 <h2 id="toc">
   Contents
 </h2>
@@ -17,9 +39,11 @@ cssfiles:
   <li>
     <a href="#blogs">Blogs</a>
   </li>
+  {% if lonerSkills.size > 0 %}
   <li>
     <a href="#skills">Skills</a>
   </li>
+  {% endif %}
   <li>
     <a href="#sleep-quality">Sleep Quality</a>
   </li>
@@ -326,29 +350,6 @@ Collect data from all skill pages
     timeElem.innerHTML = "I found a blog posted within the past 24 hours. Great work!";
   }
 </script>
-
-
-{%- assign lonerSkills = '' | split:',' -%}
-{%- assign sortSkills = site.data.skills | sort: "name" -%}
-
-{%- for skill in sortSkills -%}
-  {%- for skillPage in site.skills -%}
-    {%- assign skillFound = false -%}
-    {%- assign skillPN = skillPage.name | downcase -%}
-
-    {%- if skill.name == skillPN -%}
-      {%- assign skillFound = true -%}
-      {% break %}
-    {%- endif -%}
-
-    {%- if forloop.last == true -%}
-      {%- if skillFound == false -%}
-        {%- assign lonerSkills = lonerSkills | push:skill.name -%}
-      {%- endif -%}
-    {%- endif -%}
-
-  {%- endfor -%}
-{%- endfor -%}
 
 
 {% if lonerSkills.size > 0 %}

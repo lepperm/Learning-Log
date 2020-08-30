@@ -8,7 +8,7 @@ categories: [journal]
 tags: [css]
 excerpt: Training my wife on VirtualBox, configuring a VM with macOS X, and customizing Tabliss.
 references: ["https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/","https://tabliss.io/","https://gitlab.com/-/snippets/2009089"]
-skills: [virtualbox, css]
+skills: [css]
 timespent: 105
 sleep: 
 workout: 
