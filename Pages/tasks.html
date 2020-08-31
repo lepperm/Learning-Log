@@ -466,4 +466,28 @@ Collect data from all skill pages
   FreeCodeCamp
   {%- include return-to-top.html target="toc" -%}
 </h2>
-<div>If you have completed everything else that you wanted to work on, or if you don't feel like working any of your existing tasks or projects, why not keep working towards certifications through <a href="https://www.freecodecamp.org/learn">FreeCodeCamp?</a></div>
+<div>
+  If you have completed everything else that you wanted to work on, or if you don't feel like working any of your existing tasks or projects, why not keep working towards certifications through <a href="https://www.freecodecamp.org/learn">FreeCodeCamp?</a>
+</div>
+{%- capture fcc -%}
+  {%- include freecodecamp.md -%}
+{%- endcapture -%}
+<div id="fcc" hidden=true>
+  {{ fcc | markdownify }}
+  <a id='hideFcc' style='cursor:pointer;' onclick="hideFcc()">(Hide ↑)</a>
+</div>
+<a id='showFcc' style='cursor:pointer;' onclick="showFcc()"><br>Click here to see my current track and progress!</a>
+<script>
+  const fccContentElem = document.getElementById("fcc");
+  const sFccLinkElem = document.getElementById("showFcc");
+
+  function showFcc() {
+    fccContentElem.removeAttribute("hidden");
+    sFccLinkElem.setAttribute("hidden", "true");
+  }
+
+  function hideFcc() {
+    fccContentElem.setAttribute("hidden", "true");
+    sFccLinkElem.removeAttribute("hidden");
+  }
+</script>

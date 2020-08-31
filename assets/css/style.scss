@@ -65,12 +65,11 @@ svg {
 }
 
 /* Tag, Skill, and Category badges */
-#badges{
-  text-decoration: inherit;
-  text-decoration-line: none;
+.badges{
+  text-decoration: none !important;
 }
 
-#badges button{
+.badges button{
   background-color: $badge-inactive;
   border: 3px solid $badge-inactive;
   border-radius: 5px;
@@ -82,26 +81,26 @@ svg {
   cursor: pointer;
 }
 
-#badges button:hover{
+.badges button:hover{
   border: 3px solid $badge-active;
   background-color: $badge-active;
 }
 
-#badges svg{
+.badges svg{
   vertical-align: middle;
   display: inline-block;
 }
 
-#badges svg path{
+.badges svg path{
   fill: $svg-inactive;
   transition: fill 0.3s;
 }
 
-#badges button:hover svg path{
+.badges button:hover svg path{
   fill: $svg-active;
 }
 
-#badges text{
+.badges text{
   vertical-align: middle;
   display: inline-block;
 }

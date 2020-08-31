@@ -43,7 +43,7 @@ The purpose of this snippet is to list all the categories you have in your site.
 {%- endcomment -%}
 
 {%- for category in categories -%}
-	<a href="#{{ category | slugify }}" id="badges">
+	<a href="#{{ category | slugify }}" class="badges">
 		<button>
 			{% include icons/category.svg %}
 			<text>{{ category }}</text>

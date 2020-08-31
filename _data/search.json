@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "FreeCodeCamp and Tracking My Progress",
+      "tags"       : "html",
+      "skills"     : "html, css",
+      "excerpt"    : "Completing some FreeCodeCamp lessons and minor blog housekeeping instead of resting...",
+      "url"        : "/learning-log/journal/2020/08/30/freecodecamp-and-tracking-my-progress.html",
+      "category"   : "journal",
+      "datetime"   : "2020-08-30 23:22:17 -0400",
+      "date"       : "Aug 30, 2020",
+      "timespent"  : "150",
+      "words"      : "134",
+      "references" : "https://www.freecodecamp.org/learn",
+      "sleep"      : "",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Intro to Task Runners and Bundlers",
       "tags"       : "gulp, webpack",
       "skills"     : "gulp, webpack",
@@ -9,7 +24,7 @@
       "datetime"   : "2020-08-30 13:47:08 -0400",
       "date"       : "Aug 30, 2020",
       "timespent"  : "160",
-      "words"      : "910",
+      "words"      : "909",
       "references" : "https://stackoverflow.com/questions/33561272/task-runners-gulp-grunt-etc-and-bundlers-webpack-browserify-why-use-toge/33574602#33574602, https://survivejs.com/webpack/appendices/comparison/, https://css-tricks.com/using-webp-images/#using-webp-in-html, https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better, https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9, https://www.npmjs.com/package/fuse-box, https://github.com/ericgrosse/task-runner-bundler-comparison, https://stackoverflow.com/questions/48395804/where-is-create-react-app-webpack-config-and-files",
       "sleep"      : "375",
       "workout"    : ""

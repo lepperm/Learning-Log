@@ -22,7 +22,7 @@ As such, I've been pretty interested to learn about Gulp. I have used GitLab CI/
 
 Terminology and knowing what can do what is my first issue, so I found [this post]({{page.references[0]}}) on Stack Exchange discussing the differences between Gulp, Grunt, Webpack, and Browserify, and what they're used for. This was a great diving-in point, and gave me much more to look into.
 
-To learn more about the history of runners and bundlers, I read [this blog]({{page.references[1]}}), which seems to do a good job of summarizing things. It was interesting to read about Make being released as far back as 1977, and transitioning from configuration-heavy Grunt , to code-focused Gulp, Gulp's synergy with Browserify, and now with configurable core and plugin approach with Webpack. [FuseBox]({{page.references[5]}}) also sounds very interesting!
+To learn more about the history of runners and bundlers, I read [this blog]({{page.references[1]}}), which seems to do a good job of summarizing things. It was interesting to read about Make being released as far back as 1977, and transitioning from configuration-heavy Grunt, to code-focused Gulp, Gulp's synergy with Browserify, and now with configurable core and plugin approach with Webpack. [FuseBox]({{page.references[5]}}) also sounds very interesting!
 
 While reading up about task runners and bundlers, I accidentally stumbled across [this link]({{page.references[2]}}) about serving WebP images to users! There are open issues both on my portfolio and AGWSU, so this was a nice surprise to find!
 
