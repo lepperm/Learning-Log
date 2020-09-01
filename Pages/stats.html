@@ -13,6 +13,7 @@ Variables to control stat collection
 =======================
 {%- endcomment -%}
 
+{%- assign assumedSkills = 'html,css' | split:',' -%}
 {%- assign loggedSkillsCt = 5 -%}
 {%- assign percThreshold = 0.034 -%}
 {%- assign topRefCt = 5 -%}
@@ -95,24 +96,52 @@ Actual data output to the page
 {%- assign sortSkills = site.data.skills | sort: "time" | reverse -%}
 
 <ol>
-  {%- for skill in sortSkills limit:loggedSkillsCt-%}
-    <li>
-      <a href="/learning-log/skills#{{ skill.name }}" >
-        <strong>{{ skill.name }}</strong>
-      </a>
-    </li>
+  {%- assign skillsCounter = 0 -%}
+
+  {%- for skill in sortSkills -%}
+    {% if skillsCounter < loggedSkillsCt %}
+      
+      {%- assign skipSkill = false -%}
+      {%- for assumedSkill in assumedSkills-%}
+        {% if assumedSkill==skill.name %}
+          {%- assign skipSkill = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      
+      {% unless skipSkill %}
+        <li>
+          <a href="/learning-log/skills#{{ skill.name }}" >
+            <b>{{ skill.name | capitalize }}</b>
+          </a>
+        </li>
+        {%- assign skillsCounter = skillsCounter | plus:1-%}
+      {%- endunless -%}
+    {%- endif -%}
   {%- endfor -%}
 </ol>
+<div>(Not accounting for the following fundamental skills: {{ assumedSkills | join: ", " }})</div>
 
 
 <h2 id="skill-pie">
   Logged Skills Distribution
   {%- include return-to-top.html target="toc" -%}
-</h2>
+</h2>     
+
 
 {%- assign allSkillTime = 0 -%}
+
 {%- for skill in sortSkills -%}
-  {%- assign allSkillTime = allSkillTime | plus: skill.time -%}
+  {%- assign skipSkill = false -%}
+  {%- for assumedSkill in assumedSkills-%}
+    {% if assumedSkill==skill.name %}
+      {%- assign skipSkill = true -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {% unless skipSkill %}
+    {%- assign allSkillTime = allSkillTime | plus: skill.time -%}
+  {%- endunless -%}
 {%- endfor -%}
 {%- assign allSkillTime = allSkillTime | times: 1.0 -%}
 
@@ -123,22 +152,31 @@ Actual data output to the page
 <div class="mermaid">
   pie
     {%- for skill in sortSkills -%}
-      {%- assign skillperc = skill.time | divided_by: allSkillTime  -%}
-      {%- if skillperc <= percThreshold -%}
-        {% if skillNameCluster == '' %}
-          {%- assign skillNameCluster = skillNameCluster | append: skill.name -%}
+      {%- assign skipSkill = false -%}
+      {%- for assumedSkill in assumedSkills-%}
+        {% if assumedSkill==skill.name %}
+          {%- assign skipSkill = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {% unless skipSkill %}
+        {%- assign skillperc = skill.time | divided_by: allSkillTime  -%}
+        {%- if skillperc <= percThreshold -%}
+          {% if skillNameCluster == '' %}
+            {%- assign skillNameCluster = skillNameCluster | append: skill.name -%}
+          {% else %}
+            {%- assign skillNameCluster = skillNameCluster | append: ", " | append: skill.name -%}
+          {% endif %}
+          {%- assign skillTimeCluster = skillTimeCluster | plus: skill.time -%}
         {% else %}
-          {%- assign skillNameCluster = skillNameCluster | append: ", " | append: skill.name -%}
+          {% assign skillint = skillperc | times: 100 | round %}
+          "{{skillint}}% - {{skill.name | capitalize }}" : {{skill.time}}
         {% endif %}
-        {%- assign skillTimeCluster = skillTimeCluster | plus: skill.time -%}
-      {% else %}
-        {% assign skillint = skillperc | times: 100 | round %}
-        "{{skillint}}% - {{skill.name}}" : {{skill.time}}
-      {% endif %}
+      {%- endunless -%}
     {%- endfor -%}
     {% if skillTimeCluster > 0 %}
       {%- assign skillclusterperc = skillTimeCluster | divided_by: allSkillTime | times: 100 | round -%}
-      "{{skillclusterperc}}% - other*" : {{skillTimeCluster}}
+      "{{skillclusterperc}}% - Other*" : {{skillTimeCluster}}
     {% endif %}
 </div>
 {% if skillTimeCluster > 0 %}
@@ -146,6 +184,7 @@ Actual data output to the page
     *{{skillNameCluster}}
   </div>
 {% endif %}
+<div style="float:right">**Not accounting for the following fundamental skills: {{ assumedSkills | join: ", " }}</div>
 
 <h2 id="total-time">
   Total Time Logged
@@ -160,9 +199,52 @@ Actual data output to the page
   {%- include min-to-time.html timeVal=timeSum verbose=true -%}
 {%- endcapture -%}
 
+{%- assign uniqDates = '' | split:',' -%}
+{%- for date in dates -%}
+  {%- assign dailyDate = date | date:'%Y%j' -%}
+  {%- assign uniqDates = uniqDates | push:dailyDate -%}
+{%- endfor -%}
+{%- assign uniqDates = uniqDates | uniq -%}
+
+{%- assign uniqDayEntries = uniqDates.size -%}
+{%- assign aveEntryDayTime = timeSum | divided_by: uniqDayEntries -%}
+{%- capture prettyEntryTime -%}
+  {%- include min-to-time.html timeVal=aveEntryDayTime verbose=true -%}
+{%- endcapture -%}
+
+{%- assign sortedDates = dates | sort -%}
+{%- assign sortedDatesEnd = sortedDates.size | minus: 1 -%}
+
+{%- assign oldestDateY = sortedDates[0] | date: '%y' -%}
+{%- assign oldestDateY = oldestDateY | minus: 1 -%}
+{%- assign oldestDateLeaps = oldestDateY | divided_by: 4 | floor -%}
+{%- assign oldestDateY = oldestDateY | times: 365 | plus: oldestDateLeaps -%}
+{%- assign oldestDateD = sortedDates[0] | date: '%j' -%}
+{%- assign oldestDateD = oldestDateD | plus: oldestDateY -%}
+
+{%- assign newestDateY = sortedDates[sortedDatesEnd] | date: '%y' -%}
+{%- assign newestDateY = newestDateY | minus: 1 -%}
+{%- assign newestDateLeaps = newestDateY | divided_by: 4 | floor -%}
+{%- assign newestDateY = newestDateY | times: 365 | plus: newestDateLeaps -%}
+{%- assign newestDateD = sortedDates[sortedDatesEnd] | date: '%j' -%}
+{%- assign newestDateD = newestDateD | plus: newestDateY -%}
+
+{%- assign startToCurrentD = newestDateD | minus: oldestDateD | plus: 1 -%}
+
+{%- assign aveAbsDayTime = timeSum | divided_by: startToCurrentD -%}
+{%- capture prettyAbsDayTime -%}
+  {%- include min-to-time.html timeVal=aveAbsDayTime verbose=true -%}
+{%- endcapture -%}
+
 <ul>
   <li>
-    <strong>{{ prettyTotalTime }}</strong> has been logged to skill development to date
+    <b>{{ prettyTotalTime }}</b> has been logged to skill development to date
+  </li>
+  <li>
+    That's an average of <b>{{ prettyEntryTime }} per log</b> across {{ uniqDayEntries }} logs
+  </li>
+  <li>
+    In the {{ startToCurrentD }} days from the very first log to the most recent, that's an average of <b>{{ prettyAbsDayTime }} per log</b>.
   </li>
 </ul>
 
@@ -180,13 +262,13 @@ Actual data output to the page
 
 <ul>
   <li>
-    <strong>{{ wordSum }}</strong> total words typed across all posts
+    <b>{{ wordSum }}</b> total words typed across all posts
   </li>
   <li>
-    That's roughly <strong>{%- include time-to-read.html output="time" rawcount=wordSum -%}</strong> minutes of reading
+    That's roughly <b>{%- include time-to-read.html output="time" rawcount=wordSum -%}</b> minutes of reading
   </li>
   <li>
-    Each post is an average length of <strong>{{ aveSum }}</strong> words
+    Each post is an average length of <b>{{ aveSum }}</b> words
   </li>
 </ul>
 
@@ -335,32 +417,32 @@ This may eventually be an issue???
 
 <ul>
   <li>
-    One post is published an average of every <strong>{{ prettyDiffTime }}</strong>
+    One post is published an average of every <b>{{ prettyDiffTime }}</b>
   </li>
 
   <li id="lastPosting" hidden="true">
-    The latest entry was posted approximately <strong id="lastPostingTime"></strong> ago
+    The latest entry was posted approximately <b id="lastPostingTime" placeholder="???"></b> ago
   </li>
 
   {% if streaks[0] != nil %}
     <li>
-      The longest daily posting streak lasted <strong>{{streaks[0]}}</strong> days!
+      The longest daily posting streak has lasted <b>{{streaks[0]}}</b> days!
     </li>
   {% endif %}
 
   {% if gaps[0] != nil %}
     <li>
-      The longest gap between posts was <strong>{{gaps[0]}}</strong> days
+      The longest gap between posts was <b>{{gaps[0]}}</b> days
     </li>
   {%- else -%}
     <li>
-      <strong>I have not yet missed a single day of posts!</strong> We'll see how long that lasts!
+      <b>I have not yet missed a single day of posts!</b> We'll see how long that lasts!
     </li>
   {% endif %}
 
   {% if streak %}
     <li>
-      <strong>There is an active streak right now!</strong> Want to sign up for my <a href='{{ site.baseurl }}/feed.xml''>RSS feed</a>? 😊
+      <b>There is an active streak right now!</b> Want to sign up for my <a href='{{ site.baseurl }}/feed.xml''>RSS feed</a>? 😊
     </li>
   {% endif %}
 </ul>
@@ -442,7 +524,7 @@ This may eventually be an issue???
   {% assign position = forloop.index0 %}
     <li>
       <a href="/learning-log/categories#{{ dispLayout }}" >
-        <strong>{{ dispLayout | capitalize }}s:</strong>
+        <b>{{ dispLayout | capitalize }}s:</b>
       </a>
       &nbsp;&nbsp;&nbsp;{{ layoutCounts[position] }}
     </li>
@@ -474,13 +556,13 @@ This may eventually be an issue???
 <ol>
   {%- if topRefs == 0 -%}
     <li>
-      <strong>TBD</strong>
+      <b>TBD</b>
     </li>
   {%- else -%}
     {%- for dispRefs in refCounts limit:topRefCt -%}
       {% assign splitRefs = dispRefs | split: "," %}
         <li>
-          (<strong>{{ splitRefs[0] }}</strong> times)&nbsp;&nbsp;-&nbsp;
+          (<b>{{ splitRefs[0] }}</b> times)&nbsp;&nbsp;-&nbsp;
           <a href={{ splitRefs[1] }}>{{ splitRefs[1] | truncate: 40 }}</a>
         </li>
     {%- endfor -%}

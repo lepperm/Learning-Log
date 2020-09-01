@@ -3,12 +3,12 @@
 1. Responsive Web Design Certification (2/8)
    - [x] Basic HTML and HTML5 (28/28)
    - [x] Basic CSS (44/44)
-   - [ ] Applied Visual Design
-   - [ ] Applied Accessibility
-   - [ ] Responsive Web Design Principles
-   - [ ] CSS Flexbox
-   - [ ] CSS Grid
-   - [ ] Responsive Web Design Projects
+   - [x] Applied Visual Design (52/52)
+   - [ ] Applied Accessibility (0/22)
+   - [ ] Responsive Web Design Principles (0/4)
+   - [ ] CSS Flexbox (0/17)
+   - [ ] CSS Grid (0/22)
+   - [ ] Responsive Web Design Projects (0/5)
 
 ### Up Next
 

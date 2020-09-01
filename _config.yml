@@ -36,9 +36,6 @@ collections:
   skills:
     output: true
     permalink: /:collection/:name
-  skillsOld:
-    output: true
-    permalink: /:collection/:name
 
 # Theme
 theme: minima # https://github.com/jekyll/minima
@@ -46,12 +43,14 @@ minima:
   skin: dark
   date_format: "%b %-d, %Y"
   social_links:
+    personal: https://maxlepper.me
     github: lepperm
     linkedin: maxlepper
     gitlab:
       - username: maxlepper
         instance: gitlab.com
-# On my local PC, the Minima theme assets can be found at \Programs\Ruby27-x64\lib\ruby\gems\2.7.0\gems\minima-2.5.1
+    stackoverflow: 14096749/max-l
+# On my local PC, the Minima theme assets can be found at \Programs\Ruby27-x64\lib\ruby\gems\2.7.0\bundler\gems\minima-49f6dce0727a
 # To modify, copy assets to the site directory and override
 
 plugins:

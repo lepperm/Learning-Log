@@ -7,6 +7,11 @@
 
 **Statistics**
 - [x] Streak counter needs to account for rolling over the end of the year
+- [x] "Assumed skills" filter for Stats skill ranking
+- [x] "Assumed skills" filter for Stats skill pie chart
+- [x] Average log time
+  - [x] total time / total # of logs
+  - [x] total time / total # of days between date range
 
 **Tasks**
 - [x] Tasks to include the task item type as part of the shorthand task description
@@ -14,4 +19,4 @@
 - [x] Make Learning Item lists collapsible, truncate list?
 
 Logging of improvements started 8/22/2020.  
-Last updated 8/29/2020.
+Last updated 8/31/2020.

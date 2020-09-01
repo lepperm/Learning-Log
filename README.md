@@ -28,6 +28,6 @@ RubyGems will also need to be installed, which can similarly be checked with `ge
 
 Currently, I have to manually copy the Liquid-generated `Skill.json` and `Search.json` files to the `_data` data folder after building and before committing. My current thinking is that this is something that I may be able to correct with a self-made Ruby plugin or by using a task runner...but I haven't learned that yet - hence the reason for the blog!
 
-Additionally, it appears that stying is a little weird on iOS on certain pages. Improving the CSS for cross-browser use is on my task list, and will ideally resolve the issues I've seen in time.
+Additionally, it appears that styling is a little weird on iOS on certain pages. Improving the CSS for cross-browser use is on my task list, and will ideally resolve the issues I've seen in time.
 
 More bleeding-edge tasks can be found [on my Tasks page](https://maxlepper.gitlab.io/learning-log/todo/#improvements).

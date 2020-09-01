@@ -37,6 +37,13 @@ I believe **information** - the factual kind - sits quietly and immediately behi
 
 There are more major resources, such as social connections (peer learning is a fantastic process), and I only briefly touched on socioeconomic imbalances (which heavily skew everything), but I want to stop here to focus, from a neutral perspective, on the immediate internal decision-making and planning process.
 
+To summarize, our **Four Key Resources** are:
+{: #key-resources}
+1. Time
+2. Health
+3. Money
+4. Information
+
 So, we've established our resources, but what is our objective, and what is the course of action to get there?
 
 ### Objectives and Actions
