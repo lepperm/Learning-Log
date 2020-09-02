@@ -26,8 +26,8 @@ progressionEntries:
     datecomp: 8/18/2020
     datelink: 
   - 
-    id: 2
-    status: UN
+    id: 3
+    status: NS
     name: Wes Bos's Mastering Markdown
     item: https://masteringmarkdown.com/
     type: Course

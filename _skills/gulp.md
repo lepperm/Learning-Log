@@ -6,8 +6,8 @@ mainsite: https://gulpjs.com/
 category: Task Runner
 progressionEntries: 
   - 
-    id: 
-    status: IP
+    id: 1
+    status: NS
     name: Gulp.js Quick Start
     item: https://gulpjs.com/docs/en/getting-started/quick-start
     type: Official Docs
@@ -16,7 +16,7 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 
+    id: 2
     status: NS
     name: Automate Your Tasks Easily with Gulp.js
     item: https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js

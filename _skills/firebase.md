@@ -17,7 +17,7 @@ progressionEntries:
     datelink: 
   - 
     id: 2
-    status: IP
+    status: NS
     name: Easily add sign-in to your Web app with FirebaseUI
     item: https://firebase.google.com/docs/auth/web/firebaseui
     type: Official Docs
@@ -27,7 +27,7 @@ progressionEntries:
     datelink: 
   - 
     id: 3
-    status: UN
+    status: NS
     name: Authenticate with Firebase Anonymously Using JavaScript
     item: https://firebase.google.com/docs/auth/web/anonymous-auth
     type: Official Docs

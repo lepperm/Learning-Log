@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Accessibility Training and AGWSU Merge",
+      "tags"       : "accessibility",
+      "skills"     : "react, css, html, accessibility",
+      "excerpt"    : "Starting on FCC&#39;s Applied Accessibility Challenges and completing the user registration feature merge request for AGWSU",
+      "url"        : "/learning-log/journal/2020/09/01/accessibility-training-and-agwsu-merge.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-01 23:46:31 -0400",
+      "date"       : "Sep 1, 2020",
+      "timespent"  : "130",
+      "words"      : "849",
+      "references" : "https://www.freecodecamp.org/learn, https://www.w3.org/WAI/standards-guidelines/wcag/, https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/merge_requests/11",
+      "sleep"      : "380",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Applied Visual Design and New Stats",
       "tags"       : "css",
       "skills"     : "css, html",
