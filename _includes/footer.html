@@ -1,3 +1,9 @@
+{% comment %}
+  Minima (where the following code is sourced from), is shared under the
+  MIT License, https://github.com/jekyll/minima/blob/master/LICENSE.txt
+  Any alterations to Minima source code is re-shared under the MIT License
+{% endcomment %}
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
@@ -24,17 +30,22 @@
       {%- endif %}
       </div>
       <div class="footer-col">
-        <p style="float: right;">{{ site.description | escape }}</p>
-        <div>
-          <a href="https://gitlab.com/maxlepper/learning-log" rel="noopener noreferrer" target="_blank" style="float: right;">
-            <img alt="Pipeline badge" aria-hidden="" src="https://gitlab.com/maxlepper/learning-log/badges/master/pipeline.svg">
-          </a>
-        </div>
+        <p class="feed-subscribe">{{ site.description | escape }}</p>
+        <ul class="contact-list">
+          <li>
+            <a class="u-email" href="https://gitlab.com/maxlepper/learning-log" rel="noopener noreferrer" target="_blank">
+              <img alt="Pipeline badge" aria-hidden="" src="https://gitlab.com/maxlepper/learning-log/badges/master/pipeline.svg">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-
     <div class="social-links">
       {%- include social.html -%}
+    </div>
+    <br>
+    <div class="social-links" style="text-align:center;">
+      Made with ❤ Max Lepper 2020
     </div>
 
   </div>

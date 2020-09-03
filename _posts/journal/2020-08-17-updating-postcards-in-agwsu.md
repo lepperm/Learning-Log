@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [react]
-excerpt: Back into React with pair-programming for AGWSU, and project maintenance and schedule tasks
+excerpt: Back into React with pair-programming for AGWSU, and project maintenance and schedule tasks.
 references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"]
 skills: [react, agile-pm, gitlab-ci]
 timespent: 395

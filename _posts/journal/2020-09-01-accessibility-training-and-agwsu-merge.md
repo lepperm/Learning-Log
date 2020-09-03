@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [accessibility]
-excerpt: Starting on FCC's Applied Accessibility Challenges and completing the user registration feature merge request for AGWSU
+excerpt: Starting on FCC's Applied Accessibility Challenges and completing the user registration feature merge request for AGWSU.
 references: ["https://www.freecodecamp.org/learn","https://www.w3.org/WAI/standards-guidelines/wcag/","https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/merge_requests/11"]
 skills: [react, css, html, accessibility]
 timespent: 130

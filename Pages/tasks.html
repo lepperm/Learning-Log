@@ -373,7 +373,7 @@ Collect data from all skill pages
 {%- assign sleepAve = 0 -%}
 {%- assign prettySleepTime = 0 -%}
 
-{% for entry in site.data.search %}
+{% for entry in site.data.search limit:sleepAveDays %}
   {%- assign sleepVal = entry.sleep | plus:0 -%}
   {%- if sleepVal > 0 -%}
     {%- if entry.datetime != "" -%}

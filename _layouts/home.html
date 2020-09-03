@@ -10,21 +10,44 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}
+
+      {%- if site.posts.size > 0 -%}
+      {%- assign uniqCats = '' | split:',' -%}
+      {%- for post in site.posts -%}
+        {%- assign uniqCats = uniqCats | push: post.categories[0] -%}
+      {%- endfor -%}
+  
+      {%- if uniqCats.size > 1 -%}
+        {%- assign uniqCats = uniqCats | uniq -%}
+  
+        {%- if uniqCats.size > 1 -%}
+          <select name="postFilter" id="postFilter" onchange="filterPosts()">
+            <option value="all">All Posts</option>
+            {%- for uniqCat in uniqCats -%}
+              <option value="{{ uniqCat }}">{{ uniqCat | capitalize }}</option>
+            {%- endfor -%}
+          </select>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    </h2>
+
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}&nbsp;&nbsp;||&nbsp;&nbsp;{{ post.categories[0] | capitalize }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        <li data-category="{{post.categories[0]}}">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}&nbsp;&nbsp;||&nbsp;&nbsp;{{ post.categories[0] | capitalize }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
       {%- endfor -%}
     </ul>
 
@@ -32,3 +55,21 @@ layout: default
   {%- endif -%}
 
 </div>
+
+
+<script>
+  function filterPosts()  {
+    const postFilter = document.getElementById("postFilter");
+    const catVal = postFilter.options[postFilter.selectedIndex].value;
+    let posts = document.getElementsByTagName("li");
+
+    for(var i=0; i<posts.length; i++) {
+      let catName = posts[i].getAttribute('data-category');
+      posts[i].removeAttribute("hidden");
+
+      if(catName != catVal && catVal != "all") {
+        posts[i].setAttribute("hidden", "true");
+      }
+    }
+  }
+</script>

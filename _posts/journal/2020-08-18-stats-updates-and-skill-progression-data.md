@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [sass, markdown]
-excerpt: Powering up my Stats pie chart, improving my CSS, and pulling in progression and course data to my skill collection entries
+excerpt: Powering up my Stats pie chart, improving my CSS, and pulling in progression and course data to my skill collection entries.
 references: ["https://sass-lang.com/documentation/variables", "http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html","https://materialdesignicons.com/"]
 skills: [sass, liquid, javascript, markdown]
 timespent: 275

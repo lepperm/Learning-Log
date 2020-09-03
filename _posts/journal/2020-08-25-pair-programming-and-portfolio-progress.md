@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [react]
-excerpt: Pair programming with Neal on AGWSU and getting back into working on my portfolio
+excerpt: Pair programming with Neal on AGWSU and getting back into working on my portfolio.
 references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"]
 skills: [react, redux, firebase, material-ui]
 timespent: 290

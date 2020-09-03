@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [git]
-excerpt: Working on Git, making Skill table improvements, and some general housecleaning
+excerpt: Working on Git, making Skill table improvements, and some general housecleaning.
 references: ["https://learngitbranching.js.org/"]
 skills: [git, javascript, html]
 timespent: 300

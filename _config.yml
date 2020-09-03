@@ -26,7 +26,7 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
   Max Lepper's Web Development Skill Journal
 baseurl: "/learning-log" # the subpath of your site, e.g. /blog
-url: "https://maxlepper.gitlab.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://maxlepper.gitlab.io" # the base hostname & protocol for your site, e.g. http://example.com
 # permalink: /:slugified_categories/:year/:month/:day/:title
 show_excerpts: true
 google_analytics: UA-174987278-1

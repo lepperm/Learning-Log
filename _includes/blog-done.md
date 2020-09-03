@@ -1,3 +1,6 @@
+**Landing Page**
+- [x] Allow for optional sorting of landing page by post categories
+
 **Data Generation**
 - [x] Add an improvements to-do section with collapsible task archives
 
@@ -18,5 +21,5 @@
 - [x] Generate a task to take time to rest and get to bed early if my average sleep over X days is under a target value
 - [x] Make Learning Item lists collapsible, truncate list?
 
-Logging of improvements started 8/22/2020.  
-Last updated 8/31/2020.
+Logging of improvements started 08/22/2020.  
+Last updated 09/02/2020.

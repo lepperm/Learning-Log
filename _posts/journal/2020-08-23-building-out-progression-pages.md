@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [git]
-excerpt: More progress on Git learning and migrating learning items into skills
+excerpt: More progress on Git learning and migrating learning items into skills.
 references: ["https://learngitbranching.js.org/"]
 skills: [git, liquid]
 timespent: 235

@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]
-excerpt: Practice with Liquid, adding social media buttons, time to read
+excerpt: Practice with Liquid, adding social media buttons, time to read.
 references: ["https://devhints.io/jekyll", "https://shopify.github.io/liquid/", "https://jekyllcodex.org/without-plugins/", "https://www.sureoak.com/seo-tools"]
 skills: [jekyll, liquid, seo]
 timespent: 220

@@ -6,7 +6,7 @@ published: true
 author: Max Lepper
 categories: [journal]
 tags: [css]
-excerpt: Exploring a quote, some Stat page updates, and completing the next section on FreeCodeCamp
+excerpt: Exploring a quote, some Stat page updates, and completing the next section on FreeCodeCamp.
 references: ["https://www.freecodecamp.org/learn","https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory"]
 skills: [css, html]
 timespent: 325
