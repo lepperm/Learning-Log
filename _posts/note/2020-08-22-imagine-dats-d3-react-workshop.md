@@ -4,7 +4,7 @@ title: "Imagine.Dat's D3 + React Workshop"
 date: 2020-08-22 13:15:28 -0400
 published: true
 author: Max Lepper
-categories: [notes]
+categories: [note]
 tags: [d3]
 excerpt: My personal notes and next learning steps from attending an online D3 + React workshop.
 references: ["https://github.com/imagine-dat/d3-react-tutorial","https://github.com/imagine-dat/d3-react-advanced","http://renestep.com/","https://www.milufranz.com/","https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110","https://codepen.io/ren_estep/pen/eYJwJQr","https://dev.to/milu_franz"]

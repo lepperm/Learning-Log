@@ -22,10 +22,11 @@ layout: default
         {%- assign uniqCats = uniqCats | uniq -%}
   
         {%- if uniqCats.size > 1 -%}
-          <select name="postFilter" id="postFilter" onchange="filterPosts()">
+          <span id="sr-postFilter" class="sr-only">Filter shown posts:</span>
+          <select name="postFilter" id="postFilter" onchange="filterPosts()" aria-labelledby="sr-postFilter">
             <option value="all">All Posts</option>
             {%- for uniqCat in uniqCats -%}
-              <option value="{{ uniqCat }}">{{ uniqCat | capitalize }}</option>
+              <option value="{{ uniqCat }}">{{ uniqCat | capitalize }}s</option>
             {%- endfor -%}
           </select>
         {%- endif -%}
@@ -65,10 +66,13 @@ layout: default
 
     for(var i=0; i<posts.length; i++) {
       let catName = posts[i].getAttribute('data-category');
-      posts[i].removeAttribute("hidden");
+      console.log(catName);
+      if(catName != null){
+        posts[i].removeAttribute("hidden");
 
-      if(catName != catVal && catVal != "all") {
-        posts[i].setAttribute("hidden", "true");
+        if(catName != catVal && catVal != "all") {
+          posts[i].setAttribute("hidden", "true");
+        }
       }
     }
   }

@@ -236,6 +236,27 @@ Actual data output to the page
   {%- include min-to-time.html timeVal=aveAbsDayTime verbose=true -%}
 {%- endcapture -%}
 
+{%- assign estWeekends = startToCurrentD | times: 1.0 | divided_by: 7.0 -%}
+<script>console.log("{{estWeekends}}");</script>
+{%- assign estWeekendDays = estWeekends | times: 2.0 | round -%}
+<script>console.log("{{estWeekendDays}}");</script>
+{%- assign workweekD = startToCurrentD | minus: estWeekendDays -%}
+<script>console.log("{{workweekD}}");</script>
+
+{%- assign aveWorkWeekTime = timeSum | divided_by: workweekD -%}
+<script>console.log("{{aveWorkWeekTime}}");</script>
+{%- assign aveEquivWWTime = aveWorkWeekTime | times: 5 -%}
+<script>console.log("{{aveEquivWWTime}}");</script>
+{%- assign hrRound = aveEquivWWTime | modulo: 60 -%}
+<script>console.log("{{hrRound}}");</script>
+{%- assign aveEquivWWTime = aveEquivWWTime | minus: hrRound -%}
+<script>console.log("{{aveEquivWWTime}}");</script>
+{%- assign aveEquivWWHrs = aveEquivWWTime | divided_by: 60 -%}
+<script>console.log("{{aveEquivWWHrs}}");</script>
+
+{%- assign partTime = 1200 -%}
+{%- assign fullTime = 2400 -%}
+
 <ul>
   <li>
     <b>{{ prettyTotalTime }}</b> has been logged to skill development to date
@@ -244,7 +265,19 @@ Actual data output to the page
     That's an average of <b>{{ prettyEntryTime }} per log</b> across {{ uniqDayEntries }} logs
   </li>
   <li>
-    In the {{ startToCurrentD }} days from the very first log to the most recent, that's an average of <b>{{ prettyAbsDayTime }} per log</b>.
+    In the {{ startToCurrentD }} days from the very first log to the most recent, that's an average of <b>{{ prettyAbsDayTime }}</b> per day, 7-days a week.
+  </li>
+  <li>
+    This is the average equivalent of working a second job doing <b>{{ aveEquivWWHrs }}-hour weeks</b>
+    {%- if aveEquivWWTime > partTime -%}
+      {%- if aveEquivWWTime > fullTime -%}
+        , full-time!
+      {%- else -%}
+        , part-time!
+      {%- endif -%}
+    {%- else -%}
+      .
+    {%- endif -%}
   </li>
 </ul>
 

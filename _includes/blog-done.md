@@ -15,6 +15,7 @@
 - [x] Average log time
   - [x] total time / total # of logs
   - [x] total time / total # of days between date range
+- [x] Represent my 7-day average values as an equivalent job work week, how close to a full-time learner am I?
 
 **Tasks**
 - [x] Tasks to include the task item type as part of the shorthand task description
@@ -22,4 +23,4 @@
 - [x] Make Learning Item lists collapsible, truncate list?
 
 Logging of improvements started 08/22/2020.  
-Last updated 09/02/2020.
+Last updated 09/03/2020.

@@ -35,6 +35,16 @@ progressionEntries:
     relprojlink: 
     datecomp: 
     datelink: 
+  - 
+    id: 4
+    status: NS
+    name: How to Scrub Sensitive Information from Git
+    item: https://seesparkbox.com/foundry/remove_file_from_git_history_with_git_filter-branch
+    type: Blog
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
 resources: 
   - 
     refname: Resources to learn Git

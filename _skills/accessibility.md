@@ -7,13 +7,13 @@ category: Accessibility
 progressionEntries:
   - 
     id: 1
-    status: IP
+    status: OK
     name: Applied Accessibility Challenges (FCC)
     item: https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/
     type: Course
     relproj:
     relprojlink:
-    datecomp:
+    datecomp: 9/3/20
     datelink:
 resources:
   - 
@@ -37,6 +37,38 @@ Tag names alone can indicate the type of information it contains, which adds sem
 - **header**, **nav**, **footer**
   - Landmark tags (similar to `main`) for content repeated across pages
   - If the `footer` contains navigation tags, it is not necessary to also wrap those tags in `nav`
+
+### Contrast
+
+WCAG recommends at least a 4.5:1 contrast ratio for normal text. This applies both to greyscale and color combinations.
+
+The contrast ratio is calculated by comparing the relative luminance values of two colors. This ranges from 1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast.
+
+The most common form of colorblindness is a reduced sensitivity to detect greens.
+
+There are many tools available to compare the contrast between elements. Some online color picking tools also include visual simulations of how colors appear for different types of colorblindness.
+
+### Access Keys
+
+The `accesskey` attribute can specify a shortcut key to activate or bring focus to an element, making navigation more efficient for keyboard-only users. HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones.
+
+`<button accesskey="b">Important Button</button>`
+
+### Tab Index
+
+The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus. When it's on a tag, it indicates that element can be focused on. The value (an integer that's positive, negative, or zero) determines the behavior.
+
+Certain elements, such as links and form controls, automatically receive keyboard focus when a user tabs through a page in the same order as the elements in the HTML source markup. This same functionality can be given to other elements, such as `div`, `span`, and `p`, by placing a `tabindex="0"` attribute on them. For example:
+
+`<div tabindex="0">I need keyboard focus!</div>`
+
+When the value of the attribute is set to a positive number of 1 or higher, the `tabindex` attribute specifies the exact tab order of elements.
+
+`tabindex="1"` will bring keyboard focus to that element first. Then it cycles through the sequence of specified `tabindex` values (2, 3, etc.), before moving to default and `tabindex="0"` items. Take caution, however, as explicitly modifying the index sequence may confuse users if the tab sequence does not follow an expected pattern, such as top to bottom.
+
+A negative `tabindex` value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This is generally used to bring focus to content programmatically (like when a `div` used for a pop-up window is activated).
+
+Using `tabindex` also enables the CSS pseudo-class `:focus` to work on normally non-focusable elements.
 
 ### Headings
 

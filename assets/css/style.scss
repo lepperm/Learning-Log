@@ -59,6 +59,16 @@ select:hover, select:focus {
   border: 2px solid $interactive-hover;
 }
 
+/* Class for screen reader elements */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
 /* Skills table */
 .nullAnchor{
   color: inherit;
