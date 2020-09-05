@@ -16,7 +16,7 @@ workout:
 
 ## Journal
 
-Right off the bat, I started over going through my skills data. The JSON was valid, and I could see the data with an "inspect" filter. I slowly iterated on accessing the data through index calls, console.logs, and inspects in little steps. Not even 5 minutes in...it just worked, and I felt kind of silly. I was trying to do far too much, and breaking the data in the process. In the end, it really was as simple as everyone made it look:
+Right off the bat, I started over going through my skills data. The JSON was valid, and I could see the data with an `inspect` filter. I slowly iterated on accessing the data through index calls, console.logs, and inspects in little steps. Not even 5 minutes in...it just worked, and I felt kind of silly. I was trying to do far too much, and breaking the data in the process. In the end, it really was as simple as everyone made it look:
 
 ```
 // %s redacted for accurate code
@@ -27,7 +27,7 @@ Right off the bat, I started over going through my skills data. The JSON was val
 
 Live and learn, right? The good news is that I now have incredibly simple access to all kinds of data. I went ahead and made each skill name in the table a hidden anchor so that I can redirect skill links from journal pages to the skill table entry. Regarding moving the data files around, I finally created a [Stack Overflow account]({{page.references[5]}}) and posted my [first question]({{page.references[6]}}). My concern is that this may cause me CI issues, or certainly at least be something that I forget to do occasionally.
 
-Watching the console log on my live site, I noticed a 503 error related to GitLab that would appear on every refresh in every page. I assume this has something to do with access permissions, but since my repo is set to Public and the most open visibility option is "Everyone with Access," I'm not sure how I could make it more open than it already is. I made a comment in the GitLab chat. If I don't hear anything, then I may move forward with opening a ticket, but I am also not sure if it's anything to worry about.
+Watching the console log on my live site, I noticed a `503` error related to GitLab that would appear on every refresh in every page. I assume this has something to do with access permissions, but since my repo is set to Public and the most open visibility option is "Everyone with Access," I'm not sure how I could make it more open than it already is. I made a comment in the GitLab chat. If I don't hear anything, then I may move forward with opening a ticket, but I am also not sure if it's anything to worry about.
 
 To start generating site statistics, I decided to hijack the JSON object created for `jekyll-simple-search` and include a bit more data in a more flexible format. Using what I learned for the skills data, I was able to generate multiple arrays of similar data, and start generating some simple statistics. Right now, the loops are made up of repeated code, so I will need to find a way to make it more reusable. There seem to be a few different types of json array patterns I have been running into with Liquid, so I may possibly try to capture some of those as includes. I assume it would probably take an `include` statement wrapped in a `capture`...this might need some experimenting!
 

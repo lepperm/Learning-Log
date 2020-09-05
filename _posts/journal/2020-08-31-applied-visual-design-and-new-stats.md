@@ -59,6 +59,7 @@ My wife and I have some vacation coming up, and I'm concerned about arbitrarily 
 For the first issue, small updates, my current thinking is that if I haven't learned enough or done enough that I have at least something little to say about it, then I'm not sure it legitimately counts towards the purpose of "Learning Log" and should be omitted.
 
 The second issue, "new workbench" syndrome, is a term I've encountered through an interest in woodworking. It's for when you've just spent a lot of time and effort into building something important, like a new workbench, but it's so new and unmarred that you hesitate to actually use it for the intended purpose. People will take a chisel and make a big gash in their shiny new workbench to break this feeling and start using it without holding back. Maybe a few days of much-needed vacation will be a nice chisel in my log streak.
+{: #new-workbench}
 
 I already have logic in place to capture my anti-streak, and then I will actually be using the streak mechanic as intended. It will probably feel less bad if I legit need to miss a day, afterwards. I know that logs and dates could be manipulated to keep the streak going, if I really wanted, but I would only be cheating myself, and I don't think that literally anyone else will care.
 

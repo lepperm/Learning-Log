@@ -59,7 +59,7 @@ From personal experience, it's easy to slowly and poorly commit to a course of a
 
 To shift from theory to the specifics of Learning Log, my **action** is to log and prioritize my development learning and notes for the **objective** of obtaining employment in a new career field.
 
-This objective has a somewhat nebulous external time limit, as there have been mentions of layoffs at work. Additionally, the sooner the objective is achieved, the sooner my personal learning efforts will be aligned with my career, and I can spend an exponential amount of time learning the material and developing my skills.
+This objective has a nebulous external time limit. Additionally, the sooner the objective is achieved, the sooner my personal learning efforts will be aligned with my career, and I can spend an exponential amount of time learning the material and developing my skills.
 
 (For the record, web learning has also been for personal enjoyment and self-actualization, but that's a difficult target to measure and therefore more of a bonus in the context of this discussion.)
 
@@ -72,9 +72,9 @@ As time is my most valuable resource, the biggest risk to successfully achieving
 
 Yes, I did.
 
-**However**, I spent 2 months working on React/Redux/Firebase prior to that, but did not have a good process for capturing and reinforcing information, and wasn't yet able to easily identify low-quality information. I picked up some fundamentals, made some sites, completed some tutorials, and got over some fears and hang-ups, sure, but I found myself struggling with recalling the basics due to learning many different things across various levels of complexity. On top of this, I was learning all new frameworks, IDEs, languages, and hardware profiles at my day job in industrial electronic controls development, so it was whiplash slamming my mental gears back and forth every day and night. It got to a point where I was wondering if I had actually learned anything at all.
+**However**, I spent 2 months working on React/Redux/Firebase prior to that, but did not have a good process for capturing and reinforcing information, and wasn't yet able to easily identify low-quality information. I picked up some fundamentals, made some sites, completed some tutorials, and got over some fears and hang-ups, sure, but I found myself struggling with recalling the basics due to learning many different things across various levels of complexity. Additionally, I was learning all new frameworks, IDEs, and hardware profiles at my day job in industrial electronic controls development, so it was whiplash slamming my mental gears back and forth every day and night. It got to a point where I was wondering if I had actually learned anything at all.
 
-In hindsight, I had learned quite a bit on the technical side, but I mostly got a better understanding for what it would take to ultimately be successful, and if I could handle it. It took a while to get Learning Log up and running, but now it largely runs itself, and all I really need to do is write posts and log my time. Looking at my skill progression entries and my site statistics fills me with confidence and encouragement that, _yes_, I **AM** making progress, I am learning and growing, and that I can do this. Now when I work on AGWSU and my Portfolio, I know that I can contribute and do quality work. When I work on a tutorial or read through documentation or watch a conference, I know that I am following my current best understanding of what I should do to develop my understanding of the skills in question skills.
+In hindsight, I _had_ learned quite a bit on the technical side, and I had also gained a better understanding for what it would take to ultimately be successful, and if I could handle it. It took a while to get Learning Log up and running, but now it largely runs itself, and all I really need to do is write posts and log my time. Looking at my skill progression entries and my site statistics fills me with confidence and encouragement that, _yes_, I **AM** making progress, I am learning and growing, and that I can do this. Now when I work on AGWSU and my Portfolio, I know that I can contribute and do quality work, and that I can select higher quality information when I get stuck. When I work on a tutorial or read through documentation or watch a conference, I know that I am following my current best understanding of what I should do to develop my understanding of the skills in question skills.
 {% endcapture %}
 
 <div id="call-out" hidden=true>
@@ -127,6 +127,10 @@ Incorrect prioritization when learning a new subject is, arguably, one of the hi
 
 ##### Risk Mitigation Plan
 
+Referring back to "information begets information," there will be some nearly unavoidable discovery period when learning a new skill. If there is a central source of verified information (main site, high-quality wiki, etc), that's an excellent place to start. In lieu of that, or perhaps in addition to it, I find that trying to read just about anything you can come across relating to the specific topic is helpful to at least expose yourself to the terminology, and maybe some general concepts. From there, you can use the terminology and concepts to seek out more detailed explanations.
+
+Additionally, try to make connections with people in the skill that you are trying to learn. If they can use their experience to recommend resources that helped them when they were starting, or help steer you or answer questions, then that is an excellent boost!
+
 I am very fortunate in that many of my friends are already developers, so I have access to many great connections to ask questions and for help. Discussions with my friends have helped to guide me towards skills that are currently in demand, where to get started, and what tools to use.
 
 Determining high-quality learning content, however, has been a learning experience. I have discovered and had some great resources referred to me, but I have also organically encountered information that was either low quality, or too complex (out of sequence) to impart helpful information. Determining sequence is currently my next challenge with this site, as I have amassed a collection of resources that seem to be regarded as high-quality learning materials among other learners, and I need to sort and order them in a sequence that will allow for efficient skill progression. A properly sequenced learning item list will also make my Skills table progression value a more direct representation of my approximate familiarity with core skills.
@@ -157,6 +161,8 @@ Information comprehension and retention is an ongoing resource management strugg
 
 ##### Risk Mitigation Plan
 
+Learning is so much more than just a mental activity. Your brain needs time to process new information in a diffused mode, resources to work at full capacity, repetition to strengthen memories of new content, and patience. It seems counter-intuitive that taking a break and going to bed on time can help you learn something you're focusing on.
+
 I struggled with this for the first few months. I was taking on more than I could handle, and spending every free minute trying to absorb and expose myself to as much information as possible. I knew better, but with a looming and ambiguous deadline, I wanted to immerse myself as much as possible - let's call this a "mistake of ambition." I burnt out twice trying to find a good and sustainable cadence, and you can see this reflected in my GitLab activity chart:
 
 {% capture image %}
@@ -170,6 +176,8 @@ Dr. Barbara Oakley's [Learning How To Learn](https://www.coursera.org/learn/lear
 
 This Learning Log site has also helped me to focus in more tasks. I've mentioned in previous logs that I was trying to migrate board tasks out of my Todoist account, and I have similarly made an effort to create issues in GitLab for other projects instead of tasks. This helps to keep me more focused in the mode of work I'm operating within, rather than changing levels of focus and not being as productive as possible. I have also given up multiple monitors for a single large monitor, which allows me to fill my workspace with only what I'm working on and nothing extra, helping me to focus in without notifications popping up on a second screen.
 
+Cultivating an effective ritual for learning and reinforcement which is sustainable for the long-term is, essentially, an exercise in general self-care and personal health.
+
 ### Conclusion
 
-I'm sure there's a tidy, Bayesian way to model the expected value of courses of actions given my current information, which is something I would like to practice more. In lieu of performing the math explicitly, I hope that I have been able to demonstrate my thought process and how I seek to tackle complicated tasks with limited resources. The balance of time, health, money, and gathering information is delicate and fluctuating, but by learning what you can and identifying risks, ambitious actions can help you to chase the dreams you have always wanted to follow.
+I'm sure there's a tidy, Bayesian way to model the expected value of courses of actions given my current information, which may be an exploration for a future post. I hope that I have been able to demonstrate my thought process and how I seek to tackle complicated tasks with limited resources. The balance of time, health, money, and gathering information is delicate and fluctuating, but by learning what you can, and identifying risks, ambitious actions can enable you to chase the dreams you have always wanted to follow.

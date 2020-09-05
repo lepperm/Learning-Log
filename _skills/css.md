@@ -70,3 +70,179 @@ resources:
     refname: 
     reflink: 
 ---
+
+### Media Queries
+
+Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.
+
+The general syntax is:
+
+```css
+@media ( conditions ) {
+  elem {
+    styles: here;
+  }
+}
+```
+
+### Responsive Units
+
+Viewport units are relative to the viewport dimensions, and percentages are relative to the parent container element.
+
+- vw (viewport width)
+  - 10vw would be 10% of the viewport's width.
+- vh (viewport height)
+  - 3vh would be 3% of the viewport's height.
+- vmin (viewport minimum)
+  - 70vmin would be 70% of the viewport's smaller dimension (height or width).
+- vmax (viewport maximum)
+  - 100vmax would be 100% of the viewport's bigger dimension (height or width).
+
+### Responsive Images
+
+Consider the following properties:
+
+```css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+These rules ensure that an `img` is never wider than the parent container, and automatically adjusts the height to maintain the original aspect ratio.
+
+### Retina Displays
+
+With certain displays, most noticeably with Apple devices, the high-resolution display can make images appear pixelated. According to FreeCodeCamp, this can be counteracted by displaying images at half the resolution of their source image, like so:
+
+```css
+<style>
+  img { height: 250px; width: 250px; }
+</style>
+<img src="coolPic500x500" alt="A most excellent picture">
+```
+
+### Flexbox
+
+An element can be turned into a flex container with:
+`display: flex;`
+
+A flex container allows you to adjust and control the flow of child elements within the container.
+
+For a graphical representation of [flex terms and directions, click here](https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg).
+
+#### `flex-direction`
+
+- `row` - horizontally aligned children
+- `column` - vertically aligned children
+- `row-reverse` - same as `row`, but elements are arranged in the opposite order of the HTML flow
+- `column-reverse` - same as `column`, but elements are arranged in the opposite order of the HTML flow
+
+#### `order`
+
+For fine adjustment of element order in a flex container, you can explicitly set the sequence with a numerical value (positive or negative) using `order`.
+
+#### `justify-content`
+
+`justify-content` is how we specify how the flex container will space out and align the items within.
+
+`center`
+- The most common, aligns all items to the center of the flex container
+
+`flex-start`
+- Pushes all items to the left (if row direction) or top (if column direct) of the container
+
+`flex-end`
+- Pushes all items to the right (if row direction) or bottom (if column direct) of the container
+
+`space-between`
+- Aligns the items to the center of the main axis, with extra space placed between the items, and the first and last items pushed to the edge of the container
+
+`space-around`
+- Space is distributed across all elements, with 1/2 spacing on the outside of the first and last elements
+
+`space-evenly`
+- Space is distributed across all elements, with full spacing on the outside of the first and last elements
+
+
+#### `align-items`
+
+`align-items` is similar to `justify-content`, but rather than aligning along the primary axis, `align-items` aligns to the cross axis of the flex container. This allows us to change how all of the spaced objects are ultimately arranged in the parent object.
+
+`center`
+- The most common, aligns all items to the cross-center of the flex container
+  
+`flex-start`
+- Pushes all items to the top (if row direction) or left (if column direct) of the container
+  
+`flex-end`
+- Pushes all items to the bottom (if row direction) or right (if column direct) of the container
+  
+`stretch`
+- Stretches all of the items to fill the flex container
+
+`baseline`
+- Aligns all items to their baselines, similar to the line that letters sit on
+
+#### `align-self`
+
+`align-self` allows you to adjust an item's alignment individually, instead of setting all elements at once. This is useful since other common adjustment techniques using the CSS properties `float`, `clear`, and `vertical-align` do not work on flex items.
+
+`align-self` accepts the same values as `align-items` and will override any value set by the `align-items` property.
+
+#### `flex-wrap`
+
+`flex-wrap` can be used to control how elements scale and arrange as they fill their container.
+
+`nowrap`
+- Default, items do not wrap
+
+`wrap`
+- Child elements will wrap left-to-right if in a row or top-to-bottom if in a column
+
+`wrap-reverse`
+- Child elements will wrap right-to-left if in a row or bottom-to-top if in a column
+
+#### Grow and Shrink
+
+`flex-shrink` is used to control how elements shrink when the flex container is smaller than the combined widths of all the flex elements within it.
+
+Values for `flex-shrink` are specified as numbers relative to other child elements in the same flex container. The higher the number, the more the element shrinks (multiplicative).
+
+`flex-grow` is the opposite of `flex-shrink`, and is used to control how children grow when the parent container expands. It is similarly set with a number value.
+
+`flex-basis` specifies the initial size of the item before CSS makes adjustments via `flex-grow` or `flex-shrink`. The units for this parameter are similar to other size properties - `px`, `em`, `%`, `auto`, etc.
+
+This has quickly become a somewhat long list of properties to specify. To make things more manageable, there is a shorthand property available to set multiple values at once: `flex`!
+
+The format is as follows:
+`flex: (grow) (shrink) (basis);`
+
+### Grid
+
+An element can be turned into a grid container with:
+`display: grid;`
+
+To make use of this grid container, you have to specify a structure. with `grid-template-columns`. For example, to make a grid of three 50px wide columns, you would use:
+
+`grid-template-columns: 50px 50px 50px;`
+
+You can do the same for rows using `grid-template-rows`.
+
+Either absolute or relative units can be used to define the size of rows and columns. Some options include:
+
+`fr`
+- Sets the column or row to a fraction of the available space,
+
+`auto`
+- Sets the column or row to the width or height of its content automatically,
+
+`%`
+- Adjusts the column or row to the percent width of its container.
+
+These can be used in any combination:
+
+`grid-template-columns: auto 50px 10% 2fr 1fr;`
+
+The above snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
+

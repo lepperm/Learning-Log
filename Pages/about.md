@@ -4,15 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Learning Log is my web development education hub, where I chronicle my progression and skill acquisition.
+Learning Log is my web development education hub, where I chronicle my progression and skill acquisition, starting as a newbie.
 
 Here, you can find:
-- Logs of my daily learning activities and insight into my problem-solving process
 - An overview of skills I am working to develop
 - My progress towards mastering skills and the resources being used to get there
-- Blog posts covering a variety of topics
 - Statistics for my skill development and this site
 - A dynamically generated list of tasks that I am using to guide my learning
+- Logs of my daily learning activities and insight into my problem-solving process
+- Blog posts covering a variety of topics
 
 You can find the source code for this site on GitLab:  
 [Learning Log - GitLab](https://gitlab.com/maxlepper/learning-log)
