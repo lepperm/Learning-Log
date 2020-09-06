@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Sprint Ceremonies and Finishing Features",
+      "tags"       : "agile-pm",
+      "skills"     : "agile-pm",
+      "excerpt"    : "Neal and I meet to sync up on the AGWSU project, wrapping up sprint 6 and moving forward with projections for sprint 7, and the timeline beyond.",
+      "url"        : "/learning-log/journal/2020/09/05/sprint-ceremonies-and-finishing-features.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-05 14:51:21 -0400",
+      "date"       : "Sep 5, 2020",
+      "timespent"  : "140",
+      "words"      : "462",
+      "references" : "https://agwsu.org/, https://www.linkedin.com/in/nealstrobl/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/92, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/93",
+      "sleep"      : "485",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Irregular Coffee, CI/CD Limits, and Blogging Quality",
       "tags"       : "css",
       "skills"     : "css",
@@ -9,7 +24,7 @@
       "datetime"   : "2020-09-04 23:57:33 -0400",
       "date"       : "Sep 4, 2020",
       "timespent"  : "140",
-      "words"      : "913",
+      "words"      : "912",
       "references" : "https://www.freecodecamp.org/learn, https://agwsu.org/, https://www.cybercoders.com/insights/why-programmers-should-be-blogging/",
       "sleep"      : "375",
       "workout"    : ""
@@ -24,8 +39,8 @@
       "datetime"   : "2020-09-03 23:20:48 -0400",
       "date"       : "Sep 3, 2020",
       "timespent"  : "245",
-      "words"      : "1171",
-      "references" : "https://www.freecodecamp.org/learn, https://leansmarts.com/summary-2-second-lean/, https://search.google.com/search-console/about, www.linkedin.com/in/davidebest, https://seesparkbox.com/, https://agwsu.org/, https://www.linkedin.com/in/nealstrobl/, http://www.davidmacd.com/blog/select-box-label.html, https://www.twitch.tv/happydevelopment, http://nicolasgallagher.com/git-checkout-specific-files-from-another-branch/",
+      "words"      : "1172",
+      "references" : "https://www.freecodecamp.org/learn, https://leansmarts.com/summary-2-second-lean/, https://search.google.com/search-console/about, https://www.linkedin.com/in/davidebest, https://seesparkbox.com/, https://agwsu.org/, https://www.linkedin.com/in/nealstrobl/, http://www.davidmacd.com/blog/select-box-label.html, https://www.twitch.tv/happydevelopment, http://nicolasgallagher.com/git-checkout-specific-files-from-another-branch/",
       "sleep"      : "440",
       "workout"    : ""
     },{
@@ -39,7 +54,7 @@
       "datetime"   : "2020-09-02 22:35:29 -0400",
       "date"       : "Sep 2, 2020",
       "timespent"  : "200",
-      "words"      : "973",
+      "words"      : "1012",
       "references" : "https://www.freecodecamp.org/learn, https://search.google.com/search-console/about, https://marketingplatform.google.com/about/analytics/, https://stackoverflow.com/questions/10161177/url-with-multiple-forward-slashes-does-it-break-anything",
       "sleep"      : "295",
       "workout"    : ""
@@ -54,7 +69,7 @@
       "datetime"   : "2020-09-01 23:46:31 -0400",
       "date"       : "Sep 1, 2020",
       "timespent"  : "130",
-      "words"      : "849",
+      "words"      : "848",
       "references" : "https://www.freecodecamp.org/learn, https://www.w3.org/WAI/standards-guidelines/wcag/, https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/merge_requests/11",
       "sleep"      : "380",
       "workout"    : ""
@@ -69,7 +84,7 @@
       "datetime"   : "2020-08-31 23:12:28 -0400",
       "date"       : "Aug 31, 2020",
       "timespent"  : "325",
-      "words"      : "1352",
+      "words"      : "1351",
       "references" : "https://www.freecodecamp.org/learn, https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory",
       "sleep"      : "400",
       "workout"    : ""
@@ -99,7 +114,7 @@
       "datetime"   : "2020-08-30 13:47:08 -0400",
       "date"       : "Aug 30, 2020",
       "timespent"  : "160",
-      "words"      : "909",
+      "words"      : "918",
       "references" : "https://stackoverflow.com/questions/33561272/task-runners-gulp-grunt-etc-and-bundlers-webpack-browserify-why-use-toge/33574602#33574602, https://survivejs.com/webpack/appendices/comparison/, https://css-tricks.com/using-webp-images/#using-webp-in-html, https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better, https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9, https://www.npmjs.com/package/fuse-box, https://github.com/ericgrosse/task-runner-bundler-comparison, https://stackoverflow.com/questions/48395804/where-is-create-react-app-webpack-config-and-files",
       "sleep"      : "375",
       "workout"    : ""
@@ -114,7 +129,7 @@
       "datetime"   : "2020-08-29 23:58:31 -0400",
       "date"       : "Aug 29, 2020",
       "timespent"  : "165",
-      "words"      : "395",
+      "words"      : "408",
       "references" : "",
       "sleep"      : "490",
       "workout"    : ""
@@ -129,7 +144,7 @@
       "datetime"   : "2020-08-28 23:10:57 -0400",
       "date"       : "Aug 28, 2020",
       "timespent"  : "280",
-      "words"      : "709",
+      "words"      : "718",
       "references" : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator, https://learngitbranching.js.org/, https://www.freecodecamp.org/maxlepper, https://shopify.dev/docs/themes/liquid/reference/objects/for-loops, https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week",
       "sleep"      : "310",
       "workout"    : ""
@@ -144,7 +159,7 @@
       "datetime"   : "2020-08-27 23:58:20 -0400",
       "date"       : "Aug 27, 2020",
       "timespent"  : "0",
-      "words"      : "153",
+      "words"      : "145",
       "references" : "",
       "sleep"      : "",
       "workout"    : ""
@@ -174,7 +189,7 @@
       "datetime"   : "2020-08-26 23:27:31 -0400",
       "date"       : "Aug 26, 2020",
       "timespent"  : "105",
-      "words"      : "438",
+      "words"      : "439",
       "references" : "https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/, https://tabliss.io/, https://gitlab.com/-/snippets/2009089",
       "sleep"      : "",
       "workout"    : ""
@@ -189,7 +204,7 @@
       "datetime"   : "2020-08-25 23:08:00 -0400",
       "date"       : "Aug 25, 2020",
       "timespent"  : "290",
-      "words"      : "357",
+      "words"      : "382",
       "references" : "https://agwsu.org/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79",
       "sleep"      : "",
       "workout"    : ""
@@ -204,7 +219,7 @@
       "datetime"   : "2020-08-24 22:27:41 -0400",
       "date"       : "Aug 24, 2020",
       "timespent"  : "300",
-      "words"      : "571",
+      "words"      : "576",
       "references" : "https://learngitbranching.js.org/",
       "sleep"      : "",
       "workout"    : ""
@@ -219,7 +234,7 @@
       "datetime"   : "2020-08-23 21:50:51 -0400",
       "date"       : "Aug 23, 2020",
       "timespent"  : "235",
-      "words"      : "251",
+      "words"      : "278",
       "references" : "https://learngitbranching.js.org/",
       "sleep"      : "",
       "workout"    : ""
@@ -264,7 +279,7 @@
       "datetime"   : "2020-08-21 23:46:02 -0400",
       "date"       : "Aug 21, 2020",
       "timespent"  : "460",
-      "words"      : "1070",
+      "words"      : "1071",
       "references" : "https://www.w3schools.com/howto/howto_js_sort_table.asp, http://www.javascriptkit.com/dhtmltutors/customattributes.shtml, http://alanwsmith.com/jekyll-liquid-date-formatting-examples, https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll, https://www.w3schools.com/howto/howto_css_arrows.asp, https://css-tricks.com/snippets/css/css-triangle/, https://shopify.dev/docs/themes/liquid/reference/objects/for-loops, https://shopify.github.io/liquid/basics/operators/, https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages, https://github.com/philnash/jekyll-gzip",
       "sleep"      : "",
       "workout"    : ""
@@ -279,7 +294,7 @@
       "datetime"   : "2020-08-20 23:01:42 -0400",
       "date"       : "Aug 20, 2020",
       "timespent"  : "180",
-      "words"      : "355",
+      "words"      : "337",
       "references" : "https://shopify.dev/docs/themes/liquid/reference/objects/for-loops",
       "sleep"      : "",
       "workout"    : ""
@@ -331,7 +346,7 @@
     },{
       "layout"     : "journal",
       "title"      : "Stabilizing Learning Log and Back to React",
-      "tags"       : "javascript, liquid, learning, progress",
+      "tags"       : "javascript, liquid, learning, progress, mentality",
       "skills"     : "javascript, liquid, jekyll, html, css",
       "excerpt"    : "Reflecting on the past 3 months of web development and a few last improvements for Learning Log before switching back to other projects.",
       "url"        : "/learning-log/journal/2020/08/16/stabilizing-learning-log-and-back-to-react.html",
@@ -384,7 +399,7 @@
       "datetime"   : "2020-08-14 22:37:31 -0400",
       "date"       : "Aug 14, 2020",
       "timespent"  : "330",
-      "words"      : "631",
+      "words"      : "639",
       "references" : "https://shopify.github.io/liquid/, https://jekyllrb.com/docs/liquid/filters/, https://jekyllrb.com/docs/configuration/options/, https://jekyllrb.com/docs/permalinks/, https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8",
       "sleep"      : "",
       "workout"    : ""

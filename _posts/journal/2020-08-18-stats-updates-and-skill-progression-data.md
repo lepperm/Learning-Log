@@ -24,7 +24,7 @@ Things have started getting messy in the site folder, so I added all of my root 
 
 I've never used Sass before, but started getting into it a little bit by assigning color variables in my `styles.scss` file, which builds on the Minimia dark theme defaults. The badges were updated to give a little indication on hover, and I added a configurable "scroll to target" module with a subtle hover animation.
 
-Truth be told, it has been very difficult keeping myself from going nuts with animations. I know from reading portfolio reviews on Reddit that it's substance over flashiness, and that's what I have been trying to hone in on more. Some day, however, I would really like to make something heavily animated for fun...I'll put that in the [Project Bucket]({{ site.baseurl }}/bucket-list/#projects).
+Truth be told, it has been difficult keeping myself from making lots of little animations. I know from reading portfolio reviews on Reddit that it's "substance over flashiness", and that's what I have been trying to hone in on more. Some day, however, I would really like to make something heavily animated for fun...I'll put that in the [Project Bucket]({{ site.baseurl }}/bucket-list/#projects).
 
 Finally, I worked on cleaning up the Progression layout more. I like where it is headed, but really need to start filling out the tables. I've found three excellent sources of coursework online that I would like to parse into respective sub-lists. Eventually, I would like to automatically collect up a list of all "In Progress" and "Up Next" learning items into a hidden url, where I could have a to-do list for myself ready for when I have free time.
 

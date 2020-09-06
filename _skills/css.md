@@ -1,6 +1,6 @@
 --- 
 layout: progression
-name: CSS
+name: css
 fullname: CSS
 mainsite: https://developer.mozilla.org/en-US/docs/Web/CSS
 category: Style Sheet Language
@@ -47,9 +47,19 @@ progressionEntries:
     datelink:
   - 
     id: 
-    status: NS
+    status: OK
     name: Flexboxfroggy
     item: http://flexboxfroggy.com/
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp: 9/6/20
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Grid Garden
+    item: https://codepip.com/games/grid-garden/
     type: Course
     relproj:
     relprojlink:
@@ -202,6 +212,13 @@ For fine adjustment of element order in a flex container, you can explicitly set
 
 `wrap-reverse`
 - Child elements will wrap right-to-left if in a row or bottom-to-top if in a column
+
+#### `flex-flow`
+
+`flex-wrap` and `flex-direction` are used together so frequently that you can use the single command `flex-flow` to specify both!
+
+The syntax is:
+`flex-flow: (direction) (wrap)`
 
 #### Grow and Shrink
 

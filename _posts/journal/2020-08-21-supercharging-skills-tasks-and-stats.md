@@ -28,7 +28,7 @@ Now onto the stats page. Figuring out how long it has been since the last post w
 
 Having a "streak" mechanic for daily blog posts might not be sustainable in the long run, but it may also be a good motivator to keep me blogging more when I do blog. Liquid's `forloop` was very helpful to [keep track of locations through loops]({{page.references[6]}}) and to correctly add days to streaks while capturing broken streaks. I tried to build in some conditional outputs to encourage myself to keep making posts daily, like a broken streak penalty value, and stating if I have a current streak or not.
 
-Cleaning up extra unflagged rows from displaying in skill progression pages was as simple as doing a few quick checks and wrapping the row loop in an `if` statement. I am using `status` as the primary determinating key value for all progression entries. I am not sure if this is the best decision right now, but considering this whole blog is about learning how to be a better developer, then tracking and completing learning exercises seems like it should be #1 indicator.
+Cleaning up extra unflagged rows from displaying in skill progression pages was as simple as doing a few quick checks and wrapping the row loop in an `if` statement. I am using `status` as the primary determinating key value for all progression entries. I am not sure if this is the best decision right now, but considering this whole blog is about learning how to be a better developer, then tracking and completing learning exercises seems like it should be the #1 indicator.
 
 Using the time difference calculations I worked out for my Stats pages, I replicated this to selectively display a Blog task if no post has been made within the last 24 hours. Originally, I was going to have it only appear if I still needed to make a post, but changed it to also give me an encouraging message if I have posted.
 
@@ -36,7 +36,7 @@ On the Tasks page, I wanted to keep track of any skills that still need progress
 
 Finally, Tasks needs to present learning item suggestions in a far more controlled manner. The goal is to selectively have it offer a certain number of courses, ideally from the smallest not started ID to largest, from a certain number of skills. The current method of just randomly grabbing samples isn't conducive to actually learning in a structured way.
 
-I struggled with this for a while, admittedly. I had been at things for a while already and was pretty tired, but made a goal to get things worked out before the end of the night. When taking a break for dinner, I wrote some pseudocode in line where I stopped to help myself remember my train of thought.:
+I struggled with this for a while, admittedly. I had been at things for a while already and was pretty tired, but made a goal to get things worked out before the end of the night. When taking a break for dinner, I wrote some pseudocode in line where I stopped to help myself remember my train of thought:
 
 ```javascript
 /*

@@ -30,7 +30,7 @@ Now that everything was plugged into place, we created a test user, logged into 
 
 Ta-da! The user properly populates. An email verification process is in place, as well. All that is left now is to hook up denial with a rejection message, approval, and mass approval with a confirmation modal.
 
-Switching over to my portfolio site, I made a few quick adjustments. Perhaps most importantly, the First Kommand cement mixer project was removed from portfolio in exchange for Learning Log (hooray!).
+Switching over to my portfolio site, I made a few quick adjustments. Perhaps most importantly, the First Kommand cement mixer project was removed from portfolio in exchange for Learning Log. I need to make more adjustments before this goes live, but I am looking forward to having all web development projects on my web development portfolio!
 
 ## Tasklist
 
