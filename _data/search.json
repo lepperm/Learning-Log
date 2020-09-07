@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Confidence and Importance Metrics, and CSS Games",
+      "tags"       : "css",
+      "skills"     : "css",
+      "excerpt"    : "Blog feedback sparks an exciting idea for more actionable metrics to capture with each post, and a little CSS learning with some quick games.",
+      "url"        : "/learning-log/journal/2020/09/06/confidence-and-importance-metrics-and-css-games.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-06 23:52:46 -0400",
+      "date"       : "Sep 6, 2020",
+      "timespent"  : "90",
+      "words"      : "532",
+      "references" : "https://www.gwern.net/About#confidence-tags, https://www.gwern.net/About#importance-tags, https://www.gwern.net/Resorter, https://www.gwern.net/docs/statistics/bayes/2008-kesselman.pdf, http://flexboxfroggy.com/, https://cssgridgarden.com/",
+      "sleep"      : "395",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Sprint Ceremonies and Finishing Features",
       "tags"       : "agile-pm",
       "skills"     : "agile-pm",
@@ -24,7 +39,7 @@
       "datetime"   : "2020-09-04 23:57:33 -0400",
       "date"       : "Sep 4, 2020",
       "timespent"  : "140",
-      "words"      : "912",
+      "words"      : "908",
       "references" : "https://www.freecodecamp.org/learn, https://agwsu.org/, https://www.cybercoders.com/insights/why-programmers-should-be-blogging/",
       "sleep"      : "375",
       "workout"    : ""

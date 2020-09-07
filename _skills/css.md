@@ -53,17 +53,17 @@ progressionEntries:
     type: Course
     relproj:
     relprojlink:
-    datecomp: 9/6/20
+    datecomp: 9/7/20
     datelink:
   - 
     id: 
-    status: NS
+    status: OK
     name: Grid Garden
-    item: https://codepip.com/games/grid-garden/
+    item: https://cssgridgarden.com/
     type: Course
     relproj:
     relprojlink:
-    datecomp:
+    datecomp: 9/7/20
     datelink:
   - 
     id: 
@@ -181,13 +181,13 @@ For fine adjustment of element order in a flex container, you can explicitly set
 
 `center`
 - The most common, aligns all items to the cross-center of the flex container
-  
+
 `flex-start`
 - Pushes all items to the top (if row direction) or left (if column direct) of the container
-  
+
 `flex-end`
 - Pushes all items to the bottom (if row direction) or right (if column direct) of the container
-  
+
 `stretch`
 - Stretches all of the items to fill the flex container
 
@@ -237,6 +237,8 @@ The format is as follows:
 
 ### Grid
 
+#### Grid Construction
+
 An element can be turned into a grid container with:
 `display: grid;`
 
@@ -249,7 +251,8 @@ You can do the same for rows using `grid-template-rows`.
 Either absolute or relative units can be used to define the size of rows and columns. Some options include:
 
 `fr`
-- Sets the column or row to a fraction of the available space,
+- Sets the column or row to a fraction of the available space. Note that the total number of `fr` determines the divisor:
+  - `grid-template-columns: 1fr 3fr;` makes 2 columns, with one (1/4) wide and the second (3/4) wide.
 
 `auto`
 - Sets the column or row to the width or height of its content automatically,
@@ -263,3 +266,77 @@ These can be used in any combination:
 
 The above snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
 
+The `repeat()` function can be used to create a specified number of columns:
+
+`grid-template-columns: repeat(5, 20%);`
+
+These can be used in conjunction with other column declarations:
+
+`grid-template-columns: 50px repeat(3, 1fr) 50px;`
+
+To construct rows instead of columns, substitute `row` in place of `column` for any of the above commands.
+
+`grid-template` is a shorthand property that combines `grid-template-rows` and `grid-template-columns` in the form of:
+
+`grid-template: (rows) / (columns)`
+
+Like:
+
+`grid-template: 50% 50% / 200px;`
+
+#### Grid Positioning
+
+`grid-column-start` takes an integer value (starting from 1) to indicate the start of a grid selection. Independently, this will only select one column.
+
+Using `grid-column-end`, however, can extend this selection across multiple columns. Take note that the integer value for "end" is the first column that is NOT part of the selection.
+
+These values absolute to the grid, and can be used in either direction. For example:
+
+```css
+grid-column-start: 2;
+grid-column-end: 5;
+```
+
+gives the same selection as
+
+```css
+grid-column-start: 5;
+grid-column-end: 2;
+```
+
+Negative values can also be used to select from the right side of the grid:
+
+```css
+grid-column-start: 2;
+grid-column-end: -3;
+```
+
+Rather than using index values, `span` allows you to specify your selection by the desired column width. This only works with positive values.
+
+```css
+grid-column-start: 2;
+grid-column-end: span 3;
+```
+
+`grid-column` is a shorthand property that combines both `grid-column-start` and `grid-column-end` together, separated by a slash:
+
+`grid-column: 2/5;`
+
+To select rows instead of columns, substitute `row` in place of `column` for any of the above commands.
+
+Row and Column selectors can be used simultaneously to select across entire areas:
+
+```css
+grid-column: 2/5;
+grid-row: 1/6;
+```
+
+To condense things even further, `grid-area` combines both `grid-column` and `grid-row` into a single property with syntax:
+
+`grid-area: (row start) / (column start) / (row end) / (column end);`
+
+You can overlap `grid-area`s.
+
+#### `order`
+
+For fine adjustment of element order in a grid, you can explicitly set the sequence with a numerical value (positive or negative) using `order`.
