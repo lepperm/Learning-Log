@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Canonical URLs and CSS Consistency"
-date: 2020-09-02 22:35:29 -0400
-published: true
+excerpt: Looking into a malformed canonical URL and making CSS adjustments to the footer and interactive elements.
 author: Max Lepper
 categories: [journal]
 tags: [html, css]
-excerpt: Looking into a malformed canonical URL and making CSS adjustments to the footer and interactive elements.
-references: ["https://www.freecodecamp.org/learn", "https://search.google.com/search-console/about", "https://marketingplatform.google.com/about/analytics/", "https://stackoverflow.com/questions/10161177/url-with-multiple-forward-slashes-does-it-break-anything"]
+date: 2020-09-02 22:35:29 -0400
+modified_date: 2020-09-07 19:27:37 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [javascript, html, css]
+references: ["https://www.freecodecamp.org/learn", "https://search.google.com/search-console/about", "https://marketingplatform.google.com/about/analytics/", "https://stackoverflow.com/questions/10161177/url-with-multiple-forward-slashes-does-it-break-anything"]
 timespent: 200
 sleep: 295
-workout: 
+workout:
 ---
 
 ## Journal

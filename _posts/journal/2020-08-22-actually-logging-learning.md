@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Actually logging some learning!"
-date: 2020-08-22 23:54:31 -0400
-published: true
+excerpt: Learning git cli commands in an effort to not rely on Sourcetree so much, and adding a "Blog Improvements" section in my Tasks page for improvements that I would like to capture.
 author: Max Lepper
 categories: [journal]
 tags: [git]
-excerpt: Learning git cli commands in an effort to not rely on Sourcetree so much, and adding a "Blog Improvements" section in my Tasks page for improvements that I would like to capture.
-references: ["https://learngitbranching.js.org/"]
+date: 2020-08-22 23:54:31 -0400
+modified_date: 2020-09-07 19:40:08 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [git, liquid, html, javascript, css]
+references: ["https://learngitbranching.js.org/"]
 timespent: 120
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

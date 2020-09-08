@@ -1,14 +1,19 @@
 ---
 layout: journal
 title: "Jekyll learning and site setup"
-date: 2020-08-09 23:33:17 -0400
-published: true
+excerpt: Adding tags, categories, search, and fundamentals.
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]
-excerpt: Adding tags, categories, search, and fundamentals.
-references: ["https://github.com/jekyll/minima/", "https://github.com/jekyll/", "https://jekyllrb.com/docs/", "https://github.com/christian-fei/Simple-Jekyll-Search", "https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"]
+date: 2020-08-09 23:33:17 -0400
+modified_date: 2020-09-07 19:45:39 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [jekyll, liquid, css, yaml]
+references: ["https://github.com/jekyll/minima/", "https://github.com/jekyll/", "https://jekyllrb.com/docs/", "https://github.com/christian-fei/Simple-Jekyll-Search", "https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"]
 timespent: 150
 sleep: 
 workout: 

@@ -1,14 +1,19 @@
 ---
 layout: journal
 title: "Creating my Skill Summary page"
-date: 2020-08-11 20:06:54 -0400
-published: true
+excerpt: Deep dive into Liquid to generate my Skills page content dynamically from journal logs.
 author: Max Lepper
 categories: [journal]
 tags: [liquid]
-excerpt: Deep dive into Liquid to generate my Skills page content dynamically from journal logs.
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "http://blog.emmatosch.com/2016/03/09/using-custom-javascript-in-jekyll-blogs.html"]
+date: 2020-08-11 20:06:54 -0400
+modified_date: 2020-09-07 19:44:58 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [liquid, jekyll, javascript]
+references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "http://blog.emmatosch.com/2016/03/09/using-custom-javascript-in-jekyll-blogs.html"]
 timespent: 265
 sleep: 
 workout: 

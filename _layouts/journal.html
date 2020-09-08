@@ -12,15 +12,48 @@ layout: default
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}&nbsp;&nbsp;
+        {{ page.date | date: date_format }}
+        {% if page.modified_date %}
+          {% assign mdate = page.modified_date | date_to_xmlschema %}
+          <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+            (edited {{ mdate | date: date_format }})
+          </time>
+        {% endif %}
+        <span>&nbsp;·&nbsp;</span>
       </time>
-      {%- if page.author -%}
+      {% if page.author %}
         <span class="author-span" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <a href="{{ site.author.site }}" class="p-author h-card" itemprop="name">{{ page.author }}</a>
-          &nbsp;
+          <span>&nbsp;·&nbsp;</span>
         </span>
-      {%- endif -%}
-      {%- include time-to-read.html output="text" wordsource=content -%}
+      {% endif %}
+      <span class="nobreak">
+        {% include time-to-read.html output="text" wordsource=content %}
+        <span>&nbsp;·&nbsp;</span>
+      </span>
+      {% if page.status %}
+        <span class="nobreak" title="Writing status: notes / draft / live / finished">
+          {{ page.status | capitalize }}
+          <span>&nbsp;·&nbsp;</span>
+        </span>
+      {% endif %}
+      {% if page.context %}
+        <span class="nobreak" title="This post makes references to other posts or external content and is not self-contained">
+          Requires context
+          <span>&nbsp;·&nbsp;</span>
+        </span>
+      {% endif %}
+      {% if page.confidence %}
+        <span class="nobreak" title="Indicates the confidence in the accuracy of the beliefs expressed in the post, either as non-reflective ( log / emotional / fiction ), or expressed as Kesselman Estimative Words (ranging 0–100%: impossible / remote / highly unlikely / unlikely / possible / likely / highly likely / certain )">
+          Confidence: {{ page.confidence | capitalize }}
+          <span>&nbsp;·&nbsp;</span>
+        </span>
+      {% endif %}
+      {% if page.importance %}
+        <span class="nobreak" title="1–10 rating of the estimated importance of the post to the reader.">
+          Importance: {{ page.importance }}
+        </span>
+      {% endif %}
     </p>
     {%- include share-buttons.html -%}
   </header>
@@ -29,6 +62,7 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.skills.size > 0 %}
   <h2>
     Skills used:
     {%- include return-to-top.html -%}
@@ -43,7 +77,9 @@ layout: default
       </a>
     {%- endfor -%}
   </ul>
+  {%- endif -%}
 
+  {% if page.timespent > 0 %}
   <h2>
     Time spent:
     {%- include return-to-top.html -%}
@@ -57,7 +93,9 @@ layout: default
       {%- endif -%}
     </li>
   </ul>
+  {%- endif -%}
 
+  {% if page.references.size > 0 %}
   <h2>
     References:
     {%- include return-to-top.html -%}
@@ -69,6 +107,7 @@ layout: default
       </li>
     {%- endfor -%}
   </ul>
+  {%- endif -%}
 
   {%- include prev-next-posts.html -%}
 

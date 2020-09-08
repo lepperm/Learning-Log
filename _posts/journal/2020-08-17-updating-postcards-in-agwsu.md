@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Updating Postcards in AGWSU"
-date: 2020-08-17 22:41:17 -0400
-published: true
+excerpt: Back into React with pair-programming for AGWSU, and project maintenance and schedule tasks.
 author: Max Lepper
 categories: [journal]
 tags: [react]
-excerpt: Back into React with pair-programming for AGWSU, and project maintenance and schedule tasks.
-references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"]
+date: 2020-08-17 22:41:17 -0400
+modified_date: 2020-09-07 19:41:58 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [react, agile-pm, gitlab-ci]
+references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"]
 timespent: 395
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Intro to Task Runners and Bundlers"
-date: 2020-08-30 13:47:08 -0400
-published: true
+excerpt: Looking into task runners and bundlers, and learning about the history and application of Grunt, Gulp, Browserify, and Webpack.
 author: Max Lepper
 categories: [journal]
 tags: [gulp, webpack]
-excerpt: Looking into task runners and bundlers, and learning about the history and application of Grunt, Gulp, Browserify, and Webpack.
-references: ["https://stackoverflow.com/questions/33561272/task-runners-gulp-grunt-etc-and-bundlers-webpack-browserify-why-use-toge/33574602#33574602","https://survivejs.com/webpack/appendices/comparison/","https://css-tricks.com/using-webp-images/#using-webp-in-html","https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better","https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9","https://www.npmjs.com/package/fuse-box","https://github.com/ericgrosse/task-runner-bundler-comparison","https://stackoverflow.com/questions/48395804/where-is-create-react-app-webpack-config-and-files"]
+date: 2020-08-30 13:47:08 -0400
+modified_date: 2020-09-07 19:29:06 -0400
+published: true
+status: finished
+confidence: likely
+importance: 5
+context: true
 skills: [gulp, webpack]
+references: ["https://stackoverflow.com/questions/33561272/task-runners-gulp-grunt-etc-and-bundlers-webpack-browserify-why-use-toge/33574602#33574602","https://survivejs.com/webpack/appendices/comparison/","https://css-tricks.com/using-webp-images/#using-webp-in-html","https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better","https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9","https://www.npmjs.com/package/fuse-box","https://github.com/ericgrosse/task-runner-bundler-comparison","https://stackoverflow.com/questions/48395804/where-is-create-react-app-webpack-config-and-files"]
 timespent: 160
 sleep: 375
-workout: 
+workout:
 ---
 
 ## Journal

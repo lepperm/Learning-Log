@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Filling Out Skill Progression Tables"
-date: 2020-08-29 23:58:31 -0400
-published: true
+excerpt: Posting the new blog and adding many progression items to my skill pages.
 author: Max Lepper
 categories: [journal]
 tags: []
-excerpt: Posting the new blog and adding many progression items to my skill pages.
-references: []
+date: 2020-08-29 23:58:31 -0400
+modified_date: 2020-09-07 19:30:57 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [html, javascript, liquid]
+references: []
 timespent: 165
 sleep: 490
-workout: 
+workout:
 ---
 
 ## Journal

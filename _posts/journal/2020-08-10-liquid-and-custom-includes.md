@@ -1,14 +1,19 @@
 ---
 layout: journal
 title: "Liquid and Custom Includes"
-date: 2020-08-10 23:34:22 -0400
-published: true
+excerpt: Practice with Liquid, adding social media buttons, time to read.
 author: Max Lepper
 categories: [journal]
 tags: [jekyll]
-excerpt: Practice with Liquid, adding social media buttons, time to read.
-references: ["https://devhints.io/jekyll", "https://shopify.github.io/liquid/", "https://jekyllcodex.org/without-plugins/", "https://www.sureoak.com/seo-tools"]
+date: 2020-08-10 23:34:22 -0400
+modified_date: 2020-09-07 19:45:15 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [jekyll, liquid, seo]
+references: ["https://devhints.io/jekyll", "https://shopify.github.io/liquid/", "https://jekyllcodex.org/without-plugins/", "https://www.sureoak.com/seo-tools"]
 timespent: 220
 sleep: 
 workout: 

@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Applied Visual Design and New Stats"
-date: 2020-08-31 23:12:28 -0400
-published: true
+excerpt: Exploring a quote, some Stat page updates, and completing the next section on FreeCodeCamp.
 author: Max Lepper
 categories: [journal]
 tags: [css]
-excerpt: Exploring a quote, some Stat page updates, and completing the next section on FreeCodeCamp.
-references: ["https://www.freecodecamp.org/learn","https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory"]
+date: 2020-08-31 23:12:28 -0400
+modified_date: 2020-09-07 19:28:51 -0400
+published: true
+status: finished
+confidence: likely
+importance: 4
+context: true
 skills: [css, html]
+references: ["https://www.freecodecamp.org/learn","https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory"]
 timespent: 325
 sleep: 400
-workout: 
+workout:
 ---
 
 ## Journal

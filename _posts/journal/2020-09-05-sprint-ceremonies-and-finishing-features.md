@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Sprint Ceremonies and Finishing Features"
-date: 2020-09-05 14:51:21 -0400
-published: true
+excerpt: Neal and I meet to sync up on the AGWSU project, wrapping up sprint 6 and moving forward with projections for sprint 7, and the timeline beyond.
 author: Max Lepper
 categories: [journal]
 tags: [agile-pm]
-excerpt: Neal and I meet to sync up on the AGWSU project, wrapping up sprint 6 and moving forward with projections for sprint 7, and the timeline beyond.
-references: ["https://agwsu.org/","https://www.linkedin.com/in/nealstrobl/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/92","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/93"]
+date: 2020-09-05 14:51:21 -0400
+modified_date: 2020-09-07 19:22:41 -0400
+published: true
+status: finished
+confidence: highly likely
+importance: 1
+context: true
 skills: [agile-pm]
+references: ["https://agwsu.org/","https://www.linkedin.com/in/nealstrobl/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/92","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/93"]
 timespent: 140
 sleep: 485
-workout: 
+workout:
 ---
 
 ## Journal

@@ -1,13 +1,17 @@
 ---
 layout: post
 title: "Hesitations and Coding"
-date: 2020-08-08 23:32:24 -0400
-modified_date:
-published: true
+excerpt: A discussion puts things into better perspective and helps me overcome my hesitations in coding
 author: Max Lepper
 categories: [blog]
 tags: [mentality]
-excerpt: A discussion puts things into better perspective and helps me overcome my hesitations in coding
+date: 2020-08-08 23:32:24 -0400
+modified_date: 2020-09-07 18:15:23 -0400
+published: true
+status: finished
+confidence: emotional
+importance: 6
+context: false
 ---
 
 I had a conversation with a friend tonight about design approach for a [collaborative project](https://gitlab.com/neal.strobl/wsu-adventurers-guild). During the discussion, he tasked me with taking a look at an issue and trying to figure it out for myself - nothing out of the ordinary. He mentioned that he wasn't sure about the true complexity or time expectations for the issue, and that I would need to get into it and see what all breaks.

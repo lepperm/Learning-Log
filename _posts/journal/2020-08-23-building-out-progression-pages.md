@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Building Out Progression Pages"
-date: 2020-08-23 21:50:51 -0400
-published: true
+excerpt: More progress on Git learning and migrating learning items into skills.
 author: Max Lepper
 categories: [journal]
 tags: [git]
-excerpt: More progress on Git learning and migrating learning items into skills.
-references: ["https://learngitbranching.js.org/"]
+date: 2020-08-23 21:50:51 -0400
+modified_date: 2020-09-07 19:39:34 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [git, liquid]
+references: ["https://learngitbranching.js.org/"]
 timespent: 235
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

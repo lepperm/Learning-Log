@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "FreeCodeCamp and Tracking My Progress"
-date: 2020-08-30 23:22:17 -0400
-published: true
+excerpt: Completing some FreeCodeCamp lessons and minor blog housekeeping instead of resting...
 author: Max Lepper
 categories: [journal]
 tags: [html]
-excerpt: Completing some FreeCodeCamp lessons and minor blog housekeeping instead of resting...
-references: ["https://www.freecodecamp.org/learn"]
+date: 2020-08-30 23:22:17 -0400
+modified_date: 2020-09-07 19:30:02 -0400
+published: true
+status: finished
+confidence: log
+importance: 0
+context: true
 skills: [html, css]
+references: ["https://www.freecodecamp.org/learn"]
 timespent: 150
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Working on a New Blog Post"
-date: 2020-08-27 23:58:20 -0400
-published: true
+excerpt: Spending a few hours writing a new blog post and working on life tasks.
 author: Max Lepper
 categories: [journal]
 tags: [writing]
-excerpt: Spending a few hours writing a new blog post and working on life tasks.
-references: []
+date: 2020-08-27 23:58:20 -0400
+modified_date: 2020-09-07 19:31:18 -0400
+published: true
+status: finished
+confidence: log
+importance: 0
+context: true
 skills: []
+references: []
 timespent: 0
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

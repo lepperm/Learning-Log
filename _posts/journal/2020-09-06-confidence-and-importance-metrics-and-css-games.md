@@ -1,22 +1,27 @@
 ---
 layout: journal
 title: "Confidence and Importance Metrics, and CSS Games"
-date: 2020-09-06 23:52:46 -0400
-published: true
+excerpt: Blog feedback sparks an exciting idea for more actionable metrics to capture with each post, and a little CSS learning with some quick games.
 author: Max Lepper
 categories: [journal]
 tags: [css]
-excerpt: Blog feedback sparks an exciting idea for more actionable metrics to capture with each post, and a little CSS learning with some quick games.
-references: ["https://www.gwern.net/About#confidence-tags","https://www.gwern.net/About#importance-tags","https://www.gwern.net/Resorter","https://www.gwern.net/docs/statistics/bayes/2008-kesselman.pdf","http://flexboxfroggy.com/","https://cssgridgarden.com/"]
+date: 2020-09-06 23:52:46 -0400
+modified_date: 2020-09-07 16:19:21 -0400
+published: true
+status: finished
+confidence: log
+importance: 2
+context: true
 skills: [css]
+references: ["https://www.gwern.net/About#confidence-tags","https://www.gwern.net/About#importance-tags","https://www.gwern.net/Resorter","https://www.gwern.net/docs/statistics/bayes/2008-kesselman.pdf","http://flexboxfroggy.com/","https://cssgridgarden.com/"]
 timespent: 90
 sleep: 395
-workout: 
+workout:
 ---
 
 ## Journal
 
-Regarding [the perception of this blog]({% post_url journal/2020-09-04-irregular-coffee-cicd-limits-and-blogging-quality %}), outside of the value it generates for myself, I spoke with a friend, Kevin (blog link here in the future, potentially!), and asked about his thoughts. His response was very positive and encouraging! One thing that was suggested was considering metrics for things like [confidence]({{page.references[0]}}) and [importance]({{page.references[1]}}).
+Regarding [the perception of this blog]({% post_url journal/2020-09-04-irregular-coffee-cicd-limits-and-blogging-quality %}), outside of the value it generates for myself, I spoke with a friend, Kevin (blog link here in the future, potentially!), and asked about his thoughts. His response was very positive and encouraging! Kevin referred me to a different blog, and suggested considering metrics for things like [confidence]({{page.references[0]}}) and [importance]({{page.references[1]}}).
 
 I really enjoy this idea, and the author of the blog in question appears to execute this very well. It would be informative to capture how I feel about what I have written, and update this belief over time with more experience and perspective. Similarly, trying to estimate how important the content within is for the reader would be an interesting exploration, and one that could be used to better calibrate my writing style and topics with time and feedback. The author of this post mentions an interactive sorting tool, [Resorter]({{page.references[2]}}), which they have written to counteract polarized results in self-evaluated ranking systems. This was the exact pitfall I was imagining experiencing myself before reading deeper into the article, and the proposed solution has piqued my curiosity!
 

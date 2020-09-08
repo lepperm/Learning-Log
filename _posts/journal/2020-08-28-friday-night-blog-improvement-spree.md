@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Friday Night Blog Improvement Spree"
-date: 2020-08-28 23:10:57 -0400
-published: true
+excerpt: Cleaning up some more items around the site, and adding in features related to the upcoming large blog post.
 author: Max Lepper
 categories: [journal]
 tags: [html]
-excerpt: Cleaning up some more items around the site, and adding in features related to the upcoming large blog post.
-references: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator","https://learngitbranching.js.org/","https://www.freecodecamp.org/maxlepper","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week"]
+date: 2020-08-28 23:10:57 -0400
+modified_date: 2020-09-07 19:31:32 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [css, html, liquid]
+references: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator","https://learngitbranching.js.org/","https://www.freecodecamp.org/maxlepper","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week"]
 timespent: 280
 sleep: 310
-workout: 
+workout:
 ---
 
 ## Journal

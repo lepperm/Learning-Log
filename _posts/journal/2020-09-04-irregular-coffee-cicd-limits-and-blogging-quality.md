@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Irregular Coffee, CI/CD Limits, and Blogging Quality"
-date: 2020-09-04 23:57:33 -0400
-published: true
+excerpt: Planning for GitLab's new 400 minute limit on CI/CD, working on FreeCodeCamp, and debating if this blog is serving a productive purpose by being publicly accessible.
 author: Max Lepper
 categories: [journal]
 tags: [css]
-excerpt: Planning for GitLab's new 400 minute limit on CI/CD, working on FreeCodeCamp, and debating if this blog is serving a productive purpose by being publicly accessible.
-references: ["https://www.freecodecamp.org/learn","https://agwsu.org/","https://www.cybercoders.com/insights/why-programmers-should-be-blogging/"]
+date: 2020-09-04 23:57:33 -0400
+modified_date: 2020-09-07 19:25:21 -0400
+published: true
+status: finished
+confidence: possible
+importance: 2
+context: true
 skills: [css]
+references: ["https://www.freecodecamp.org/learn","https://agwsu.org/","https://www.cybercoders.com/insights/why-programmers-should-be-blogging/"]
 timespent: 140
 sleep: 375
-workout: 
+workout:
 ---
 
 ## Journal

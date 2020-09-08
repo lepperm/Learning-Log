@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Supercharging the Skills Table, Tasks, and Stats"
-date: 2020-08-21 23:46:02 -0400
-published: true
+excerpt: Adding snappy header sorting to the Skills table, adding even more Stats into the stats page, and making sure my Tasks page always has work for me ready to go.
 author: Max Lepper
 categories: [journal]
 tags: [javascript]
-excerpt: Adding snappy header sorting to the Skills table, adding even more Stats into the stats page, and making sure my Tasks page always has work for me ready to go.
-references: ["https://www.w3schools.com/howto/howto_js_sort_table.asp","http://www.javascriptkit.com/dhtmltutors/customattributes.shtml","http://alanwsmith.com/jekyll-liquid-date-formatting-examples","https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll","https://www.w3schools.com/howto/howto_css_arrows.asp", "https://css-tricks.com/snippets/css/css-triangle/","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://shopify.github.io/liquid/basics/operators/","https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages","https://github.com/philnash/jekyll-gzip"]
+date: 2020-08-21 23:46:02 -0400
+modified_date: 2020-09-07 19:40:43 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [html, javascript, css, liquid]
+references: ["https://www.w3schools.com/howto/howto_js_sort_table.asp","http://www.javascriptkit.com/dhtmltutors/customattributes.shtml","http://alanwsmith.com/jekyll-liquid-date-formatting-examples","https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll","https://www.w3schools.com/howto/howto_css_arrows.asp", "https://css-tricks.com/snippets/css/css-triangle/","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://shopify.github.io/liquid/basics/operators/","https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages","https://github.com/philnash/jekyll-gzip"]
 timespent: 460
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

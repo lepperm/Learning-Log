@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Pair Programming and Portfolio Progress"
-date: 2020-08-25 23:08:00 -0400
-published: true
+excerpt: Pair programming with Neal on AGWSU and getting back into working on my portfolio.
 author: Max Lepper
 categories: [journal]
 tags: [react]
-excerpt: Pair programming with Neal on AGWSU and getting back into working on my portfolio.
-references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"]
+date: 2020-08-25 23:08:00 -0400
+modified_date: 2020-09-07 19:32:53 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [react, redux, firebase, material-ui]
+references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"]
 timespent: 290
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Progression Polish, Skill Cleanliness, and Navbar Search"
-date: 2020-08-19 23:58:51 -0400
-published: true
+excerpt: Creating an entirely different skill collection structure, fully-automated skill collection output pages, an automated learning task collection system, and cleaning up the navigation bar.
 author: Max Lepper
 categories: [journal]
 tags: [yaml]
-excerpt: Creating an entirely different skill collection structure, fully-automated skill collection output pages, an automated learning task collection system, and cleaning up the navigation bar.
-references: ["https://github.com/avillafiorita/jekyll-datapage_gen","https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one","https://shopify.github.io/liquid/tags/iteration/","https://materialdesignicons.com/", "https://jekyllrb.com/docs/liquid/filters/"]
+date: 2020-08-19 23:58:51 -0400
+modified_date: 2020-09-07 19:41:16 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [liquid, markdown, yaml, sass, html, javascript]
+references: ["https://github.com/avillafiorita/jekyll-datapage_gen","https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one","https://shopify.github.io/liquid/tags/iteration/","https://materialdesignicons.com/", "https://jekyllrb.com/docs/liquid/filters/"]
 timespent: 340
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

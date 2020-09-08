@@ -1,14 +1,19 @@
 ---
 layout: journal
 title: "Skills Data and Quality of Life Improvements"
-date: 2020-08-12 23:24:16 -0400
-published: true
+excerpt: Working towards richer skills data, search improvements, javascript loading framework, QoL improvements.
 author: Max Lepper
 categories: [journal]
 tags: [javascript, liquid]
-excerpt: Working towards richer skills data, search improvements, javascript loading framework, QoL improvements.
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await", "https://javascript.info/async-await", "https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll", "https://jekyllrb.com/docs/datafiles/"]
+date: 2020-08-12 23:24:16 -0400
+modified_date: 2020-09-07 19:44:31 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [javascript, liquid, jekyll, markdown, html, css]
+references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await", "https://javascript.info/async-await", "https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll", "https://jekyllrb.com/docs/datafiles/"]
 timespent: 445
 sleep: 
 workout: 

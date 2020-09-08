@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Accessibility Training and AGWSU Merge"
-date: 2020-09-01 23:46:31 -0400
-published: true
+excerpt: Starting on FCC's Applied Accessibility Challenges and completing the user registration feature merge request for AGWSU.
 author: Max Lepper
 categories: [journal]
 tags: [accessibility]
-excerpt: Starting on FCC's Applied Accessibility Challenges and completing the user registration feature merge request for AGWSU.
-references: ["https://www.freecodecamp.org/learn","https://www.w3.org/WAI/standards-guidelines/wcag/","https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/merge_requests/11"]
+date: 2020-09-01 23:46:31 -0400
+modified_date: 2020-09-07 19:28:42 -0400
+published: true
+status: finished
+confidence: highly likely
+importance: 3
+context: true
 skills: [react, css, html, accessibility]
+references: ["https://www.freecodecamp.org/learn","https://www.w3.org/WAI/standards-guidelines/wcag/","https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/merge_requests/11"]
 timespent: 130
 sleep: 380
-workout: 
+workout:
 ---
 
 ## Journal

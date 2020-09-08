@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Task Suggestions and Converting Skills"
-date: 2020-08-20 23:01:42 -0400
-published: true
+excerpt: Suggesting new tasks with an empty backlog, and pulling all skills over to the new format.
 author: Max Lepper
 categories: [journal]
 tags: [liquid]
-excerpt: Suggesting new tasks with an empty backlog, and pulling all skills over to the new format.
-references: ["https://shopify.dev/docs/themes/liquid/reference/objects/for-loops"]
+date: 2020-08-20 23:01:42 -0400
+modified_date: 2020-09-07 19:41:11 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [liquid, html, javascript]
+references: ["https://shopify.dev/docs/themes/liquid/reference/objects/for-loops"]
 timespent: 180
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

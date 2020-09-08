@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "More Git Learning and Skill Table Improvements"
-date: 2020-08-24 22:27:41 -0400
-published: true
+excerpt: Working on Git, making Skill table improvements, and some general housecleaning.
 author: Max Lepper
 categories: [journal]
 tags: [git]
-excerpt: Working on Git, making Skill table improvements, and some general housecleaning.
-references: ["https://learngitbranching.js.org/"]
+date: 2020-08-24 22:27:41 -0400
+modified_date: 2020-09-07 19:33:17 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [git, javascript, html]
+references: ["https://learngitbranching.js.org/"]
 timespent: 300
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

@@ -1,14 +1,19 @@
 ---
 layout: journal
 title: "Skills Collection and Skill Badges"
-date: 2020-08-15 23:41:11 -0400
-published: true
+excerpt: Creating a collection for detailed per-skill information and changing the log skill list to a collection of badges instead of a list.
 author: Max Lepper
 categories: [journal]
 tags: [javascript, liquid]
-excerpt: Creating a collection for detailed per-skill information and changing the log skill list to a collection of badges instead of a list.
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://gitlab.com/gitlab-org/gitlab-pages/-/issues/231", "https://jekyllrb.com/docs/collections/"]
+date: 2020-08-15 23:41:11 -0400
+modified_date: 2020-09-07 19:43:09 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [javascript, liquid, jekyll, html, css]
+references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://gitlab.com/gitlab-org/gitlab-pages/-/issues/231", "https://jekyllrb.com/docs/collections/"]
 timespent: 130
 sleep: 
 workout: 

@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "A Detailed Breakdown of my Front Matter Data",
+      "tags"       : "jekyll",
+      "skills"     : "html",
+      "excerpt"    : "Implementing and documenting additional Front Matter values for my blogs, logs, and notes.",
+      "url"        : "/learning-log/journal/2020/09/07/detailed-breakdown-of-my-front-matter-data.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-07 17:48:10 -0400",
+      "date"       : "Sep 7, 2020",
+      "timespent"  : "50",
+      "words"      : "771",
+      "references" : "https://www.gwern.net/About#confidence-tags, https://www.gwern.net/About#importance-tags, https://www.gwern.net/About",
+      "sleep"      : "380",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Confidence and Importance Metrics, and CSS Games",
       "tags"       : "css",
       "skills"     : "css",
@@ -9,7 +24,7 @@
       "datetime"   : "2020-09-06 23:52:46 -0400",
       "date"       : "Sep 6, 2020",
       "timespent"  : "90",
-      "words"      : "532",
+      "words"      : "535",
       "references" : "https://www.gwern.net/About#confidence-tags, https://www.gwern.net/About#importance-tags, https://www.gwern.net/Resorter, https://www.gwern.net/docs/statistics/bayes/2008-kesselman.pdf, http://flexboxfroggy.com/, https://cssgridgarden.com/",
       "sleep"      : "395",
       "workout"    : ""

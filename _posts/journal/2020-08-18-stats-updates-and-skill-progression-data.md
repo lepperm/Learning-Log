@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "Stats Updates, Style, and Skill Progression Data"
-date: 2020-08-18 22:41:19 -0400
-published: true
+excerpt: Powering up my Stats pie chart, improving my CSS, and pulling in progression and course data to my skill collection entries.
 author: Max Lepper
 categories: [journal]
 tags: [sass, markdown]
-excerpt: Powering up my Stats pie chart, improving my CSS, and pulling in progression and course data to my skill collection entries.
-references: ["https://sass-lang.com/documentation/variables", "http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html","https://materialdesignicons.com/"]
+date: 2020-08-18 22:41:19 -0400
+modified_date: 2020-09-07 19:41:39 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [sass, liquid, javascript, markdown]
+references: ["https://sass-lang.com/documentation/variables", "http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html","https://materialdesignicons.com/"]
 timespent: 275
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

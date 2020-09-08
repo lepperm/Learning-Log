@@ -1,17 +1,22 @@
 ---
 layout: journal
 title: "MacOS VirtualBox and Tabliss CSS"
-date: 2020-08-26 23:27:31 -0400
-published: true
+excerpt: Training my wife on VirtualBox, configuring a VM with macOS X, and customizing Tabliss.
 author: Max Lepper
 categories: [journal]
 tags: [css]
-excerpt: Training my wife on VirtualBox, configuring a VM with macOS X, and customizing Tabliss.
-references: ["https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/","https://tabliss.io/","https://gitlab.com/-/snippets/2009089"]
+date: 2020-08-26 23:27:31 -0400
+modified_date: 2020-09-07 19:32:24 -0400
+published: true
+status: finished
+confidence: log
+importance: 1
+context: true
 skills: [css]
+references: ["https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/","https://tabliss.io/","https://gitlab.com/-/snippets/2009089"]
 timespent: 105
-sleep: 
-workout: 
+sleep:
+workout:
 ---
 
 ## Journal

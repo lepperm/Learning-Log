@@ -1,13 +1,17 @@
 ---
 layout: post
 title: "Risk Mitigation in Planning Learning"
-date: 2020-08-27 21:14:26 -0400
-modified_date: 2020-08-22 13:55:38 -0400
-published: true
+excerpt: A quote kicks off a mental exploration of risk management in the context of learning new material and limited time.
 author: Max Lepper
 categories: [blog]
 tags: [risk management]
-excerpt: A quote kicks off a mental exploration of risk management in the context of learning new material and limited time.
+date: 2020-08-27 21:14:26 -0400
+modified_date: 2020-09-07 18:24:51 -0400
+published: true
+status: finished
+confidence: likely
+importance: 9
+context: false
 ---
 
 This morning, I opened a new tab on my computer to see the following quote prominently displayed:
