@@ -81,6 +81,11 @@ resources:
     reflink: 
 ---
 
+## Quick Reference
+
+* TOC
+{: toc}
+
 ### Media Queries
 
 Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.
@@ -266,14 +271,6 @@ These can be used in any combination:
 
 The above snippet creates five columns. The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.
 
-The `repeat()` function can be used to create a specified number of columns:
-
-`grid-template-columns: repeat(5, 20%);`
-
-These can be used in conjunction with other column declarations:
-
-`grid-template-columns: 50px repeat(3, 1fr) 50px;`
-
 To construct rows instead of columns, substitute `row` in place of `column` for any of the above commands.
 
 `grid-template` is a shorthand property that combines `grid-template-rows` and `grid-template-columns` in the form of:
@@ -284,7 +281,107 @@ Like:
 
 `grid-template: 50% 50% / 200px;`
 
+Grids can be constructed within grids, allowing for highly specific arrangements.
+
+##### Functions
+
+The `repeat()` function can be used to create a specified number of columns:
+
+`grid-template-columns: repeat(5, 20%);`
+
+These can be used in conjunction with other column declarations:
+
+`grid-template-columns: 50px repeat(3, 1fr) 50px;`
+
+`repeat()` can also replicate patterns:
+
+`grid-template-columns: repeat(2, 1fr 50px) 20px;`
+
+Which translates to:
+
+`grid-template-columns: 1fr 50px 1fr 50px 20px;`
+
+The `minmax()` function is used to limit the size of items when the grid container changes size.
+
+`grid-template-columns: 100px minmax(50px, 200px);`
+
+In the code above, `grid-template-columns` is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
+
+You can nest functions within functions for more complex behavior!
+
+##### Auto Properties
+
+The `repeat()` function comes with an option called `auto-fill`. This allows you to automatically insert as many rows or columns of your desired size as possible depending on the size of the container. You can create flexible layouts when combining `auto-fill` with `minmax`, like this:
+
+`grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));`
+
+When the container changes size, this setup keeps inserting 60px columns and stretching them until it can insert another one. If your container can't fit all your items on one row, it will move them down to a new one.
+
+`auto-fit` works almost identically to `auto-fill`. The only difference is that when the container's size exceeds the size of all the items combined, `auto-fill` keeps inserting empty rows or columns and pushes your items to the side, while `auto-fit` collapses those empty rows or columns and stretches your items to fit the size of the container.
+
+##### Template Areas
+
+You can group cells of your grid together into an area and give the area a custom name, like so:
+
+```css
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+```
+
+The code above merges the top three cells together into an area named `header`, the bottom three cells into a `footer` area, and it makes two areas in the middle row; `advert` and `content`. Every word in the code represents a cell and every pair of quotation marks represent a row. The `.` symbol can be used to designate an empty cell in the grid.
+
+Now that we have a labelled area, we can specify that elements should be added directly to areas:
+
+```css
+.item1 {
+  grid-area: header;
+}
+```
+
+This lets the grid know that you want the `item1` class to go in the area named `header`.
+
+##### Gap
+
+To add a gap between columns or rows, use the gap property:
+
+`grid-column-gap: 10px;`
+`grid-row-gap: 5px;`
+
+`grid-gap` is a shorthand property that handles gaps for both rows and columns, with the syntax:
+
+`grid-gap: (row) (column);`
+
+If `grid-gap` receives only one value, it defaults to using the same value for both rows and columns.
+
 #### Grid Positioning
+
+The hypothetical horizontal and vertical lines that create the grid are referred to as lines. These lines are numbered starting with 1 at the top left corner of the grid and move right for columns and down for rows, counting upward.
+
+This is what the lines look like for a 3x3 grid:
+
+<table>
+  <tr>
+    <td>1 ←↑</td>
+    <td>2 ←</td>
+    <td><span>3 ←</span><span style="float:right;">4 →</span></td>
+  </tr>
+  <tr>
+    <td>2 ↑</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><span>3 ↑</span><span style="float:right;">4 ↓</span></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+(each number in the table above is the value of the line at the top/left of the cell containing the number, respectively)
+
+##### Start, End, and Area
 
 `grid-column-start` takes an integer value (starting from 1) to indicate the start of a grid selection. Independently, this will only select one column.
 
@@ -337,6 +434,59 @@ To condense things even further, `grid-area` combines both `grid-column` and `gr
 
 You can overlap `grid-area`s.
 
-#### `order`
+##### `order`
 
 For fine adjustment of element order in a grid, you can explicitly set the sequence with a numerical value (positive or negative) using `order`.
+
+#### `justify-items` and `align-items`
+
+`justify-items` is used to control the location all of the objects in a grid horizontally, and `align-items` is used to control vertically.
+
+#### `justify-self` and `align-self`
+
+`justify-self` and `align-self` work similar to their standard CSS counterparts. `justify-self` is used to control an object's location horizontally, and `align-self` is used to adjust vertically.
+
+Both take values such as:
+- `start`
+- `center`
+- `end`
+
+#### Grid Media Queries
+
+Grids and Media Queries can be used together to rearrange site layouts dynamically for different device resolutions.
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto 1fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header"
+    "advert"
+    "content"
+    "footer";
+}
+
+@media (min-width: 300px){
+  .container{
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+}
+
+@media (min-width: 400px){
+  .container{
+    grid-template-areas:
+      "header header"
+      "advert content"
+      "footer footer";
+  }
+}
+```
+
+The above results in a column of content under 300px, a full left-side advert at 300px-400px, and a full-width header and footer with inset advert above 400px.

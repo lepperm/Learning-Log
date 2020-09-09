@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [blog]
 tags: [risk management]
 date: 2020-08-27 21:14:26 -0400
-modified_date: 2020-09-07 18:24:51 -0400
+modified_date: 2020-09-09 01:27:34 -0400
 published: true
 status: finished
 confidence: likely
@@ -61,7 +61,8 @@ Given limited resources, we want to:
 
 From personal experience, it's easy to slowly and poorly commit to a course of action, only to eventually realize that you have effectively nothing to show for it. Similarly, following a course of action without considering the risks can introduce a multitude of failure points, such as running out of resources, a forced shift of priorities, or ultimately wasted effort.
 
-To shift from theory to the specifics of Learning Log, my **action** is to log and prioritize my development learning and notes for the **objective** of obtaining employment in a new career field.
+To shift from theory to the specifics of Learning Log, my **action** is to log and prioritize my development learning and notes for the **objective** of obtaining employment in a new career field (web development).
+{: #my-objective}
 
 This objective has a nebulous external time limit. Additionally, the sooner the objective is achieved, the sooner my personal learning efforts will be aligned with my career, and I can spend an exponential amount of time learning the material and developing my skills.
 

@@ -1,3 +1,6 @@
+**Statistics**
+- [ ] Calculate current active streak against javascript current time, not site build time
+
 **Modularity**
 - [ ] Make the skill collection and data make skill collection and data generic (for example, a languages learning breakdown)
 

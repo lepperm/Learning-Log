@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "CSS Grid and Responsive Web Projects",
+      "tags"       : "css",
+      "skills"     : "css",
+      "excerpt"    : "Finishing the educational portion of FCC&#39;s Responsive Web Design Certification and starting the projects",
+      "url"        : "/learning-log/journal/2020/09/09/css-grid-and-responsive-web-projects.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-09 00:47:39 -0400",
+      "date"       : "Sep 9, 2020",
+      "timespent"  : "80",
+      "words"      : "548",
+      "references" : "https://www.freecodecamp.org/learn",
+      "sleep"      : "460",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "A Detailed Breakdown of my Front Matter Data",
       "tags"       : "jekyll",
       "skills"     : "html",
@@ -204,7 +219,7 @@
       "datetime"   : "2020-08-27 21:14:26 -0400",
       "date"       : "Aug 27, 2020",
       "timespent"  : "",
-      "words"      : "2246",
+      "words"      : "2248",
       "references" : "",
       "sleep"      : "",
       "workout"    : ""

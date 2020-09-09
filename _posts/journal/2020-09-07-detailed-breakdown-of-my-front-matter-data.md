@@ -6,9 +6,9 @@ author: Max Lepper
 categories: [journal]
 tags: [jekyll]
 date: 2020-09-07 17:48:10 -0400
-modified_date:
+modified_date: 2020-09-09 00:45:16 -0400
 published: true
-status: live
+status: finished
 confidence: log
 importance: 2
 context: true
