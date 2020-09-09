@@ -237,22 +237,14 @@ Actual data output to the page
 {%- endcapture -%}
 
 {%- assign estWeekends = startToCurrentD | times: 1.0 | divided_by: 7.0 -%}
-<script>console.log("{{estWeekends}}");</script>
 {%- assign estWeekendDays = estWeekends | times: 2.0 | round -%}
-<script>console.log("{{estWeekendDays}}");</script>
 {%- assign workweekD = startToCurrentD | minus: estWeekendDays -%}
-<script>console.log("{{workweekD}}");</script>
 
 {%- assign aveWorkWeekTime = timeSum | divided_by: workweekD -%}
-<script>console.log("{{aveWorkWeekTime}}");</script>
 {%- assign aveEquivWWTime = aveWorkWeekTime | times: 5 -%}
-<script>console.log("{{aveEquivWWTime}}");</script>
 {%- assign hrRound = aveEquivWWTime | modulo: 60 -%}
-<script>console.log("{{hrRound}}");</script>
 {%- assign aveEquivWWTime = aveEquivWWTime | minus: hrRound -%}
-<script>console.log("{{aveEquivWWTime}}");</script>
 {%- assign aveEquivWWHrs = aveEquivWWTime | divided_by: 60 -%}
-<script>console.log("{{aveEquivWWHrs}}");</script>
 
 {%- assign partTime = 1200 -%}
 {%- assign fullTime = 2400 -%}
@@ -409,14 +401,12 @@ This may eventually be an issue???
 {%- assign gaps = '' | split: ',' -%}
 
 {%- for sDate in streakDates -%}
-  {% if forloop.last %}
-    {% if streak == true %}
-      {%- assign streaks = streaks | push: streakCounter -%}
-    {% endif %}
-  {% elsif forloop.first != true %}
+  <script>console.log("{{ sDate }}");</script>
+  {% if forloop.first != true %}
     {%- assign lastPostIndex = forloop.index0 | minus: 1 -%}
     {%- assign lastPost = streakDates[lastPostIndex] -%}
     {%- assign postDiff = sDate | minus: lastPost -%}
+    <script>console.log("diff: {{ postDiff }}");</script>
 
     {% if postDiff <= 1 %}
       {% if postDiff == 1 %}
@@ -427,7 +417,7 @@ This may eventually be an issue???
           {%- assign streakCounter = streakCounter | plus: 1 -%}
         {% endif %}
       {% endif %}
-    {% elsif postDiff >= 365 %}
+    {% elsif postDiff >= 365 and postDiff < 367 %}
       {% if streak == false %}
         {%- assign streak = true -%}
         {%- assign streakCounter = 1 -%}
@@ -459,13 +449,13 @@ This may eventually be an issue???
 
   {% if streaks[0] != nil %}
     <li>
-      The longest daily posting streak has lasted <b>{{streaks[0]}}</b> days!
+      The longest daily posting streak has lasted <b>{{ streaks[0] }}</b> days!
     </li>
   {% endif %}
 
   {% if gaps[0] != nil %}
     <li>
-      The longest gap between posts was <b>{{gaps[0]}}</b> days
+      The longest gap between posts was <b>{{ gaps[0] | minus: 1 }}</b> days
     </li>
   {%- else -%}
     <li>
