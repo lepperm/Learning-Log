@@ -16,6 +16,7 @@
   - [x] total time / total # of logs
   - [x] total time / total # of days between date range
 - [x] Represent my 7-day average values as an equivalent job work week, how close to a full-time learner am I?
+- [x] Calculate current active streak against javascript current time, not site build time
 
 **Tasks**
 - [x] Tasks to include the task item type as part of the shorthand task description
@@ -26,4 +27,4 @@
 - [x] Implement Front Matter for status, confidence, importance, context, and modified dates]({% post_url journal/2020-09-06-confidence-and-importance-metrics-and-css-games %})
 
 Logging of improvements started 08/22/2020.  
-Last updated 09/07/2020.
+Last updated 09/09/2020.
