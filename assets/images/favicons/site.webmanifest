@@ -1,0 +1,21 @@
+{
+    "name": "Learning Log",
+    "short_name": "Learning Log",
+    "description": "The log for Max Lepper's web development journey.",
+    "icons": [
+        {
+            "src": "/learning-log/assets/images/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/learning-log/assets/images/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#79b8ff",
+    "background_color": "#79b8ff",
+    "start_url": "https://maxlepper.gitlab.io/learning-log/",
+    "display": "standalone"
+}

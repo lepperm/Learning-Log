@@ -50,17 +50,34 @@ minima:
       - username: maxlepper
         instance: gitlab.com
     stackoverflow: 14096749/max-l
+    codepen: lepperm
 # On my local PC, the Minima theme assets can be found at \Programs\Ruby27-x64\lib\ruby\gems\2.7.0\bundler\gems\minima-49f6dce0727a
 # To modify, copy assets to the site directory and override
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-pwa-plugin # https://github.com/lavas-project/jekyll-pwa
 # - jekyll-compose # Command plugin to help with writing posts https://github.com/jekyll/jekyll-compose
 # - jekyll-gzip # Seems more full-featured than my CI line, look into and test! https://github.com/philnash/jekyll-gzip
 # - jemoji # https://github.com/jekyll/jemoji
 # - jekyll-archives # https://github.com/jekyll/jekyll-archives
 # - jekyll-assets # https://github.com/envygeeks/jekyll-assets/blob/master/README.md
+
+# jekyll-pwa-plugin configuration
+pwa:
+  enabled: true # Optional
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: assets/js # Required
+  precache_recent_posts_num: 10 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "assets/**/**/*.{js,css,eot,svg,ttf,woff,ico}"
+    - index.html
+    - "**/index.html"
+  precache_glob_ignores: # Optional
+    - sw-register.js
 
 # Exclude from processing.
 # The following items will not be processed, by default.

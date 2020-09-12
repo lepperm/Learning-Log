@@ -1,32 +1,15 @@
-{%- comment -%}
-  Placeholder to allow defining custom head, in principle, you can add anything here, e.g. favicons:
-
-  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
-  2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
-
-  Add in skill tags while removing duplicates, some default site tags
-  page.description | truncate: 160 else site.descri...
-  iconifier.net
-
-  SEO todo notes, can I implement some of this? Maybe contribute?
-  https://github.com/bhardin/jekyll-seo-script
-  - [ ] Identify SEO terms in the URL
-  - [ ] You have not used your keyword / keyphrase in any subheading (such as an H2) in your copy.
-  - [ ] No images appear in this page, consider adding some as appropriate.
-  - [ ] The meta description is under 120 characters, however up to 156 characters are available. The available space is shorter than the usual 155 characters because Google will also include the publication date in the snippet.
-  - [ ] The page title contains keyword / phrase, but it does not appear at the beginning; try and move it to the beginning.
-  - [ ] The keyword / phrase does not appear in the URL for this page. If you decide to rename the URL be sure to check the old URL 301 redirects to the new one!
-  - [ ] The copy scores 68.9 in the Flesch Reading Ease test, which is considered OK to read.
-  - [ ] This page has 14 outbound link(s).
-  - [ ] The keyword density is 1.74%, which is great, the keyword was found 15 times.
-  - [ ] The meta description contains the primary keyword / phrase.
-  - [ ] There are 890 words contained in the body copy, this is greater than the 300 word recommended minimum.
-  - [ ] The page title is more than 40 characters and less than the recommended 70 character limit. #The keyword appears in the first paragraph of the copy.
-
-{%- endcomment -%}
+<link rel="apple-touch-icon" sizes="180x180" href="/learning-log/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/learning-log/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/learning-log/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/learning-log/assets/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/learning-log/assets/images/favicons/safari-pinned-tab.svg" color="#79b8ff">
+<link rel="shortcut icon" href="/learning-log/assets/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#79b8ff">
+<meta name="msapplication-config" content="/learning-log/assets/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#79b8ff">
 
 {%- if page.tags -%}
-  <meta name="keywords" content="Max Lepper, learning log, {{ page.tags | join: ', ' | escape}}"/>
+  <meta name="keywords" content="Max Lepper, learning log, blog, web development, {{ page.tags | join: ', ' | escape}}"/>
 {%- else -%}
   <meta name="keywords" content="Max Lepper, learning log, blog, web development"/>
 {%- endif -%}
