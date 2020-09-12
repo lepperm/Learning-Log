@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Better Practices with Favicons",
+      "tags"       : "css, accessibility",
+      "skills"     : "css, html, accessibility",
+      "excerpt"    : "Already fixing my brand-new favicons to include a version identifier and better color contrast.",
+      "url"        : "/learning-log/journal/2020/09/12/better-practices-with-favicons.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-12 18:23:37 -0400",
+      "date"       : "Sep 12, 2020",
+      "timespent"  : "140",
+      "words"      : "568",
+      "references" : "https://realfavicongenerator.net/, https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/, https://github.com/lavas-project/jekyll-pwa, https://developer.mozilla.org/en-US/docs/Web/Manifest, https://developers.google.com/web/fundamentals/primers/service-workers, https://medium.com/izettle-engineering/beginners-guide-to-web-push-notifications-using-service-workers-cb3474a17679",
+      "sleep"      : "370",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Service Workers, Accessibility, and Favicons",
       "tags"       : "service workers, css, accessibility",
       "skills"     : "css, html, accessibility",
