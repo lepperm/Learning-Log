@@ -16,6 +16,7 @@ skills: [css, html]
 references: ["https://www.freecodecamp.org/learn","https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory"]
 timespent: 325
 sleep: 400
+recreation:
 workout:
 ---
 

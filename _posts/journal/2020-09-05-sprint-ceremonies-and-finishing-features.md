@@ -16,6 +16,7 @@ skills: [agile-pm]
 references: ["https://agwsu.org/","https://www.linkedin.com/in/nealstrobl/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/92","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/93"]
 timespent: 140
 sleep: 485
+recreation:
 workout:
 ---
 

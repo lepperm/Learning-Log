@@ -16,6 +16,7 @@ skills: [css]
 references: ["https://www.freecodecamp.org/learn","https://agwsu.org/","https://www.cybercoders.com/insights/why-programmers-should-be-blogging/"]
 timespent: 140
 sleep: 375
+recreation:
 workout:
 ---
 

@@ -16,6 +16,7 @@ skills: [sass, liquid, javascript, markdown]
 references: ["https://sass-lang.com/documentation/variables", "http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html","https://materialdesignicons.com/"]
 timespent: 275
 sleep:
+recreation:
 workout:
 ---
 

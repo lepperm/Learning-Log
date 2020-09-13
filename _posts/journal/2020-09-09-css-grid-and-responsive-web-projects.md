@@ -16,6 +16,7 @@ skills: [css]
 references: ["https://www.freecodecamp.org/learn"]
 timespent: 80
 sleep: 460
+recreation:
 workout:
 ---
 

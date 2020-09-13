@@ -16,6 +16,7 @@ skills: [gulp, webpack]
 references: ["https://stackoverflow.com/questions/33561272/task-runners-gulp-grunt-etc-and-bundlers-webpack-browserify-why-use-toge/33574602#33574602","https://survivejs.com/webpack/appendices/comparison/","https://css-tricks.com/using-webp-images/#using-webp-in-html","https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better","https://medium.com/@housecor/browserify-vs-webpack-b3d7ca08a0a9","https://www.npmjs.com/package/fuse-box","https://github.com/ericgrosse/task-runner-bundler-comparison","https://stackoverflow.com/questions/48395804/where-is-create-react-app-webpack-config-and-files"]
 timespent: 160
 sleep: 375
+recreation:
 workout:
 ---
 

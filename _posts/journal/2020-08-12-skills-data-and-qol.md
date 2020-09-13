@@ -16,6 +16,7 @@ skills: [javascript, liquid, jekyll, markdown, html, css]
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://devhints.io/jekyll", "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await", "https://javascript.info/async-await", "https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll", "https://jekyllrb.com/docs/datafiles/"]
 timespent: 445
 sleep: 
+recreation:
 workout: 
 ---
 

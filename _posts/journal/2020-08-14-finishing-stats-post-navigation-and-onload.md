@@ -16,6 +16,7 @@ skills: [javascript, liquid, jekyll, html, css]
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8"]
 timespent: 330
 sleep: 
+recreation:
 workout: 
 ---
 

@@ -401,12 +401,10 @@ This may eventually be an issue???
 {%- assign gaps = '' | split: ',' -%}
 
 {%- for sDate in streakDates -%}
-  <script>console.log("{{ sDate }}");</script>
   {% if forloop.first != true %}
     {%- assign lastPostIndex = forloop.index0 | minus: 1 -%}
     {%- assign lastPost = streakDates[lastPostIndex] -%}
     {%- assign postDiff = sDate | minus: lastPost -%}
-    <script>console.log("diff: {{ postDiff }}");</script>
 
     {% if postDiff <= 1 %}
       {% if postDiff == 1 %}
@@ -465,7 +463,7 @@ This may eventually be an issue???
 
   {% if streak %}
     <li id="isStreak">
-      <b>There is an active streak right now!</b> Want to sign up for my <a href='{{ site.baseurl }}/feed.xml''>RSS feed</a>? 😊
+      <b>There is an active streak right now! ({{ streakCounter }} days)</b> Want to sign up for my <a href='{{ site.baseurl }}/feed.xml''>RSS feed</a>? 😊
     </li>
   {% endif %}
 </ul>
@@ -518,7 +516,6 @@ This may eventually be an issue???
   }
 
   if (timeDiff > 0) {
-    console.log(timeDiff);
     if (timeDiff > 86400000) { //24 hrs
       try {
         // if no post from the past 24 real-world hours, maybe streak lost

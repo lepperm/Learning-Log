@@ -16,6 +16,7 @@ skills: [jekyll, liquid, seo]
 references: ["https://devhints.io/jekyll", "https://shopify.github.io/liquid/", "https://jekyllcodex.org/without-plugins/", "https://www.sureoak.com/seo-tools"]
 timespent: 220
 sleep: 
+recreation:
 workout: 
 ---
 

@@ -16,6 +16,7 @@ skills: [javascript, liquid, jekyll, html, css]
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/datafiles/", "https://www.w3.org/TR/2016/REC-html51-20161101/textlevel-semantics.html#the-a-element", "https://jekyllrb.com/docs/liquid/tags/#links", "https://stackoverflow.com/users/14096749/max-l","https://stackoverflow.com/questions/63400845/how-can-i-use-a-liquid-generated-json-as-a-data-site-data-object-in-jekyll"]
 timespent: 305
 sleep: 
+recreation:
 workout: 
 ---
 

@@ -16,6 +16,7 @@ skills: [git, liquid]
 references: ["https://learngitbranching.js.org/"]
 timespent: 235
 sleep:
+recreation:
 workout:
 ---
 

@@ -1,16 +1,16 @@
 [{
       "layout"     : "journal",
-      "title"      : "Better Practices with Favicons",
+      "title"      : "Better Practices with Favicons, Pipelines, and Recreation",
       "tags"       : "css, accessibility",
-      "skills"     : "css, html, accessibility",
-      "excerpt"    : "Already fixing my brand-new favicons to include a version identifier and better color contrast.",
-      "url"        : "/learning-log/journal/2020/09/12/better-practices-with-favicons.html",
+      "skills"     : "css, html, accessibility, gitlab-ci",
+      "excerpt"    : "Already fixing my brand-new favicons to include a version identifier and better color contrast, updating CI/CD pipelines for AGWSU and my portfolio, and adding a new &quot;recreation&quot; metric.",
+      "url"        : "/learning-log/journal/2020/09/12/better-practices-with-favicons-pipelines-and-recreation.html",
       "category"   : "journal",
       "datetime"   : "2020-09-12 18:23:37 -0400",
       "date"       : "Sep 12, 2020",
-      "timespent"  : "140",
-      "words"      : "568",
-      "references" : "https://realfavicongenerator.net/, https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/, https://github.com/lavas-project/jekyll-pwa, https://developer.mozilla.org/en-US/docs/Web/Manifest, https://developers.google.com/web/fundamentals/primers/service-workers, https://medium.com/izettle-engineering/beginners-guide-to-web-push-notifications-using-service-workers-cb3474a17679",
+      "timespent"  : "265",
+      "words"      : "938",
+      "references" : "https://realfavicongenerator.net/, https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/117, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/commit/b102f59348786adcbfbeeb878c7925c4e7161338",
       "sleep"      : "370",
       "workout"    : ""
     },{

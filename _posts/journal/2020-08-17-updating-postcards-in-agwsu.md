@@ -16,6 +16,7 @@ skills: [react, agile-pm, gitlab-ci]
 references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Code%20Style%20Guide"]
 timespent: 395
 sleep:
+recreation:
 workout:
 ---
 

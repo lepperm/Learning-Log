@@ -16,6 +16,7 @@ skills: [liquid, html, javascript]
 references: ["https://shopify.dev/docs/themes/liquid/reference/objects/for-loops"]
 timespent: 180
 sleep:
+recreation:
 workout:
 ---
 

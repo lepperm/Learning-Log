@@ -16,6 +16,7 @@ skills: [jekyll, liquid, css, yaml]
 references: ["https://github.com/jekyll/minima/", "https://github.com/jekyll/", "https://jekyllrb.com/docs/", "https://github.com/christian-fei/Simple-Jekyll-Search", "https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"]
 timespent: 150
 sleep: 
+recreation:
 workout: 
 ---
 

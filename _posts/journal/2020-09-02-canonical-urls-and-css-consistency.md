@@ -16,6 +16,7 @@ skills: [javascript, html, css]
 references: ["https://www.freecodecamp.org/learn", "https://search.google.com/search-console/about", "https://marketingplatform.google.com/about/analytics/", "https://stackoverflow.com/questions/10161177/url-with-multiple-forward-slashes-does-it-break-anything"]
 timespent: 200
 sleep: 295
+recreation:
 workout:
 ---
 

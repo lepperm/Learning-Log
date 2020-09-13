@@ -16,6 +16,7 @@ skills: [html, javascript, liquid]
 references: []
 timespent: 165
 sleep: 490
+recreation:
 workout:
 ---
 

@@ -16,6 +16,7 @@ skills: []
 references: []
 timespent: 0
 sleep:
+recreation:
 workout:
 ---
 

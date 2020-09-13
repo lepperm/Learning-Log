@@ -16,6 +16,7 @@ skills: [css]
 references: ["https://www.gwern.net/About#confidence-tags","https://www.gwern.net/About#importance-tags","https://www.gwern.net/Resorter","https://www.gwern.net/docs/statistics/bayes/2008-kesselman.pdf","http://flexboxfroggy.com/","https://cssgridgarden.com/"]
 timespent: 90
 sleep: 395
+recreation:
 workout:
 ---
 

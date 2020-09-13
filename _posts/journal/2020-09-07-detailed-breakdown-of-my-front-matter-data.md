@@ -16,6 +16,7 @@ skills: [html]
 references: ["https://www.gwern.net/About#confidence-tags","https://www.gwern.net/About#importance-tags","https://www.gwern.net/About"]
 timespent: 50
 sleep: 380
+recreation:
 workout:
 ---
 

@@ -16,6 +16,7 @@ skills: [css]
 references: ["https://www.geekrar.com/install-macos-catalina-on-virtualbox-on-windows-pc-new/","https://tabliss.io/","https://gitlab.com/-/snippets/2009089"]
 timespent: 105
 sleep:
+recreation:
 workout:
 ---
 

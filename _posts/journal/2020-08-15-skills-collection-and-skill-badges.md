@@ -16,6 +16,7 @@ skills: [javascript, liquid, jekyll, html, css]
 references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://gitlab.com/gitlab-org/gitlab-pages/-/issues/231", "https://jekyllrb.com/docs/collections/"]
 timespent: 130
 sleep: 
+recreation:
 workout: 
 ---
 

@@ -16,6 +16,7 @@ skills: [javascript, html, css, accessibility, agile-pm, git]
 references: ["https://www.freecodecamp.org/learn","https://leansmarts.com/summary-2-second-lean/","https://search.google.com/search-console/about","https://www.linkedin.com/in/davidebest","https://seesparkbox.com/","https://agwsu.org/","https://www.linkedin.com/in/nealstrobl/","http://www.davidmacd.com/blog/select-box-label.html","https://www.twitch.tv/happydevelopment","http://nicolasgallagher.com/git-checkout-specific-files-from-another-branch/"]
 timespent: 245
 sleep: 440
+recreation:
 workout:
 ---
 

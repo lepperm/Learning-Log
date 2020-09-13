@@ -8,7 +8,7 @@ tags: [service workers, css, accessibility]
 date: 2020-09-11 23:27:06 -0400
 modified_date:
 published: true
-status: live
+status: finished
 confidence: log
 importance: 2
 context: true
@@ -16,6 +16,7 @@ skills: [css, html, accessibility]
 references: ["https://www.freecodecamp.org/learn","https://codepen.io/lepperm","https://codepen.io/lepperm/pen/abNYBJK","https://uxwing.com/","https://realfavicongenerator.net/","https://github.com/lavas-project/jekyll-pwa","https://developer.mozilla.org/en-US/docs/Web/Manifest","https://developers.google.com/web/fundamentals/primers/service-workers","https://medium.com/izettle-engineering/beginners-guide-to-web-push-notifications-using-service-workers-cb3474a17679","https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/","https://stackoverflow.com/questions/45536537/centering-in-css-grid"]
 timespent: 345
 sleep: 390
+recreation:
 workout:
 ---
 
