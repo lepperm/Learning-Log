@@ -16,7 +16,7 @@ skills: [javascript]
 references: ["https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events","https://medium.com/javascript-dots/creating-browser-notification-in-javascript-79e91bfb76c8"]
 timespent: 160
 sleep: 460
-recreation: 90
+recreation: 95
 workout:
 ---
 
