@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Browser Notifications and the Update Event",
+      "tags"       : "javascript, service workers",
+      "skills"     : "javascript",
+      "excerpt"    : "Setting up and serving update notifications after tying into the PWA plugin update event.",
+      "url"        : "/learning-log/journal/2020/09/13/browser-notifications-and-the-update-event.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-13 21:41:48 -0400",
+      "date"       : "Sep 13, 2020",
+      "timespent"  : "160",
+      "words"      : "371",
+      "references" : "https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events, https://medium.com/javascript-dots/creating-browser-notification-in-javascript-79e91bfb76c8",
+      "sleep"      : "460",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Better Practices with Favicons, Pipelines, and Recreation",
       "tags"       : "css, accessibility",
       "skills"     : "css, html, accessibility, gitlab-ci",

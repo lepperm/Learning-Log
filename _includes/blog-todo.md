@@ -10,6 +10,7 @@
 - [ ] Greatly improve accessibility
 - [ ] Some way to distinguish between different groupings of topics within blog posts.
   - Alternating background shading behind paragraphs (like excel tables)? Horizontal rules? Extra headers? Possibly mock up some variants and take a poll from readers
+- [ ] Server push notifications to PWA on new content
 
 **Brainstorming**
 - [ ] A configurable floating TOC element

@@ -5,3 +5,47 @@
 {%- else -%}
   <meta name="keywords" content="Max Lepper, learning log, blog, web development"/>
 {%- endif -%}
+
+<!-- The script below handles delivering update notifications from the jekyll-pwa-plugin "sw.update" event -->
+<script>
+  {% assign latestPost = site.posts.first %}
+
+  function showNotification() {
+    console.log(document.visibilityState);
+    if(document.visibilityState === "visible") {
+      if(confirm("New content has been posted! Tap OK to refresh and check out '{{ latestPost.title }}'")) {
+        window.location.href = '{{site.baseurl}}{{ latestPost.url }}';
+        //window.location.reload(true);
+      };
+      return;
+    }
+
+    let title = "Learning Log";
+    icon = "{{site.baseurl}}/assets/images/favicons/android-chrome-192x192.png";
+    let body = "New log posted! Check out '{{ latestPost.title }}' on Learning Log!";
+    let notification = new Notification(title, { body, icon });
+
+    notification.onclick = () => {
+      notification.close();
+      window.parent.focus();
+      window.location.href = '{{site.baseurl}}{{ latestPost.url }}';
+    }
+  }
+
+  function requestPermAndShow() {
+    Notification.requestPermission(function (permission) {
+      if (permission === "granted") {
+        showNotification();
+      }
+    });
+  }
+
+  window.addEventListener("sw.update", function () {
+    let permission = Notification.permission;
+    if(permission === "granted") {
+      showNotification();
+    } else if(permission === "default") {
+      requestPermAndShow();
+    }
+  });
+</script>

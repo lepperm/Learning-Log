@@ -6,9 +6,9 @@ author: Max Lepper
 categories: [journal]
 tags: [css, accessibility]
 date: 2020-09-12 18:23:37 -0400
-modified_date:
+modified_date: 2020-09-12 23:52:11 -0400
 published: true
-status: live
+status: finished
 confidence: log
 importance: 2
 context: true
@@ -16,7 +16,7 @@ skills: [css, html, accessibility, gitlab-ci]
 references: ["https://realfavicongenerator.net/","https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/117","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/commit/b102f59348786adcbfbeeb878c7925c4e7161338"]
 timespent: 265
 sleep: 370
-recreation: 20
+recreation: 50
 workout:
 ---
 
