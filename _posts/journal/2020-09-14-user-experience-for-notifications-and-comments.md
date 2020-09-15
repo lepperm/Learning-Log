@@ -5,7 +5,7 @@ excerpt: Conducting a poll to improve the user experience for post notifications
 author: Max Lepper
 categories: [journal]
 tags: [javascript, service workers, disqus]
-date: 2020-09-14 23:18:51 -0400
+date: 2020-09-14 22:15:51 -0400
 modified_date:
 published: true
 status: live
