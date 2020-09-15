@@ -1,0 +1,33 @@
+---
+layout: page
+title: References
+exclude: true
+permalink: /references/
+jsfiles:
+cssfiles:
+---
+
+<p>
+	All references used across any posts on this site will be listed below.
+</p>
+
+{%- assign reflist = '' | split: ',' -%}
+{% for stat in site.data.search %}
+  {%- if stat.references != "" -%}
+    {%- assign references = stat.references | split: ',' -%}
+    {%- assign reflist = reflist | concat: references -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign uniqRefs = reflist | uniq -%}
+{%- assign uniqRefs = uniqRefs | sort_natural -%}
+
+{%- if uniqRefs -%}
+	<ul>
+		{%- for ref in uniqRefs -%}
+			<li>
+				<a href="{{ ref }}">{{ ref }}</a>
+			</li>
+		{%- endfor -%}
+	</ul>
+{%- endif -%}

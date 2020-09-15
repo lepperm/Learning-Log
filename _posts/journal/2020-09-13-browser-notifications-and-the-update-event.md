@@ -6,9 +6,9 @@ author: Max Lepper
 categories: [journal]
 tags: [javascript, service workers]
 date: 2020-09-13 21:41:48 -0400
-modified_date:
+modified_date: 2020-09-14 19:08:22 -0400
 published: true
-status: live
+status: finished
 confidence: log
 importance: 1
 context: true
@@ -16,7 +16,7 @@ skills: [javascript]
 references: ["https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events","https://medium.com/javascript-dots/creating-browser-notification-in-javascript-79e91bfb76c8"]
 timespent: 160
 sleep: 460
-recreation: 95
+recreation: 90
 workout:
 ---
 
@@ -38,6 +38,10 @@ I am curious to see if this is enough to start getting proper updates on my web 
 - <https://michielsioen.be/2019-10-26-the-pwa-experiment-pt1-setup/>
 - <https://michielsioen.be/2019-11-23-the-pwa-experiment-pt2-debugging/>
 - <https://medium.com/progressive-web-apps/pwa-create-a-new-update-available-notification-using-service-workers-18be9168d717>
+- <https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update>
+- <https://developer.mozilla.org/en-US/docs/Web/API/Push_API>
+- <https://developer.mozilla.org/en-US/docs/Web/API/PushManager/subscribe>
+- <https://codelabs.developers.google.com/codelabs/push-notifications/#0>
 
 Today ended up being a pretty jam-packed day, so I didn't get to much else on the coding front. I hope to get that references list page done soon!
 

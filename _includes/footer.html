@@ -15,7 +15,19 @@
           <a href="{{ 'feed.xml' | relative_url }}">
             <svg class="svg-icon orange">
               <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
+            </svg><span>Subscribe via RSS</span>
+          </a>
+        </p>
+        <p class="feed-subscribe">
+          <a id="PWAsubscribe" onclick="reqNotifications()" style="cursor:pointer;" hidden=true>
+            <svg class="svg-icon">
+              <image xlink:href="{{site.baseurl}}/assets/images/icons/bell-ring.svg"  width="16" height="16">
+            </svg><span>Get notified of new posts</span>
+          </a>
+          <a id="PWAunsubscribe" onclick="unsubscribePush()" style="cursor:pointer;" hidden=true>
+            <svg class="svg-icon">
+              <image xlink:href="{{site.baseurl}}/assets/images/icons/bell-off.svg"  width="16" height="16">
+            </svg><span>Unsubscribe from push notifications</span>
           </a>
         </p>
       {%- if site.author %}
@@ -51,3 +63,49 @@
   </div>
 
 </footer>
+
+<!-- The script below is used to manually trigger notification permissions -->
+<script>
+  function reqNotifications() {
+    Notification.requestPermission().then(
+      function() {
+        updateSubLink();
+      }
+    );
+  }
+
+  function unsubscribePush() {
+    // --- Code to handle unsubscribing from push should go here ---
+    // Add condition so subscribe link shown if notification but no push?
+    showSubscribe();
+  }
+
+  // Handles showing or hiding the PWA subscribe links in the footer
+  // Both links hidden by default, so not shown if notifications are unavailable
+  function updateSubLink() {
+    let permission = Notification.permission;
+    if(permission === "granted") {
+      hideSubscribe();
+    } else {
+      showSubscribe();
+    }
+  }
+
+  // Adds and removes hidden attributes
+  const subscribeElem = document.getElementById("PWAsubscribe");
+  const unsubscribeElem = document.getElementById("PWAunsubscribe");
+
+  function showSubscribe() {
+    subscribeElem.removeAttribute("hidden");
+    unsubscribeElem.setAttribute("hidden", "true");
+  }
+
+  function hideSubscribe() {
+    subscribeElem.setAttribute("hidden", "true");
+    //unsubscribeElem.removeAttribute("hidden"); // disabled until web push service added
+  }
+
+  // Upon loading the page, check notification permissions and update the footer PWA subscribe link
+  updateSubLink();
+
+</script>

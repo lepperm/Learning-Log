@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "User Experience for Notifications and Comments",
+      "tags"       : "javascript, service workers, disqus",
+      "skills"     : "javascript, html",
+      "excerpt"    : "Conducting a poll to improve the user experience for post notifications, and exploring selectively adding Disqus to posts.",
+      "url"        : "/learning-log/journal/2020/09/14/user-experience-for-notifications-and-comments.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-14 23:18:51 -0400",
+      "date"       : "Sep 14, 2020",
+      "timespent"  : "335",
+      "words"      : "1319",
+      "references" : "https://shopify.github.io/liquid/basics/truthy-and-falsy/, https://onesignal.com/webpush",
+      "sleep"      : "380",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Browser Notifications and the Update Event",
       "tags"       : "javascript, service workers",
       "skills"     : "javascript",
@@ -9,7 +24,7 @@
       "datetime"   : "2020-09-13 21:41:48 -0400",
       "date"       : "Sep 13, 2020",
       "timespent"  : "160",
-      "words"      : "371",
+      "words"      : "375",
       "references" : "https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events, https://medium.com/javascript-dots/creating-browser-notification-in-javascript-79e91bfb76c8",
       "sleep"      : "460",
       "workout"    : ""

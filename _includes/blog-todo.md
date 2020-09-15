@@ -16,3 +16,6 @@
 - [ ] A configurable floating TOC element
 - [ ] "Year in pixels" style blogging map for days with posts
   - [ ] Navigate through to see all posts for that day (can reuse existing search query w/ date format `%b %d, %Y`)
+- [ ] Advanced search functionality
+  - [ ] Filter posts by date range, duration, skills, length, confidence level, status, and more
+  - [ ] Filter skills by time, date range, progression, references, and more
