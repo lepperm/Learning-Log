@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [service workers, css, accessibility]
 date: 2020-09-11 23:27:06 -0400
-modified_date:
+modified_date: 2020-09-15 13:12:55 -0400
 published: true
 status: finished
 confidence: log
@@ -38,7 +38,7 @@ Here's the current version of the project:
 
 Chances are, unless you're actively following this blog, the above Pen will already have a proper completed tribute. As of this writing, though, I still have quite a few details to fill in before I can stamp it as "done". I feel a bit guilty about not aiming for a more fleshed-out page, especially as I read more about Alice Ball's accomplishments, but fortunately Wikipedia has many well-written references attributed and my intent is primarily awareness/amplification. And completing the page, of course.
 
-Up to this point, my site has not had a favicon, mostly because I haven't known what to use, but it has definitely been bugging me. Plus, the debugger is constantly screaming at me. At least for the time being, I decided to go with a simple open book, as Learning Log has been, in a sense, me trying to be an "open book" about my experiences. The selection is a bit limited, but I ended up picking the `read-book-icon` from [UXWing]({{page.references[3]}}), which has a very flexible license agreement that both allows for modification and does not require attribution. I will be keeping them in mind as a solid option going forward! Next up was to create the actual favicon, and I found this [great online tool with many simple options]({{page.references[4]}}). Following the instructions, it was simple to get everything added to the site.
+Up to this point, Learning Log has not had a favicon, mostly because I haven't known what to use, but it has definitely been bugging me. Plus, the debugger is constantly screaming at me. At least for the time being, I decided to go with a simple open book, as Learning Log has been, in a sense, me trying to be an "open book" about my experiences. The selection is a bit limited, but I ended up picking the `read-book-icon` from [UXWing]({{page.references[3]}}), which has a very flexible license agreement that both allows for modification and does not require attribution. I will be keeping them in mind as a solid option going forward! Next up was to create the actual favicon, and I found this [great online tool with many simple options]({{page.references[4]}}). Following the instructions, it was simple to get everything added to the site.
 
 In the files generated, I found a `site.webmanifest` file, and a little research showed me that this was related to progressive web apps. I've done a little bit with this on my portfolio site, so why the heck not try to add it to Learning Log, too? I found a nice-looking [PWA Jekyll gem plugin]({{page.references[5]}}) immediately, and set out to get it integrated. The generated [web app manifest]({{page.references[6]}}) could be used as-is, and I took a little time to read up on [service workers]({{page.references[7]}}) to build out my understanding of what happens behind the scenes.
 

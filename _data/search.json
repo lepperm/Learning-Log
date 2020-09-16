@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Finalizing Notifications and Mastering Markdown",
+      "tags"       : "javascript, freecodecamp, service workers",
+      "skills"     : "javascript, html, css, markdown",
+      "excerpt"    : "Putting finishing touches on notifications for now, submitting my finalized tribute project, and taking a quick Markdown course.",
+      "url"        : "/learning-log/journal/2020/09/15/finalizing-notifications-and-mastering-markdown.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-15 23:58:21 -0400",
+      "date"       : "Sep 15, 2020",
+      "timespent"  : "255",
+      "words"      : "851",
+      "references" : "https://www.brainscape.com/blog/2016/08/better-learning-focused-vs-diffuse-thinking/, https://masteringmarkdown.com/, https://typora.io/",
+      "sleep"      : "380",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "User Experience for Notifications and Comments",
       "tags"       : "javascript, service workers, disqus",
       "skills"     : "javascript, html",

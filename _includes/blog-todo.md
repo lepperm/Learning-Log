@@ -1,5 +1,5 @@
 **Modularity**
-- [ ] Make the skill collection and data make skill collection and data generic (for example, a languages learning breakdown)
+- [ ] Make the skill collection and data generic (for example, a languages learning breakdown)
 
 **Quality and Code Health**
 - [ ] Figure out how to copy compiled `Skills.json` and `Search.json` files to the `_data` folder at build

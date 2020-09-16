@@ -8,12 +8,10 @@
 
 <!-- The script below handles delivering update notifications from the jekyll-pwa-plugin "sw.update" event -->
 <script>
-  {% assign latestPost = site.posts.first %}
-
   function showNotification() {
     if(document.visibilityState === "visible") {
-      if(confirm("New content has been posted! Tap OK to check out '{{ latestPost.title }}'")) {
-        window.location.href = "{{ site.baseurl }}{{ latestPost.url }}";
+      if(confirm("New content has been posted, tap OK to read now!")) {
+        window.location.href = "{{ site.baseurl }}/latest-post/";
       } else {
         window.location.reload(true);
       };
@@ -22,7 +20,7 @@
 
     let title = "Learning Log";
     let options = {
-      body: "New log posted! Check out '{{ latestPost.title }}' on Learning Log!",
+      body: "New log posted, tap here to read it now!",
       icon: "{{site.baseurl}}/assets/images/favicons/android-chrome-192x192.png",
       vibrate: [200, 100, 200]
     }
@@ -32,7 +30,7 @@
     notification.onclick = () => {
       notification.close();
       window.parent.focus();
-      window.location.href = "{{ site.baseurl }}{{ latestPost.url }}";
+      window.location.href = "{{ site.baseurl }}/latest-post/";
     }
   }
 

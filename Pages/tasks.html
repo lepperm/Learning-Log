@@ -7,6 +7,28 @@ jsfiles:
 cssfiles:
 ---
 
+{%- comment -%}
+=======================
+Variables to control task collection
+=======================
+{%- endcomment -%}
+
+{%- assign learnSkillLimit = 2 -%}
+
+{%- assign suggSkillSample = 3 -%}
+{%- assign suggTaskSample = 4 -%}
+{%- assign suggSplitEven = true -%}
+
+{%- assign sleepTarget = 390 -%}
+{%- assign sleepMin = 360 -%}
+{%- assign sleepAveDays = 5 -%}
+
+{%- comment -%}
+=======================
+Checking for any skills without progression pages
+=======================
+{%- endcomment -%}
+
 {%- assign lonerSkills = '' | split:',' -%}
 {%- assign sortSkills = site.data.skills | sort: "name" -%}
 
@@ -59,22 +81,6 @@ cssfiles:
   Learning Items
   {%- include return-to-top.html target="toc" -%}
 </h2>
-
-{%- comment -%}
-=======================
-Variables to control task collection
-=======================
-{%- endcomment -%}
-
-{%- assign learnSkillLimit = 2 -%}
-
-{%- assign suggSkillSample = 3 -%}
-{%- assign suggTaskSample = 4 -%}
-{%- assign suggSplitEven = true -%}
-
-{%- assign sleepTarget = 390 -%}
-{%- assign sleepMin = 360 -%}
-{%- assign sleepAveDays = 3 -%}
 
 {%- comment -%}
 =======================
