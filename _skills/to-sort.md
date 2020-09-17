@@ -44,7 +44,37 @@ progressionEntries:
     relproj:
     relprojlink:
     datecomp: 04/2020
-    datelink: 
+    datelink:
+  - 
+    id: 5
+    status: OK
+    name: Problem Solving
+    item: https://michielsioen.be/2020-01-12-problem-solving/
+    type: Blog
+    relproj:
+    relprojlink:
+    datecomp: 9/16/2020
+    datelink:
+  - 
+    id: 6
+    status: UN
+    name: Build a network of peers
+    item: https://lethain.com/network-of-peers/
+    type: Blog
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 7
+    status: UN
+    name: Meeting People
+    item: https://lethain.com/meeting-people/
+    type: Blog
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
   - 
     id: 
     status: NS
@@ -711,26 +741,6 @@ progressionEntries:
     name: React for Data Visualization
     item: https://reactfordataviz.com/
     type: Course (paid)
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: 
-    item: 
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: 
-    item: 
-    type: 
     relproj:
     relprojlink:
     datecomp:

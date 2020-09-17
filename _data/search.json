@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Communication, Visibility, and Problem Solving",
+      "tags"       : "mentality, communication",
+      "skills"     : "",
+      "excerpt"    : "Working on my mentality in an effort to be a more mindful communicator, and highlights from other readings.",
+      "url"        : "/learning-log/journal/2020/09/16/tbd.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-16 23:36:51 -0400",
+      "date"       : "Sep 16, 2020",
+      "timespent"  : "0",
+      "words"      : "1190",
+      "references" : "https://www.irregular.cafe/, https://www.youtube.com/watch?v=R1vskiVDwl4, https://blog.trello.com/visible-and-valued-remote-worker, https://michielsioen.be/2020-01-12-problem-solving/, https://en.wikipedia.org/wiki/Rubber_duck_debugging, https://people.ucsc.edu/~bcstorm/sa_2010.pdf",
+      "sleep"      : "280",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Finalizing Notifications and Mastering Markdown",
       "tags"       : "javascript, freecodecamp, service workers",
       "skills"     : "javascript, html, css, markdown",
