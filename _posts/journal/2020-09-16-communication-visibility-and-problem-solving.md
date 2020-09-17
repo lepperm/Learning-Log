@@ -5,7 +5,7 @@ excerpt: Working on my mentality in an effort to be a more mindful communicator,
 author: Max Lepper
 categories: [journal]
 tags: [mentality, communication]
-date: 2020-09-16 23:36:51 -0400
+date: 2020-09-16 23:04:51 -0400
 modified_date:
 published: true
 status: live
