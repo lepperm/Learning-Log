@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Git Mirroring and Hacktoberfest 2020",
+      "tags"       : "open source, hacktoberfest2020",
+      "skills"     : "",
+      "excerpt"    : "Gearing up for Hacktoberfest 2020, and making my GitLab and GitHub repositories share data.",
+      "url"        : "/learning-log/journal/2020/09/17/git-mirroring-and-hacktoberfest-2020.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-17 23:45:04 -0400",
+      "date"       : "Sep 17, 2020",
+      "timespent"  : "0",
+      "words"      : "1146",
+      "references" : "https://gitlab.com/neal.strobl/wsu-adventurers-guild, https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Architecture, https://www.irregular.cafe/, https://twitter.com/davidebest, https://hacktoberfest.digitalocean.com/, https://www.linkedin.com/in/nealstrobl/, https://dev.to/devteam/preptember-start-getting-ready-for-hacktoberfest-this-month-58cn, https://www.youtube.com/watch?v=vSdSFxIKy5w&feature=youtu.be, http://do.co/hf_firstpr, https://getavataaars.com/",
+      "sleep"      : "380",
+      "workout"    : ""
+    },{
+      "layout"     : "journal",
       "title"      : "Communication, Visibility, and Problem Solving",
       "tags"       : "mentality, communication",
       "skills"     : "",
