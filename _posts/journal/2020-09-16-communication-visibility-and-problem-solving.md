@@ -13,9 +13,9 @@ confidence: highly likely
 importance: 3
 context: true
 comments: true
-skills: []
+skills: [general]
 references: ["https://www.irregular.cafe/","https://www.youtube.com/watch?v=R1vskiVDwl4","https://blog.trello.com/visible-and-valued-remote-worker","https://michielsioen.be/2020-01-12-problem-solving/","https://en.wikipedia.org/wiki/Rubber_duck_debugging","https://people.ucsc.edu/~bcstorm/sa_2010.pdf"]
-timespent: 0
+timespent: 305
 sleep: 280
 recreation: 0
 workout:

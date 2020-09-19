@@ -6,16 +6,16 @@ author: Max Lepper
 categories: [journal]
 tags: [open source, hacktoberfest2020]
 date: 2020-09-17 23:45:04 -0400
-modified_date:
+modified_date: 2020-09-18 13:27:04 -0400
 published: true
 status: live
 confidence: log
 importance: 1
 context: true
 comments: true
-skills: []
+skills: [general]
 references: ["https://gitlab.com/neal.strobl/wsu-adventurers-guild","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/wikis/Home/Technical/Architecture","https://www.irregular.cafe/","https://twitter.com/davidebest","https://hacktoberfest.digitalocean.com/","https://www.linkedin.com/in/nealstrobl/","https://dev.to/devteam/preptember-start-getting-ready-for-hacktoberfest-this-month-58cn","https://www.youtube.com/watch?v=vSdSFxIKy5w&feature=youtu.be","http://do.co/hf_firstpr","https://getavataaars.com/"]
-timespent: 0
+timespent: 270
 sleep: 380
 recreation: 60
 workout:
@@ -23,11 +23,13 @@ workout:
 
 ## Journal
 
-Getting into web development when I did, there was some initial debate on whether I should go with GitLab or GitHub. I read many articles (many of which were over my head at the time), spoke with most of my friends, and dug around on each site. In addition to the [AGWSU]({{page.references[0]}}) project being hosted on GitLab, it seemed to make sense to go with GitLab. As time has gone on, I've gotten a much better sense for what exactly that decision entails - GitLab has great DevOps tools, but GitHub has a much deeper sense of customization and community. That missing customization and community element keep coming up, be it wanting to grab some kind of data, or add more content to my profile, or coming across a developer site that lets me sign up with a GitHub account, but not GitLab. I realize that GitHub has been around for longer than GitLab, so a lot of that makes sense, but GitLab also seems much more laser-focused on the customer side of things. It's kind of a bummer having to "choose" one.
+Getting into web development when I did, there was some initial debate on whether I should go with GitLab or GitHub. I read many articles (many of which were over my head at the time), spoke with most of my friends, and dug around on each site. In addition to the [AGWSU]({{page.references[0]}}) project being hosted on GitLab, it seemed to make sense to go with GitLab. As time has gone on, I've gotten a much better sense for what exactly that decision entails - GitLab has great DevOps tools, but GitHub has a much deeper sense of customization and community. That missing customization and community element keeps coming up, either when wanting to grab some kind of data, or add more content to my profile, or coming across a developer site that lets me sign up with a GitHub account, but not GitLab. I realize that GitHub has been around for longer than GitLab, so a lot of that makes sense, but GitLab also seems much more laser-focused on the customer side of things. It was a bummer having to "choose" one.
 
-But, did I actually need to "choose" at all? I do not remember what the inspiration was, but a few days ago, I asked my friends if there was some way to have my GitLab repositories duplicated on GitHub. This way, if someone was to only look at one account, they would still see that I'm actively pushing commits without having an empty shell plastered with "go to my GitLab." Using a script to duplicate and using multiple Git commands were suggested - easy enough! Looking into it though, I discovered that GitLab actually natively supports "mirroring" repositories, both incoming and outgoing.
+But, did I actually need to "choose" at all? The inspiration eludes me now, but a few days ago, I asked my friends if there was some way to have my GitLab repositories duplicated on GitHub. This way, if someone was to only look at one account, they would still see that I'm actively pushing commits without having an empty shell plastered with "go to my GitLab." Using a script and chaining multiple Git commands were suggested - easy enough! Looking into it though, I discovered that GitLab actually natively supports "mirroring" repositories, both incoming and outgoing.
 
 On GitHub, I first cloned the repository I wanted to mirror to generate a URL. Back in GitLab, under `Settings > Repository` in the repository and then to the section labelled `Mirroring repositories`, there is a form to create the link from the url, a key, and a direction. Success! Forcing a sync completed successfully. It was then just a matter of time to do the same for all the other repositories I wanted to mirror. The only downside to this is that I'll need to remember which account the "primary" copy is associated with, but that could just be a note in the readme. To my surprise, GitHub updated all of my stats to reflect my activity in GitLab. Activity from AGWSU won't show up in there, but I thankfully have enough going on that it doesn't stand out too much.
+
+I do wonder if it is considered bad practice to duplicate content like this. Currently, I don't know what exactly I would do if someone made a pull request on the GitHub side, although I suppose the manual approach from the opposite direction would be the way to go. The risk of outdated, fragmented, or de-synchronized data is probably the main risk with duplication.
 
 During [Irregular Café]({{page.references[2]}}) this morning, [David]({{page.references[3]}}) mentioned wanting to ship a software project for [Hacktoberfest 2020]({{page.references[4]}}), a month-long celebration of open source code starting on October 1st. Up until now, I have made two tiny contributions to open source projects, worked with [Neal]({{page.references[5]}}) on the [AGSWU]({{page.references[0]}}) project, and spun up a few educational solo projects. Where I currently am in my learning process, contributing more actively to open source is both extremely exciting and very intimidating, and participating in this event is too good of an educational experience to miss out!
 

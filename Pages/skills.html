@@ -21,6 +21,8 @@ cssfiles:
     </tr>
 
     {%- assign sortSkills = site.data.skills | sort: "name" -%}
+    {%- assign generalSkill = nil -%}
+    {%- assign toSortSkill = nil -%}
 
     {%- assign anchorLetters = '' | split: ',' -%}
 
@@ -31,8 +33,15 @@ cssfiles:
         {%- assign skillPN = skillPage.name | downcase -%}
         {%- assign skillFound = false -%}
 
-        {%- if skill.name == skillPN or skillPN == 'to-sort' -%}
+        {%- if skill.name == skillPN or skillPN == 'to-sort' or skillPN == 'general' -%}
           {%- assign skillFound = true -%}
+
+          {%- if skillPN == 'to-sort' -%}
+            {%- assign toSortSkill = skillPage -%}
+          {%- elsif skillPN == 'general' -%}
+            {%- assign generalSkill = skillPage -%}
+          {%- endif -%}
+
           {%- break -%}
         {%- endif -%}
 
@@ -46,47 +55,49 @@ cssfiles:
 
     {%- for skill in sortSkills -%}
 
-      {%- assign skilltime = skill.time | to_integer -%}
-      {%- capture prettyTime -%}
-        {%- include min-to-time.html timeVal=skilltime verbose=false -%}
-      {%- endcapture -%}
-      {%- assign prettyTime = prettyTime | strip_newlines | strip_html | replace: '&nbsp;', ' ' | strip -%}
+      {%- if skill.name != 'to-sort' and skill.name != 'general' -%}
+        {%- assign skilltime = skill.time | to_integer -%}
+        {%- capture prettyTime -%}
+          {%- include min-to-time.html timeVal=skilltime verbose=false -%}
+        {%- endcapture -%}
+        {%- assign prettyTime = prettyTime | strip_newlines | strip_html | replace: '&nbsp;', ' ' | strip -%}
 
-      {%- assign foundSkill = nil -%}
-      {%- assign foundProg = nil -%}
-      {%- assign foundCat = nil -%}
-      {%- for skillPage in site.skills -%}
+        {%- assign foundSkill = nil -%}
+        {%- assign foundProg = nil -%}
+        {%- assign foundCat = nil -%}
+        {%- for skillPage in site.skills -%}
 
-        {%- assign skillPN = skillPage.name | downcase -%}
+          {%- assign skillPN = skillPage.name | downcase -%}
 
-        {%- if skill.name == skillPN -%}
-          {%- assign foundSkill = skillPage -%}
-          {%- assign foundCat = foundSkill.category -%}
+          {%- if skill.name == skillPN -%}
+            {%- assign foundSkill = skillPage -%}
+            {%- assign foundCat = foundSkill.category -%}
 
-          {%- if foundSkill.progressionEntries != null -%}
-            {%- assign progSize = foundSkill.progressionEntries.size -%}
-            {%- assign progDone = 0 -%}
-            {%- assign progSortPerc = 0.0 -%}
-            {%- for progEntries in foundSkill.progressionEntries -%}
-              {%- if progEntries.status == 'OK' -%}
-                {%- assign progDone = progDone | plus:1 -%}
+            {%- if foundSkill.progressionEntries != null -%}
+              {%- assign progSize = foundSkill.progressionEntries.size -%}
+              {%- assign progDone = 0 -%}
+              {%- assign progSortPerc = 0.0 -%}
+              {%- for progEntries in foundSkill.progressionEntries -%}
+                {%- if progEntries.status == 'OK' -%}
+                  {%- assign progDone = progDone | plus:1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- assign foundProg = progDone | append:'/' | append: progSize -%}
+              {%- assign progSortPerc = progDone | times: 1.0 -%}
+              {%- assign progSortPerc = progSortPerc | divided_by: progSize -%}
+              {%- if progSortPerc == 0.0 -%}
+                {%- assign progSortPerc = 0.0001 -%}
               {%- endif -%}
-            {%- endfor -%}
-            {%- assign foundProg = progDone | append:'/' | append: progSize -%}
-            {%- assign progSortPerc = progDone | times: 1.0 -%}
-            {%- assign progSortPerc = progSortPerc | divided_by: progSize -%}
-            {%- if progSortPerc == 0.0 -%}
-              {%- assign progSortPerc = 0.0001 -%}
+              {%- assign progSortBubble = progSize | times: 0.0001 -%}
+              {%- assign progSortPerc = progSortPerc | plus:progSortBubble -%}
+            {%- else -%}
+              {%- assign foundProg = '-' -%}
+              {%- assign progSortPerc = 0.0 -%}
             {%- endif -%}
-            {%- assign progSortBubble = progSize | times: 0.0001 -%}
-            {%- assign progSortPerc = progSortPerc | plus:progSortBubble -%}
-          {%- else -%}
-            {%- assign foundProg = '-' -%}
-            {%- assign progSortPerc = 0.0 -%}
+            {%- break -%}
           {%- endif -%}
-          {%- break -%}
-        {%- endif -%}
-      {%- endfor -%}
+        {%- endfor -%}
+      {%- endif -%}
 
       {%- assign todayS = site.time | date: '%s' -%}
       {%- assign loggedS = skill.lastlogged  | date: '%s' -%}
@@ -188,6 +199,18 @@ cssfiles:
     {%- endfor -%}
   </table>
 </div>
+{%- if generalSkill.progressionEntries.size > 1 -%}
+<div id="general">
+  <a href="{{site.baseurl}}/skills/general/">Click here for details about general learning resources, inspiration, soft-skills, and motivational notes.</a>
+</div>
+{%- endif -%}
+{%- if toSortSkill.progressionEntries.size > 1 -%}
+  <br>
+  <div id="to-sort">
+    <a href="{{site.baseurl}}/skills/to-sort/">Click here to see aggregated learning materials that still need to be sorted and prioritized into skills.</a>
+  </div>
+{%- endif -%}
+
 <script>
   sortTable(0,'text',document.getElementById("snameHeader"));
 

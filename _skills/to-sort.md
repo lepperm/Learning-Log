@@ -1,80 +1,10 @@
 --- 
 layout: progression
 name: to-sort
-fullname: Learning Items to Sort and for Encouragement
+fullname: Learning Items to Sort
 mainsite: 
 category: Organization
 progressionEntries: 
-  - 
-    id: 1
-    status: OK
-    name: How I got my first developer job at age 40 after 10 months of hard work
-    item: https://medium.com/free-code-camp/how-i-switched-careers-and-got-a-developer-job-in-10-months-a-true-story-b8895e855a8b
-    type: blog
-    relproj:
-    relprojlink:
-    datecomp: 8/27/2020
-    datelink:
-  - 
-    id: 2
-    status: OK
-    name: The tools and resources that landed me a front-end developer job
-    item: https://medium.com/free-code-camp/the-tools-and-resources-that-landed-me-a-front-end-developer-job-1314c6f1fa7f
-    type: blog
-    relproj:
-    relprojlink:
-    datecomp: 8/27/2020
-    datelink:
-  - 
-    id: 3
-    status: OK
-    name: My journey to becoming a web developer from scratch without a CS degree
-    item: https://www.freecodecamp.org/news/my-journey-to-becoming-a-web-developer-from-scratch-without-a-cs-degree-2-years-later-and-what-i-4a7fd2ff5503/
-    type: blog
-    relproj:
-    relprojlink:
-    datecomp: 8/29/2020
-    datelink:
-  - 
-    id: 4
-    status: OK
-    name: Learning How to Learn - Powerful mental tools to help you master tough subjects
-    item: https://www.coursera.org/learn/learning-how-to-learn
-    type: course
-    relproj:
-    relprojlink:
-    datecomp: 04/2020
-    datelink:
-  - 
-    id: 5
-    status: OK
-    name: Problem Solving
-    item: https://michielsioen.be/2020-01-12-problem-solving/
-    type: Blog
-    relproj:
-    relprojlink:
-    datecomp: 9/16/2020
-    datelink:
-  - 
-    id: 6
-    status: UN
-    name: Build a network of peers
-    item: https://lethain.com/network-of-peers/
-    type: Blog
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 7
-    status: UN
-    name: Meeting People
-    item: https://lethain.com/meeting-people/
-    type: Blog
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
   - 
     id: 
     status: NS
@@ -188,16 +118,6 @@ progressionEntries:
   - 
     id: 
     status: NS
-    name: Basic Front End Development Projects
-    item: https://www.freecodecamp.org/syknapse
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
     name: The Web Developer Bootcamp - Frond End
     item: https://www.udemy.com/the-web-developer-bootcamp
     type: 
@@ -210,16 +130,6 @@ progressionEntries:
     status: NS
     name: The Web Developer Bootcamp - Back End
     item: https://www.udemy.com/the-web-developer-bootcamp
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Front End Development
-    item: https://www.freecodecamp.org/syknapse
     type: 
     relproj:
     relprojlink:
@@ -278,168 +188,8 @@ progressionEntries:
   - 
     id: 
     status: NS
-    name: Getting Started With Redux
-    item: https://egghead.io/courses/getting-started-with-redux
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: The Next.js Handbook
-    item: https://www.freecodecamp.org/news/the-next-js-handbook/
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: JavaScript and React for Developers
-    item: https://www.udemy.com/js-and-react-for-devs/
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Workflow Tools for Web Developers
-    item: https://www.lynda.com/Web-Design-tutorials/Workflow-Tools-Web-Development/533305-2.html
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Learning Git and GitHub
-    item: https://www.lynda.com/Git-tutorials/Up-Running-Git-GitHub/409275-2.html
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: CSS Essential Training 3
-    item: https://www.lynda.com/CSS-tutorials/CSS-Essential-Training-3/609030-2.html
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: CSS Essential Training 2
-    item: https://www.lynda.com/CSS-tutorials/CSS-Essential-Training-2/569189-2.html
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Getting Your Website Online
-    item: https://www.lynda.com/Web-Development-tutorials/Getting-Your-Website-Online/609031-2.html
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Learn Enough Command Line to Be Dangerous
-    item: https://www.learnenough.com/command-line-tutorial
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
     name: Basic Front End Development Projects
     item: https://www.freecodecamp.org/syknapse
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: The Web Developer Bootcamp - Frond End
-    item: https://www.udemy.com/the-web-developer-bootcamp
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: The Web Developer Bootcamp - Back End
-    item: https://www.udemy.com/the-web-developer-bootcamp
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Front End Development
-    item: https://www.freecodecamp.org/syknapse
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Google Developer Challenge Scholarship
-    item: https://www.udacity.com/google-scholarships
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: JavaScript & jQuery
-    item: http://javascriptbook.com/
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Learn CSS Grid
-    item: https://scrimba.com/g/gR8PTE
-    type: 
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: The Beginner's Guide to Reactjs
-    item: https://egghead.io/courses/the-beginner-s-guide-to-reactjs
     type: 
     relproj:
     relprojlink:
@@ -748,6 +498,186 @@ progressionEntries:
   - 
     id: 
     status: NS
+    name: CS50 - Introduction to Computer Science
+    item: https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Stanford Computer Science 101
+    item: https://www.edx.org/course/computer-science-101
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Data Structures and Algorithms Specialization
+    item: https://www.coursera.org/specializations/data-structures-algorithms
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Intro to Data Structures and Algorithms
+    item: https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Advanced Data Structures
+    item: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2012/
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Introduction to Operating Systems
+    item: https://www.udacity.com/course/introduction-to-operating-systems--ud923
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Operating Systems - Three Easy Pieces
+    item: http://pages.cs.wisc.edu/~remzi/OSTEP/
+    type: Book
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Databases - Relational Databases and SQL
+    item: https://www.edx.org/course/databases-5-sql
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Intro to Relational Databases
+    item: https://www.udacity.com/course/intro-to-relational-databases--ud197
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Mathematics for Computer Science
+    item: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Teach Yourself Computer Science
+    item: https://teachyourselfcs.com/
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Computer Systems - A Programmer's Perspective
+    item: https://csapp.cs.cmu.edu/
+    type: Book
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Designing Data-Intensive Applications
+    item: https://www.amazon.com/dp/1449373321/?coliid=I13FPDBCCQBS03&colid=1YXHR2IB5MX82&psc=1&ref_=lv_ov_lig_dp_it
+    type: Book
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Structure and Interpretation of Computer Programs
+    item: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html
+    type: Book
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Berkley Computer Science 61A
+    item: https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Essence of Linear Algebra
+    item: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Linear Algebra
+    item: http://joshua.smcvt.edu/linearalgebra/book.pdf
+    type: Book
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Composing Programs
+    item: https://composingprograms.com/
+    type: Course
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
     name: 
     item: 
     type: 
@@ -787,41 +717,6 @@ progressionEntries:
     datelink:
 resources: 
   - 
-    refname: Web Design in 4 minutes
-    reflink: https://jgthms.com/web-design-in-4-minutes/
-  - 
-    refname: Why Hiring is So Hard in Tech
-    reflink: https://medium.com/javascript-scene/why-hiring-is-so-hard-in-tech-c462c3230017
-  - 
-    refname: XSS Game
-    reflink: https://xss-game.appspot.com/
-  - 
-    refname: How To Write Unmaintainable Code
-    reflink: https://github.com/Droogans/unmaintainable-code
-  - 
-    refname: Name that Color
-    reflink: chir.ag/projects/name-that-color/
-  - 
-    refname: Can I Use ___?
-    reflink: https://caniuse.com/
+    refname: 
+    reflink: 
 ---
-
->You have to be willing to work hard, learn a lot, and be consistent. You need to persist when things get tough. Talk yourself out of the moments of desperation when you feel like you are not cut out for this. That’s all it takes, and everyone can do these things with a bit of practice.
-
----
-
->The two biggest mistakes I found at first were:
->1. Fear of failure. Because I was the new guy, I was constantly in fear of my code being wrong or poorly made, so I spent a lot of time double-checking everything and adhered to coding best practices. Because of this, I rarely attempted solutions in creative new ways because of my fear that it might not work correctly at the end. This effectively shut down my drive to learn new things.
->2. Doing things because “X” person who knows better than me said so. I did this a lot at first. While not completely wrong, doing things in a certain way only because “X” expert on the matter said so — without knowing why — lead to me not really knowing when to why things were done the way they were. I soon learned that there were exceptions to everything, and that you always should know the reason behind best practices.
-
----
-
->“Libraries and Frameworks may become obsolete, but the concepts and solutions they propose often survive the test of time.”
-
----
-
->I’ve met a lot of developers over the past 2 years I’ve been a web developer. Along my journey, I’ve met a few developers who really stood out — developers who were clearly in a league of their own, and to whom me and everyone else looked up to. I found these individuals shared quite a few characteristics, which I’d like to share with you right now. These are in my opinion the secret sauce to being a successful web developer:
->
->- Love what you do. This is simply the most important characteristic of them all. If you don’t love what you do (be it CSS Styling or JavaScript), it will truly show in what you do. Those who are passionate about what they do often clearly stand out from the crowd.
->- Be generous and share your knowledge. It’s very easy to want to keep that new CSS/JavaScript hack you found that solves the project’s issues a secret, but please don’t. The people who share their knowledge the most are often the most valuable, since they can be placed in any kind of team and improve it’s quality by a huge margin.
->- Always be on the lookout for new things. Most of the successful developers I’ve met share this common trait. Whether it be by reading blogs, spending lots of time in programming related discussions, or even talking about what’s new in web development during lunch breaks. Being on the lookout for new things all the time allows the best developers to always stay ahead of the curve.

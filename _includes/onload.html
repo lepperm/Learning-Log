@@ -1,8 +1,5 @@
 <script>
-  window.onload = init;
-
-  async function init(){
-
+  window.addEventListener('load', function() {
     // Set noCrisp to true to prevent loading the Crisp plugin
     if(typeof noCrisp === 'undefined' || !noCrisp){
       window.$crisp=[];window.CRISP_WEBSITE_ID="d983f28e-d4fd-44db-b8a4-86386070549a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
@@ -45,5 +42,5 @@
 
       searchQuery();
     }
-  }
+  });
 </script>
