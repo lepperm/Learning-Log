@@ -11,6 +11,10 @@ progressionEntries:
     name: Getting Started with Redux
     item: https://redux.js.org/introduction/getting-started
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

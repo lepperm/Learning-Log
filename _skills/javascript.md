@@ -11,6 +11,10 @@ progressionEntries:
     name: Learn JavaScript
     item: https://www.codecademy.com/learn/introduction-to-javascript
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Eloquent Javascript - A Modern Introduction to Programming
     item: https://eloquentjavascript.net/
     type: Book
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -31,6 +39,10 @@ progressionEntries:
     name: You Don't Know JS Yet (2nd edition)
     item: https://github.com/getify/You-Dont-Know-JS
     type: Book
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -41,6 +53,10 @@ progressionEntries:
     name: You Don't know JavaScript
     item: https://github.com/getify/You-Dont-Know-JS
     type: 
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -51,6 +67,10 @@ progressionEntries:
     name: JavaScript - The Right Way
     item: http://jstherightway.org/
     type:
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -61,6 +81,10 @@ progressionEntries:
     name: JavaScript - Understanding the Weird Parts
     item: https://www.udemy.com/understand-javascript/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -71,6 +95,10 @@ progressionEntries:
     name: Learn ES6 (ECMAScript 2015)
     item: https://egghead.io/courses/learn-es6-ecmascript-2015
     type:
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -81,6 +109,10 @@ progressionEntries:
     name: Watch and Code - Practical Javascript
     item: https://watchandcode.com/p/practical-javascript
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -91,6 +123,10 @@ progressionEntries:
     name: Asynchronous JavaScript Requests
     item: https://in.udacity.com/course/asynchronous-javascript-requests--ud109
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -101,6 +137,10 @@ progressionEntries:
     name: Javascript30
     item: https://javascript30.com/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -111,6 +151,10 @@ progressionEntries:
     name: Get Job ready - JavaScript Edition
     item: https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-2.0.md
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -121,6 +165,10 @@ progressionEntries:
     name: 33 concepts every JavaScript developer should know
     item: https://github.com/leonardomso/33-js-concepts
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -131,6 +179,10 @@ progressionEntries:
     name: The Complete JavaScript Handbook
     item: https://medium.freecodecamp.org/the-complete-javascript-handbook-f26b2c71719c
     type: 
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -141,6 +193,10 @@ progressionEntries:
     name: JavaScript clean code guide
     item: https://github.com/ryanmcdermott/clean-code-javascript
     type: 
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -151,6 +207,10 @@ progressionEntries:
     name: DOM Enlightenment
     item: http://domenlightenment.com/
     type: Book
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -161,6 +221,10 @@ progressionEntries:
     name: The Modern JavaScript Tutorial
     item: https://javascript.info/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

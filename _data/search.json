@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Reading Weekend and Building Progression Value",
+      "tags"       : "hacktoberfest, career",
+      "skills"     : "general",
+      "excerpt"    : "Reading my way through a growing backlog of resources and articles, and developing a plan and metrics to increase value within the data on individual progression items.",
+      "url"        : "/learning-log/journal/2020/09/20/reading-weekend-and-building-progression-value.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-20 22:40:04 -0400",
+      "date"       : "Sep 20, 2020",
+      "timespent"  : "395",
+      "words"      : "1636",
+      "references" : "https://dev.to/torianne02/hacktoberfest-getting-over-the-fear-of-open-source-41kg, https://letslearnabout.net/blog/should-you-use-medium-or-dev-to/, https://dev.to/devteam/the-dev-community-published-a-book-your-first-year-in-code-1ejk, https://techbeacon.com/app-dev-testing/what-do-job-seeking-developers-need-their-github, https://dev.to/evanplaice/comment/km69, https://dev.to/rinaarts/how-to-ruin-your-career-in-8-easy-steps-71, https://dev.to/vinitshahdeo/hacktoberfest-2020-is-here-17op, https://lethain.com/network-of-peers/, https://lethain.com/meeting-people/, https://www.reddit.com/r/learnprogramming/wiki/faq#wiki_getting_started, https://www.gwern.net/Resorter, https://www.freecodecamp.org/news/good-habits-for-junior-developers/, https://dev.to/cockroachlabs/an-absolute-beginner-s-checklist-for-hacktoberfest-p2k, https://dev.to/amrutaranade/how-to-contribute-to-open-source-without-compromising-your-mental-health-and-work-life-balance-35og",
+      "sleep"      : "440",
+      "workout"    : "35"
+    },{
+      "layout"     : "journal",
       "title"      : "Progression Items and Fixing Onload",
       "tags"       : "mentality",
       "skills"     : "html, javascript",

@@ -11,6 +11,10 @@ progressionEntries:
     name: Learn CSS
     item: https://www.codecademy.com/learn/learn-css
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Learn CSS Layout
     item: http://learnlayout.com/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -31,6 +39,10 @@ progressionEntries:
     name: Specifics on CSS Specificity
     item: https://css-tricks.com/specifics-on-css-specificity/
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -41,6 +53,10 @@ progressionEntries:
     name: Scalable and Modular Architecture for CSS
     item: http://smacss.com/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -51,6 +67,10 @@ progressionEntries:
     name: Flexboxfroggy
     item: http://flexboxfroggy.com/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp: 9/7/20
@@ -61,6 +81,10 @@ progressionEntries:
     name: Grid Garden
     item: https://cssgridgarden.com/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp: 9/7/20
@@ -71,6 +95,10 @@ progressionEntries:
     name: What the Flexbox?
     item: https://flexbox.io/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

@@ -11,6 +11,10 @@ progressionEntries:
     name: Composition
     item: https://material-ui.com/guides/composition/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Styles
     item: https://material-ui.com/styles/basics/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -31,6 +39,10 @@ progressionEntries:
     name: Theming (Advanced)
     item: https://material-ui.com/styles/advanced/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

@@ -46,12 +46,14 @@ minima:
     personal: https://maxlepper.me
     github: lepperm
     twitter: MaxLepper
+    devto: maxlepper
     linkedin: maxlepper
     gitlab:
       - username: maxlepper
         instance: gitlab.com
     stackoverflow: 14096749/max-l
     codepen: lepperm
+    sourcerer: maxlepper
 # On my local PC, the Minima theme assets can be found at \Programs\Ruby27-x64\lib\ruby\gems\2.7.0\bundler\gems\minima-49f6dce0727a
 # To modify, copy assets to the site directory and override
 

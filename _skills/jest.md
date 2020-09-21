@@ -11,6 +11,10 @@ progressionEntries:
     name:
     item:
     type:
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

@@ -11,6 +11,10 @@ progressionEntries:
     name: Getting Sassy With CSS
     item: http://www.sassshop.com/#/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Sass Basics
     item: https://sass-lang.com/guide
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

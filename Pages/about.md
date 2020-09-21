@@ -14,6 +14,9 @@ Here, you can find:
 - Logs of my daily learning activities and insight into my problem-solving process
 - Blog posts covering a variety of topics
 
+My long-term roadmap for a career in development can be found here:  
+[Learning Log - Roadmap]({{ site.baseurl }}/roadmap)
+
 You can find the source code for this site on GitLab:  
 [Learning Log - GitLab](https://gitlab.com/maxlepper/learning-log)
 

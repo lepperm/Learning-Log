@@ -11,6 +11,10 @@ progressionEntries:
     name: Gulp.js Quick Start
     item: https://gulpjs.com/docs/en/getting-started/quick-start
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Automate Your Tasks Easily with Gulp.js
     item: https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js
     type: Tutorial
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

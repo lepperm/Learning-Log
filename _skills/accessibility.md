@@ -11,6 +11,10 @@ progressionEntries:
     name: Applied Accessibility Challenges (FCC)
     item: https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/
     type: Course
+    price: 0.0
+    est-duration: 30
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp: 9/3/20

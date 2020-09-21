@@ -11,6 +11,10 @@ progressionEntries:
     name: Transactions and batched writes
     item: https://firebase.google.com/docs/firestore/manage-data/transactions
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Easily add sign-in to your Web app with FirebaseUI
     item: https://firebase.google.com/docs/auth/web/firebaseui
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: FirebaseUI Auth
     relprojlink: https://gitlab.com/maxlepper/firebaseui-auth
     datecomp:
@@ -31,6 +39,10 @@ progressionEntries:
     name: Authenticate with Firebase Anonymously Using JavaScript
     item: https://firebase.google.com/docs/auth/web/anonymous-auth
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: FirebaseUI Auth
     relprojlink: https://gitlab.com/maxlepper/firebaseui-auth
     datecomp:
@@ -41,6 +53,10 @@ progressionEntries:
     name: Introduction to Firebase Local Emulator Suite
     item: https://firebase.google.com/docs/emulator-suite
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

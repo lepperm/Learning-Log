@@ -11,6 +11,10 @@ progressionEntries:
     name: Learn Git Branching (34/34)
     item: https://learngitbranching.js.org/
     type: Tutorial
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp: 8/24/2020
@@ -21,6 +25,10 @@ progressionEntries:
     name: Git Explained
     item: https://dev.to/milu_franz/series/6989
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: 
     relprojlink: 
     datecomp: 
@@ -31,6 +39,10 @@ progressionEntries:
     name: Using Version Control in VS Code
     item: https://code.visualstudio.com/Docs/editor/versioncontrol
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: 
     relprojlink: 
     datecomp: 
@@ -41,6 +53,10 @@ progressionEntries:
     name: How to Scrub Sensitive Information from Git
     item: https://seesparkbox.com/foundry/remove_file_from_git_history_with_git_filter-branch
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: 
     relprojlink: 
     datecomp: 

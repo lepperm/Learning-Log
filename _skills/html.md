@@ -11,6 +11,10 @@ progressionEntries:
     name: Learn HTML
     item: https://www.codecademy.com/learn/learn-html
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Learn to Code HTML & CSS
     item: http://learn.shayhowe.com/html-css/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -31,6 +39,10 @@ progressionEntries:
     name: Responsive Web Design Fundamentals
     item: https://www.udacity.com/course/responsive-web-design-fundamentals--ud893
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -41,6 +53,10 @@ progressionEntries:
     name: 9 basic principles of responsive web design
     item: https://blog.froont.com/9-basic-principles-of-responsive-web-design/
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -51,6 +67,10 @@ progressionEntries:
     name: Website Performance Optimization
     item: https://www.udacity.com/course/website-performance-optimization--ud884
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

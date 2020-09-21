@@ -11,6 +11,10 @@ progressionEntries:
     name: Building a Web Scraper with Python and BeautifulSoup
     item: https://realpython.com/beautiful-soup-web-scraper-python/
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: Cocktail Web Scraper
     relprojlink: https://gitlab.com/maxlepper/cocktail-web-scraper
     datecomp: 7/5/2020

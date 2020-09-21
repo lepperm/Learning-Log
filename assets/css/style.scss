@@ -190,12 +190,13 @@ select:hover, select:focus {
 }
 
 #hdr-query{
-  width:8em;
+  width:6em;
   border: 2px solid $interactive-default;
   border-radius: 5px;
   background-color: #181818;
   color: $text-color;
   padding: 5px;
+  margin: 0px 8px;
   outline: none;
   transition: $transition-time;
 }

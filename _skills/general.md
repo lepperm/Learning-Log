@@ -11,6 +11,10 @@ progressionEntries:
     name: How I got my first developer job at age 40 after 10 months of hard work
     item: https://medium.com/free-code-camp/how-i-switched-careers-and-got-a-developer-job-in-10-months-a-true-story-b8895e855a8b
     type: Blog
+    price: 0.0
+    est-duration: 11
+    est-benefit: 5
+    act-benefit: 8
     relproj:
     relprojlink:
     datecomp: 8/27/2020
@@ -21,6 +25,10 @@ progressionEntries:
     name: The tools and resources that landed me a front-end developer job
     item: https://medium.com/free-code-camp/the-tools-and-resources-that-landed-me-a-front-end-developer-job-1314c6f1fa7f
     type: Blog
+    price: 0.0
+    est-duration: 14
+    est-benefit: 5
+    act-benefit: 4
     relproj:
     relprojlink:
     datecomp: 8/27/2020
@@ -31,6 +39,10 @@ progressionEntries:
     name: My journey to becoming a web developer from scratch without a CS degree
     item: https://www.freecodecamp.org/news/my-journey-to-becoming-a-web-developer-from-scratch-without-a-cs-degree-2-years-later-and-what-i-4a7fd2ff5503/
     type: Blog
+    price: 0.0
+    est-duration: 25
+    est-benefit: 5
+    act-benefit: 7
     relproj:
     relprojlink:
     datecomp: 8/29/2020
@@ -41,6 +53,10 @@ progressionEntries:
     name: Learning How to Learn - Powerful mental tools to help you master tough subjects
     item: https://www.coursera.org/learn/learning-how-to-learn
     type: Course
+    price: 0.0
+    est-duration: 960
+    est-benefit: 7
+    act-benefit: 9
     relproj:
     relprojlink:
     datecomp: 04/2020
@@ -51,29 +67,41 @@ progressionEntries:
     name: Problem Solving
     item: https://michielsioen.be/2020-01-12-problem-solving/
     type: Blog
+    price: 0.0
+    est-duration: 4
+    est-benefit: 5
+    act-benefit: 5
     relproj:
     relprojlink:
     datecomp: 9/16/2020
     datelink:
   - 
     id: 6
-    status: UN
+    status: OK
     name: Build a network of peers
     item: https://lethain.com/network-of-peers/
     type: Blog
+    price: 0.0
+    est-duration: 6
+    est-benefit: 5
+    act-benefit:
     relproj:
     relprojlink:
-    datecomp:
+    datecomp: 9/20/20
     datelink:
   - 
     id: 7
-    status: UN
+    status: OK
     name: Meeting People
     item: https://lethain.com/meeting-people/
     type: Blog
+    price: 0.0
+    est-duration: 9
+    est-benefit: 5
+    act-benefit:
     relproj:
     relprojlink:
-    datecomp:
+    datecomp: 9/20/20
     datelink:
   - 
     id: 8
@@ -81,16 +109,80 @@ progressionEntries:
     name: How to Learn to Code
     item: https://www.youtube.com/watch?v=mvK0UzFNw1Q
     type: Video
+    price: 0.0
+    est-duration: 5
+    est-benefit: 5
+    act-benefit: 6
     relproj:
     relprojlink:
     datecomp: 9/18/20
     datelink:
   - 
-    id: 
-    status: NS
+    id: 9
+    status: UN
     name: Getting Started
     item: https://www.reddit.com/r/learnprogramming/wiki/faq#wiki_getting_started
     type: Blog
+    price: 0.0
+    est-duration: 64
+    est-benefit: 8
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 10
+    status: IP
+    name: Your First Year In Code
+    item: https://dev.to/devteam/the-dev-community-published-a-book-your-first-year-in-code-1ejk
+    type: Book
+    price: 15.00
+    est-duration:
+    est-benefit: 8
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 11
+    status: NS
+    name: Ship in Six
+    item: https://shop.stackingthebricks.com/ship-in-six
+    type: Course
+    price: 0.0
+    est-duration:
+    est-benefit: 6
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 12
+    status: NS
+    name: Just F---ing Ship
+    item: https://shop.stackingthebricks.com/just-fucking-ship-premium
+    type: Book
+    price: 39.00
+    est-duration:
+    est-benefit: 8
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 13
+    status: NS
+    name: The Truth about Success - Brick by Brick
+    item: https://stackingthebricks.com/stacking-the-bricks/
+    type: Blog
+    price: 0.0
+    est-duration: 45
+    est-benefit: 6
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

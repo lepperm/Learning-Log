@@ -11,6 +11,10 @@ progressionEntries:
     name: Official Gatsby Tutorial
     item: https://www.gatsbyjs.com/tutorial/
     type: Tutorial
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

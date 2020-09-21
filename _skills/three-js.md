@@ -11,6 +11,10 @@ progressionEntries:
     name: Minimal Three.js Wrapper for React
     item: https://github.com/supromikali/react-three-demo
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: Three.Js and React
     relprojlink: https://gitlab.com/maxlepper/three.js-and-react
     datecomp: 07/16/2020
@@ -21,6 +25,10 @@ progressionEntries:
     name: Three.js OBJ Loader with React
     item: https://github.com/supromikali/react-three-obj-loader
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: Three.Js and React
     relprojlink: https://gitlab.com/maxlepper/three.js-and-react
     datecomp: 

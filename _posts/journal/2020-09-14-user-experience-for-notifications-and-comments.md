@@ -64,7 +64,7 @@ Reading through the FAQ, I did see the following:
 
 Fantastic! I sent in a message to appeal for a free upgrade. The presence or lack of ads below will let you know how that appeal went.
 
-Edit: Six hours passed before they all went home for the day, so...maybe just use an ad blocker. Fingers crossed that they get back to me eventually. Please let me know in the comments below if you'd prefer me to disable the comments section, haha!
+Edit: Six hours passed before they all went home for the day, so...maybe just use an ad blocker. Fingers crossed that they get back to me eventually. Please let me know in the [comments](#disqus_thread) below if you'd prefer me to disable the comments section, haha!
 
 I quickly implemented an "all references" list, which was tucked away into Search. In the current form...I am not sure how helpful it is, but it will be faster for me to search the page to find old references. If I eventually implement some kind of advanced search refinement, it would be nice to selectively limit references to only posts that contain the specified criteria. I do not currently feel that there is enough content on this site now for a feature like that - maybe if I get a year's worth of posts under my belt. This feature has been banished to the brainstorming section of [the to-do list]({{site.baseurl}}/todo/#improvements).
 

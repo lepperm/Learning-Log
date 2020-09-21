@@ -11,6 +11,10 @@ progressionEntries:
     name: Intro to Framer Motion
     item: https://konstantinlebedev.com/framer-motion-intro/
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Animated Text with Framer Motion
     item: https://www.framer.com/learn/guide/animated-text/
     type: Tutorial
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

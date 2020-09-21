@@ -11,6 +11,10 @@ progressionEntries:
     name: Read the React-Spring Docs
     item: https://konstantinlebedev.com/framer-motion-intro/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

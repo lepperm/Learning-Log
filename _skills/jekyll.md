@@ -11,6 +11,10 @@ progressionEntries:
     name: This website
     item: https://maxlepper.gitlab.io/learning-log
     type: Project
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: GitLab repo
     relprojlink: https://gitlab.com/maxlepper/learning-log
     datecomp: v1.0 @ 08/23/2020

@@ -11,6 +11,10 @@ progressionEntries:
     name: Software Product Management Specialization (6/6)
     item: https://www.coursera.org/specializations/product-management
     type: Certification
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp: 05/2020

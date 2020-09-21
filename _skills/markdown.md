@@ -11,6 +11,10 @@ progressionEntries:
     name: Markdown Tips & Tricks 1
     item: http://blog.virtuacreative.com.br/markdown-tips-and-tricks.html
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: Learning Log
     relprojlink: https://maxlepper.gitlab.io/learning-log/
     datecomp: 8/18/2020
@@ -21,6 +25,10 @@ progressionEntries:
     name: Markdown Tips & Tricks 2
     item: http://blog.virtuacreative.com.br/markdown-tips-tricks-part2.html
     type: Blog
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: Learning Log
     relprojlink: https://maxlepper.gitlab.io/learning-log/
     datecomp: 8/18/2020
@@ -31,6 +39,10 @@ progressionEntries:
     name: Wes Bos's Mastering Markdown
     item: https://masteringmarkdown.com/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj: Learning Log
     relprojlink: https://maxlepper.gitlab.io/learning-log/
     datecomp: 9/15/2020

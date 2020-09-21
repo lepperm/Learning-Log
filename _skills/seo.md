@@ -11,6 +11,10 @@ progressionEntries:
     name: Google PWA Training
     item: https://codelabs.developers.google.com/dev-pwa-training/
     type: Course
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:

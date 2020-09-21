@@ -11,6 +11,10 @@ progressionEntries:
     name: Webpack Concepts
     item: https://webpack.js.org/concepts/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -21,6 +25,10 @@ progressionEntries:
     name: Getting Started with Webpack
     item: https://webpack.js.org/guides/getting-started/
     type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
@@ -31,6 +39,10 @@ progressionEntries:
     name: Webpack How-To
     item: https://github.com/petehunt/webpack-howto
     type: Tutorial
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
     relproj:
     relprojlink:
     datecomp:
