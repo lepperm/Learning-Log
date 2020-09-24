@@ -1,5 +1,20 @@
 [{
       "layout"     : "journal",
+      "title"      : "Product Lab, Next Projects, and Personal CRM",
+      "tags"       : "",
+      "skills"     : "general",
+      "excerpt"    : "Signing up for the Scrimmage Product Lab and coordinating our next big project, and creating a personal CRM to try and grow my network.",
+      "url"        : "/learning-log/journal/2020/09/23/product-lab-next-projects-and-personal-crm.html",
+      "category"   : "journal",
+      "datetime"   : "2020-09-23 23:51:44 -0400",
+      "date"       : "Sep 23, 2020",
+      "timespent"  : "150",
+      "words"      : "1493",
+      "references" : "https://scrimmage.us/the-product-lab/, https://leanpub.com/firstyearincode, https://airtable.com/templates/marketing-and-sales/exp7KcHbb6laaJkjU/personal-crm, https://startupweekend.org/, https://seths.blog/akimboworkshops/, https://agwsu.org/, https://www.linkedin.com/in/davidebest, https://truedungeon.com/, https://lethain.com/meeting-people/",
+      "sleep"      : "330",
+      "workout"    : "50"
+    },{
+      "layout"     : "journal",
       "title"      : "Reading Weekend and Building Progression Value",
       "tags"       : "hacktoberfest, career",
       "skills"     : "general",

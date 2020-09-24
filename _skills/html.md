@@ -20,7 +20,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id:
+    id: 2
     status: NS
     name: Learn to Code HTML & CSS
     item: http://learn.shayhowe.com/html-css/
@@ -34,7 +34,7 @@ progressionEntries:
     datecomp:
     datelink: 
   - 
-    id: 
+    id: 3
     status: NS
     name: Responsive Web Design Fundamentals
     item: https://www.udacity.com/course/responsive-web-design-fundamentals--ud893
@@ -48,7 +48,7 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 
+    id: 4
     status: NS
     name: 9 basic principles of responsive web design
     item: https://blog.froont.com/9-basic-principles-of-responsive-web-design/
@@ -62,7 +62,7 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 
+    id: 5
     status: NS
     name: Website Performance Optimization
     item: https://www.udacity.com/course/website-performance-optimization--ud884

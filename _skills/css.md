@@ -62,35 +62,35 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 
+    id: 5
     status: OK
     name: Flexboxfroggy
     item: http://flexboxfroggy.com/
     type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
+    price: 0.0
+    est-duration: 30
+    est-benefit: 5
+    act-benefit: 6
     relproj:
     relprojlink:
     datecomp: 9/7/20
     datelink:
   - 
-    id: 
+    id: 6
     status: OK
     name: Grid Garden
     item: https://cssgridgarden.com/
     type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
+    price: 0.0
+    est-duration: 30
+    est-benefit: 5
+    act-benefit: 6
     relproj:
     relprojlink:
     datecomp: 9/7/20
     datelink:
   - 
-    id: 
+    id: 7
     status: NS
     name: What the Flexbox?
     item: https://flexbox.io/
