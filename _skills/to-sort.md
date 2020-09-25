@@ -596,20 +596,6 @@ progressionEntries:
   - 
     id:
     status:
-    name: Harvard University's CS50
-    item: https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/
-    type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink: 
-  - 
-    id:
-    status:
     name:
     item: https://commandlinepoweruser.com/
     type: Course
@@ -621,34 +607,6 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink: 
-  - 
-    id: 
-    status: NS
-    name: Material Design Guidelines
-    item: https://material.io/
-    type: Official Docs
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Why Isn't Functional Programming the Norm? – Richard Feldman
-    item: https://www.youtube.com/watch?v=QyJZzq0v7Z4
-    type: Conference
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
   - 
     id: 
     status: NS
@@ -683,34 +641,6 @@ progressionEntries:
     name: React for Data Visualization
     item: https://reactfordataviz.com/
     type: Course (paid)
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: CS50 - Introduction to Computer Science
-    item: https://online-learning.harvard.edu/course/cs50-introduction-computer-science?delta=0
-    type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Stanford Computer Science 101
-    item: https://www.edx.org/course/computer-science-101
-    type: Course
     price:
     est-duration:
     est-benefit:
@@ -764,34 +694,6 @@ progressionEntries:
   - 
     id: 
     status: NS
-    name: Introduction to Operating Systems
-    item: https://www.udacity.com/course/introduction-to-operating-systems--ud923
-    type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Operating Systems - Three Easy Pieces
-    item: http://pages.cs.wisc.edu/~remzi/OSTEP/
-    type: Book
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
     name: Databases - Relational Databases and SQL
     item: https://www.edx.org/course/databases-5-sql
     type: Course
@@ -834,20 +736,6 @@ progressionEntries:
   - 
     id: 
     status: NS
-    name: Teach Yourself Computer Science
-    item: https://teachyourselfcs.com/
-    type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
     name: Computer Systems - A Programmer's Perspective
     item: https://csapp.cs.cmu.edu/
     type: Book
@@ -865,34 +753,6 @@ progressionEntries:
     name: Designing Data-Intensive Applications
     item: https://www.amazon.com/dp/1449373321/?coliid=I13FPDBCCQBS03&colid=1YXHR2IB5MX82&psc=1&ref_=lv_ov_lig_dp_it
     type: Book
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Structure and Interpretation of Computer Programs
-    item: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html
-    type: Book
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj:
-    relprojlink:
-    datecomp:
-    datelink:
-  - 
-    id: 
-    status: NS
-    name: Berkley Computer Science 61A
-    item: https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E?sort=titleSorter
-    type: Course
     price:
     est-duration:
     est-benefit:

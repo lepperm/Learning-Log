@@ -147,6 +147,34 @@ progressionEntries:
     datelink:
   - 
     id: 11
+    status: IP
+    name: How to get a job as a web developer
+    item: http://web.archive.org/web/20160925155912/http://www.happybearsoftware.com/how-to-get-a-programmer-job.html
+    type: Blog
+    price: 0.0
+    est-duration: 35 
+    est-benefit: 7
+    act-benefit: 9
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 12
+    status: NS
+    name: Learn to Type
+    item: http://web.archive.org/web/20161008225659/http://steve-yegge.blogspot.co.uk/2008/09/programmings-dirtiest-little-secret.html
+    type: Blog
+    price: 0.0
+    est-duration: 18
+    est-benefit: 7
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
     status: NS
     name: Ship in Six
     item: https://shop.stackingthebricks.com/ship-in-six
@@ -160,7 +188,7 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 12
+    id: 
     status: NS
     name: Just F---ing Ship
     item: https://shop.stackingthebricks.com/just-fucking-ship-premium
@@ -174,7 +202,7 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 13
+    id: 
     status: NS
     name: The Truth about Success - Brick by Brick
     item: https://stackingthebricks.com/stacking-the-bricks/
@@ -182,6 +210,20 @@ progressionEntries:
     price: 0.0
     est-duration: 45
     est-benefit: 6
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: 
+    item: 
+    type: 
+    price: 
+    est-duration: 
+    est-benefit: 
     act-benefit:
     relproj:
     relprojlink:

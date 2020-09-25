@@ -22,6 +22,20 @@ progressionEntries:
   - 
     id: 
     status: NS
+    name: The Odin Project - Full Stack Javascript
+    item: https://www.theodinproject.com/tracks/full-stack-javascript
+    type: Course
+    price: 0.0
+    est-duration:
+    est-benefit:
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
     name: Eloquent Javascript - A Modern Introduction to Programming
     item: https://eloquentjavascript.net/
     type: Book

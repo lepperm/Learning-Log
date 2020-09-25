@@ -4,7 +4,7 @@ title: "Product Lab, Next Projects, and Personal CRM"
 excerpt: Signing up for the Scrimmage Product Lab and coordinating our next big project, and creating a personal CRM to try and grow my network.
 author: Max Lepper
 categories: [journal]
-tags: []
+tags: [product lab, crm]
 date: 2020-09-23 23:51:44 -0400
 modified_date:
 published: true

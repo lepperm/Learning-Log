@@ -47,6 +47,20 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink: 
+  - 
+    id: 
+    status: NS
+    name: Material Design Guidelines
+    item: https://material.io/
+    type: Official Docs
+    price:
+    est-duration:
+    est-benefit:
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
 resources: 
   - 
     refname: 
