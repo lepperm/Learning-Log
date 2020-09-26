@@ -189,7 +189,7 @@ progressionEntries:
     datelink:
   - 
     id: 
-    status: NS
+    status: IP
     name: Just F---ing Ship
     item: https://shop.stackingthebricks.com/just-fucking-ship-premium
     type: Book

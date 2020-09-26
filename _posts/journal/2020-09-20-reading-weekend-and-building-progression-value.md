@@ -105,4 +105,4 @@ With the new progression data fields added to all existing entries and with a fe
 - [x] Add DEV and Sourcerer social media buttons
 - [ ] <span title="Task to be added to next entry">=></span>May need to add a months value to min-to-time? Years??
 - [ ] <span title="Task to be added to next entry">=></span> Set up and test Resorter
-  - [ ] <span title="Task to be added to next entry">=></span> Generate post importance metrics in Liquid for resorting
+  - [ ] <span title="Task to be added to next entry">=></span> Collect post importance metrics in Liquid for resorting

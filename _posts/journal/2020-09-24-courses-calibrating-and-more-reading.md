@@ -4,7 +4,7 @@ title: "Courses, Calibrating, and More Reading"
 excerpt: Registering for Hacktoberfest, making a survey, and getting a new book.
 author: Max Lepper
 categories: [journal]
-tags: [hacktoberfest]
+tags: [hacktoberfest, jfs]
 date: 2020-09-24 23:58:07 -0400
 modified_date:
 published: true
@@ -45,4 +45,4 @@ My newfound social media pipeline, on the subject of reading, has introduced a t
 - [x] Start reading _Just F---ing Ship_
 - [ ] <span title="Task to be added to next entry">=></span>May need to add a months value to min-to-time? Years??
 - [ ] <span title="Task to be added to next entry">=></span> Set up and test Resorter
-  - [ ] <span title="Task to be added to next entry">=></span> Generate post importance metrics in Liquid for resorting
+  - [ ] <span title="Task to be added to next entry">=></span> Collect post importance metrics in Liquid for resorting

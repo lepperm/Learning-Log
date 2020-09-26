@@ -119,18 +119,18 @@ progressionEntries:
     datelink:
   - 
     id:
-    status:
-    name:
-    item:
-    type:
-    price:
+    status: NS
+    name: The Missing Semester of Your CS Education
+    item: https://missing.csail.mit.edu/
+    type: Course
+    price: 0.0
     est-duration:
     est-benefit:
     act-benefit:
     relproj:
     relprojlink:
     datecomp:
-    datelink: 
+    datelink:
 resources: 
   - 
     refname: 
