@@ -26,7 +26,7 @@
     }
 
     let notification = new Notification(title, options);
-    
+
     notification.onclick = () => {
       notification.close();
       window.parent.focus();
@@ -39,6 +39,8 @@
     let permission = Notification.permission;
     if(permission === "granted") {
       showNotification();
+    } else {
+      window.location.reload(true);
     }
   });
 </script>
