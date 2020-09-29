@@ -873,6 +873,175 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
+  - 
+    id: 
+    status: NS
+    name: JavaScript Console.log() Example – How to Print to the Console in JS
+    item: https://www.freecodecamp.org/news/javascript-console-log-example-how-to-print-to-the-console-in-js/
+    type: Blog
+    price: 0.0
+    est-duration: 6
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Learn React in 5 minutes - A React.js tutorial for beginners
+    item: https://www.freecodecamp.org/news/learn-react-js-in-5-minutes-526472d292f4/
+    type: Blog
+    price: 0.0
+    est-duration: 8
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: How to think like a programmer — lessons in problem solving
+    item: https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
+    type: Blog
+    price: 0.0
+    est-duration: 8
+    est-benefit: 6
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Why some of us don't have one true calling
+    item: https://www.ted.com/talks/emilie_wapnick_why_some_of_us_don_t_have_one_true_calling
+    type: Video
+    price: 0.0
+    est-duration: 12
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Designing with Accessible Color Contrast on the Web
+    item: https://seesparkbox.com/foundry/web_design_color_contrast_accessible_web_colors
+    type: Video
+    price: 0.0
+    est-duration: 12
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Visual Studio Code Course – How to Increase Your Productivity in VS Code
+    item: https://www.freecodecamp.org/news/learn-visual-studio-code-to-increase-productivity/
+    type: Course
+    price: 0.0
+    est-duration: 120
+    est-benefit: 7
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: Dijkstra's Shortest Path Algorithm - A Detailed and Visual Introduction
+    item: https://www.freecodecamp.org/news/dijkstras-shortest-path-algorithm-visual-introduction/
+    type: Blog
+    price: 0.0
+    est-duration: 14
+    est-benefit: 6
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: 
+    item: 
+    type: Blog
+    price: 0.0
+    est-duration: 
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: 
+    item: 
+    type: Blog
+    price: 0.0
+    est-duration: 
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: 
+    item: 
+    type: Blog
+    price: 0.0
+    est-duration: 
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: 
+    item: 
+    type: Blog
+    price: 0.0
+    est-duration: 
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
+    status: NS
+    name: 
+    item: 
+    type: Blog
+    price: 0.0
+    est-duration: 
+    est-benefit: 5
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+
 resources: 
   - 
     refname: 

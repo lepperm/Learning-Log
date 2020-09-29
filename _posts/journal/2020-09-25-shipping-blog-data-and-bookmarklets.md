@@ -57,4 +57,4 @@ javascript:(function(){
 - [x] Read more of _Just F---ing Ship_
 - [ ] <span title="Task to be added to next entry">=></span>May need to add a months value to min-to-time? Years??
 - [ ] <span title="Task to be added to next entry">=></span> Set up and test Resorter
-  - [x] <span title="Task to be added to next entry">=></span> Collect post importance metrics in Liquid for resorting
+  - [x] <span title="Task carried over from previous day">=X</span> Collect post importance metrics in Liquid for resorting
