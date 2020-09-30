@@ -156,7 +156,7 @@ This phase will complete when...TBD
 
 ## Phase 5 - Specialization (5 years)
 
-After solidifying my career in development, moving towards specialization should become a key focus. Machine learning is a critical skill for the next decade, and something I would be extremely interested to look into, as well as data science and data visualization. I will need to be watching trends within the industry and market to see if there are different leading sectors by this point.
+After solidifying my career in development, moving towards specialization should become a key focus. Machine learning is a critical skill for the next decade, and something I would be extremely interested to look into, as well as data visualization. I will need to be watching trends within the industry and market to see if there are different leading sectors by this point.
 
 ### Timeline
 

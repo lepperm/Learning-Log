@@ -1,10 +1,14 @@
 {%- if include.timeVal != "" -%}
   <span>
     {%- if include.verbose -%}
+      {%- assign yearTxt = "&nbsp;years" -%}
+      {%- assign monthTxt = "&nbsp;months" -%}
       {%- assign dayTxt = "&nbsp;days" -%}
       {%- assign hourTxt = "&nbsp;hours" -%}
       {%- assign minTxt = "&nbsp;minutes" -%}
     {%- else -%}
+      {%- assign yearTxt = "y" -%}
+      {%- assign monthTxt = "m" -%}
       {%- assign dayTxt = "d" -%}
       {%- assign hourTxt = "h" -%}
       {%- assign minTxt = "m" -%}
@@ -12,8 +16,18 @@
 
     {%- assign timesArray = '' | split: ',' -%}
 
+    {%- if include.timeVal >= 525600 -%}
+      {%- assign yearVal = include.timeVal | divided_by: 525600 -%}
+      {%- assign yearVal = yearVal | append: yearTxt -%}
+      {%- assign timesArray = timesArray | push: yearVal -%}
+    {%- endif -%}
+    {%- if include.timeVal >= 43800 -%}
+      {%- assign monthVal = include.timeVal | modulo: 525600 | divided_by: 43800 -%}
+      {%- assign monthVal = monthVal | append: monthTxt -%}
+      {%- assign timesArray = timesArray | push: monthVal -%}
+    {%- endif -%}
     {%- if include.timeVal >= 1440 -%}
-      {%- assign dayVal = include.timeVal | divided_by: 1440 -%}
+      {%- assign dayVal = include.timeVal | modulo: 43800 | divided_by: 1440 -%}
       {%- assign dayVal = dayVal | append: dayTxt -%}
       {%- assign timesArray = timesArray | push: dayVal -%}
     {%- endif -%}
@@ -31,7 +45,14 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- assign tempString = '' -%}
+    {%- comment -%}
+      Assemble the output string. If the time is greater than a month, add a tilde to signify that the time is approximate
+    {%- endcomment -%}
+    {%- if include.timeVal >= 43800 -%}
+      {%- assign tempString = '~' -%}
+    {%- else -%}
+      {%- assign tempString = '' -%}
+    {%- endif -%}
     {%- if timesArray.size >= 3 -%}
       {%- for time in timesArray -%}
         {% if forloop.last == true %}
