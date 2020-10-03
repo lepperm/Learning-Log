@@ -174,7 +174,7 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 
+    id: 13
     status: NS
     name: Ship in Six
     item: https://shop.stackingthebricks.com/ship-in-six
@@ -188,18 +188,18 @@ progressionEntries:
     datecomp:
     datelink:
   - 
-    id: 
-    status: IP
+    id: 14
+    status: OK
     name: Just F---ing Ship
     item: https://shop.stackingthebricks.com/just-fucking-ship-premium
     type: Book
     price: 39.00
-    est-duration:
+    est-duration: 150
     est-benefit: 8
-    act-benefit:
+    act-benefit: 9
     relproj:
     relprojlink:
-    datecomp:
+    datecomp: 9/30/20
     datelink:
   - 
     id: 
