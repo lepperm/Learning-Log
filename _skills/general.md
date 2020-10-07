@@ -218,12 +218,12 @@ progressionEntries:
   - 
     id: 
     status: NS
-    name: 
-    item: 
-    type: 
-    price: 
-    est-duration: 
-    est-benefit: 
+    name: Teach Yourself Programming in Ten Years
+    item: https://www.norvig.com/21-days.html
+    type: Blog
+    price: 0.0
+    est-duration:
+    est-benefit: 7
     act-benefit:
     relproj:
     relprojlink:
