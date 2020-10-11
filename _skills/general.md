@@ -229,6 +229,20 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
+  - 
+    id: 
+    status: NS
+    name: Web Developer Job Preparedness Sessions
+    item: https://seesparkbox.com/foundry/web_developer_resume_cover_letter_salary_negotiation_whiteboarding_workshop
+    type: Video
+    price: 0.0
+    est-duration: 155
+    est-benefit: 7
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
 resources: 
   - 
     refname: Web Design in 4 minutes
