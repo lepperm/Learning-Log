@@ -4,7 +4,7 @@ title: "On Time, Productivity, and the Pursuit of a Better Future"
 excerpt: Exploring the adversarial nature of the perception of productivity against living life. Also some normal updates.
 author: Max Lepper
 categories: [journal]
-tags: [product lab, mentality, time]
+tags: [product lab,mentality,time]
 date: 2020-10-02 23:49:11 -0400
 modified_date: 2020-10-03 01:36:52 -0400
 published: true

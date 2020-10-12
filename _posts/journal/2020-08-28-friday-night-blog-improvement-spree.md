@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [css, html, liquid]
+skills: [css,html,liquid]
 references: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator","https://learngitbranching.js.org/","https://www.freecodecamp.org/maxlepper","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://stackoverflow.com/questions/46672231/in-jekyll-how-to-show-posts-from-last-week"]
 timespent: 280
 sleep: 310

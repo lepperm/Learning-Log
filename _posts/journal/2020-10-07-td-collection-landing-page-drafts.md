@@ -4,7 +4,7 @@ title: "TD Collection Landing Page Drafts"
 excerpt: Working with Neal to craft drafts for the TD Collection landing pages, and a quote on curiosity.
 author: Max Lepper
 categories: [journal]
-tags: [tdc, design, product lab, mentality]
+tags: [tdc,design,product lab,mentality]
 date: 2020-10-07 23:54:12 -0400
 modified_date:
 published: true

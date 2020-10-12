@@ -4,7 +4,7 @@ title: "Networking, Prioritizing, and Accessibility"
 excerpt: Joining an irregular coffee club, organizing our issues for AGWSU, blog improvements and accessibility, and adding the equivalent second job time commitment being devoted to this learning journey.
 author: Max Lepper
 categories: [journal]
-tags: [social, networking, lean, accessibility, project management]
+tags: [social,networking,lean,accessibility,project management]
 date: 2020-09-03 23:20:48 -0400
 modified_date: 2020-09-07 19:26:52 -0400
 published: true
@@ -12,7 +12,7 @@ status: finished
 confidence: highly likely
 importance: 3
 context: true
-skills: [javascript, html, css, accessibility, agile-pm, git]
+skills: [javascript,html,css,accessibility,agile-pm,git]
 references: ["https://www.freecodecamp.org/learn","https://leansmarts.com/summary-2-second-lean/","https://search.google.com/search-console/about","https://www.linkedin.com/in/davidebest","https://seesparkbox.com/","https://agwsu.org/","https://www.linkedin.com/in/nealstrobl/","http://www.davidmacd.com/blog/select-box-label.html","https://www.twitch.tv/happydevelopment","http://nicolasgallagher.com/git-checkout-specific-files-from-another-branch/"]
 timespent: 245
 sleep: 440

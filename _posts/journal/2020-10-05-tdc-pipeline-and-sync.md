@@ -4,7 +4,7 @@ title: "TDC Pipeline And Sync"
 excerpt: Having a sync meeting with the TDC team to lay out our plans for the month and future, and setting up our CI pipeline.
 author: Max Lepper
 categories: [journal]
-tags: [product lab, tdc]
+tags: [product lab,tdc]
 date: 2020-10-05 23:18:53 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [agile-pm, gitlab-ci, react]
+skills: [agile-pm,gitlab-ci,react]
 references: ["https://scrimmage.us/the-product-lab/"]
 timespent: 215
 sleep: 390

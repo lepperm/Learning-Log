@@ -4,7 +4,7 @@ title: "Finishing Stats, Post Navigation, and OnLoad"
 excerpt: Finishing the stats page (sort of), adding some CSS to post-to-post navigation and the post header info, and reworking onload into an include function.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, liquid]
+tags: [javascript,liquid]
 date: 2020-08-14 22:37:31 -0400
 modified_date: 2020-09-07 19:43:42 -0400
 published: true
@@ -12,8 +12,8 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [javascript, liquid, jekyll, html, css]
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/", "https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8"]
+skills: [javascript,liquid,jekyll,html,css]
+references: ["https://shopify.github.io/liquid/","https://jekyllrb.com/docs/liquid/filters/","https://jekyllrb.com/docs/configuration/options/","https://jekyllrb.com/docs/permalinks/","https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8"]
 timespent: 330
 sleep: 
 recreation:

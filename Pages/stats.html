@@ -76,7 +76,7 @@ Reuse all extracted data from our generated search.json file for use on this pag
   {%- endif -%}
 
   {%- if stat.references != "" -%}
-    {%- assign references = stat.references | split: ',' -%}
+    {%- assign references = stat.references | split: ', ' -%}
     {%- assign reflist = reflist | concat: references -%}
   {%- endif -%}
 
@@ -571,13 +571,12 @@ This may eventually be an issue???
   {%- include return-to-top.html target="toc" -%}
 </h2>
 
-{%- assign uniqReflist = reflist | uniq -%}
 {%- assign refCounts = '' | split: ',' -%}
 {%- assign uniqReflist = reflist | uniq -%}
 {%- for uniqRef in uniqReflist -%}
   {%- assign refCount = 0 -%}
   {%- for ref in reflist -%}
-    {%- if ref == uniqRef -%}
+    {%- if uniqRef == ref -%}
       {%- assign refCount = refCount | plus: 1 -%}
     {%- endif -%}
   {%- endfor -%}

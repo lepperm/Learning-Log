@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [html, javascript]
+skills: [html,javascript]
 references: ["https://www.dyn-web.com/tutorials/init.php","https://www.javascripttutorial.net/javascript-dom/javascript-onload/"]
 timespent: 140
 sleep: 390

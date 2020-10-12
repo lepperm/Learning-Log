@@ -4,7 +4,7 @@ title: "Stabilizing Learning Log and Back to React"
 excerpt: Reflecting on the past 3 months of web development and a few last improvements for Learning Log before switching back to other projects.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, liquid, learning, progress, mentality]
+tags: [javascript,liquid,learning,progress,mentality]
 date: 2020-08-16 21:33:38 -0400
 modified_date: 2020-09-07 19:42:21 -0400
 published: true
@@ -12,8 +12,8 @@ status: finished
 confidence: emotional
 importance: 4
 context: true
-skills: [javascript, liquid, jekyll, html, css]
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/"]
+skills: [javascript,liquid,jekyll,html,css]
+references: ["https://shopify.github.io/liquid/","https://jekyllrb.com/docs/liquid/filters/","https://jekyllrb.com/docs/configuration/options/"]
 timespent: 200
 sleep:
 recreation:

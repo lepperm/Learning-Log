@@ -4,7 +4,7 @@ title: "Landing Page Taking Form"
 excerpt: Building out the TD Collection landing page, and the last day for Irregular Café.
 author: Max Lepper
 categories: [journal]
-tags: [tdc, product lab, material-ui]
+tags: [tdc,product lab,material-ui]
 date: 2020-10-09 23:00:00 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [material-ui, react]
+skills: [material-ui,react]
 references: ["https://material-ui.com/components/grid/","https://material-ui.com/api/grid/","https://www.irregular.cafe/"]
 timespent: 395
 sleep: 320

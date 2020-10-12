@@ -4,7 +4,7 @@ title: "Service Workers, Accessibility, and Favicons"
 excerpt: Finally adding a favicon to this site and learning about setting up a service worker to get things working as a progressive web app, plus focusing on accessibility.
 author: Max Lepper
 categories: [journal]
-tags: [service workers, css, accessibility]
+tags: [service workers,css,accessibility]
 date: 2020-09-11 23:27:06 -0400
 modified_date: 2020-09-15 13:12:55 -0400
 published: true
@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 2
 context: true
-skills: [css, html, accessibility]
+skills: [css,html,accessibility]
 references: ["https://www.freecodecamp.org/learn","https://codepen.io/lepperm","https://codepen.io/lepperm/pen/abNYBJK","https://uxwing.com/","https://realfavicongenerator.net/","https://github.com/lavas-project/jekyll-pwa","https://developer.mozilla.org/en-US/docs/Web/Manifest","https://developers.google.com/web/fundamentals/primers/service-workers","https://medium.com/izettle-engineering/beginners-guide-to-web-push-notifications-using-service-workers-cb3474a17679","https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/","https://stackoverflow.com/questions/45536537/centering-in-css-grid"]
 timespent: 345
 sleep: 390

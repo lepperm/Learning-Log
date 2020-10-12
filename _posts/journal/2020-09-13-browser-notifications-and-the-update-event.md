@@ -4,7 +4,7 @@ title: "Browser Notifications and the Update Event"
 excerpt: Setting up and serving update notifications after tying into the PWA plugin update event.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, service workers]
+tags: [javascript,service workers]
 date: 2020-09-13 21:41:48 -0400
 modified_date: 2020-09-14 19:08:22 -0400
 published: true

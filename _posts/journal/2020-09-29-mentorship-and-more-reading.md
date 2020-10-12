@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [javascript, general]
+skills: [javascript,general]
 references: ["https://www.irregular.cafe/","https://shop.stackingthebricks.com/just-fucking-ship"]
 timespent: 85
 sleep: 280

@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [javascript, general]
+skills: [javascript,general]
 references: ["https://shop.stackingthebricks.com/just-fucking-ship"]
 timespent: 205
 sleep: 380

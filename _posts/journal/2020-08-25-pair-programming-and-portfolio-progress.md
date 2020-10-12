@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [react, redux, firebase, material-ui]
+skills: [react,redux,firebase,material-ui]
 references: ["https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/79"]
 timespent: 290
 sleep:

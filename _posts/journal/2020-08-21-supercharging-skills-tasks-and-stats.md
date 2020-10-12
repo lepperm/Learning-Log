@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [html, javascript, css, liquid]
+skills: [html,javascript,css,liquid]
 references: ["https://www.w3schools.com/howto/howto_js_sort_table.asp","http://www.javascriptkit.com/dhtmltutors/customattributes.shtml","http://alanwsmith.com/jekyll-liquid-date-formatting-examples","https://stackoverflow.com/questions/31340018/get-the-difference-in-days-between-two-dates-in-jekyll","https://www.w3schools.com/howto/howto_css_arrows.asp", "https://css-tricks.com/snippets/css/css-triangle/","https://shopify.dev/docs/themes/liquid/reference/objects/for-loops","https://shopify.github.io/liquid/basics/operators/","https://webmasters.stackexchange.com/questions/119670/how-do-you-serve-jekyll-pages-with-gzip-compression-on-gitlab-pages","https://github.com/philnash/jekyll-gzip"]
 timespent: 460
 sleep:

@@ -4,7 +4,7 @@ title: "Working Skills and Adding Stats"
 excerpt: Fixing my Skills page and using the lessons learned to capture blog stats.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, liquid]
+tags: [javascript,liquid]
 date: 2020-08-13 23:41:23 -0400
 modified_date: 2020-09-07 19:44:02 -0400
 published: true
@@ -12,8 +12,8 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [javascript, liquid, jekyll, html, css]
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/datafiles/", "https://www.w3.org/TR/2016/REC-html51-20161101/textlevel-semantics.html#the-a-element", "https://jekyllrb.com/docs/liquid/tags/#links", "https://stackoverflow.com/users/14096749/max-l","https://stackoverflow.com/questions/63400845/how-can-i-use-a-liquid-generated-json-as-a-data-site-data-object-in-jekyll"]
+skills: [javascript,liquid,jekyll,html,css]
+references: ["https://shopify.github.io/liquid/","https://jekyllrb.com/docs/liquid/filters/","https://jekyllrb.com/docs/datafiles/","https://www.w3.org/TR/2016/REC-html51-20161101/textlevel-semantics.html#the-a-element","https://jekyllrb.com/docs/liquid/tags/#links","https://stackoverflow.com/users/14096749/max-l","https://stackoverflow.com/questions/63400845/how-can-i-use-a-liquid-generated-json-as-a-data-site-data-object-in-jekyll"]
 timespent: 305
 sleep: 
 recreation:

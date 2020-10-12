@@ -4,7 +4,7 @@ title: "Reading Weekend and Building Progression Value"
 excerpt: Reading my way through a growing backlog of resources and articles, and developing a plan and metrics to increase value within the data on individual progression items.
 author: Max Lepper
 categories: [journal]
-tags: [hacktoberfest, career]
+tags: [hacktoberfest,career]
 date: 2020-09-20 22:40:04 -0400
 modified_date:
 published: true

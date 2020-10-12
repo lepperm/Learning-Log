@@ -4,7 +4,7 @@ title: "User Experience for Notifications and Comments"
 excerpt: Conducting a poll to improve the user experience for post notifications, and exploring selectively adding Disqus to posts.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, service workers, disqus]
+tags: [javascript,service workers,disqus]
 date: 2020-09-14 23:18:51 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 2
 context: true
 comments: true
-skills: [javascript, html]
+skills: [javascript,html]
 references: ["https://shopify.github.io/liquid/basics/truthy-and-falsy/","https://onesignal.com/webpush"]
 timespent: 335
 sleep: 380

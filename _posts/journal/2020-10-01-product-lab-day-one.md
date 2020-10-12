@@ -4,7 +4,7 @@ title: "Product Lab Day One"
 excerpt: Diving into Product Lab and getting things started on the TDC project.
 author: Max Lepper
 categories: [journal]
-tags: [jfs, product lab, task tracking]
+tags: [jfs,product lab,task tracking]
 date: 2020-10-01 23:14:38 -0400
 modified_date:
 published: true

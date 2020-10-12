@@ -4,7 +4,7 @@ title: "Better Practices with Favicons, Pipelines, and Recreation"
 excerpt: Already fixing my brand-new favicons to include a version identifier and better color contrast, updating CI/CD pipelines for AGWSU and my portfolio, and adding a new "recreation" metric.
 author: Max Lepper
 categories: [journal]
-tags: [css, accessibility]
+tags: [css,accessibility]
 date: 2020-09-12 18:23:37 -0400
 modified_date: 2020-09-12 23:52:11 -0400
 published: true
@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 2
 context: true
-skills: [css, html, accessibility, gitlab-ci]
+skills: [css,html,accessibility,gitlab-ci]
 references: ["https://realfavicongenerator.net/","https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/issues/117","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/commit/b102f59348786adcbfbeeb878c7925c4e7161338"]
 timespent: 265
 sleep: 370

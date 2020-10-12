@@ -4,7 +4,7 @@ title: "Fixing Search and Skill Sorting"
 excerpt: Hooking up skill details, sorting the skill table, fixing query search, and a few dead ends.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, liquid]
+tags: [javascript,liquid]
 date: 2020-08-16 06:54:32 -0400
 modified_date: 2020-09-07 19:42:55 -0400
 published: true
@@ -12,8 +12,8 @@ status: finished
 confidence: log
 importance: 2
 context: true
-skills: [javascript, liquid, jekyll, html, css]
-references: ["https://shopify.github.io/liquid/", "https://jekyllrb.com/docs/liquid/filters/", "https://jekyllrb.com/docs/configuration/options/", "https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc", "https://www.w3schools.com/css/css3_flexbox.asp", "https://www.w3schools.com/howto/howto_js_sort_table.asp"]
+skills: [javascript,liquid,jekyll,html,css]
+references: ["https://shopify.github.io/liquid/","https://jekyllrb.com/docs/liquid/filters/","https://jekyllrb.com/docs/configuration/options/","https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc","https://www.w3schools.com/css/css3_flexbox.asp","https://www.w3schools.com/howto/howto_js_sort_table.asp"]
 timespent: 415
 sleep: 
 recreation:

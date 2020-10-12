@@ -12,12 +12,12 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [html, javascript, liquid]
+skills: [html,javascript,liquid]
 references: []
 timespent: 165
 sleep: 490
 recreation:
-workout:
+workout: 
 ---
 
 ## Journal

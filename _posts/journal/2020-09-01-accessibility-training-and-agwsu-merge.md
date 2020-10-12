@@ -12,7 +12,7 @@ status: finished
 confidence: highly likely
 importance: 3
 context: true
-skills: [react, css, html, accessibility]
+skills: [react,css,html,accessibility]
 references: ["https://www.freecodecamp.org/learn","https://www.w3.org/WAI/standards-guidelines/wcag/","https://agwsu.org/","https://gitlab.com/neal.strobl/wsu-adventurers-guild/-/merge_requests/11"]
 timespent: 130
 sleep: 380

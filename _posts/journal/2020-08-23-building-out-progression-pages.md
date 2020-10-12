@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [git, liquid]
+skills: [git,liquid]
 references: ["https://learngitbranching.js.org/"]
 timespent: 235
 sleep:

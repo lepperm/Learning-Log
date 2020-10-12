@@ -4,7 +4,7 @@ title: "Shipping, Blog Data, and Bookmarklets"
 excerpt: Reading JFS, brainstorming solutions to my data file management issue, and creating a tool to solve a team problem at work.
 author: Max Lepper
 categories: [journal]
-tags: [jfs, bookmarklet]
+tags: [jfs,bookmarklet]
 date: 2020-09-25 23:48:11 -0400
 modified_date:
 published: true

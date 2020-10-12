@@ -12,8 +12,8 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [liquid, markdown, yaml, sass, html, javascript]
-references: ["https://github.com/avillafiorita/jekyll-datapage_gen","https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one","https://shopify.github.io/liquid/tags/iteration/","https://materialdesignicons.com/", "https://jekyllrb.com/docs/liquid/filters/"]
+skills: [liquid,markdown,yaml,sass,html,javascript]
+references: ["https://github.com/avillafiorita/jekyll-datapage_gen","https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one","https://shopify.github.io/liquid/tags/iteration/","https://materialdesignicons.com/","https://jekyllrb.com/docs/liquid/filters/"]
 timespent: 340
 sleep:
 recreation:

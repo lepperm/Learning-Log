@@ -4,7 +4,7 @@ title: "Git Mirroring and Hacktoberfest 2020"
 excerpt: Gearing up for Hacktoberfest 2020, and making my GitLab and GitHub repositories share data.
 author: Max Lepper
 categories: [journal]
-tags: [open source, hacktoberfest2020]
+tags: [open source,hacktoberfest2020]
 date: 2020-09-17 23:45:04 -0400
 modified_date: 2020-09-18 13:27:04 -0400
 published: true

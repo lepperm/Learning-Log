@@ -4,7 +4,7 @@ title: "The Rookie Mistake"
 excerpt: Stumbling by chasing curiosity instead of progressively iterating, but still managing to make some progress on the TDC landing page.
 author: Max Lepper
 categories: [journal]
-tags: [tdc, product lab, material-ui]
+tags: [tdc,product lab,material-ui]
 date: 2020-10-08 23:40:10 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [material-ui, react]
+skills: [material-ui,react]
 references: ["https://material.io/resources/icons/","https://stackoverflow.com/questions/57058299/what-does-the-cssbaseline-class-do","https://www.smashingmagazine.com/2012/12/css-baseline-the-good-the-bad-and-the-ugly/","https://stackoverflow.com/questions/57557271/how-to-use-clsx-in-react","https://realfavicongenerator.net/"]
 timespent: 345
 sleep: 280

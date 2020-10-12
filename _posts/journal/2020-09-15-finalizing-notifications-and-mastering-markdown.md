@@ -4,7 +4,7 @@ title: "Finalizing Notifications and Mastering Markdown"
 excerpt: Putting finishing touches on notifications for now, submitting my finalized tribute project, and taking a quick Markdown course.
 author: Max Lepper
 categories: [journal]
-tags: [javascript, freecodecamp, service workers]
+tags: [javascript,freecodecamp,service workers]
 date: 2020-09-15 23:58:21 -0400
 modified_date:
 published: true
@@ -12,7 +12,7 @@ status: live
 confidence: log
 importance: 1
 context: true
-skills: [javascript, html, css, markdown]
+skills: [javascript,html,css,markdown]
 references: ["https://www.brainscape.com/blog/2016/08/better-learning-focused-vs-diffuse-thinking/","https://masteringmarkdown.com/","https://typora.io/"]
 timespent: 255
 sleep: 380

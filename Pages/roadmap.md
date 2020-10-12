@@ -21,8 +21,8 @@ Phase 1 should conclude January, 2021.
 
 ### Projects
 
-- [ ] AGWSU (intern developer, project management)
-- [ ] Untitled True Dungeon Token Platform (junior developer, project management)
+- [ ] [AGWSU](https://agwsu.org/) (intern developer, project management)
+- [ ] [TD Collection](https://tdcollection.net/) (junior developer, project management)
 - [ ] FreeCodeCamp HTML/CSS projects (fundamentals)
 - [ ] FreeCodeCamp Javascript projects (fundamentals)
 

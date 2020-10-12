@@ -12,7 +12,7 @@ status: finished
 confidence: log
 importance: 1
 context: true
-skills: [git, javascript, html]
+skills: [git,javascript,html]
 references: ["https://learngitbranching.js.org/"]
 timespent: 300
 sleep:

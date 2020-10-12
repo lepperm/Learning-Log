@@ -4,7 +4,7 @@ title: "Communication, Visibility, and Problem Solving"
 excerpt: Working on my mentality in an effort to be a more mindful communicator, and highlights from other readings.
 author: Max Lepper
 categories: [journal]
-tags: [mentality, communication]
+tags: [mentality,communication]
 date: 2020-09-16 23:04:51 -0400
 modified_date:
 published: true
