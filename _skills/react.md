@@ -62,7 +62,7 @@ progressionEntries:
     datecomp: 
     datelink: 
   - 
-    id: 
+    id: 5
     status: NS
     name: Getting Started with React (2019 Edition)
     item: https://scotch.io/starters/react/getting-started-with-react-2019-edition
@@ -75,6 +75,62 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
+  - 
+    id: 6
+    status: UN
+    name: Demystifying React Hooks
+    item: https://dev.to/milu_franz/series/7304
+    type: Blog
+    price: 0.0
+    est-duration: 18
+    est-benefit: 5
+    act-benefit:
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
+  - 
+    id: 7
+    status: UN
+    name: React Hooks - My Introduction
+    item: https://medium.zenika.com/react-hooks-my-introduction-81b15e6eff20
+    type: Blog
+    price: 0.0
+    est-duration: 8
+    est-benefit: 5
+    act-benefit:
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
+  - 
+    id: 8
+    status: IP
+    name: Learn React Hooks In One Hour
+    item: https://scrimba.com/course/greacthooks
+    type: Course
+    price: 0.0
+    est-duration: 60
+    est-benefit: 6
+    act-benefit:
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
+  - 
+    id: 9
+    status: OK
+    name: Understanding Functional Components vs. Class Components in React
+    item: https://www.twilio.com/blog/react-choose-functional-components
+    type: Blog
+    price: 0.0
+    est-duration: 8
+    est-benefit: 6
+    act-benefit: 9
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
   - 
     id: 
     status: NS
@@ -117,48 +173,6 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
-  - 
-    id: 
-    status: NS
-    name: Learn React Hooks In One Hour
-    item: https://scrimba.com/course/greacthooks
-    type: Course
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj: 
-    relprojlink: 
-    datecomp: 
-    datelink: 
-  - 
-    id: 
-    status: NS
-    name: Demystifying React Hooks
-    item: https://dev.to/milu_franz/series/7304
-    type: Blog
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj: 
-    relprojlink: 
-    datecomp: 
-    datelink: 
-  - 
-    id: 
-    status: NS
-    name: React Hooks - My Introduction
-    item: https://medium.zenika.com/react-hooks-my-introduction-81b15e6eff20
-    type: Blog
-    price:
-    est-duration:
-    est-benefit:
-    act-benefit:
-    relproj: 
-    relprojlink: 
-    datecomp: 
-    datelink: 
   - 
     id: 
     status: NS
@@ -219,4 +233,152 @@ resources:
   - 
     refname: React.js Examples
     reflink: https://reactjsexample.com/
+  - 
+    refname: Hooks at a Glance
+    reflink: https://reactjs.org/docs/hooks-overview.html
 ---
+
+* TOC
+{:toc}
+
+## Components
+
+[Components](https://reactjs.org/docs/components-and-props.html) are the building blocks created with React, and can be used to split a UI up into independent reusable pieces.
+
+Components consume `props`, which are arbitrary inputs, which can be used to manipulate how the component displays.
+
+Values, passed as `props`, can be delivered to user-declared components as such:
+
+```jsx
+const element = <Welcome name="World" />;
+```
+
+Props should be named from the component’s own point of view, rather than the context in which it is being used.
+
+Components can be built up of further components, allowing for high abstraction and flexibility. The general recommendation is that if a component is used several times or is complex, it is a good candidate to be extracted to a separate component.
+
+### Class Components
+
+```jsx
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+
+Class components tend to be more verbose and typically require a minimum of `constructor()` and `render()` lifecycle methods, and may take advantage of other lifecycle methods such as `componentDidMount()` (runs after component rendered to DOM) and `componentWillUnmount()` (runs as the component is being removed from the DOM).
+
+Class components are known as "stateful," as they can implement logic and state.
+
+### Function Components
+
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+Function components utilize hooks to simplify accessing lifecycle methods. They are also considered "stateless," as they simply accept data and display it in some form.
+
+Or at least, this used to be the case. With the introduction of React Hooks in React 16.8, function components have rapidly gained functionality, and are the current preference for component construction.
+
+## Props
+
+Props passed to a component are read-only, and should not be modified. The rule is:
+
+> **All React components must act like pure functions with respect to their props.**
+
+As an example:
+
+```jsx
+function sum(a, b) {
+  return a + b;
+}
+```
+
+...is a pure function, as it always returns the exact same results for the same inputs.
+
+## State
+
+State is similar to props, but is private and fully controlled by a component.
+
+While `<Clock date={new Date()} />` would make the date object accessible within `Clock` via `{this.props.date.toLocaleTimeString()}`, using state allows the date object to be fully self-contained within `Clock`:
+
+```jsx
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    );
+  }
+}
+```
+
+While state can be initialized with `this.state`, it can also be updated with `this.setState()`. `this.state` can ONLY be assigned in the constructor.
+
+Directly modifying the state value will not re-render a component! Using `setState()` will trigger the re-render correctly.
+
+Updates to both props and state may be batched asynchronously by React for performance, and may be unreliable to use to set state.
+
+**UNRELIABLE:**
+```jsx
+this.setState({
+  counter: this.state.counter + this.props.increment,
+});
+```
+
+To counteract this, `setState()` can alternatively accept a function that uses the previous state and the updated props to update state once properly processed.
+
+**CORRECT:**
+```jsx
+this.setState(function(state, props) {
+  return {
+    counter: state.counter + props.increment
+  };
+});
+```
+
+...which can be simplified further with arrow notation:
+
+```jsx
+this.setState((state, props) => ({
+  counter: state.counter + props.increment
+}));
+```
+
+The state can contain multiple independent variables, and each can be updated independent of each other with separate `setState()` calls. The merge is shallow, so only the state variables passed to `setState()` are replaced.
+
+## Hooks
+
+In a class component, state is declared like this:
+
+```jsx
+constructor(props) {
+  super(props)
+  this.state = { date: new Date() }
+}
+```
+
+Without implementing the constructor and calling `super(props)`, all the state variables that you are trying to use will be `undefined`, per [the React documentation](https://reactjs.org/docs/react-component.html#constructor).
+
+In a function component, however, the `useState()` hook allows you to set both a variable (left) and a function to update the value of said variable (right):
+
+```jsx
+const [time, setTime] = useState(new Date());
+```
+
+The most commonly used hooks are `useState()` and `useEffect`:
+
+| Classes                                                                              | Hooks                                                                                    |
+|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| constructor(props) {<br>  super(props)<br>  this.state = { varName: initValue }<br>} | const [varName, setVarName] = useState(initValue);                                       |
+| componentDidMount() {<br>  console.log("Hello");<br>}                                | React.useEffect(() => {<br>  console.log("Hello");<br>}, []);                            |
+| componentWillUnmount() {<br>  console.log("Bye");<br>}                               | React.useEffect(() => {<br>  return () => {<br>    console.log("Bye");<br>  }<br>}, []); |

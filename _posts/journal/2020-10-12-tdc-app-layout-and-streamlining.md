@@ -44,7 +44,7 @@ Additionally, we added chips for active search filters into the design.
 
 Quickly into laying out the search filters, we discovered why some of the existing solutions are as cumbersome to use as they are - there are over 165 discrete filterable options, not including text or specific number values! The solution we are currently considering is a one-section-open-at-a-time controlled accordion component. Here is the current v1 for the main app design:
 
-{% include blog-img.html source="/assets/images/posts/2020/10/13/mainapp_draft01.png" alt="Our first pass at the main app layout" %}
+{% include blog-img.html source="/assets/images/posts/2020/10/12/mainapp_draft01.png" alt="Our first pass at the main app layout" %}
 
 Oh, and our theme colors changed a bit more.
 
@@ -52,5 +52,5 @@ Looking into the filters has exposed some questionable and confusing inconsisten
 
 ## Tasklist
 
-- [x] Post retrospective to Product Lab
+- [x] Post my daily updates on Product Lab
 - [x] Collaborate with Neal on main app design
