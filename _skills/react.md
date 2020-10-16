@@ -77,7 +77,7 @@ progressionEntries:
     datelink:
   - 
     id: 6
-    status: UN
+    status: IP
     name: Demystifying React Hooks
     item: https://dev.to/milu_franz/series/7304
     type: Blog
@@ -91,14 +91,14 @@ progressionEntries:
     datelink: 
   - 
     id: 7
-    status: UN
+    status: OK
     name: React Hooks - My Introduction
     item: https://medium.zenika.com/react-hooks-my-introduction-81b15e6eff20
     type: Blog
     price: 0.0
     est-duration: 8
     est-benefit: 5
-    act-benefit:
+    act-benefit: 3
     relproj: 
     relprojlink: 
     datecomp: 
@@ -112,7 +112,7 @@ progressionEntries:
     price: 0.0
     est-duration: 60
     est-benefit: 6
-    act-benefit:
+    act-benefit: 9
     relproj: 
     relprojlink: 
     datecomp: 
@@ -236,6 +236,9 @@ resources:
   - 
     refname: Hooks at a Glance
     reflink: https://reactjs.org/docs/hooks-overview.html
+  - 
+    refname: Rules of Hooks
+    reflink: https://reactjs.org/docs/hooks-rules.html
 ---
 
 * TOC
@@ -282,6 +285,18 @@ function Welcome(props) {
 Function components utilize hooks to simplify accessing lifecycle methods. They are also considered "stateless," as they simply accept data and display it in some form.
 
 Or at least, this used to be the case. With the introduction of React Hooks in React 16.8, function components have rapidly gained functionality, and are the current preference for component construction.
+
+Functional components can also be declared in the `export` to keep things exceptionally tidy:
+
+```jsx
+import React, { useState } from 'react'
+
+export default function MyComponent() {
+  
+}
+```
+
+`{ useState }` within our import is destructured from React so that it can be used directly instead of `React.useState()`.
 
 ## Props
 
@@ -358,6 +373,18 @@ The state can contain multiple independent variables, and each can be updated in
 
 ## Hooks
 
+Hooks are powerful functions that expose class-like capabilities to functional components. The most commonly used hooks are `useState()` and `useEffect()`, and many have direct similarities to class lifecycle methods.
+
+### Conversion Reference
+
+| Classes                                                                              | Hooks                                                                                    |
+|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| constructor(props) {<br>  super(props)<br>  this.state = { varName: initValue }<br>} | const [varName, setVarName] = useState(initValue);                                       |
+| componentDidMount() {<br>  console.log("Hello");<br>}                                | React.useEffect(() => {<br>  console.log("Hello");<br>}, []);                            |
+| componentWillUnmount() {<br>  console.log("Bye");<br>}                               | React.useEffect(() => {<br>  return () => {<br>    console.log("Bye");<br>  }<br>}, []); |
+
+### `useState`
+
 In a class component, state is declared like this:
 
 ```jsx
@@ -375,10 +402,129 @@ In a function component, however, the `useState()` hook allows you to set both a
 const [time, setTime] = useState(new Date());
 ```
 
-The most commonly used hooks are `useState()` and `useEffect`:
+`useState` is imported from React, and can either be accessed by `React.useState()` or deconstructed at import with `{ useState }` and accessed directly.
 
-| Classes                                                                              | Hooks                                                                                    |
-|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| constructor(props) {<br>  super(props)<br>  this.state = { varName: initValue }<br>} | const [varName, setVarName] = useState(initValue);                                       |
-| componentDidMount() {<br>  console.log("Hello");<br>}                                | React.useEffect(() => {<br>  console.log("Hello");<br>}, []);                            |
-| componentWillUnmount() {<br>  console.log("Bye");<br>}                               | React.useEffect(() => {<br>  return () => {<br>    console.log("Bye");<br>  }<br>}, []); |
+Let's look at an iterative example. Given a state variable `count`:
+
+```jsx
+const [count, setCount] = useState(0)
+```
+
+...let's say we have a button to increase the value of `count` by one per click:
+
+```jsx
+<button onClick={setCount(count + 1)}>+</button>
+```
+
+Declaring the function this way executes immediately, however, so we want to use an in-line function to have it execute on the click:
+
+```jsx
+<button onClick={() => setCount(count + 1)}>+</button>
+```
+
+State updates are processed asynchronously, so by using the state variable directly, we are relying on the current state of `count` and run the risk of calling `setCount` with an outdated value. We can counteract that by passing a function, with the current state as it's argument, to `setCount` rather than a value directly:
+
+```jsx
+<button onClick={() => setCount(currentCount => currentCount + 1)}>-</button>
+```
+
+For related state variables, it may be helpful to declare them in groupings using destructured arrays:
+
+```jsx
+const [[windowWidth, windowHeight], setWindowSize] = useState([window.innerWidth, window.innerHeight])
+
+setWindowSize([window.innerWidth, window.innerHeight])
+```
+
+### `useEffect`
+
+The `useEffect` hook takes the following parameters:
+- A function to execute on trigger
+- An array of things that should trigger the effect when updated
+  - An empty array will only run on the first render
+  - A missing second parameter will create an infinite loop
+
+```jsx
+useEffect(getValue, [])
+```
+
+When a target prop is updated, the `useEffect`'s function will run.
+
+### `useRef`
+
+We can utilize `useRef` to get a reference to a DOM element.
+
+Add `ref={}` within the target element properties. The reference variable itself is an option with value `.current` that is set to the current value.
+
+```jsx
+const inputRef = useRef()
+
+useEffect(() => {
+  inputRef.current.focus()
+}, [])
+
+<input ref={inputRef} ...>
+```
+
+In another example, we can use the reference to get useful information:
+
+```jsx
+const headerRef = useRef({ offsetHeight: 0 })
+
+<header ref={headerRef}>
+
+<Canvas
+  color={activeColor}
+  height={window.innerHeight - headerRef.current.offsetHeight}
+/>
+```
+
+### `useCallback`
+
+`useCallback` utilizes the exact same pattern as `useEffect` - a function (or functional component in our case), and an array of conditions:
+
+```jsx
+export default function Playground() {
+  const [count, setCount] = useState(30)
+  {...}
+  const cb = useCallback(num => console.log(num), [count])
+
+  return (
+    <div>
+      {...}
+      <Calculate cb={cb} num={count} />
+    </div>
+  )
+}
+
+function Calculate({ cb, num }) {
+  cb(num)
+  const renderCount = useRef(1)
+  return <div>{renderCount.current++}</div>
+}
+```
+
+In the example above, the `num` will be updated in the console every time that `count` is updated.
+
+### `React.memo`
+
+Going back to `useCallback`, we can use `React.memo` to check and see if the inputs are the same, and not render if they are:
+
+```jsx
+const Calculate = React.memo(({ cb, num }) => {
+  cb(num)
+  const renderCount = useRef(1)
+  return <div>{renderCount.current++}</div>
+})
+```
+
+### `useMemo`
+
+`useMemo` can be utilized to cache the results of long equations for reuse.
+
+```jsx
+useCallback(() => console.log('useCallback')) // return the function
+useMemo(() => console.log('useMemo')) // return the result of the function
+```
+
+### Custom Hooks
