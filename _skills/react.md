@@ -77,7 +77,7 @@ progressionEntries:
     datelink:
   - 
     id: 6
-    status: IP
+    status: UN
     name: Demystifying React Hooks
     item: https://dev.to/milu_franz/series/7304
     type: Blog
@@ -105,14 +105,14 @@ progressionEntries:
     datelink: 
   - 
     id: 8
-    status: IP
+    status: OK
     name: Learn React Hooks In One Hour
     item: https://scrimba.com/course/greacthooks
     type: Course
     price: 0.0
     est-duration: 60
     est-benefit: 6
-    act-benefit: 9
+    act-benefit: 8
     relproj: 
     relprojlink: 
     datecomp: 
@@ -375,6 +375,11 @@ The state can contain multiple independent variables, and each can be updated in
 
 Hooks are powerful functions that expose class-like capabilities to functional components. The most commonly used hooks are `useState()` and `useEffect()`, and many have direct similarities to class lifecycle methods.
 
+### Rules
+
+1. Only call Hooks at the top level
+2. Only call Hooks from React functions
+
 ### Conversion Reference
 
 | Classes                                                                              | Hooks                                                                                    |
@@ -528,3 +533,7 @@ useMemo(() => console.log('useMemo')) // return the result of the function
 ```
 
 ### Custom Hooks
+
+Names for custom hooks should start with `use`, similar to `useState` and the other native react hooks. Formatting of the actual functions are similar, as well.
+
+Try to make them as small, composable, and reusable as possible!

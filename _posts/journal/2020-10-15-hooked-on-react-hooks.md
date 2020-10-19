@@ -54,7 +54,6 @@ The day went by incredibly fast and I can't believe I'm already past when I said
 - [ ] Post my daily updates on Product Lab
 - [ ] Post my daily updates on the TD Collection discord
 - [ ] Look into React Hooks
-  - [ ] Complete React Progression [item #6]({{ site.baseurl }}/skills/react#6)
   - [x] Complete React Progression [item #7]({{ site.baseurl }}/skills/react#7)
   - [ ] Complete React Progression [item #8]({{ site.baseurl }}/skills/react#8)
 - [ ] Work on TDC Landing Page layout

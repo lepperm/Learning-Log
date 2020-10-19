@@ -42,7 +42,6 @@ I'll call it quits here rather than doing that thing where I say up until midnig
 - [x] Post my daily updates on Product Lab
 - [x] Post my daily updates on the TD Collection discord
 - [ ] Look into React Hooks
-  - [ ] Complete React Progression [item #6]({{ site.baseurl }}/skills/react#6)
   - [ ] Complete React Progression [item #7]({{ site.baseurl }}/skills/react#7)
   - [ ] Complete React Progression [item #8]({{ site.baseurl }}/skills/react#8)
   - [x] Complete React Progression [item #9]({{ site.baseurl }}/skills/react#9)

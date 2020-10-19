@@ -231,6 +231,20 @@ progressionEntries:
     datelink:
   - 
     id: 
+    status: OK
+    name: If There Aren't Any Typos In This Essay, We Launched Too Late!
+    item: https://www.linkedin.com/pulse/arent-any-typos-essay-we-launched-too-late-reid-hoffman/
+    type: Blog
+    price: 0.0
+    est-duration: 7
+    est-benefit: 6
+    act-benefit: 8
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 
     status: NS
     name: Web Developer Job Preparedness Sessions
     item: https://seesparkbox.com/foundry/web_developer_resume_cover_letter_salary_negotiation_whiteboarding_workshop
