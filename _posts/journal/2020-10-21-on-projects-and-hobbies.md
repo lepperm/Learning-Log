@@ -1,7 +1,7 @@
 ---
 layout: journal
-title: "TBD"
-excerpt: TBD.
+title: "On Projects and Hobbies"
+excerpt: A brief overview of the pipeline I use to filter and prioritize where I put my focus.
 author: Max Lepper
 categories: [journal]
 tags: [task management]
@@ -10,11 +10,11 @@ modified_date:
 published: true
 status: live
 confidence: log
-importance: 1
-context: true
+importance: 3
+context: false
 comments: true
 skills: [general]
-references: ["http://www.oblique-strategies.com/","https://material-ui.com/styles/advanced/","https://material-ui.com/components/text-fields/","https://material-ui.com/customization/default-theme/"]
+references: ["https://scrimmage.us/the-product-lab/"]
 timespent: 30
 sleep: 380
 recreation: 0
@@ -23,11 +23,11 @@ workout: 25
 
 ## Journal
 
-[Oblique Strategies]({{page.references[0]}})
+I was absolutely slammed at work and wrapped up in errands and prior obligations until nearly 9:30 tonight, so I didn't have much time or energy left to do much else today. There was a thread I was participating in over on [Product Lab]({{page.references[0]}}), though, where I ended up writing out a little bit of information about my task and project process. From the quoted comment I'm responding to below onwards, I have pasted my outline. Hopefully this will be interesting to someone, and please don't hesitate to drop a message in the comments if you have any questions!
 
-[quote="lauramappin, post:1, topic:55"]
-I still have too many interests and they crowd each other such that it’s hard to get anything through.
-[/quote]
+---
+
+>I still have too many interests and they crowd each other such that it’s hard to get anything through.
 
 Same, this is so challenging to manage! On one hand, you want to stay curious and interested, and to explore why things work or are the way that they are. On the other, however, I know that it is very easy for me to get wrapped up in the process and have it intrude on other potentially more reactive or time-sensitive objectives. Especially with a new hobby or concept, I tend to get a little obsessive initially until I understand core concepts and know enough to seek out and identify higher quality information. In a similar vein, I hesitate to abandon something prematurely.
 
@@ -35,7 +35,7 @@ Surprise surprise, I have adopted systems to try to manage and overcome these ch
 
 For longer-form projects and hobbies, I use a Trello board set up with columns that represent project lifecycle (intake, launching, launched, mature, and closed, as well as stale and abandoned) so, at a glance, I can see roughly where things left off. Each whole project is a single card, and contains task lists, an activity history of comments to myself, and links to resources so that I can quickly review and pick up where I left off, and larger projects contain links to external boards or cards for more detailed information. The active decision to mark items as stale or abandoned is liberating, in a sense, as it's the conscious decision and forgiveness to let something go. With everything being archived through Trello, so I can always come back to a project in the future if things change.
 
-For competing immediate focus, I've found tremendous benefit in running tasks and projects through a number of filters, both at work and home. 
+For competing immediate focus, I've found tremendous benefit in running tasks and projects through a number of filters, both at work and home.
 
 When I'm either short on time or resources and have competing objectives that should be addressed immediately, I've set up a Trello board with an [Eisenhower Matrix](https://www.eisenhower.me/eisenhower-matrix/) that I use for rough-sorting. This is a quick gut-check way to very quickly calibrate myself when considering the whole of my objectives, rather than as isolated individual "wants" or "needs".
 
@@ -45,10 +45,10 @@ While these are going on, I really try to be cognizant of the [Focus Funnel](htt
 
 I realize that this is a lot of overhead for 85% of things, but for that remaining 15%, there's often not much time to get to them at all, so I've perceived a lot of personal benefit from these processes.
 
+---
 
 ## Tasklist
 
 - [x] Post my daily updates on Product Lab
 - [x] Post my daily updates on the TD Collection discord
 - [ ] Add a search bar component to the navigation element
-- [ ] Make the landing page background scale to always cover all elements

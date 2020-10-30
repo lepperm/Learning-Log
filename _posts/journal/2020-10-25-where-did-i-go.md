@@ -15,10 +15,10 @@ context: true
 comments: true
 skills: []
 references: ["https://scrimmage.us/the-product-lab/","https://tdcollection.net/"]
-timespent: 
-sleep: 
-recreation: 
-workout: 
+timespent: 0
+sleep: 0
+recreation: 0
+workout: 0
 ---
 
 ## Journal

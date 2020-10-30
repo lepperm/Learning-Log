@@ -4,7 +4,7 @@ title: "TD Collection Design Matching"
 excerpt: Implementing the TD Collection design on the actual site, and progress snapshots.
 author: Max Lepper
 categories: [journal]
-tags: [react,material-ui,hooks]
+tags: [react,material-ui,hooks,tdc]
 date: 2020-10-19 23:22:43 -0400
 modified_date:
 published: true

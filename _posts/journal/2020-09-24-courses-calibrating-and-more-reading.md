@@ -4,7 +4,7 @@ title: "Courses, Calibrating, and More Reading"
 excerpt: Registering for Hacktoberfest, making a survey, and getting a new book.
 author: Max Lepper
 categories: [journal]
-tags: [hacktoberfest,jfs]
+tags: [hacktoberfest2020,jfs]
 date: 2020-09-24 23:58:07 -0400
 modified_date:
 published: true
