@@ -20,3 +20,6 @@
   - [ ] Filter posts by date range, duration, skills, length, confidence level, status, and more
   - [ ] Filter skills by time, date range, progression, references, and more
 - [ ] Use calls to [GitHub statistics](https://docs.github.com/en/rest/reference/repos#statistics) with mirrored GitLab repositories to cross-reference git data with blog data
+- [ ] Generate a list of books that I've read from progression items
+- [ ] Wrap-Up Page - summarize the time clocked towards specific skills and any progression entries completed within a certain number of days (past week?), along with a digest of all posts made.
+  - [ ] Make it easy to share to social media!

@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [storybook,portfolio]
 date: 2020-11-04 23:33:18 -0400
-modified_date:
+modified_date: 2020-11-10 23:55:20 -0400
 published: true
 status: live
 confidence: log
@@ -64,9 +64,7 @@ After chasing all that down, I needed to change focus for a bit. [Awwwards]({{pa
   - Social media links disappear on mobile, doesn't seem like anticipated behavior
   - Loader on page change probably due to videos, but a little obnoxious seeing on every page
 <https://fleurmoreau.fr/>
-  - **LOVE** this site!
   - Projects front-and-center
-  - Easy to navigate
   - Simple sections
   - Most animations are gentle and polished without being intrusive to the actual content, absolutely fantastic on project detail pages
   - Beautiful on mobile, little bit of text overlap but different colors helps a lot
@@ -84,8 +82,8 @@ After chasing all that down, I needed to change focus for a bit. [Awwwards]({{pa
 
 I think out of the initial forty, the following four best capture and express what I would currently like to go towards, ranked by an arbitrary internal feeling of design impact:
 
-1. <https://fleurmoreau.fr/>
-2. <https://kuon.space/>
+1. <https://kuon.space/>
+2. <https://fleurmoreau.fr/>
 3. <http://2016.robinmastromarino.com/>
 4. <https://thierrychopain.com/>
 
