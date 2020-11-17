@@ -22,7 +22,7 @@ workout:
 
 ## Journal
 
-The new [blog post]({% post_url blog/2020-08-27-risk-mitigation-in-planning-learning %}) went live today! In it, I discuss risk mitigation as it relates to learning, and tie it into my experience so far. I feel like I talk about the meta experience of making this site too much, and should probably come up with a more interesting topic - it just happens to be my daily life right now.
+The new [blog post]({% post_url blog/2020/08/2020-08-27-risk-mitigation-in-planning-learning %}) went live today! In it, I discuss risk mitigation as it relates to learning, and tie it into my experience so far. I feel like I talk about the meta experience of making this site too much, and should probably come up with a more interesting topic - it just happens to be my daily life right now.
 
 On the blog improvements side of things, skill progression sorting currently uses a 0-100% value based on the fraction of tasks completed over total tasks. While this technically works and is fine, I would prefer for larger skills to bubble to the top of the list, i.e. (5/5) should be ranked higher than (2/2). This ended up being a simple 4-line change, where the divisor portion of the progression value multiplied by `0.0001` is added to the progression sort value. This is small enough that, unless a task is into hundreds of items, it should not bleed past the appropriate sorting location. I may need to revisit this in the future, if progression values become that expansive.
 

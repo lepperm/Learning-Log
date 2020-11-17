@@ -4,6 +4,7 @@
 **Quality and Code Health**
 - [ ] Figure out how to copy compiled `Skills.json` and `Search.json` files to the `_data` folder at build
 - [ ] Documentation
+- [ ] Blog posts as Progression items should probably all be moved to References, perhaps replicate Quality metric from progression items?
 
 **User Experience**
 - [ ] Improve CSS for cross-browser compatibility

@@ -56,7 +56,7 @@ I really hadn't expected, coming into this, that learning about Gulp might ultim
 
 To my surprise, I discovered that `create-react-app` actually is [already using Webpack]({{page.references[8]}})! The more I had been reading, the more I was wondering if something was already running under the hood. I will need to get in there and poke around to see what all is actually happening when I run my commands.
 
-I am sure that I will eventually want to learn enough about everything to be dangerous, but as I mentioned in my [latest blog post]({% post_url blog/2020-08-27-risk-mitigation-in-planning-learning %}), correctly prioritizing learning the correct things first is critical, as time is my most valuable resource. Sometimes, you have to spend some time to "read and update your map" and make sure you're headed in the right direction early, which is exactly what today has felt like.
+I am sure that I will eventually want to learn enough about everything to be dangerous, but as I mentioned in my [latest blog post]({% post_url blog/2020/08/2020-08-27-risk-mitigation-in-planning-learning %}), correctly prioritizing learning the correct things first is critical, as time is my most valuable resource. Sometimes, you have to spend some time to "read and update your map" and make sure you're headed in the right direction early, which is exactly what today has felt like.
 
 ## Tasklist
 

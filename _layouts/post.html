@@ -68,6 +68,10 @@ layout: default
     {{ content }}
   </div>
 
+  <a class="post-GitLabLink" title="A link to this page in my GitLab repository" href="https://gitlab.com/maxlepper/learning-log/-/blob/master/{{ page.path }}">
+    Notice an issue in this post? Suggest a change here!
+  </a>
+
   {%- include prev-next-posts.html -%}
 
   {%- if site.disqus.shortname -%}

@@ -38,7 +38,7 @@ In the USA (where I'm from), we're taught from a young age that we need to compe
 
 - Have the same end objective
 - Have the same measures of success
-- Have the same access to the [Four Key Resources]({% post_url blog/2020-08-27-risk-mitigation-in-planning-learning %}#key-resources)
+- Have the same access to the [Four Key Resources]({% post_url blog/2020/08/2020-08-27-risk-mitigation-in-planning-learning %}#key-resources)
 - Have the same environment, living situation, and access to mental health
 - ...and many other factors
 

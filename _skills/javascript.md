@@ -245,6 +245,6 @@ progressionEntries:
     datelink:
 resources: 
   - 
-    refname: 
-    reflink: 
+    refname: Learn map, filter and reduce in Javascript
+    reflink: https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4
 ---

@@ -24,7 +24,7 @@
 - [x] Make Learning Item lists collapsible, truncate list?
 
 **User Experience**
-- [x] Implement Front Matter for status, confidence, importance, context, and modified dates]({% post_url journal/2020-09-06-confidence-and-importance-metrics-and-css-games %})
+- [x] Implement Front Matter for status, confidence, importance, context, and modified dates]({% post_url journal/2020/09/2020-09-06-confidence-and-importance-metrics-and-css-games %})
 
 Logging of improvements started 08/22/2020.  
 Last updated 09/09/2020.

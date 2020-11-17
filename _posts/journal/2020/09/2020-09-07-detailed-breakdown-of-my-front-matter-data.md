@@ -22,7 +22,7 @@ workout:
 
 ## Journal
 
-Yesterday, I had written about potentially going back to restructure the Front Matter for all my posts with new [confidence and importance tag values]({% post_url journal/2020-09-06-confidence-and-importance-metrics-and-css-games %}). I took a little bit of time to write out how this should work and what all of the entries mean, as there's a fair bit being captured with each post now. Additionally, some reorganization of the data layout in each post will aid the initial post setup.
+Yesterday, I had written about potentially going back to restructure the Front Matter for all my posts with new [confidence and importance tag values]({% post_url journal/2020/09/2020-09-06-confidence-and-importance-metrics-and-css-games %}). I took a little bit of time to write out how this should work and what all of the entries mean, as there's a fair bit being captured with each post now. Additionally, some reorganization of the data layout in each post will aid the initial post setup.
 
 I had not initially planned on doing all of the blogs, but my wife and I were relaxing and watching videos, so I went ahead and knocked them all out! Next step was to add them into the intro section of the post templates. This gave me a chance to adjust the appearance more and how the elements break across lines. I heavily took inspiration from [gwern.net]({{page.references[2]}}), and will need to fully read through their approach to posting and documenting posts, as the structural quality of their site is far and away something that I would love to aspire to.
 
