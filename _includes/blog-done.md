@@ -23,8 +23,11 @@
 - [x] Generate a task to take time to rest and get to bed early if my average sleep over X days is under a target value
 - [x] Make Learning Item lists collapsible, truncate list?
 
+**Quality and Code Health**
+- [x] Figure out how to copy compiled `Skills.json` and `Search.json` files to the `_data` folder at build
+
 **User Experience**
 - [x] Implement Front Matter for status, confidence, importance, context, and modified dates]({% post_url journal/2020/09/2020-09-06-confidence-and-importance-metrics-and-css-games %})
 
 Logging of improvements started 08/22/2020.  
-Last updated 09/09/2020.
+Last updated 11/18/2020.

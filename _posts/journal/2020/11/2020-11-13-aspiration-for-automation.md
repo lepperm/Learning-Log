@@ -42,7 +42,7 @@ The deeper I dug, the more confused I became, and it felt like I might be drifti
 
 After all that runaround with installing Cygwin and trying to cascade between environments, I looked into Node.js directly more and, duh, you can just have it run a JavaScript file directly. I felt like such a fool at how much more incredibly easy this was! Within minutes, I was passing arguments from the command line and verifying files and running commands.
 
-The next issue was to switch into the newly-created React project folder to start installing packages. Changing the current directory with normal commands didn't seem to work. My first thought was that maybe I could end one child process and start another, possibly, or maybe there was some way to navigate the tree. After a bit of googling, I came across a post about [using `cwd` and `pwd` for `child_process`]({{page.references[6]}}) and the working directory, which helped get me to my answer.
+The next issue was to switch into the newly-created React project folder to start installing packages. Changing the current directory with normal commands didn't seem to work. My first thought was that maybe I could end one child process and start another, possibly, or maybe there was some way to navigate the tree. After a bit of googling, I came across a post about [using `cwd` and `pwd` for `child_process`]({{page.references[6]}}) and the working directory, which helped get me closer to my answer.
 
 Despite getting derailed a bit, today was a really fun experiment, and I am curious to explore Node.js more. This script is fairly basic right now, but it's working, and 2 out of 3 targets are already achieved - just file templating and directory structuring is left!
 
