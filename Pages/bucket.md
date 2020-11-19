@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bucket
-exclude: false
+exclude: true
 permalink: /bucket-list/
 jsfiles:
 cssfiles:
@@ -36,8 +36,8 @@ My Bucket is a list of "Real Developer" activities, initially copied and inspire
 
 ## Project Bucket <a id="projects"></a>
 
+- [ ] Home bar management and drink queuing web platform with backend dashboard and frontend 'customer' interface, with inventory management, expense statistics, and forecasting
+- [ ] Incremental idle resource management game
 - [ ] Revenue-generating online shop
 - [ ] Machine learning image classification model to transcribe my own handwriting
-- [ ] Incremental idle resource management game
 - [ ] Web animation using all 2D or 3D graphics generated in the browser
-- [ ] Home bar management and drink queuing web platform with backend dashboard and frontend 'customer' interface, with inventory management, expense statistics, and forecasting

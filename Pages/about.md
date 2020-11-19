@@ -23,4 +23,7 @@ You can find the source code for this site on GitLab:
 You can find my personal portfolio website here:  
 [Max Lepper - Portfolio](https://maxlepper.me) (Early draft, expect this to change drastically!)
 
+I also have a small bucket list of developer goals here:  
+[Learning Log - Bucket]({{ site.baseurl }}/bucket-list)
+
 This site was heavily inspired by the writing of [Syk Houdeib](https://syknapse.github.io/Syk-Houdeib/) and their awesome [Learning Tracker repo](https://github.com/Syknapse/My-Learning-Tracker/). I can't thank them enough!
