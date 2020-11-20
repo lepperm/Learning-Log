@@ -21,5 +21,7 @@
   - [ ] Filter skills by time, date range, progression, references, and more
 - [ ] Use calls to [GitHub statistics](https://docs.github.com/en/rest/reference/repos#statistics) with mirrored GitLab repositories to cross-reference git data with blog data
 - [ ] Generate a list of books that I've read from progression items
+- [ ] Create a (sortable?) table of projects to show development status with repo and endpoint links. Link to blog posts??
+  - [ ] Add project name tags to old blog posts
 - [ ] Wrap-Up Page - summarize the time clocked towards specific skills and any progression entries completed within a certain number of days (past week?), along with a digest of all posts made.
   - [ ] Make it easy to share to social media!
