@@ -4,7 +4,7 @@ title: "The Spinning Plate Conundrum"
 excerpt: Sorting and compiling all of my current focus areas.
 author: Max Lepper
 categories: [journal]
-tags: []
+tags: [mentality]
 date: 2020-11-22 23:56:14 -0400
 modified_date:
 published: true
@@ -81,7 +81,6 @@ These initiatives don't include:
 
 These are all excellent things and I can see the benefits of pushing all of them forward, however it's not sustainable to be trying to work on all of them all the time
 I need to come up with some kind of schedule or pattern to keep all of these plates spinning together
-
 
 ## Tasklist
 
