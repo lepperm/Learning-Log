@@ -433,6 +433,26 @@ State updates are processed asynchronously, so by using the state variable direc
 <button onClick={() => setCount(currentCount => currentCount + 1)}>-</button>
 ```
 
+---
+
+To elaborate on this, let's take the following example:
+
+`setCount(count + 1)`  is effectively the equivalent of  `this.setState({ count: this.state.count + 1 })`
+
+When it is critical that a state gets the updated value, we would change
+
+`this.setState({ coins: this.state.coins + 1 });`
+
+to
+
+`this.setState((state) => ({ coins: state.coins + 1 }));`
+
+Therefore, the hooks equivalent would be:
+
+`setCount(oldCount => oldCount + 1)`
+
+---
+
 For related state variables, it may be helpful to declare them in groupings using destructured arrays:
 
 ```jsx

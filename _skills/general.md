@@ -297,3 +297,12 @@ resources:
 >- Love what you do. This is simply the most important characteristic of them all. If you don’t love what you do (be it CSS Styling or JavaScript), it will truly show in what you do. Those who are passionate about what they do often clearly stand out from the crowd.
 >- Be generous and share your knowledge. It’s very easy to want to keep that new CSS/JavaScript hack you found that solves the project’s issues a secret, but please don’t. The people who share their knowledge the most are often the most valuable, since they can be placed in any kind of team and improve it’s quality by a huge margin.
 >- Always be on the lookout for new things. Most of the successful developers I’ve met share this common trait. Whether it be by reading blogs, spending lots of time in programming related discussions, or even talking about what’s new in web development during lunch breaks. Being on the lookout for new things all the time allows the best developers to always stay ahead of the curve.
+
+---
+
+Guided resource to prep for technical interviews:
+https://interviews.school/
+
+---
+
+https://www.freecodecamp.org/news/lessons-learned-after-11-years-coding/amp/

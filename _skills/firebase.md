@@ -66,3 +66,10 @@ resources:
     refname: 
     reflink: 
 ---
+
+- [ ] https://firebase.google.com/docs/functions/get-started
+- [ ] https://www.robinwieruch.de/firebase-tutorial
+- [ ] https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial
+- [ ] https://codelabs.developers.google.com/codelabs/firebase-web/#0
+- [ ] https://www.tutorialspoint.com/firebase/firebase_overview.htm
+- [ ] https://firebasetutorials.com/send-push-notification-using-firebase-in-android/#Send_Notification_from_Firebase_Console

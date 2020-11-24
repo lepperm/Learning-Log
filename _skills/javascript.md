@@ -251,3 +251,7 @@ resources:
     refname: Getting Literal With ES6 Template Strings
     reflink: https://developers.google.com/web/updates/2015/01/ES6-Template-Strings
 ---
+
+https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
+
+https://www.freecodecamp.org/news/time-saving-javascript-tips/

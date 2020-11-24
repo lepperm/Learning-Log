@@ -35,15 +35,12 @@ layout: default
 
     </h2>
 
-    <ul class="post-list" key="drafts-link">
-      {%- assign drafts = site.posts | where_exp:"post", "post.status == 'draft' or post.status == 'bulletpoint'"-%}
-      {%- if drafts.size > 0 -%}
-        <a href="{{ site.baseurl }}/drafts/" class="nav-icon" alt="View preliminary posts" title="View preliminary posts">Click here to view outstanding drafts to be published!</a>
-      {%- endif -%}
+    <ul class="post-list">
+      <a href="{{ site.baseurl }}/" class="nav-icon" alt="View preliminary posts" title="View preliminary posts">Return to published posts</a>
     </ul>
 
     <ul class="post-list">
-      {%- assign posts = site.posts | where_exp:"post", "post.status == 'live' or post.status == 'finished'"-%}
+      {%- assign posts = site.posts | where_exp:"post", "post.status == 'draft' or post.status == 'bulletpoint'"-%}
       {%- for post in posts -%}
         <li data-category="{{post.categories[0]}}">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
