@@ -4,6 +4,7 @@ name: accessibility
 fullname: Accessibility
 mainsite: https://www.w3.org/WAI/standards-guidelines/wcag/
 category: Accessibility
+proficient: false
 progressionEntries:
   - 
     id: 1

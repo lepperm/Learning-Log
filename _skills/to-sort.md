@@ -4,6 +4,7 @@ name: to-sort
 fullname: Learning Items to Sort
 mainsite: 
 category: Organization
+proficient: false
 progressionEntries: 
   - 
     id: 

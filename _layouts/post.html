@@ -65,6 +65,15 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {% if page.status == "bulletpoint" or page.status == "draft" %}
+      <h2>
+        ⚠ ATTENTION! ⚠
+      </h2>
+      <p>
+        This post is a preliminary draft, and does not reflect completely processed thoughts. Content, structure, and tone may change drastically. Coherence is not guaranteed!
+      </p>
+    {% endif %}
+    
     {{ content }}
   </div>
 

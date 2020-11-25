@@ -4,6 +4,7 @@ name: yaml
 fullname: YAML
 mainsite: https://yaml.org/
 category: Serialization Language
+proficient: false
 progressionEntries: 
   - 
     id:

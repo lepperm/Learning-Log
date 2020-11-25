@@ -4,6 +4,7 @@ name: javascript
 fullname: JavaScript
 mainsite: 
 category: Scripting Language
+proficient: false
 progressionEntries: 
   - 
     id: 1

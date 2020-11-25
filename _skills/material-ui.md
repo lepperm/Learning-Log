@@ -4,6 +4,7 @@ name: material-ui
 fullname: Material-UI
 mainsite: https://material-ui.com/
 category: Framework
+proficient: false
 progressionEntries: 
   - 
     id: 1

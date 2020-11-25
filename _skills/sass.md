@@ -4,6 +4,7 @@ name: sass
 fullname: Sass
 mainsite: https://sass-lang.com/
 category: Extension language
+proficient: false
 progressionEntries: 
   - 
     id: 1

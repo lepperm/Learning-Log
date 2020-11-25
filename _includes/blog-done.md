@@ -3,6 +3,7 @@
 
 **Data Generation**
 - [x] Add an improvements to-do section with collapsible task archives
+- [x] Create a table of projects to show development status with repo and endpoint links. Add link to blog posts
 
 **Skills Table**
 - [x] Add skills that exist in collections but not in the data source populate to the Skills table. Selectively replace missing data.
@@ -30,4 +31,4 @@
 - [x] Implement Front Matter for status, confidence, importance, context, and modified dates]({% post_url journal/2020/09/2020-09-06-confidence-and-importance-metrics-and-css-games %})
 
 Logging of improvements started 08/22/2020.  
-Last updated 11/18/2020.
+Last updated 11/24/2020.

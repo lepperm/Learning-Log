@@ -4,6 +4,7 @@ name: general
 fullname: General Learning
 mainsite: 
 category: Inspiration
+proficient: false
 progressionEntries: 
   - 
     id: 1
@@ -306,3 +307,5 @@ https://interviews.school/
 ---
 
 https://www.freecodecamp.org/news/lessons-learned-after-11-years-coding/amp/
+
+https://simpleprogrammer.com/products/how-to-market-yourself/

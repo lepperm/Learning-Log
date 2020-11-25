@@ -4,6 +4,7 @@ name: Redux
 fullname: Redux
 mainsite: https://redux.js.org/
 category: Javascript library
+proficient: false
 progressionEntries: 
   - 
     id:

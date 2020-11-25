@@ -4,6 +4,7 @@ name: machine-learning
 fullname: Machine Learning
 mainsite: 
 category: 
+proficient: false
 progressionEntries: 
   - 
     id: 1

@@ -4,6 +4,7 @@ name: react-spring
 fullname: React-Spring
 mainsite: https://www.react-spring.io/
 category: Animation Library
+proficient: false
 progressionEntries: 
   - 
     id: 1

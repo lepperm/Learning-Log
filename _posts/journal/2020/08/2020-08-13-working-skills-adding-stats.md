@@ -25,10 +25,11 @@ workout:
 Right off the bat, I started over going through my skills data. The JSON was valid, and I could see the data with an `inspect` filter. I slowly iterated on accessing the data through index calls, console.logs, and inspects in little steps. Not even 5 minutes in...it just worked, and I felt kind of silly. I was trying to do far too much, and breaking the data in the process. In the end, it really was as simple as everyone made it look:
 
 ```
-// %s redacted for accurate code
-{- for skill in site.data.skills -}
+{% raw %}
+{%- for skill in site.data.skills -%}
   <script>console.log("{{ skill.name }}");</script>
-{- endfor -}
+{%- endfor -%}
+{% endraw %}
 ```
 
 Live and learn, right? The good news is that I now have incredibly simple access to all kinds of data. I went ahead and made each skill name in the table a hidden anchor so that I can redirect skill links from journal pages to the skill table entry. Regarding moving the data files around, I finally created a [Stack Overflow account]({{page.references[5]}}) and posted my [first question]({{page.references[6]}}). My concern is that this may cause me CI issues, or certainly at least be something that I forget to do occasionally.

@@ -4,6 +4,7 @@ name: python
 fullname: Python
 mainsite: https://www.python.org/
 category: Scripting Language
+proficient: false
 progressionEntries: 
   - 
     id: 1

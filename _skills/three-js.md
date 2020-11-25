@@ -4,6 +4,7 @@ name: three-js
 fullname: Three.JS
 mainsite: https://threejs.org/
 category: WebGL Wrapper
+proficient: false
 progressionEntries: 
   - 
     id: 1

@@ -4,6 +4,7 @@ name: framer-motion
 fullname: Framer Motion
 mainsite: https://www.framer.com/motion/
 category: Animation Library
+proficient: false
 progressionEntries: 
   - 
     id: 1

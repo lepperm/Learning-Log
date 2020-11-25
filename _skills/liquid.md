@@ -4,6 +4,7 @@ name: liquid
 fullname: Liquid
 mainsite: https://shopify.github.io/liquid/
 category: Template Language
+proficient: false
 progressionEntries: 
   - 
     id: 1
@@ -26,4 +27,7 @@ resources:
   - 
     refname: Liquid `date` uses Ruby strftime formatting
     reflink: http://www.strfti.me/
+  - 
+    refname: Liquid for Designers
+    reflink: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 ---

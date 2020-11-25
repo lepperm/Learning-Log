@@ -4,6 +4,7 @@ name: ruby
 fullname: Ruby
 mainsite: https://www.ruby-lang.org/en/
 category: Scripting Language
+proficient: false
 progressionEntries: 
   - 
     id:

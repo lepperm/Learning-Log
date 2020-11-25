@@ -4,6 +4,7 @@ name: gatsby
 fullname: Gatsby
 mainsite: https://www.gatsbyjs.com/
 category: Static Site Generator
+proficient: false
 progressionEntries: 
   - 
     id: 1

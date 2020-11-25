@@ -1,0 +1,35 @@
+[
+  {
+    "id"     : "00001",
+    "quote"  : "All courses of action are risky, so prudence is not in avoiding danger (it's impossible), but calculating risk and acting decisively. Make mistakes of ambition and not mistakes of sloth. Develop the strength to do bold things, not the strength to suffer.",
+    "link"   : "",
+    "author" : "Niccolo Machiavelli",
+    "year"   : "1532",
+    "source" : "The Prince",
+    "tags"   : "risk, ambition, strength",
+  },{
+    "id"     : "00002",
+    "quote"  : "It's always best to refer to the only source of truth - the source code.",
+    "link"   : "https://stackoverflow.com/questions/52956555/sorting-by-last-in-jekyll-doesnt-work-reverse-sorting-etc#comment102259766_52959052",
+    "author" : "Jack L.",
+    "year"   : "2019",
+    "source" : "Stack Overflow",
+    "tags"   : "programming",
+  },{
+    "id"     : "00003",
+    "quote"  : "Time to improve is limited. The clock is always on and doesn't care if you don't feel like it. Someone else does and they're passing you by.",
+    "link"   : "",
+    "author" : "William James Moore",
+    "year"   : "2013",
+    "source" : "On Character and Mental Toughness",
+    "tags"   : "motivation",
+  },{
+    "id"     : "00004",
+    "quote"  : "Your life does not get better by chance. It gets better by change.",
+    "link"   : "",
+    "author" : "Jim Rohn",
+    "year"   : "",
+    "source" : "",
+    "tags"   : "motivation",
+  }
+]

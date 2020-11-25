@@ -11,6 +11,12 @@ layout: default
     {%- include mermaid-init.html -%}
   {%- endif -%}
 
+  {%- capture isProficient -%}
+    {%- if page.proficient == true -%}
+      <img src='{{site.baseurl}}/assets/images/icons/check-decagram.svg' alt='Proficient in this skill' title='Proficient in this skill'>
+    {%- endif -%}
+  {%- endcapture -%}
+  
   {%- capture OKimg -%}
     {{site.baseurl}}/assets/images/icons/check-circle-outline.svg
   {%- endcapture -%}
@@ -23,15 +29,16 @@ layout: default
 
   <header class="post-header">
     {%- if page.fullname != nil -%}
-      <h1 class="post-title">{{ page.fullname | escape }}</h1>
+      <h1 class="post-title">{{ page.fullname | escape }} {{ isProficient }}</h1>
     {%- else -%}
-      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <h1 class="post-title">{{ page.title | escape }} {{ isProficient }}</h1>
     {%- endif -%}
   </header>
 
   <div class="post-content">
 
-    <div>
+    <div>      
+
       {%- if page.mainsite != null -%}
         <p>
           <a href={{ page.mainsite }}>Visit the main site</a>

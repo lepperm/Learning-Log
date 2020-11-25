@@ -4,6 +4,7 @@ name: git
 fullname: Git
 mainsite: https://git-scm.com/
 category: Version Control
+proficient: false
 progressionEntries: 
   - 
     id: 1

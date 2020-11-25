@@ -4,6 +4,7 @@ name: webpack
 fullname: Webpack
 mainsite: http://webpack.github.io/
 category: Package Bundler
+proficient: false
 progressionEntries: 
   - 
     id: 1

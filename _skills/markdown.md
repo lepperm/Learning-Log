@@ -4,6 +4,7 @@ name: markdown
 fullname: Markdown
 mainsite: https://daringfireball.net/projects/markdown/
 category: Markup language
+proficient: true
 progressionEntries: 
   - 
     id: 1

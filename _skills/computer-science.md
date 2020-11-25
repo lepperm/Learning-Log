@@ -4,6 +4,7 @@ name: computer-science
 fullname: Computer Science
 mainsite: https://www.pixijs.com/
 category: School
+proficient: false
 progressionEntries: 
   - 
     id: 1

@@ -4,6 +4,7 @@ name: react
 fullname: React
 mainsite: https://reactjs.org/
 category: Javascript library
+proficient: false
 progressionEntries: 
   - 
     id: 1

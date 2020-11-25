@@ -4,6 +4,7 @@ name: firebase
 fullname: Firebase
 mainsite: https://firebase.google.com/
 category: Database
+proficient: false
 progressionEntries: 
   - 
     id: 1

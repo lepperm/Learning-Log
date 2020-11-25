@@ -4,6 +4,7 @@ name: pixi-js
 fullname: Pixi.JS
 mainsite: https://www.pixijs.com/
 category: Javascript library
+proficient: false
 progressionEntries: 
   - 
     id:

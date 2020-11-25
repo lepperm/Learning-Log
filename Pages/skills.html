@@ -110,7 +110,10 @@ cssfiles:
           <td scope="col"><a id={{ skill.name }} href={{site.baseurl}}{{foundSkill.url}}>
             {%- if foundSkill.fullname != nil -%}
               {%- assign jumpLetter = foundSkill.fullname | slice: 0 | downcase -%}
-              {{ foundSkill.fullname }}
+              {{ foundSkill.fullname }}&nbsp;
+              {%- if foundSkill.proficient == true -%}
+                <img src='{{site.baseurl}}/assets/images/icons/check-decagram.svg' alt='Proficient in this skill' title='Proficient in this skill'>
+              {%- endif -%}
             {%- else -%}
               {%- assign jumpLetter = skill.name | slice: 0 | downcase -%}
               {{ skill.name }}

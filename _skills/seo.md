@@ -4,6 +4,7 @@ name: seo
 fullname: Search Engine Optimization
 mainsite: https://support.google.com/webmasters/answer/7451184?hl=en
 category: SEO
+proficient: false
 progressionEntries: 
   - 
     id: 1

@@ -4,6 +4,7 @@ name: gitlab-ci
 fullname: GitLab CI/CD
 mainsite: https://docs.gitlab.com/ee/ci/
 category: DevOps
+proficient: false
 progressionEntries: 
   - 
     id:

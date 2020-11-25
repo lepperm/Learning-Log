@@ -4,6 +4,7 @@ name: html
 fullname: HTML
 mainsite: https://developer.mozilla.org/en-US/docs/Web/HTML
 category: Markup Language
+proficient: false
 progressionEntries: 
   - 
     id: 1

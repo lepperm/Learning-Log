@@ -4,6 +4,7 @@ name: jekyll
 fullname: Jekyll
 mainsite: https://jekyllrb.com/
 category: Static Site Generator
+proficient: false
 progressionEntries: 
   - 
     id: 1

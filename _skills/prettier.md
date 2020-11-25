@@ -4,6 +4,7 @@ name: prettier
 fullname: Prettier
 mainsite: https://prettier.io/
 category: Linting
+proficient: false
 progressionEntries: 
   - 
     id:

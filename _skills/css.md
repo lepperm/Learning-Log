@@ -4,10 +4,11 @@ name: css
 fullname: CSS
 mainsite: https://developer.mozilla.org/en-US/docs/Web/CSS
 category: Style Sheet Language
+proficient: false
 progressionEntries: 
   - 
     id: 1
-    status: UN
+    status: NS
     name: Learn CSS
     item: https://www.codecademy.com/learn/learn-css
     type: Course
@@ -35,7 +36,7 @@ progressionEntries:
     datelink: 
   - 
     id: 3
-    status: US
+    status: NS
     name: Specifics on CSS Specificity
     item: https://css-tricks.com/specifics-on-css-specificity/
     type: Blog
