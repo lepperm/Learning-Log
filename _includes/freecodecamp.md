@@ -10,8 +10,19 @@
    - [x] CSS Grid (22/22)
    - [ ] Responsive Web Design Projects (1/5)
 
+2. JavaScript Algorithms and Data Structures Certification (0/10)
+   - [ ] Basic JavaScript (0/111)
+   - [ ] ES6 (0/31)
+   - [ ] Regular Expressions (0/33)
+   - [ ] Debugging (0/12)
+   - [ ] Basic Data Structures (0/20)
+   - [ ] Basic Algorithm Scripting (0/16)
+   - [ ] Object Oriented Programming (0/26)
+   - [ ] Functional Programming (0/24)
+   - [ ] Intermediate Algorithm Scripting (0/21)
+   - [ ] JavaScript Algorithms and Data Structures Projects (0/5)
+
 ### Up Next
 
-2. JavaScript Algorithms and Data Structures Certification (0/10)
-
 3. Front End Libraries Certification (0/7)
+4. Data Visualization Certification (0/7)

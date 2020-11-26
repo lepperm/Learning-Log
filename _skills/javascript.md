@@ -244,6 +244,20 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
+  - 
+    id: 18
+    status: NS
+    name: Modern JavaScript Explained for Dinosaurs
+    item: https://firstclass.actualize.co/p/modern-javascript-explained-for-dinosaurs
+    type: Course
+    price: 0
+    est-duration: 38
+    est-benefit: 7
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
 resources: 
   - 
     refname: Learn map, filter and reduce in Javascript
@@ -251,8 +265,49 @@ resources:
   - 
     refname: Getting Literal With ES6 Template Strings
     reflink: https://developers.google.com/web/updates/2015/01/ES6-Template-Strings
+  - 
+    refname: Time Saving JavaScript Tips
+    reflink: https://www.freecodecamp.org/news/time-saving-javascript-tips/
+  - 
+    refname: What is a callback?
+    reflink: https://www.youtube.com/watch?v=xHneyv38Jro
 ---
 
-https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
+* TOC
+{:toc}
 
-https://www.freecodecamp.org/news/time-saving-javascript-tips/
+## Introduction
+
+JavaScript is huge, and as such, trying to compile my notes on EVERYTHING here is probably way out of scope for a blog like this. I will try to reduce my notes to bite-sized pieces of information that could ideally help someone who ends up here get moving in the right direction.
+
+## Documentation
+
+```javascript
+// In-line comment
+
+/* Multi
+line
+comment */
+
+/**
+ * JSDoc comment
+ * @see {@link https://jsdoc.app/|JSDoc Syntax}
+*/
+```
+
+## Variables
+
+**Declarations**
+- `const`
+- `let`
+- `var` (although `var` should be avoided in favor of `const` or `let`)
+
+**Data type**
+- `undefined`
+- `null`
+- `boolean`
+- `string`
+- `symbol`
+- `bigint`
+- `number`
+- `object`

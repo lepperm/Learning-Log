@@ -309,3 +309,7 @@ https://interviews.school/
 https://www.freecodecamp.org/news/lessons-learned-after-11-years-coding/amp/
 
 https://simpleprogrammer.com/products/how-to-market-yourself/
+
+https://stackingthebricks.com/tinymba/
+
+https://medium.com/javascript-scene/the-secret-of-simple-code-a2cacd8004dd
