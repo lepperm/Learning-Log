@@ -25,3 +25,4 @@
 - [ ] Advanced search functionality
   - [ ] Filter posts by date range, duration, skills, length, confidence level, status, and more
   - [ ] Filter skills by time, date range, progression, references, and more
+- [ ] Implement a [new blog theme](https://mmistakes.github.io/minimal-mistakes/)

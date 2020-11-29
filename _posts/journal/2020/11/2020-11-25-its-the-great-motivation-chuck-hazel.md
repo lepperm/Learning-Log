@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [motivation,mentality]
 date: 2020-11-25 23:17:55 -0400
-modified_date:
+modified_date: 2020-11-26 15:31:40 -0400
 published: true
 status: live
 confidence: log
@@ -57,13 +57,13 @@ Consider these three questions:
 
 For example, I would love to start working on my bar management app, and it's taking some self-control to not dive into it prematurely. To answer the above questions:
 
-1. Bartending is a hobby of mine, and I get personal satisfaction from crafting aesthetic beverages that other people enjoy, and expressing myself with the presentation.
-2. I currently do not have a good system for quickly finding drinks that use a particular combination of ingredients, and I do not have much visibility on exactly how much my hobby costs.
+1. Bartending is a hobby of mine, and I get personal satisfaction from crafting aesthetic beverages that other people enjoy, and expressing myself artistically with the presentation.
+2. I currently do not have a good system for quickly finding drinks that use a particular combination of ingredients, and I do not have much visibility on exactly how much my hobby costs but would like to more carefully manage expenses.
 3. In addressing my problem, I desire [order, saving, curiosity, and to a lesser extent independence]({{page.references[2]}}) (being self-sufficient and able to tailor the solution to my own needs)
 
-The goal of creating the app would enable me to resolve a pain point to partake in a fulfilling activity while reducing frustrations associated with less robust organization ("order" and "saving"), while allowing me to both explore cross-sections of the data ("curiosity") and details on the expense ("independence"). Furthermore, it would have great synergy with my development objective, as I would be putting new skills to work creating it ("independence") and able to be creative with my approach ("curiosity").
+The goal of creating the app would enable me to resolve a pain point to partake in a fulfilling activity while reducing frustrations associated with less robust organization ("order" and "saving"), while allowing me to both explore cross-sections of the data ("curiosity") and details on the expense ("independence"). Furthermore, it would have great synergy with my development learning objective, as I would be putting new skills to work creating it ("independence") and able to be creative with my approach ("curiosity").
 
-Maybe this is all a bit of a stretch, but the discussions tonight were an interesting mental exploration, and I certainly have a lot of topics to look into further!
+I know that this is a very...superficial goal, and I don't exactly intend it to be representative of something that would be deeply motivating - it's just an example from off the top of my mind that I'm currently very excited for and motivated towards. And, maybe this is all a bit of a stretch, but the discussions tonight were an interesting mental exploration, and I certainly have a lot of topics to look into further!
 
 ## Tasklist
 
