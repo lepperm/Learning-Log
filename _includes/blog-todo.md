@@ -1,5 +1,5 @@
 **Data Generation**
-- [ ] Generate a list of books that I've read from progression items
+- [ ] Add a "Books" page that scoops up all book progression items and outputs them to a table (can be hidden for now!)
 - [ ] Add project name tags to old blog posts (for use with Projects table)
 - [ ] Wrap-Up Page - summarize the time clocked towards specific skills and any progression entries completed within a certain number of days (past week?), along with a digest of all posts made.
   - [ ] Make it easy to share to social media!
@@ -13,6 +13,7 @@
 **Modularity**
 - [ ] Make the skill collection and data generic (for example, could be reused for a spoken languages learning breakdown)
 - [ ] Create `includes` versions of task deferral messages
+- [ ] Build a "Quotes" element to replace existing quotes
 
 **Quality and Code Health**
 - [ ] Add documentation to all Jekyll/Liquid functions
@@ -26,3 +27,7 @@
   - [ ] Filter posts by date range, duration, skills, length, confidence level, status, and more
   - [ ] Filter skills by time, date range, progression, references, and more
 - [ ] Implement a [new blog theme](https://mmistakes.github.io/minimal-mistakes/)
+
+**Bugs**
+- [ ] Look into duplicated "Firebase" entries in Skills page on Learning Log
+- [ ] Look into Search no longer working correctly. If unable to resolve, try to find last known working build and run diff
