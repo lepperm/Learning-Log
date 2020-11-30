@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [prioritization]
 date: 2020-11-29 23:57:14 -0400
-modified_date:
+modified_date: 2020-11-30 09:03:18 -0400
 published: true
 status: live
 confidence: log
@@ -40,7 +40,7 @@ The holiday weekend has been a great opportunity to reset my sleep schedule and 
 1. Get up at the same time as a typical workday.
 2. Attend [Irregular Cafe]({{page.references[1]}}).
    1. If there is opportunity to discuss, follow up on book club books and express interest in participating. Both books sound excellent!
-3. Complete the [Yearly Prioritization Workbook from Susan Shu]({{page.references[0]}}).
+3. Complete the [Yearly Prioritization Workbook from Susan Shu Chang]({{page.references[0]}}).
    1. Summarize my findings and feelings from workbook.
    2. Attempt to complete by lunch / early afternoon.
 
