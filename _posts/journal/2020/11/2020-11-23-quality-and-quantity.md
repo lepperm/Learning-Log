@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [quality,consistency]
 date: 2020-11-23 23:22:37 -0400
-modified_date:
+modified_date: 2020-11-30 21:01:47 -0400
 published: true
 status: live
 confidence: log
@@ -27,7 +27,7 @@ Following up from [yesterday]({% link _posts/journal/2020/11/2020-11-22-the-spin
 
 To try and get further data points, I made a twitter poll and reached out to the technical writing discord I'm in and get opinions.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When it comes to a daily learning blog, would you be more interested to see consistently daily posts of occasionally incomplete/rough drafts, or fully fleshed-out posts with some occasional lag in posting? <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a></p>&mdash; Max Lepper (@MaxLepper) <a href="https://twitter.com/MaxLepper/status/1330893085941899265?ref_src=twsrc%5Etfw">November 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">When it comes to a daily learning blog, would you be more interested to see consistently daily posts of occasionally incomplete/rough drafts, or fully fleshed-out posts with some occasional lag in posting? <a href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfCode</a></p>&mdash; Max Lepper (@MaxLepper) <a href="https://twitter.com/MaxLepper/status/1330893085941899265?ref_src=twsrc%5Etfw">November 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 After posting, I immediately realized that my poll options were not entirely clear - "less frequent posting," which I intended to mean a reduction in post quantity overall, could be confused for "coherent drafts more often," which is what I'm doing right now, where post appear mostly human-readable but maybe I catch up one or two posts late (or 5, as is the case when I'm writing this). Regardless, I will see what the engagement ends up being like.
 
