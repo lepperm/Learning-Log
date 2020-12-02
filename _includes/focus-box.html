@@ -1,0 +1,21 @@
+{%- assign focus = '' -%}
+{%- assign theme = '' -%}
+
+{%- if include.focus -%}
+  {%- assign focus = include.focus -%}
+{%- endif -%}
+
+{%- if include.theme -%}
+  {%- assign theme = include.theme -%}
+{%- endif -%}
+
+<table class="focusbox">
+  <tr>
+    <th style="width: 6em;">Focus</th>
+    <td>{{focus}}</td>
+  </tr>
+  <tr>
+    <th style="width: 6em;">Theme</th>
+    <td>{{theme}}</td>
+  </tr>
+</table>

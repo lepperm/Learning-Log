@@ -106,8 +106,8 @@ progressionEntries:
     datelink:
 resources: 
   - 
-    refname: 
-    reflink: 
+    refname: Centering in CSS - A Complete Guide
+    reflink: https://css-tricks.com/centering-css-complete-guide/
 ---
 
 ## Quick Reference

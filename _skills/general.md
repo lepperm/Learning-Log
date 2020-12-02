@@ -258,6 +258,20 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
+  - 
+    id: 
+    status: OK
+    name: Web Developer Job Preparedness Sessions
+    item: https://www.youtube.com/watch?v=WPqXP_kLzpo
+    type: Video
+    price: 0.0
+    est-duration: 92
+    est-benefit: 7
+    act-benefit: 10
+    relproj:
+    relprojlink:
+    datecomp: 12/01/20
+    datelink:
 resources: 
   - 
     refname: Web Design in 4 minutes
@@ -277,6 +291,9 @@ resources:
   - 
     refname: Can I Use ___?
     reflink: https://caniuse.com/
+  - 
+    refname: Frontend Mentor - Real projects to improve coding skills
+    reflink: https://www.frontendmentor.io/
 ---
 
 >You have to be willing to work hard, learn a lot, and be consistent. You need to persist when things get tough. Talk yourself out of the moments of desperation when you feel like you are not cut out for this. That’s all it takes, and everyone can do these things with a bit of practice.
@@ -306,6 +323,64 @@ https://interviews.school/
 
 ---
 
+### VS Code Tips
+
+#### Keyboard Shortcuts
+
+Open the command palette
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd>
+
+Select whole word under cursor
+- <kbd>Ctrl</kbd> + <kbd>d</kbd>
+
+With nothing selected, add whole line to the clipboard
+- <kbd>Ctrl</kbd> + <kbd>c</kbd>
+
+Shift line contents vertically
+- <kbd>Alt</kbd> + up or down arrow keys
+
+Copy line contents vertically
+- <kbd>Alt</kbd> + <kbd>Shift</kbd> + up or down arrow keys
+
+Custom shortcuts can be [created and support conditions](https://www.youtube.com/watch?v=WPqXP_kLzpo&t=2605s)!
+
+#### Snippets
+
+Snippets are saved as either a local or global [json file that can be modified](https://www.youtube.com/watch?v=WPqXP_kLzpo&t=3040s). There are some really great examples in this video that demonstrate how to build efficient snippets.
+
+To access, click on the settings cog in lower left, then select "user snippets."
+
+VS Code also comes with [Emmet snippets](https://docs.emmet.io/) enabled by default! This allows you to generate lots of structure quickly. For example:
+
+`div>ul>ui*4` and `tab` turns into
+
+```html
+<div>
+  <ul>
+    <ui></ui>
+    <ui></ui>
+    <ui></ui>
+    <ui></ui>
+  </ul>
+</div>
+```
+
+You can take this to extremes like `div.content#intro>table>tr.headers>th*4^tr*7>td*4`, which creates a div with an 8x4 table, and adds some classes and IDs to elements.
+
+#### Settings
+
+If you use the command palette to turn on `setting sync`, you can export all (or some) of your settings with your GitHub account.
+
+#### Debugging
+
+The video also contains a great overview of [using debugging](https://youtu.be/WPqXP_kLzpo?t=4020). Debugging looks incredibly powerful, and I feel a little foolish for not looking into it sooner! I will definitely be trying this out soon.
+
+#### Version Control
+
+From the [git tab](https://www.youtube.com/watch?v=WPqXP_kLzpo&t=4725s), you can perform all of your basic git actions. With GitHub integration, you can actually publish new repositories right from inside VS Code!
+
+---
+
 https://www.freecodecamp.org/news/lessons-learned-after-11-years-coding/amp/
 
 https://simpleprogrammer.com/products/how-to-market-yourself/
@@ -313,3 +388,5 @@ https://simpleprogrammer.com/products/how-to-market-yourself/
 https://stackingthebricks.com/tinymba/
 
 https://medium.com/javascript-scene/the-secret-of-simple-code-a2cacd8004dd
+
+http://dylanbritz.com/post/web-developer-roadmap-for-2021
