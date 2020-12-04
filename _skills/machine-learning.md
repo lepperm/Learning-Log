@@ -1,17 +1,17 @@
---- 
+---
 layout: progression
 name: machine-learning
 fullname: Machine Learning
 mainsite: 
 category: 
 proficient: false
-progressionEntries: 
-  - 
+progressionEntries:
+  -
     id: 1
     status: NS
-    name: 
-    item: 
-    type: 
+    name: Introduction to Linear Algebra by Gilbert Strang
+    item: http://math.mit.edu/~gs/linearalgebra/
+    type: Book
     price:
     est-duration:
     est-benefit:
@@ -21,7 +21,7 @@ progressionEntries:
     datecomp:
     datelink:
 resources: 
-  - 
+  -
     refname: 
     reflink: 
 ---
@@ -41,3 +41,7 @@ http://vmls-book.stanford.edu/
 www.​kaggle.​com/c/digit-recognizer
 
 Andrew Ng's Machine Learning on Coursera will ground you on what goes on behind the high level algorithms.
+
+---
+
+>To say that you want to get into ML or say that you want to use ML is incredibly broad. What specifically about ML do you want to do? Implement new methods, data analysis, build a product? Research or engineering. What you study will be vastly different towards that goal. State of the art methods get math-intensive, whereas production is more focused on the inputs and outputs.

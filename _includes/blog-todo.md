@@ -3,6 +3,7 @@
 - [ ] Add project name tags to old blog posts (for use with Projects table)
 - [ ] Wrap-Up Page - summarize the time clocked towards specific skills and any progression entries completed within a certain number of days (past week?), along with a digest of all posts made.
   - [ ] Make it easy to share to social media!
+- [ ] General resources page - non-progression items that are helpful resources, such as https://www.frontendmentor.io/ and other code challenge sites
 
 **Statistics**
 - [ ] Use calls to [GitHub statistics](https://docs.github.com/en/rest/reference/repos#statistics) with mirrored GitLab repositories to cross-reference git data with blog data
