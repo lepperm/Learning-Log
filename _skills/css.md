@@ -67,7 +67,7 @@ progressionEntries:
     status: OK
     name: Flexboxfroggy
     item: http://flexboxfroggy.com/
-    type: Course
+    type: Game
     price: 0.0
     est-duration: 30
     est-benefit: 5
@@ -81,7 +81,7 @@ progressionEntries:
     status: OK
     name: Grid Garden
     item: https://cssgridgarden.com/
-    type: Course
+    type: Game
     price: 0.0
     est-duration: 30
     est-benefit: 5
@@ -99,6 +99,20 @@ progressionEntries:
     price:
     est-duration:
     est-benefit:
+    act-benefit:
+    relproj:
+    relprojlink:
+    datecomp:
+    datelink:
+  - 
+    id: 8
+    status: NS
+    name: Flexbox Adventure
+    item: https://flexboxadventure.com/
+    type: Game
+    price:
+    est-duration:
+    est-benefit: 5
     act-benefit:
     relproj:
     relprojlink:

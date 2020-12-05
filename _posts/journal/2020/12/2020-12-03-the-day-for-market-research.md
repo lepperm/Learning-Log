@@ -14,8 +14,8 @@ importance: 1
 context: true
 comments: true
 skills: [general]
-references: []
-timespent: 260
+references: ["https://www.dice.com/"]
+timespent: 265
 sleep: 270
 recreation: 0
 workout: 25
