@@ -1,7 +1,7 @@
 ---
 layout: progression
-name: data-science
-fullname: Data Science
+name: algorithms
+fullname: Algorithms
 mainsite: 
 category: 
 proficient: false
@@ -25,5 +25,3 @@ resources:
     refname: 
     reflink: 
 ---
-
-https://www.freecodecamp.org/news/what-is-data-analytics/

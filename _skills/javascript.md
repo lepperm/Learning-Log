@@ -271,6 +271,12 @@ resources:
   - 
     refname: What is a callback?
     reflink: https://www.youtube.com/watch?v=xHneyv38Jro
+  - 
+    refname: 8 JavaScript Concepts
+    reflink: https://twitter.com/SimonHoiberg/status/1334548171175976968?s=09
+  - 
+    refname: The JavaScript Beginner's Handbook (2020 Edition)
+    reflink: https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/
 ---
 
 * TOC

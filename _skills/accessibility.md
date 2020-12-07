@@ -24,6 +24,9 @@ resources:
   - 
     refname: How to Meet WCAG (Quick Reference)
     reflink: https://www.w3.org/WAI/WCAG21/quickref/
+  - 
+    refname: Accessibility (a11y)
+    reflink: https://developer.chrome.com/apps/a11y
 ---
 
 ### Semantic Tags

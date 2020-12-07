@@ -230,6 +230,20 @@ progressionEntries:
     relprojlink: 
     datecomp: 
     datelink: 
+  - 
+    id: 
+    status: NS
+    name: Get Really Good at React
+    item: https://epicreact.dev/
+    type: Course
+    price: 600.0
+    est-duration:
+    est-benefit:
+    act-benefit:
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
 resources: 
   - 
     refname: React.js Examples

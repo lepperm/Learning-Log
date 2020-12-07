@@ -122,6 +122,9 @@ resources:
   - 
     refname: Centering in CSS - A Complete Guide
     reflink: https://css-tricks.com/centering-css-complete-guide/
+  - 
+    refname: Modern CSS Solutions for Old CSS Problems
+    reflink: https://moderncss.dev/
 ---
 
 ## Quick Reference
