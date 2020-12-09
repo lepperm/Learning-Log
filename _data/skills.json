@@ -3,6 +3,12 @@
   
   
   {
+      "name"         : "framer",
+      "entries"      : "1",
+      "time"         : "280",
+      "dateslogged"  : "2020-12-08 22:38:21 -0500",
+      "lastlogged"   : "2020-12-08 22:38:21 -0500"
+    },{
       "name"         : "react",
       "entries"      : "22",
       "time"         : "7480",
