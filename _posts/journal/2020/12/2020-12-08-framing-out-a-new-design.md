@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [portfolio,design]
 date: 2020-12-08 23:38:21 -0400
-modified_date:
+modified_date: 2020-12-09 20:54:04 -0400
 published: true
 status: live
 confidence: log
@@ -80,7 +80,7 @@ With all of this in mind, I'm split pretty evenly between Framer and InVision! B
 
 That being said, I'm _absolutely_ installing the InVision desktop client to play around with sometime, as it looks super slick. Bonus points for default dark theme. 👌
 
-Step two complete! On to step three, Framer has an [intro tutorials]({{page.references[1]}}), and then two series on desktop prototyping and coding. There ended up being way more content in here than I expected! I only got about halfway through the Desktop Prototyping tutorials before midnight, and I think I'm going to call it quits for tonight.
+Step two complete! On to step three, Framer has an [intro tutorial]({{page.references[1]}}), and then two series on desktop prototyping and coding. There ended up being way more content in here than I expected! I only got about halfway through the Desktop Prototyping tutorials before midnight, and I think I'm going to call it quits for tonight.
 
 I'm trying to shake off my battle with insomnia and get my sleep schedule back on track. It's exceedingly tempting to keep going and either finish these tutorials or clean up my draft from yesterday (which is still very much a draft), but today has been a good immediate contrast between what I'm able to tackle with good sleep versus no sleep. There is this feeling of needing to move quickly to avoid harm and danger, which is, in and of itself, persistently stressful. Regularly failing to deliver the desired results within a self-imposed deadline is also stressful. Being sleep-deprived amplifies all those feelings and negatively impacts immediate performance, recall, and retention. The answer is easy, but also so difficult:
 

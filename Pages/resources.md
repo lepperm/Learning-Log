@@ -66,7 +66,7 @@ Validators and linters can be used to check if a certain file type is correctly 
 - <https://www.canva.com/colors/color-wheel/>
 
 
-### Shape Generators
+### Art Generators
 
 **Waves**
 - <https://getwaves.io/>
@@ -74,6 +74,11 @@ Validators and linters can be used to check if a certain file type is correctly 
 **Blobs**
 - <https://www.blobmaker.app/>
 
+**Avatars**
+- <https://getavataaars.com/>
+
+**People**
+- <https://www.humaaans.com/>
 
 ## Training
 
