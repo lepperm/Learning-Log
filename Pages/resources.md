@@ -29,6 +29,9 @@ The resources below may be helpful to reference or utilize as compliments to you
 - <https://material-ui.com/components/material-icons/>
   - Searchable, with copyable `import` lines
 
+**Google Fonts**
+- <https://fonts.google.com/>
+
 
 ## Utilities
 
@@ -66,7 +69,11 @@ Validators and linters can be used to check if a certain file type is correctly 
 - <https://www.canva.com/colors/color-wheel/>
 
 
-### Art Generators
+### Generators
+
+**Favicons**
+- <https://favicon.io/favicon-generator/>
+- <https://realfavicongenerator.net/>
 
 **Waves**
 - <https://getwaves.io/>
