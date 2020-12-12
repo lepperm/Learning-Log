@@ -2,8 +2,8 @@
 layout: progression
 name: machine-learning
 fullname: Machine Learning
-mainsite: 
-category: 
+mainsite:
+category: Specialized Learning
 proficient: false
 progressionEntries:
   -
@@ -20,10 +20,10 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
-resources: 
+resources:
   -
-    refname: 
-    reflink: 
+    refname:
+    reflink:
 ---
 
 https://www.freecodecamp.org/news/machine-learning-basics-for-developers/
@@ -44,4 +44,4 @@ Andrew Ng's Machine Learning on Coursera will ground you on what goes on behind 
 
 ---
 
->To say that you want to get into ML or say that you want to use ML is incredibly broad. What specifically about ML do you want to do? Implement new methods, data analysis, build a product? Research or engineering. What you study will be vastly different towards that goal. State of the art methods get math-intensive, whereas production is more focused on the inputs and outputs.
+> To say that you want to get into ML or say that you want to use ML is incredibly broad. What specifically about ML do you want to do? Implement new methods, data analysis, build a product? Research or engineering. What you study will be vastly different towards that goal. State of the art methods get math-intensive, whereas production is more focused on the inputs and outputs.

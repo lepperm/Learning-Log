@@ -32,8 +32,24 @@ The resources below may be helpful to reference or utilize as compliments to you
 **Google Fonts**
 - <https://fonts.google.com/>
 
+**Design Inspiration Sites**
+
+As a quick disclaimer, be mindful to not confuse aesthetics with functional design! Many inspiration sites are NOT client work and only exist on these platforms.
+
+- [Behance](https://www.behance.net/)
+- [Lapa Ninja](https://www.lapa.ninja/)
+- [Onepagelove](https://onepagelove.com/)
+- [Dribbble](https://dribbble.com/)
+
 
 ## Utilities
+
+### Design Applications
+
+- <https://framer.com>
+- <https://www.invisionapp.com/>
+- <https://www.adobe.com/products/xd.html>
+- <https://www.figma.com/>
 
 ### Validators / Linters
 
@@ -54,6 +70,9 @@ Validators and linters can be used to check if a certain file type is correctly 
 
 **Page Compression Checker**
 - <http://www.gidnetwork.com/tools/gzip-test.php>
+
+**Rich Search Results Checker**
+- <https://search.google.com/test/rich-results>
 
 
 ### Color
@@ -113,6 +132,7 @@ Validators and linters can be used to check if a certain file type is correctly 
 ### Job Resources
 
 - <https://www.dice.com/>
+- [Remote Vacancies (US)](https://docs.google.com/spreadsheets/d/e/2PACX-1vRnGWwEeYo7LEKiGMaRI7vGtz-CS9aTg4r6c8gsaNM_gMfK2wxZwynT-MTdZHLegMqMwNj0VugftnvM/pubhtml)
 
 
 ### Networking

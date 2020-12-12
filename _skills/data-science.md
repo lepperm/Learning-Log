@@ -2,17 +2,17 @@
 layout: progression
 name: data-science
 fullname: Data Science
-mainsite: 
-category: 
+mainsite:
+category: Specialized Learning
 proficient: false
 progressionEntries:
   -
     id: 1
     status: NS
-    name: 
-    item: 
-    type: 
-    price: 
+    name:
+    item:
+    type:
+    price:
     est-duration:
     est-benefit:
     act-benefit:
@@ -20,10 +20,10 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
-resources: 
+resources:
   -
-    refname: 
-    reflink: 
+    refname:
+    reflink:
 ---
 
 https://www.freecodecamp.org/news/what-is-data-analytics/

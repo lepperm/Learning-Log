@@ -2,8 +2,8 @@
 layout: progression
 name: data-visualization
 fullname: Data Visualization
-mainsite: 
-category: 
+mainsite:
+category: Specialized Learning
 proficient: false
 progressionEntries:
   -
@@ -20,10 +20,10 @@ progressionEntries:
     relprojlink:
     datecomp:
     datelink:
-resources: 
+resources:
   -
-    refname: 
-    reflink: 
+    refname:
+    reflink:
 ---
 
 https://www.finereport.com/en/data-visualization/how-can-beginners-design-cool-data-visualizations.html

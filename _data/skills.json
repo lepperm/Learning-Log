@@ -3,6 +3,12 @@
   
   
   {
+      "name"         : "design",
+      "entries"      : "1",
+      "time"         : "95",
+      "dateslogged"  : "2020-12-11 22:24:49 -0500",
+      "lastlogged"   : "2020-12-11 22:24:49 -0500"
+    },{
       "name"         : "general",
       "entries"      : "33",
       "time"         : "6100",
