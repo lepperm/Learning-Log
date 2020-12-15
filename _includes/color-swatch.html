@@ -1,0 +1,7 @@
+{%- assign color = '' -%}
+
+{%- if include.color -%}
+  {%- assign color = include.color -%}
+{%- endif -%}
+
+&nbsp;<span style="display:inline-block;vertical-align:middle;width:1em;height:1em;background-color:{{color}};border-radius:0.25em;" title="{{color}} color swatch">&nbsp;</span>

@@ -25,6 +25,9 @@ The resources below may be helpful to reference or utilize as compliments to you
 **Vanilla JavaScript DOM Manipulation (w/ IE)**
 - <https://htmldom.dev/>
 
+**HTML Semantics Cheat Sheet**
+- <https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/>
+
 **Material UI Icons**
 - <https://material-ui.com/components/material-icons/>
   - Searchable, with copyable `import` lines
@@ -78,6 +81,9 @@ Validators and linters can be used to check if a certain file type is correctly 
 ### Color
 
 **Color palettes and generator from images**
+- <https://mycolor.space/>
+- <https://coolors.co/>
+- <http://colormind.io/>
 - <https://www.canva.com/colors/color-palette-generator/>
 - <https://www.canva.com/colors/color-palettes/>
 
@@ -104,7 +110,15 @@ Validators and linters can be used to check if a certain file type is correctly 
 - <https://getavataaars.com/>
 
 **People**
+- <https://blush.design/>
 - <https://www.humaaans.com/>
+- <https://illustratio.us/>
+
+**Fonts**
+- <https://fontjoy.com/>
+
+**Branding**
+- <https://app.brandmark.io/>
 
 ## Training
 
