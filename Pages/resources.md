@@ -100,6 +100,10 @@ Validators and linters can be used to check if a certain file type is correctly 
 - <https://favicon.io/favicon-generator/>
 - <https://realfavicongenerator.net/>
 
+**Documents**
+- <https://www.cookiepolicygenerator.com/cookie-policy-generator/>
+- <https://www.cookiepolicygenerator.com/privacy-policy-generator/>
+
 **Waves**
 - <https://getwaves.io/>
 
