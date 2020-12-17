@@ -272,6 +272,20 @@ progressionEntries:
     relprojlink:
     datecomp: 12/01/20
     datelink:
+  - 
+    id: 
+    status: OK
+    name: Building and Effective Dev Portfolio
+    item: https://www.joshwcomeau.com/effective-portfolio/
+    type: Book
+    price: 0.0
+    est-duration: 60
+    est-benefit: 10
+    act-benefit: 10
+    relproj:
+    relprojlink:
+    datecomp: 12/16/20
+    datelink:
 resources: 
   - 
     refname: Web Design in 4 minutes
