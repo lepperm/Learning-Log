@@ -11,7 +11,7 @@
    - [ ] Responsive Web Design Projects (1/5)
 
 2. JavaScript Algorithms and Data Structures Certification (0/10)
-   - [ ] Basic JavaScript (0/111)
+   - [ ] Basic JavaScript (23/111)
    - [ ] ES6 (0/31)
    - [ ] Regular Expressions (0/33)
    - [ ] Debugging (0/12)

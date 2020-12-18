@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [portfolio,design,technical]
 date: 2020-12-15 23:47:40 -0400
-modified_date:
+modified_date: 2020-12-17 22:31:29 -0400
 published: true
 status: live
 confidence: log
@@ -54,7 +54,7 @@ Fortunately, `npm install` went through fine, and it seems to have cleaned every
 
 Both tests worked perfectly, and I'm honestly really excited! This seems like such a powerful utility to have in my toolbelt for little fixes like this. I'll be watching my PR to see if it gets accepted, and then see what the process is like to remove my local patches down the line.
 
-On to _actual_ development now, finally.
+On to _actual_ development now.
 
 My "public" folder was pretty messy from the favicons, so I reorganized all but the basic favicon to a folder and updated paths. The fonts I had picked out last night (Ubuntu, Poppins, and Frank Ruhl Libre) similarly were added to my "fonts" folder. I'm still not totally sure which versions I will use, so for now I'm going to focus on Ubuntu-Bold and Poppins-Light, as it'll be easy enough to try swapping out the alternatives and eliminating the extras before going to production.
 
@@ -94,7 +94,7 @@ Negative talk tracks, detrimental core beliefs, and poor goal alignment. It's so
 
 {% include blog-img.html source="/assets/images/posts/2020/12/15/draft2.png" alt="A 'new' layout idea." %}
 
-...wait, this is just my old layout. 🤦‍♂️ Crud, haha. But! Some elements have changed, and my idea of how it should be structured and organized is fundamentally different. I am aware of many more things to be mindful of since my first pass, so this will be a good way to iterate in a meaningful way.
+...wait, this is just my old layout. 🤦‍♂️ But! Some elements have changed, and my idea of how it should be structured and organized is fundamentally different. I am aware of many more things to be mindful of since my first pass, so this will be a good way to iterate in a meaningful way.
 
 Running with this layout, I thought through some components that could be used (many of them persisted from the original layout idea from a few days ago) and chunked them out rapidly with the aid of `create-react-component-folder`.
 

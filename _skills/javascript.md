@@ -286,6 +286,48 @@ resources:
 
 JavaScript is huge, and as such, trying to compile my notes on EVERYTHING here is probably way out of scope for a blog like this. I will try to reduce my notes to bite-sized pieces of information that could ideally help someone who ends up here get moving in the right direction.
 
+## Variables
+
+**Declarations**
+- `const`
+- `let`
+- `var` (although `var` should be avoided in favor of `const` or `let`)
+
+**Data Types**
+- `undefined`
+- `null`
+- `boolean`
+- `string`
+- `symbol`
+- `bigint`
+- `number`
+- `object`
+
+All variables and function names are case sensitive. Best practice in JavaScript is to use camelCase to declare our variables, as such:
+
+```javascript
+const someVariable;
+const anotherVariableName;
+```
+
+## Operators
+
+`i++;` and `i--;` can be used to increment or decrement a variable by 1, with no direct assignment required.
+
+"Augmented" operations are a term to modify a value by different quantity than 1 by combining an operator and equals, as shown:
+
+```javascript
+let myVar = 1;
+myVar = myVar + 4;   // 5
+
+let otherVar = 1;
+otherVar += 4;   // 5
+```
+
+Valid operators for this operation include `+` `-` `*` `/` and more.
+
+`%` is referred to as "remainder" in JavaScript and not "modulus". The operation is similar to modulus, but does not work properly with negative numbers.
+
 ## Documentation
 
 ```javascript
@@ -301,19 +343,8 @@ comment */
 */
 ```
 
-## Variables
+## Strings
 
-**Declarations**
-- `const`
-- `let`
-- `var` (although `var` should be avoided in favor of `const` or `let`)
+Strings can marked with `"` or `'`. To use quote marks within a string, they must be escaped with `\`, like `"I am a \"double quoted\" string"`.
 
-**Data type**
-- `undefined`
-- `null`
-- `boolean`
-- `string`
-- `symbol`
-- `bigint`
-- `number`
-- `object`
+Single and double quotes are functionally identical in JavaScript

@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [portfolio,design,open source]
 date: 2020-12-14 23:50:06 -0400
-modified_date:
+modified_date: 2020-12-17 22:29:18 -0400
 published: true
 status: live
 confidence: log
@@ -33,7 +33,7 @@ When my content is good and isolated (model), I can always build new pure compon
 
 Something that's always good to knock out early is the favicons, so I [generated a simple favicon with text and a font]({{page.references[1]}}) and then used [realfavicongenerator]({{page.references[2]}}) with my generated favicons to generate all my variants and manifest, along with file versioning to help replace the icon, should I decide to change it to better fit whatever branding I decide to use down the line.
 
-I've been debating if I should use a service worker again. I think it makes more sense here on Learning Long, where there is content to consume, but on the portfolio it may negatively impact user experience, especially if it ends up that I'm updating it often with new projects. Trying to use the network-first SW configuration previously didn't seem to properly bust the cache without a refresh, and I'm sure that the issues were something that I was doing incorrectly. For now, this would be low-value to include, but something to look into later.
+I've been debating if I should use a service worker again. I think it makes more sense here on Learning Log, where there is content to consume, but on the portfolio it may negatively impact user experience, especially if it ends up that I'm updating it often with new projects. Trying to use the network-first SW configuration previously didn't seem to properly bust the cache without a refresh, and I'm sure that the issues were something that I was doing incorrectly. For now, this would be low-value to include, but something to look into later.
 
 Next up, I finally got around to working on my [create-react-component-folder template customization]({{page.references[3]}}). The default `stories` output is written in the older `storiesOf` format, which breaks my Storybook interface (at least for me, although it claims to be reverse-compatible). I swapped this out for their newer [CSF]({{page.references[4]}}) format. As a bonus, I through some JSDocs starters into the templates, as well. Despite changing the `'` to `"` in the template, it still outputs as `'` for whatever reason, causing Prettier to throw a fit and Storybook to not update until I format the new components.
 

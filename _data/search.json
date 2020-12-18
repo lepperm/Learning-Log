@@ -1,5 +1,28 @@
 [{
       "layout"     : "journal",
+      "title"      : "Application Excitement",
+      "excerpt"    : "Completing a second round of revisions on my resume, sending out my first application, and getting my PR accepted and pushed to main!",
+      "category"   : "journal",
+      "tags"       : "resume, job application",
+      "datetime"   : "2020-12-17 22:38:11 -0500",
+      "modified"   : "",
+      "status"     : "live",
+      "confidence" : "log",
+      "importance" : "1",
+      "context"    : "true",
+      "comments"   : "true",
+      "skills"     : "general",
+      "references" : "https://github.com/snaerth/create-react-component-folder/pull/49",
+      "timespent"  : "0",
+      "sleep"      : "245",
+      "recreation" : "0",
+      "workout"    : "0",
+      "date"       : "Dec 17, 2020",
+      "moddate"    : "",
+      "url"        : "/learning-log/journal/2020/12/17/application-excitement.html",
+      "words"      : "600"
+    },{
+      "layout"     : "journal",
       "title"      : "The Resume Rumble",
       "excerpt"    : "Finishing a book, and crafting what is seemingly the best resume I&#39;ve ever made. We&#39;ll see if it holds up!",
       "category"   : "journal",
@@ -28,7 +51,7 @@
       "category"   : "journal",
       "tags"       : "portfolio, design, technical",
       "datetime"   : "2020-12-15 22:47:40 -0500",
-      "modified"   : "",
+      "modified"   : "2020-12-17 22:31:29 -0400",
       "status"     : "live",
       "confidence" : "log",
       "importance" : "1",
@@ -41,9 +64,9 @@
       "recreation" : "0",
       "workout"    : "0",
       "date"       : "Dec 15, 2020",
-      "moddate"    : "",
+      "moddate"    : "Dec 17, 2020",
       "url"        : "/learning-log/journal/2020/12/15/testing-patches-and-building-components.html",
-      "words"      : "1490"
+      "words"      : "1487"
     },{
       "layout"     : "journal",
       "title"      : "The Unexpected Pull Request",
@@ -51,7 +74,7 @@
       "category"   : "journal",
       "tags"       : "portfolio, design, open source",
       "datetime"   : "2020-12-14 22:50:06 -0500",
-      "modified"   : "",
+      "modified"   : "2020-12-17 22:29:18 -0400",
       "status"     : "live",
       "confidence" : "log",
       "importance" : "1",
@@ -64,7 +87,7 @@
       "recreation" : "0",
       "workout"    : "0",
       "date"       : "Dec 14, 2020",
-      "moddate"    : "",
+      "moddate"    : "Dec 17, 2020",
       "url"        : "/learning-log/journal/2020/12/14/the-unexpected-pull-request.html",
       "words"      : "1177"
     },{

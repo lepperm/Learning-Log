@@ -238,7 +238,21 @@ progressionEntries:
     type: Course
     price: 600.0
     est-duration:
-    est-benefit:
+    est-benefit: 9
+    act-benefit:
+    relproj: 
+    relprojlink: 
+    datecomp: 
+    datelink: 
+  - 
+    id: 
+    status: NS
+    name: React 2025
+    item: https://react2025.dev/
+    type: Course
+    price: 0.0
+    est-duration: 850
+    est-benefit: 10
     act-benefit:
     relproj: 
     relprojlink: 
