@@ -345,6 +345,33 @@ comment */
 
 ## Strings
 
-Strings can marked with `"` or `'`. To use quote marks within a string, they must be escaped with `\`, like `"I am a \"double quoted\" string"`.
+Strings can marked with `"` or `'`. To use quote marks within a string, you can either mix one set of quote symbols per level like `'They said, "Hello!" to the world.'`, or escape identical quotes with `\`, like `"I am a \"double quoted\" string"`.
 
-Single and double quotes are functionally identical in JavaScript
+Single and double quotes are functionally identical in JavaScript.
+
+The string datatype has a `.length` parameter exposed, and individual letters can be accessed like an array:
+
+```javascript
+let myStr = "Test";
+console.log(myStr[0]); // "T"
+```
+
+## Arrays
+
+Arrays can be flat, or nested to create multi-dimensional arrays:
+
+```javascript
+let myArray = [1,2,3];
+
+let myMultiDimArr = [[1,2,3],[4,5,6],[7,8,[9,10]]]
+```
+
+Arrays have a `.push()` method exposed that allows us to take one or more parameters and "push" them onto the end of the array (after the index `array.length-1`).
+
+The `.pop()` method allows us to "pop" a value off the end of the array (at the index `array.length-1`) and assign it to a value.
+
+```javascript
+let myPop = myArr.pop();
+```
+
+Similar to `.pop()`, `.shift()` removes the first element of the array (at index 0).
