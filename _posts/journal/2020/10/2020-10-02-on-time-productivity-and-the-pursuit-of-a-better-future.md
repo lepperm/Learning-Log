@@ -84,6 +84,7 @@ I had started to fully realize this and work to correct it about a year ago, but
 >
 > -- <cite>Seneca</cite>
 
+{: #ardent-wish}
 Learning modern development became my ardent wish, and I have been aggressively working towards this objective since. A few months in, I became aware that I needed to strive to be being more intentional about how and where I spend my time. I launched Learning Log over a weekend, and have been dialing in a progressively clearer view of where my daily time goes: which skills I'm learning, if I'm taking care of my physical health, and if I'm taking care of my mental health.
 
 The process of learning programming has consumed a LOT of time - about 25 hours a week of just study/working time as of writing this post. Of that time, there is additional uncaptured overhead of things like producing and editing these posts, reading incessantly, and reflections (like this) that fall within the realm of self-improvement but outside the scope of development. My time beyond studying has been more tightly scheduled, and keeping up with the routine demands of life is more challenging in the tighter time window. It is genuinely _difficult_ to find space to pursue goals, maintain a life, and also live in the Now.

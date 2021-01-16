@@ -122,12 +122,10 @@ Actual data output to the page
 </ol>
 <div>(Not accounting for the following fundamental skills: {{ assumedSkills | join: ", " }})</div>
 
-
 <h2 id="skill-pie">
   Logged Skills Distribution
   {%- include return-to-top.html target="toc" -%}
-</h2>     
-
+</h2>
 
 {%- assign allSkillTime = 0 -%}
 
@@ -180,11 +178,11 @@ Actual data output to the page
     {% endif %}
 </div>
 {% if skillTimeCluster > 0 %}
-  <div style="float:right">
+  <div>
     *{{skillNameCluster}}
   </div>
 {% endif %}
-<div style="float:right">**Not accounting for the following fundamental skills: {{ assumedSkills | join: ", " }}</div>
+<div>**Not accounting for the following fundamental skills: {{ assumedSkills | join: ", " }}</div>
 
 <h2 id="total-time">
   Total Time Logged
@@ -451,6 +449,7 @@ This may eventually be an issue???
     </li>
   {% endif %}
 
+  {% comment %}
   {% if gaps[0] != nil %}
     <li>
       The longest gap between posts was <b>{{ gaps[0] | minus: 1 }}</b> days
@@ -460,6 +459,7 @@ This may eventually be an issue???
       <b>I have not yet missed a single day of posts!</b> We'll see how long that lasts!
     </li>
   {% endif %}
+  {% endcomment %}
 
   {% if streak %}
     <li id="isStreak">

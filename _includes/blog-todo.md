@@ -9,6 +9,7 @@
 - [ ] "Year in pixels" style blogging map for days with posts
   - [ ] Navigate through to see all posts for that day (can reuse existing search query w/ date format `%b %d, %Y`)
 - [ ] Graphs of post metrics over time
+- [ ] Posting gap bugged with new year, need to inspect closer
 
 **Modularity**
 - [ ] Make the skill collection and data generic (for example, could be reused for a spoken languages learning breakdown)
