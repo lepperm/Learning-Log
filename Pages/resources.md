@@ -124,6 +124,16 @@ Validators and linters can be used to check if a certain file type is correctly 
 **Branding**
 - <https://app.brandmark.io/>
 
+## APIs
+
+If you want to get some hands-on learning with APIs, the [Noops Challenge](https://noopschallenge.com/) is a great place to get started!
+
+Below is a list of easy-to-use APIs to play around with. There is also a [massive list of public APIs](https://github.com/public-apis/public-apis) on GitHub.
+
+- <https://ghibliapi.herokuapp.com/>
+- <https://numverify.com/documentation>
+- <https://github.com/15Dkatz/official_joke_api>
+
 ## Training
 
 ### Code Challenges
