@@ -11,7 +11,7 @@ Here, you can find:
 - My progress towards mastering skills and the resources being used to get there
 - Statistics for my skill development and this site
 - A dynamically generated list of tasks that I am using to guide my learning
-- Logs of my daily learning activities and insight into my problem-solving process
+- Logs of my learning activities and insight into my problem-solving process
 - Blog posts covering a variety of topics
 
 My long-term roadmap for a career in development can be found here:  
