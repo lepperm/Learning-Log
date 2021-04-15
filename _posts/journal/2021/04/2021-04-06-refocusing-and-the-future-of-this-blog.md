@@ -89,24 +89,24 @@ I'll probably need to update some of the branding around my site, but at least f
 
 **Short-Term**
 
-Monday - Project / Study
-Tuesday - Renovations / Yardwork / Socializing
-Wednesday - Project / Study
-Thursday - Renovations / Finances
-Friday - Rest
-Saturday - Intensive Renovations / Yardwork
-Sunday - Intensive Renovations / Blog (maybe but not likely)
+- Monday - Project / Study
+- Tuesday - Renovations / Yardwork / Socializing
+- Wednesday - Project / Study
+- Thursday - Renovations / Finances
+- Friday - Rest
+- Saturday - Intensive Renovations / Yardwork
+- Sunday - Intensive Renovations / Blog (maybe but not likely)
 
 **After All Immediate Concerns Resolved**
 
-Monday - Project / Study
-Tuesday - Renovations / Yardwork / Socializing
-Wednesday - Project / Study
-Thursday - Renovations / Finances
-Friday - Rest
-Weekend (Interchangeable)
-  - Project / Study / Blog (week summary)
-  - Renovations / Yardwork / Life
+- Monday - Project / Study
+- Tuesday - Renovations / Yardwork / Socializing
+- Wednesday - Project / Study
+- Thursday - Renovations / Finances
+- Friday - Rest
+- Weekend (Interchangeable)
+    - Project / Study / Blog (week summary)
+    - Renovations / Yardwork / Life
 
 Depending on how the renovation list whittles down, I would like to eventually ramp my studying back up further, and/or throw in some reading nights, or something. It will be easier to evaluate and revisit this schedule as we continue to get settled in and get everything under a bit more control.
 
