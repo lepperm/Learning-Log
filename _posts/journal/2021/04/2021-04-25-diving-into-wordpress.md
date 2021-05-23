@@ -1,10 +1,10 @@
 ---
 layout: journal
-title: "Diving into Wordpress"
-excerpt: Starting into learning Wordpress for a new client project.
+title: "Diving into WordPress"
+excerpt: Starting into learning WordPress for a new client project.
 author: Max Lepper
 categories: [journal]
-tags: [wordpress]
+tags: [WordPress]
 date: 2021-04-25 22:37:50 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [Wordpress]
+skills: [wordpress]
 references: ["https://sarahbgillam.medium.com/how-to-use-google-domains-with-dreamhost-and-how-to-get-free-email-for-your-domain-799775bd4703"]
 timespent: 810
 sleep: 410
@@ -23,19 +23,19 @@ workout: 0
 
 ## Journal
 
-{% include focus-box.html focus="Wordpress" theme="Client Projects" %}
+{% include focus-box.html focus="WordPress" theme="Client Projects" %}
 
 Since my last entry, nearly all free time not devoted to resolving safety concerns around the house has gone towards working on a new client project. The project is a job board site to help pair companies with talented individuals for either volunteer or paid opportunities. Employers will pay per posting, and there may eventually be some kind of subscription offering for talent.
 
 I had a few discussions with the client and was supplied with branding resources, feature requests, organizational structure, and all kinds of helpful data points. They had already secured the domain, so step one was to select a host and get the site live.
 
-After some research, DreamHost ended up being the winner for their selection of pricing plans and the one-click Wordpress setup. I've had decent success with DreamHost in the past for hosting small projects, so I was already familiar with their control panel.
+After some research, DreamHost ended up being the winner for their selection of pricing plans and the one-click WordPress setup. I've had decent success with DreamHost in the past for hosting small projects, so I was already familiar with their control panel.
 
-Setting up the Wordpress hosting, I specified our domain name and let DreamHost handle setting everything up. It took me a bit before I realized that, since I had specified the domain during setup, I couldn't do or access anything at all, not even via FTP, until the domain was switched over. Whoops!
+Setting up the WordPress hosting, I specified our domain name and let DreamHost handle setting everything up. It took me a bit before I realized that, since I had specified the domain during setup, I couldn't do or access anything at all, not even via FTP, until the domain was switched over. Whoops!
 
 After that, I reached out to the client to get the DNS namespaces pointed to DreamHost. We used [this guide, which also shows how to set up a free domain email]({{page.references[0]}}). With that pushed through, the site was live within the day, and I was able to get to work!
 
-Wordpress is such a different experience from anything I've done so far. Everything is tucked away and wrapped into plugins, menus, and forms. I've seen references to PHP and shortcodes and other such elements that sound more like what I'm looking for, but I haven't gotten there quite yet. Honestly, I should probably stick to more of the official introduction guides instead of youtube.
+WordPress is such a different experience from anything I've done so far. Everything is tucked away and wrapped into plugins, menus, and forms. I've seen references to PHP and shortcodes and other such elements that sound more like what I'm looking for, but I haven't gotten there quite yet. Honestly, I should probably stick to more of the official introduction guides instead of youtube.
 
 That being said, I was anxious to get something in place quickly! For now, a "coming soon" page would be a great way to start collecting emails to let people know our site will be launching, and to start building some SEO. There were a few different plugins to choose from, so I selected one that looked like it would be fairly quick to implement and created this:
 
@@ -43,11 +43,11 @@ That being said, I was anxious to get something in place quickly! For now, a "co
 
 Through this process, I was checking for licensing, verifying fonts, trying to source graphics and resources, and trying to come up with wording that properly captured the goal of the site while being mindful of the client's requests for wording.
 
-Next was the site itself. The "coming soon" plugin allows logged-in users to see the true site, which is nice for building. It looks like Elementor is the suggested site building plugin, and it uses the Astra theme to modify the appearance of everything. I had found a nice job board standard Wordpress theme already, but couldn't find anything equivalent in Elementor... and I'm a bit confused about how best to approach this.
+Next was the site itself. The "coming soon" plugin allows logged-in users to see the true site, which is nice for building. It looks like Elementor is the suggested site building plugin, and it uses the Astra theme to modify the appearance of everything. I had found a nice job board standard WordPress theme already, but couldn't find anything equivalent in Elementor... and I'm a bit confused about how best to approach this.
 
 For the core job board functionality, it seems that WP Job Manager is a mature option with lots of expandability. I will need to work with it more before I understand what all is happening. I also added plugins for user signups, signups via social media accounts, form builders, payment processors, a backup utility, and an SEO suggestion tool. Many of these were recommended to be used with each other, so I've been chipping away at the configurations.
 
-Not having a layout that looks like our brand board is definitely a concern, from a demo standpoint. I'd like to figure out how to use Elementor (or if I even _should_ be using Elementor) soon, and then create the landing page. The job board functionality is perhaps less flashy but easily as important - a good-looking landing page is useless if the site doesn't fulfil its purpose! My next task is to push forward on both of these fronts and see if I can learn Wordpress a bit better overall.
+Not having a layout that looks like our brand board is definitely a concern, from a demo standpoint. I'd like to figure out how to use Elementor (or if I even _should_ be using Elementor) soon, and then create the landing page. The job board functionality is perhaps less flashy but easily as important - a good-looking landing page is useless if the site doesn't fulfil its purpose! My next task is to push forward on both of these fronts and see if I can learn WordPress a bit better overall.
 
 ## Additional Note
 

@@ -1,10 +1,10 @@
 ---
 layout: journal
-title: "Wordpress Progress for Silver is Gold"
-excerpt: Slowly getting the hang of navigating and using Wordpress, and gaining experience developing a product with a great client!
+title: "WordPress Progress for Silver is Gold"
+excerpt: Slowly getting the hang of navigating and using WordPress, and gaining experience developing a product with a great client!
 author: Max Lepper
 categories: [journal]
-tags: [wordpress]
+tags: [WordPress]
 date: 2021-05-02 23:02:41 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [Wordpress]
+skills: [wordpress]
 references: ["https://openweathermap.org/api/one-call-api"]
 timespent: 1455
 sleep: 0
@@ -23,7 +23,7 @@ workout: 0
 
 ## Journal
 
-{% include focus-box.html focus="Wordpress" theme="Client Projects" %}
+{% include focus-box.html focus="WordPress" theme="Client Projects" %}
 
 After sleeping on it the night after my last post, I decided to try something drastic. Using a plugin called WP Reset, I completely reset the site to a (mostly) blank canvas. Now that I have a slightly better idea of what's going on, I'll take things one step at a time and focus on functionality.
 
@@ -31,9 +31,9 @@ First up was restoring the "coming soon" page. I had exported my settings prior 
 
 Next up was determining which site builder engine to go with. I had played around with Elementor a little before resetting, and while it seemed powerful, much of it was again locked behind a paywall. Gutenberg, on the other hand, looks to be the "native" option. While reading up on comparisons, multiple articles claimed it was quicker, lighter, and full-featured, and that there were many free options for extending the functionality.
 
-Honestly, if I had one core takeaway from using Wordpress so far, it's "bring a budget." It seems that you can't type anything in the plugin search bar without tripping over $40 yearly subscription plugins!
+Honestly, if I had one core takeaway from using WordPress so far, it's "bring a budget." It seems that you can't type anything in the plugin search bar without tripping over $40 yearly subscription plugins!
 
-This makes sense - Wordpress seems like a great platform to develop fully-featured sites that can be run by people who won't have to write a line of code, and that's opening up the consumer market drastically. Once you're familiar with plugins in the ecosystem, I could see being able to launch a site that could generate revenue comfortably in a single day. That'd make plugins a prime area for developers to try and get a cut of that business, and with so many paid plugins already on the market, ther be little need to justify charging for them. But I digress!
+This makes sense - WordPress seems like a great platform to develop fully-featured sites that can be run by people who won't have to write a line of code, and that's opening up the consumer market drastically. Once you're familiar with plugins in the ecosystem, I could see being able to launch a site that could generate revenue comfortably in a single day. That'd make plugins a prime area for developers to try and get a cut of that business, and with so many paid plugins already on the market, ther be little need to justify charging for them. But I digress!
 
 This time around, I grabbed the Neve theme, as it looks like it has a decent selection of themes that are available for multiple site builder plugins. Ideally, this would mean that maybe it'd be easier to switch things up in the future, if needed. WP Job Manager will be the underlying engine for the job board again, as the free offering seems to be enough to get something that can show the general functionality, and expandability and support seems to be solid (although the plugins add up extremely quickly - at least $100 to start generating revenue).
 
@@ -93,7 +93,7 @@ I know that there is little substitution for manually-configured and focused acc
 
 After looking, I'm unsure how I feel about toolbar-based accessibility plugins, and I might need to do more external research. Definitely the compliance check would be great to help make me more aware of where issues may be located. Sooner or later, it'd be great to specifically dig into proper accessibility and learn how to use the tools.
 
-### Custom CSS in Wordpress Themes
+### Custom CSS in WordPress Themes
 
 The branding board for our site is a dark theme with white text, so I made adjustments through the theme customization as best as I could. It looks like the components provided by WP Job Manager appeared to have hard-coded color values when inspected, but I'm unsure if these colors were maybe coming through the Neve theme I had selected. Regardless, the colors appearing in the forms were inaccessible, and I could not seem to get them to cooperate normally.
 
