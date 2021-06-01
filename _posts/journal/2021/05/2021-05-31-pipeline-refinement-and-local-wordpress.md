@@ -4,7 +4,7 @@ title: "Pipeline Refinement and Local WordPress"
 excerpt: The gears are slowly starting to click into place as I work out a production pipeline and experiment with running WordPress locally.
 author: Max Lepper
 categories: [journal]
-tags: [wordpress]
+tags: [wordpress,docker]
 date: 2021-05-31 23:52:33 -0400
 modified_date:
 published: true
@@ -13,7 +13,7 @@ confidence: log
 importance: 1
 context: true
 comments: true
-skills: [wordpress]
+skills: [wordpress,docker]
 references: ["https://www.silverisgold.org/","https://wpjobboard.net/","https://localwp.com/","https://snapcreek.com/duplicator/duplicator-free/","https://roots.io/bedrock/","https://github.com/urre/wordpress-nginx-docker-compose","https://community.chocolatey.org/courses"]
 timespent: 975
 sleep: 0
