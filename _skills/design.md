@@ -50,8 +50,8 @@ progressionEntries:
     datelink:
 resources:
   -
-    refname:
-    reflink:
+    refname: Laws of UX
+    reflink: https://lawsofux.com/
 ---
 
 **Introductory design videos**

@@ -27,6 +27,15 @@ resources:
   - 
     refname: Accessibility (a11y)
     reflink: https://developer.chrome.com/apps/a11y
+  - 
+    refname: A11y Coffee
+    reflink: https://a11y.coffee/
+  - 
+    refname: A11y & Me
+    reflink: https://a11y.me/
+  - 
+    refname: Americans with Disabilities Act (ADA)
+    reflink: https://www.ada.gov/cguide.htm#anchor62335
 ---
 
 ### Semantic Tags

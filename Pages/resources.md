@@ -94,6 +94,14 @@ Validators and linters can be used to check if a certain file type is correctly 
 - <https://www.canva.com/colors/color-wheel/>
 
 
+### Tools
+
+Freely remove backgrounds from images
+- <https://www.remove.bg/>
+
+Compress JPEG and PNG files, has an API for automated compression
+- <https://tinypng.com/>
+
 ### Generators
 
 **Favicons**
@@ -120,6 +128,7 @@ Validators and linters can be used to check if a certain file type is correctly 
 
 **Fonts**
 - <https://fontjoy.com/>
+- <https://www.fontpair.co/>
 
 **Branding**
 - <https://app.brandmark.io/>
@@ -166,3 +175,11 @@ Below is a list of easy-to-use APIs to play around with. There is also a [massiv
 ### Networking
 
 - <https://www.meetup.com/>
+
+
+## Libraries
+
+I hesitate to add libraries, but some of the following may be helpful references.
+
+Lightweight tooltip engine
+- <https://popper.js.org/>
