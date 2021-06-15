@@ -24,7 +24,7 @@ RubyGems will also need to be installed, which can similarly be checked with `ge
 
 - Locally host with `bundle exec jekyll serve --drafts --future` to see all posts.
 
-- When done writing, use `node ReactConfigWizard.js` to update dynamically-generated data files used for statistics. The site will need to re-generate
+- When done writing, use `node .\UpdateStats.js` to update dynamically-generated data files used for statistics. The site will need to re-generate.
 
 ## Known Issues
 
