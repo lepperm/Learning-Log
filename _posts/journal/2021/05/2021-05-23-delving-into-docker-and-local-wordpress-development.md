@@ -4,7 +4,7 @@ title: "Delving into Docker and Local WordPress Development"
 excerpt: Looking to level-up my WordPress development lifecycle, I evaluate different options and workflows and start digging into Docker.
 author: Max Lepper
 categories: [journal]
-tags: [docker, wordpress]
+tags: [docker, wordpress,"Silver is Gold"]
 date: 2021-05-23 18:58:24 -0400
 modified_date:
 published: true

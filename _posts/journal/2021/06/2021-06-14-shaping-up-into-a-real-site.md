@@ -4,7 +4,7 @@ title: "Shaping Up Into a Real Site"
 excerpt: Implementing a new job board plugin and populating page content to finally have the site looking and acting more like a real service.
 author: Max Lepper
 categories: [journal]
-tags: [wordpress,css]
+tags: [wordpress,css,"Silver is Gold"]
 date: 2021-06-14 23:49:15 -0400
 modified_date: 2021-06-15 21:51:11 -0400
 published: true

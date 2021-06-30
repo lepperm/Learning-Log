@@ -4,7 +4,7 @@ title: "WordPress Progress for Silver is Gold"
 excerpt: Slowly getting the hang of navigating and using WordPress, and gaining experience developing a product with a great client!
 author: Max Lepper
 categories: [journal]
-tags: [WordPress]
+tags: [WordPress,"Silver is Gold"]
 date: 2021-05-02 23:02:41 -0400
 modified_date:
 published: true

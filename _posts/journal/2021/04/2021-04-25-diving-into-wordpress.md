@@ -4,7 +4,7 @@ title: "Diving into WordPress"
 excerpt: Starting into learning WordPress for a new client project.
 author: Max Lepper
 categories: [journal]
-tags: [WordPress]
+tags: [WordPress,"Silver is Gold"]
 date: 2021-04-25 22:37:50 -0400
 modified_date:
 published: true

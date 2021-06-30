@@ -4,7 +4,7 @@ title: "Pipeline Refinement and Local WordPress"
 excerpt: The gears are slowly starting to click into place as I work out a production pipeline and experiment with running WordPress locally.
 author: Max Lepper
 categories: [journal]
-tags: [wordpress,docker]
+tags: [wordpress,docker,"Silver is Gold"]
 date: 2021-05-31 23:52:33 -0400
 modified_date:
 published: true
