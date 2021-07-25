@@ -9,4 +9,6 @@ exclude: true
 
 {%- include onload.html -%}
 
-Welcome to Learning Log! All logged skills, active learning tasks, and site statistics can be found in the links above. Please tap the lower-right corner chat bubble if you have any questions.
+Welcome to Learning Log! All logged skills, resources, active learning tasks, and site statistics can be found in the links above.
+
+If you have any questions, or even if you just want to say hi, tap the chat bubble in the lower-right corner. Thanks for visiting, I appreciate you!

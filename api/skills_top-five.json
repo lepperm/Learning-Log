@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{{ site.data.skills | sort:"time" | reverse | where_exp:"skill", "skill.name != 'general'" | slice: 0, 5 | jsonify }}
