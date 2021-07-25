@@ -1,11 +1,11 @@
 ---
 layout: journal
 title: "Polish, CSS, SEO, and Production"
-excerpt: Wrapping up tasks and tackling site issues as we inch towards the beta launch of Silver is Gold.
+excerpt: Wrapping up tasks and tackling site issues and design changes as we begin the soft launch of Silver is Gold!
 author: Max Lepper
 categories: [journal]
 tags: [wordpress,css,seo,"Silver is Gold"]
-date: 2021-07-25 23:31:50 -0400
+date: 2021-07-25 17:51:50 -0400
 modified_date: 
 published: true
 status: live
