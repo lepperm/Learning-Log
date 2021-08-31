@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [python, "machine learning", blackjack, obsidian]
 date: 2021-08-09 22:56:22 -0400
-modified_date:
+modified_date: 2021-08-30 21:27:39 -0400
 published: true
 status: live
 confidence: log
@@ -29,11 +29,14 @@ recreation: 0
 workout: 0
 ---
 
+* TOC
+{: toc}
+
 ## Journal
 
 {% include focus-box.html focus="Study" theme="Python" %}
 
-## Task Management and Loss
+### Task Management and Loss
 
 On a whim many weeks ago, I signed up to get into a limited-time free 30-day machine learning course, and to be totally transparent, promptly forgot about it until the day one email came in - whoops!!
 
@@ -51,7 +54,7 @@ So yeah, that's not great.
 
 Not like I fully realized all this, of course, until I started trying to smash things apart these past few days. I have new plans in motion, but that's a story for a different post (and more work on my end)! I have a few books to read on the matter, too. Migrating and building a new system will not be something that happens swiftly, this time, but I'm excited for the change and the journey ahead.
 
-## Kaggle and ML
+### Kaggle and ML
 
 I had never heard of Kaggle before, and admittedly as I write this before starting the course, I'm still ignorant about what it is - some kind of ML/data science site, and it sounds like it runs notebooks?? I have no idea. But the course starts out gentle - make an account, here's what terms mean, make these changes, etc.
 
@@ -59,7 +62,7 @@ Reading the intro, it almost sounds like it's a data science bounty hunting site
 
 Kaggle allows users to run notebooks in the browser, so there's zero work involved with setting up my local environment (at least for now). The challenge it's having me enter is, given a subset of information about Titanic passengers, I need to determine how many people from the remaining passenger list survived. Kind of morbid, but interesting nonetheless. There is information like economic class and family structure for each passenger, as well, and I'm immediately curious exactly how those would have influenced survival rates.
 
-### Day 1
+#### Day 1
 
 In my first code book, they provide a [link to the Docker image]({{page.references[0]}}) for the environment used, so that'll be perfect for continuing with what I learn here this month.
 
@@ -72,13 +75,13 @@ While I don't understand the specifics, I'm following along in a pseudo-code typ
 
 For a brief hand-held dip into ML, this doesn't seem too bad! To top it off, I've leveled up to "contributor" on Kaggle now too! I had other commitments on the first day, so I'm a day behind already... 😬 - no sweat, moving on!
 
-### Day 2
+#### Day 2
 
 The next lesson starts to get into Python. I had dabbled in Python years ago on Treehouse, but the format didn't stick with me very well at the time. Approaching things now, I'm definitely finding that I have an appreciation for the readability of Python's syntax. I won't go into too many details of the lesson, as this exercise covers data types, operators, and some built-in functions. Python's emphasis on intentional whitespace is, coming from a different language, probably the biggest takeaway.
 
 After the intro segment, there were some syntax questions to solve. Working with notebooks is very interesting, as incrementally generating new values makes it accessible in different code blocks. Out of curiosity, I tried declaring a parameter in a lower code block and running the block, and it does expose that variable to new runs of earlier code blocks! This is something to be mindful of, as I could see this possibly causing unexpected errors.
 
-### Day 3
+#### Day 3
 
 Day 3 gets into functions in Python, both built-in and self-declared. Right away, it gets into using docstrings to document functions, which is definitely helpful! Here's the example given:
 
@@ -100,7 +103,7 @@ The course mentions that Python's `None` is similar to `null` in other languages
 
 We briefly touch on higher-order functions before moving into the exercises. It makes perfect sense in retrospect, but one point mentioned was that negative values can be used for the number of decimal places parameter used in `round`. This will round the number to the nearest 10th, 100th, and so forth, which seems like a quick way to go about things.
 
-### Day 4
+#### Day 4
 
 Today is booleans and conditionals! I learned that there's an order of operation for operators like `and`, `or`, and `not`:
 
@@ -227,7 +230,7 @@ One more thing to check - I'm sure that there's an already-determined benchmark 
 
 That ended up being more of an exploration than I intended, but it felt very informative. The homework itself took less than half of the time I spent running tests and prodding the Blackjack results around.
 
-### Day 5
+#### Day 5
 
 Today gets into lists and loops! Slicing lists in Python has a neat and easy syntax:
 
@@ -380,7 +383,7 @@ or an average of $125.49 a day or $15.69/hr, at $0.03 per pull.
 
 The vast majority of runs end in bankruptcy within the first two weeks, so I'm going to keep my day job!
 
-### Day 6
+#### Day 6
 
 Day 6 is strings and dictionaries, and it opens by saying that string manipulation patterns come up often in the context of data science work.
 
@@ -414,7 +417,7 @@ for planet, initial in planet_to_initial.items():
 
 The challenges today were all about manipulating strings to find matches, and building dictionaries. My biggest takeaway was to first initialize the list values for keys in a dictionary with `dictionary_name.setdefault(keyword,[])`. To simplify things, you can chain this with a `.append()` to act as a double-check to make sure values exist before trying to write to them.
 
-### Day 7
+#### Day 7
 
 Today is external libraries! I've already done this a little bit with the `math` and `re` libraries while messing around, and also during the Titantic exercise at the very beginning of the course (which seems like ages ago now!).
 
@@ -436,7 +439,7 @@ This first leg of the ML course caps off with creating a blackjack score evaluat
 
 All-in-all, I'm excited with how this first week has gone, and I'm looking forward to digging deeper into the data science side of things while improving my Python!
 
-## Other Bits
+### Other Bits
 
 A friend shared [yare.io]({{page.references[1]}}) with our group, which is a JavaScript-based real time strategy game! The tutorial took a minute to wrap my head around, but reading the documentation got me thinking of all kinds of different approaches and strategies. I got things to the point where units would divide into teams and only try to pick off smaller numbers of enemies, and then retreat to the nearest recharge point if under a certain health threshold or if out of energy, but then realized that I had plenty of other work to be doing. I'll absolutely be coming back to this, though!
 
