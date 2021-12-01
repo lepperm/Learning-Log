@@ -100,7 +100,7 @@
       "category"   : "note",
       "tags"       : "job hunting",
       "datetime"   : "2021-07-14 23:42:21 -0400",
-      "modified"   : "",
+      "modified"   : "2021-12-01 12:42:51 -0400",
       "status"     : "live",
       "confidence" : "log",
       "context"    : "false",
@@ -109,7 +109,7 @@
       "references" : "https://github.com/cassidoo/getting-a-gig#your-cover-letter, https://www.amazon.com/dp/B01E4WAG6C, https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique",
       "timespent"  : "160",
       "date"       : "Jul 14, 2021",
-      "moddate"    : "",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/note/2021/07/14/get-a-job-interactive-discussion.html",
       "words"      : "317"
     },{
@@ -2057,7 +2057,7 @@
       "category"   : "blog",
       "tags"       : "risk management",
       "datetime"   : "2020-08-27 21:14:26 -0400",
-      "modified"   : "2020-09-09 01:27:34 -0400",
+      "modified"   : "2021-12-01 12:48:41 -0400",
       "status"     : "finished",
       "confidence" : "likely",
       "context"    : "false",
@@ -2066,9 +2066,9 @@
       "references" : "",
       "timespent"  : "",
       "date"       : "Aug 27, 2020",
-      "moddate"    : "Sep 9, 2020",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/blog/2020/08/27/risk-mitigation-in-planning-learning.html",
-      "words"      : "2248"
+      "words"      : "2224"
     },{
       "layout"     : "journal",
       "title"      : "MacOS VirtualBox and Tabliss CSS",
@@ -2171,7 +2171,7 @@
       "category"   : "note",
       "tags"       : "d3",
       "datetime"   : "2020-08-22 13:15:28 -0400",
-      "modified"   : "2020-09-07 18:26:31 -0400",
+      "modified"   : "2021-12-01 12:29:33 -0400",
       "status"     : "finished",
       "confidence" : "log",
       "context"    : "false",
@@ -2180,7 +2180,7 @@
       "references" : "https://github.com/imagine-dat/d3-react-tutorial, https://github.com/imagine-dat/d3-react-advanced, http://renestep.com/, https://www.milufranz.com/, https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110, https://codepen.io/ren_estep/pen/eYJwJQr, https://dev.to/milu_franz",
       "timespent"  : "160",
       "date"       : "Aug 22, 2020",
-      "moddate"    : "Sep 7, 2020",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/note/2020/08/22/imagine-dats-d3-react-workshop.html",
       "words"      : "1470"
     },{
@@ -2452,11 +2452,11 @@
     },{
       "layout"     : "post",
       "title"      : "Hesitations and Coding",
-      "excerpt"    : "A discussion puts things into better perspective and helps me overcome my hesitations in coding",
+      "excerpt"    : "A discussion puts things into better perspective and helps me overcome my hesitations towards web development",
       "category"   : "blog",
       "tags"       : "mentality",
       "datetime"   : "2020-08-08 23:32:24 -0400",
-      "modified"   : "2020-09-07 18:15:23 -0400",
+      "modified"   : "2021-12-01 07:47:23 -0400",
       "status"     : "finished",
       "confidence" : "emotional",
       "context"    : "false",
@@ -2465,17 +2465,17 @@
       "references" : "",
       "timespent"  : "",
       "date"       : "Aug 8, 2020",
-      "moddate"    : "Sep 7, 2020",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/blog/2020/08/08/hesitations-and-coding.html",
-      "words"      : "676"
+      "words"      : "670"
     },{
       "layout"     : "post",
       "title"      : "Learning Log Inception",
       "excerpt"    : "A summary post for how we got here, the reason for this site, and my hopes for how it develops",
       "category"   : "blog",
-      "tags"       : "learning, jekyll, organization",
+      "tags"       : "Jekyll, Hello World",
       "datetime"   : "2020-08-08 17:45:58 -0400",
-      "modified"   : "2020-09-07 18:23:58 -0400",
+      "modified"   : "2021-12-01 07:33:24 -0400",
       "status"     : "finished",
       "confidence" : "highly likely",
       "context"    : "false",
@@ -2484,7 +2484,7 @@
       "references" : "",
       "timespent"  : "",
       "date"       : "Aug 8, 2020",
-      "moddate"    : "Sep 7, 2020",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/blog/2020/08/08/learning-log-inception.html",
-      "words"      : "557"
+      "words"      : "558"
     }]

@@ -6,11 +6,10 @@ author: Max Lepper
 categories: [blog]
 tags: [risk management]
 date: 2020-08-27 21:14:26 -0400
-modified_date: 2020-09-09 01:27:34 -0400
+modified_date: 2021-12-01 12:48:41 -0400
 published: true
 status: finished
 confidence: likely
-importance: 9
 context: false
 ---
 
@@ -20,7 +19,7 @@ This morning, I opened a new tab on my computer to see the following quote promi
 >
 ><cite>— Niccolo Machiavelli</cite>
 
-"How alarmingly apt," I thought, as this had been more or less my mental theme for the previous day. I would normally take a few minutes to roll the quote and message in my head and then get on with my day, but this is something I should record for myself. It is a good opportunity to capture my mentality, my current challenges, and to look back for insights into what I could have done better.
+I realize that Machiavelli isn't exactly great to take inspiration from for a variety of reasons, but this particular quote at this specific time seemed alarmingly apt. I would normally take a few minutes to roll the quote and message in my head and then get on with my day, but this seemed like a good opportunity to capture my mentality, my current challenges, and to look back for insights into what I could have done better.
 
 ### Table of Contents
 
@@ -35,11 +34,11 @@ Let's assert that **time** is the most valuable resource available to any person
 
 Let us then assert that the second most valuable resource is **health**, as physical health gives us the energy and utility to conduct actions with our time. Our ability and efficiency in conducting actions proportionally diminishes with quality of health.
 
-I realize the axiom of the Great Beast, Capitalism, is that **money** is the most valuable resource; I will claim it takes the third spot, as we are speaking in more absolute terms. Money is the multiplicative wild card that influences all other resources. Without wealth, minimal resources and increased health risks can be a fact of life. Those with access to wealth are, conversely, capable of making larger influences more quickly. They may also live longer, healthier lives due to being able to afford any and all necessary healthcare.
+I realize the axiom of the Great Beast, capitalism, is that **money** is the most valuable resource; I will claim it takes the third spot, as we are speaking in more absolute terms. Money is the multiplicative wild card that influences all other resources. Without wealth, minimal resources and increased health risks can be a fact of life. Those with access to wealth are, conversely, capable of making larger influences more quickly and live longer, healthier lives due to being able to afford any and all necessary healthcare.
 
 I believe **information** - the factual kind - sits quietly and immediately behind money. This is because especially for our youth, high quality information is sometimes behind multiple barriers (such as a lack of access to good education or even the internet) which could be removed with money. Information begets information, and it allows the utilization and growth of resources and risk awareness. Free and open access to information is certainly at its highest rate in human existence so far, but this can be useless without understanding how to collect and properly use the available information.
 
-There are more major resources, such as social connections (peer learning is a fantastic process), and I only briefly touched on socioeconomic imbalances (which heavily skew everything), but I want to stop here to focus, from a neutral perspective, on the immediate internal decision-making and planning process.
+There are more major resources, such as social connections (peer learning is a fantastic process), and I only briefly touched on socioeconomic imbalances (which heavily skew everything), but I want to stop here to focus on the immediate internal decision-making and planning process.
 
 To summarize, our **Four Key Resources** are:
 {: #key-resources}
@@ -57,16 +56,14 @@ Given limited resources, we want to:
 - Maximize the returned value of actions
 - Minimize the impact of risk associated with those actions
 
-(Oh hey, "calculating risk and acting decisively")
+(See? "calculating risk and acting decisively")
 
 From personal experience, it's easy to slowly and poorly commit to a course of action, only to eventually realize that you have effectively nothing to show for it. Similarly, following a course of action without considering the risks can introduce a multitude of failure points, such as running out of resources, a forced shift of priorities, or ultimately wasted effort.
 
-To shift from theory to the specifics of Learning Log, my **action** is to log and prioritize my development learning and notes for the **objective** of obtaining employment in a new career field (web development).
+To shift from theory to the specifics of Learning Log, my **action** is to log and prioritize my development learning and notes for the **objective** of self-empowerment to create and build tools and resources to help people, as well as to grow my career.
 {: #my-objective}
 
-This objective has a nebulous external time limit. Additionally, the sooner the objective is achieved, the sooner my personal learning efforts will be aligned with my career, and I can spend an exponential amount of time learning the material and developing my skills.
-
-(For the record, web learning has also been for personal enjoyment and self-actualization, but that's a difficult target to measure and therefore more of a bonus in the context of this discussion.)
+(For the record, web learning has also been for personal enjoyment, but that's a difficult target to measure and therefore more of a bonus in the context of this discussion.)
 
 ### Risks in Planning Learning
 
@@ -79,7 +76,7 @@ Yes, I did.
 
 **However**, I spent 2 months working on React/Redux/Firebase prior to that, but did not have a good process for capturing and reinforcing information, and wasn't yet able to easily identify low-quality information. I picked up some fundamentals, made some sites, completed some tutorials, and got over some fears and hang-ups, sure, but I found myself struggling with recalling the basics due to learning many different things across various levels of complexity. Additionally, I was learning all new frameworks, IDEs, and hardware profiles at my day job in industrial electronic controls development, so it was whiplash slamming my mental gears back and forth every day and night. It got to a point where I was wondering if I had actually learned anything at all.
 
-In hindsight, I _had_ learned quite a bit on the technical side, and I had also gained a better understanding for what it would take to ultimately be successful, and if I could handle it. It took a while to get Learning Log up and running, but now it largely runs itself, and all I really need to do is write posts and log my time. Looking at my skill progression entries and my site statistics fills me with confidence and encouragement that, _yes_, I **AM** making progress, I am learning and growing, and that I can do this. Now when I work on AGWSU and my Portfolio, I know that I can contribute and do quality work, and that I can select higher quality information when I get stuck. When I work on a tutorial or read through documentation or watch a conference, I know that I am following my current best understanding of what I should do to develop my understanding of the skills in question skills.
+In hindsight, I _had_ learned quite a bit on the technical side, and I had also gained a better understanding for what it would take to ultimately be successful, and if I could handle it. It took a while to get Learning Log up and running, but now it largely runs itself, and all I really need to do is write posts and log my time. Looking at my skill progression entries and my site statistics fills me with confidence and encouragement that, _yes_, I **AM** making progress, I am learning and growing, and that I can do this. Now when I work on AGWSU and my portfolio, I know that I can contribute and do quality work, and that I can select higher quality information when I get stuck. When I work on a tutorial or read through documentation or watch a conference, I know that I am following my current best understanding of what I should do to develop my understanding of the skills in question skills.
 {% endcapture %}
 
 <div id="call-out" hidden=true>
@@ -138,7 +135,7 @@ Additionally, try to make connections with people in the skill that you are tryi
 
 I am very fortunate in that many of my friends are already developers, so I have access to many great connections to ask questions and for help. Discussions with my friends have helped to guide me towards skills that are currently in demand, where to get started, and what tools to use.
 
-Determining high-quality learning content, however, has been a learning experience. I have discovered and had some great resources referred to me, but I have also organically encountered information that was either low quality, or too complex (out of sequence) to impart helpful information. Determining sequence is currently my next challenge with this site, as I have amassed a collection of resources that seem to be regarded as high-quality learning materials among other learners, and I need to sort and order them in a sequence that will allow for efficient skill progression. A properly sequenced learning item list will also make my Skills table progression value a more direct representation of my approximate familiarity with core skills.
+Determining high-quality learning content, however, has been in itself a learning experience. I have discovered and had some great resources referred to me, but I have also organically encountered information that was either low quality, or too complex (out of sequence) to impart helpful information. Determining sequence is currently my next challenge with this site, as I have amassed a collection of resources that seem to be regarded as high-quality learning materials among other learners, and I need to sort and order them in a sequence that will allow for efficient skill progression. A properly sequenced learning item list will also make my Skills table progression value a more direct representation of my approximate familiarity with core skills.
 
 #### Low Information Comprehension and Retention
 
@@ -157,7 +154,7 @@ Information comprehension and retention is an ongoing resource management strugg
 - Lack of focus
   - Not properly blocking distractions
   - Non-value-add tasks taking up the majority of time spent
-  - External stressors (COVID-19, protests, etc.)
+  - External stressors (COVID-19, state violence, etc.)
 
 ##### Resources Consumed
 
@@ -168,7 +165,7 @@ Information comprehension and retention is an ongoing resource management strugg
 
 Learning is so much more than just a mental activity. Your brain needs time to process new information in a diffused mode, resources to work at full capacity, repetition to strengthen memories of new content, and patience. It seems counter-intuitive that taking a break and going to bed on time can help you learn something you're focusing on.
 
-I struggled with this for the first few months. I was taking on more than I could handle, and spending every free minute trying to absorb and expose myself to as much information as possible. I knew better, but with a looming and ambiguous deadline, I wanted to immerse myself as much as possible - let's call this a "mistake of ambition." I burnt out twice trying to find a good and sustainable cadence, and you can see this reflected in my GitLab activity chart:
+I struggled with this for the first few months (and, to be honest, slipped back into the pattern a few time since). I was taking on more than I could handle, and spending every free minute trying to absorb and expose myself to as much information as possible. I knew better, but with a looming and ambiguous deadline, I wanted to immerse myself as much as possible - let's call this a "mistake of ambition." I wore myself out twice trying to find a good and sustainable cadence, and you can see this reflected in my GitLab activity chart:
 
 {% capture image %}
 ![My nice new tabs]({{site.baseurl}}/assets/images/posts/2020/08/27/GitLab.png){: style="vertical-align: bottom;padding-top: 1.2em;padding-bottom: 1.2em;"}
@@ -177,7 +174,7 @@ I struggled with this for the first few months. I was taking on more than I coul
   {{ image | markdownify }}
 </div>
 
-Dr. Barbara Oakley's [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn#about) course is a fantastic resource, and one that I wish I had experienced years ago. Try as I could to overcome physical limitations, the lessons from the course hold strong, and I am trying to practice the teachings better. I now use an AHK macro called FlowTime to help me manage breaks in a slightly more flexible format than Pomodoro, and I try to make an effort to make time for recreation (something I have always struggled with 😬).
+Dr. Barbara Oakley's [Learning How To Learn](https://www.coursera.org/learn/learning-how-to-learn#about) course is a fantastic resource, and one that I wish I had experienced years ago. Try as I could to overcome physical limitations, the lessons from the course hold strong, and I am trying to practice the teachings better. I now use an AHK macro called FlowTime to help me manage breaks in a slightly more flexible format than Pomodoro, and I try to make an effort to make time for true recreation (something I have always struggled with 😬).
 
 This Learning Log site has also helped me to focus in more tasks. I've mentioned in previous logs that I was trying to migrate board tasks out of my Todoist account, and I have similarly made an effort to create issues in GitLab for other projects instead of tasks. This helps to keep me more focused in the mode of work I'm operating within, rather than changing levels of focus and not being as productive as possible. I have also given up multiple monitors for a single large monitor, which allows me to fill my workspace with only what I'm working on and nothing extra, helping me to focus in without notifications popping up on a second screen.
 

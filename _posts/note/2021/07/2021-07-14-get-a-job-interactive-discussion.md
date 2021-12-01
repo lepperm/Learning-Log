@@ -6,18 +6,14 @@ author: Max Lepper
 categories: [note]
 tags: ["job hunting"]
 date: 2021-07-14 23:42:21 -0400
-modified_date: 
+modified_date: 2021-12-01 12:42:51 -0400
 published: true
 status: live
 confidence: log
-importance: 1
 context: false
 skills: [general]
 references: ["https://github.com/cassidoo/getting-a-gig#your-cover-letter","https://www.amazon.com/dp/B01E4WAG6C","https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique"]
 timespent: 160
-sleep:
-recreation:
-workout:
 ---
 
 ## Journal

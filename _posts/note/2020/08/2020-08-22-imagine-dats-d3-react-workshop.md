@@ -6,18 +6,14 @@ author: Max Lepper
 categories: [note]
 tags: [d3]
 date: 2020-08-22 13:15:28 -0400
-modified_date: 2020-09-07 18:26:31 -0400
+modified_date: 2021-12-01 12:29:33 -0400
 published: true
 status: finished
 confidence: log
-importance: 1
 context: false
 skills: [d3, react, sass]
 references: ["https://github.com/imagine-dat/d3-react-tutorial","https://github.com/imagine-dat/d3-react-advanced","http://renestep.com/","https://www.milufranz.com/","https://codepen.io/Milu5489/pen/NWxBLKK?editors=0110","https://codepen.io/ren_estep/pen/eYJwJQr","https://dev.to/milu_franz"]
 timespent: 160
-sleep:
-recreation:
-workout:
 ---
 
 ## Journal

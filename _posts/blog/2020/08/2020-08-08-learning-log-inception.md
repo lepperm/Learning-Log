@@ -4,13 +4,12 @@ title: "Learning Log Inception"
 excerpt: A summary post for how we got here, the reason for this site, and my hopes for how it develops
 author: Max Lepper
 categories: [blog]
-tags: [learning, jekyll, organization]
+tags: [Jekyll, Hello World]
 date: 2020-08-08 17:45:58 -0400
-modified_date: 2020-09-07 18:23:58 -0400
+modified_date: 2021-12-01 07:33:24 -0400
 published: true
 status: finished
 confidence: highly likely
-importance: 1
 context: false
 ---
 
@@ -20,7 +19,7 @@ This is my first post ever about working towards web development. There is a bit
 
 I have been teaching myself a React/Redux/Firebase stack independently and part of a small web dev team for a few months now, and one of the most prominent things I learned very early on was that good information (specifically for learning) can be difficult to come by.
 
-As someone starting out towards professional web development, I was blown away by the number of beginner tutorials I encountered that just would not compile, or had whole sections were missing, or were dependent on plugging multiple packages together but didn't actually teach you anything. It seems that quantity of content is very high, but the quality and accuracy varies drastically.
+As someone starting out learning modern web development, I was blown away by the number of beginner tutorials I encountered that just would not compile, or had whole sections were missing, or were dependent on plugging multiple packages together but didn't actually teach you anything. It seems that quantity of content is very high, but the quality and accuracy varies drastically.
 
 Trying to stick to official documentation whenever possible has served me quite well to this point, as far as foundational understanding. When that fails, Stack Overflow and GitLab/GitHub issue pages have been an excellent source of insight and understanding of where problems come from and how/if they have been resolved, or what the developers intend.
 
@@ -28,7 +27,7 @@ Moving forward, and with the sheer quantity of information and learning required
 
 ## Process
 
-I am already using Markdown for nearly all of my personal documents and documentation at work, so the repo-style approach seemed like a very comfortable fit. However, the repo page doesn't seem very easily searchable, and requires some basic familiarity with GitLab / GitHub to navigate to all content. I had passively encountered a LOT of references to Jekyll over the past few months without really understanding what it was for, yet very quickly encountered it again while searching for a way to quickly serve documents in Markdown.
+I am already using Markdown for nearly all of my personal documents and documentation at my day job, so the repo-style approach seemed like a very comfortable fit. However, the repo page doesn't seem very easily searchable, and requires some basic familiarity with GitLab / GitHub to navigate to all content. I had passively encountered a LOT of references to Jekyll over the past few months without really understanding what it was for, yet immediately encountered it again while searching for a way to quickly serve documents in Markdown.
 
 A stand-alone site would be an excellent way to reduce the barrier to entry, give me more control over the formatting and appearance, and also help benefit my public development ecosystem in general through use of SEO and project/site backlinks.
 
