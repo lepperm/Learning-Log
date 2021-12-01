@@ -1,24 +1,20 @@
 ---
 layout: journal
 title: "Firming Up Silver is Gold"
-excerpt: As more users join my client site and more talent joins the team, we work to add more structure to our workflow and more value to our customers. I also get into what I've been up to these past weeks.
+excerpt: As more users join my client site and more talent joins the team, we work to add more structure to our workflow and more value to our customers.
 author: Max Lepper
 categories: [journal]
-tags: [wordpress,airtable,"Silver is Gold",motivation]
+tags: [wordpress,airtable,"Silver is Gold"]
 date: 2021-10-20 23:50:21 -0400
-modified_date:
+modified_date: 2021-12-01 13:43:55 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 5
 context: true
 comments: true
 skills: [wordpress]
 references: []
 timespent: 2460
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal
@@ -43,13 +39,11 @@ This gives us a great async way to communicate, and is easy to modify and improv
 
 I worked on some tasks using new task system for a few days after implementing, and found it to be a massive workflow improvement, in terms of resistance getting into tasks and accurately tracking everything in one place. It was easy to quickly update my notes and leave thoughts for myself. A "link for testing" field made it easy to jump right to the pages in question to verify that my changes matched the acceptance criteria.
 
-New users have generated a huge influx of changes and feedback, which is great for the site, but was becoming challenging to juggle. My day job had become extremely busy, to the point where I would get home late and could honestly go directly to bed with how exhausted and mentally cooked I'd been. The number of meetings I was jumping on for the client site had been increasing, too. I had three scheduled one week, and since then have asked to combine meetings back down into one.
-
-To be honest, having no spare time for personal projects or self-guided learning has me feeling a little bit hopeless about my prospects for getting a true developer role. As much as I'm glad to be part of this site and do sincerely believe that it will help people and do good, which is very motivating and exciting, I also don't think anyone would hire me for some WordPress plugins I configured and CSS I wrote. I'd love to showcase my involvement but, from a technical angle, it's more of a portfolio piece for a Project Manager position than a Software Engineer role, so there's some duality to this process.
+New users have generated a huge influx of changes and feedback, which is great for the site, but was becoming challenging to juggle. My day job had become extremely busy, to the point where I would get home late and could honestly go directly to bed with how exhausted and mentally cooked I'd been. The number of meetings I was jumping on for the client site had been increasing, too. I had three scheduled one week, and since then have asked to combine any meetings for the week down into one.
 
 After a busy week of chipping away at changes, I finally migrated Production back to Staging, hopeful to restore more of a controlled development environment.
 
-During this time, I had a meeting with the client about another potential project, but between my stress levels and availability, and the timeframe they were wanting, it looks like things didn't work out. I would have enjoyed to take on a more technical project, but this was likely for the best, as I literally didn't have the bandwidth to even think about it.
+During this time, I had a meeting with the client about another potential project, but with my bandwidth and availability, and the timeframe they were wanting, it was looking like things wouldn't work out, unfortunately. I would have enjoyed to take on a more technical project, but this was likely for the best, as it absolutely would have overextended me.
 
 I conducted a training session with a team member on how to use WP-Admin, how to adjust and modify some of our key plugins, and how to create community content, newsletter campaigns, and knowledge base articles to support users. It was a great teaching and learning session! When I'm conducting training, I enjoy taking note of all the curiosities and new questions that pop up along the way, and digging into them after we've covered all the key content. I feel like it was a very productive session!
 
@@ -67,9 +61,9 @@ I have a few tasks where I am at a bit of a standstill. I tend to work on someth
 
 Overall, I've been getting great feedback from the team. We're starting to have our first public events and making arrangements for regular events to build community.
 
-I had a massive two-year project for work that finally shipped at the beginning of October. Due to component issues, things got down to the wire, and had a nail-biting final demo with the customer, but it was ultimately successful, and the customer left pleased. In the stress vacuum immediately following, I have been a combination of physically ill and burnt out, and doing a ton of work to clean up everything and get all of my documentation in line.
+I had a massive two-year project for work that finally shipped at the beginning of October. Due to component issues, things got down to the wire, and had a nail-biting final demo with the customer, but it was ultimately successful, and the customer left very pleased. In the stress vacuum immediately following, I have been feeling a little under the weather, and doing lots of work to clean up everything and get all of my documentation in line.
 
-It's a little over halfway through the month now, and I'm finally in a place where I can get back to getting caught up on tasks and rolling out some fairly large changes to the overall structure and financial model of Silver is Gold. It's been a bit anxiety-inducing watching tasks and emails pile up while not having any mental bandwidth to address things, but I've been working on other changes in my life since early August to help increase that mental bandwidth cap, in general.
+It's a little over halfway through the month now, and I'm finally in a place where I can get back to getting caught up on tasks and rolling out some fairly large changes to the overall structure and financial model of Silver is Gold. I've also been pushing some life initiatives forward to increase my mental bandwidth cap, in general, and slowly making progress there.
 
 I had a nice sync meeting with the client and reviewed the state of the project and pending tasks. Quite a bit has changed since two weeks ago, and about a third of my incoming tasks were eliminated by a new change that changes both the pricing structure and the account structure for talent accounts. The rest of the evening was spent creating formal tasks from all the outstanding requests and emails, and clarifying and compiling everything as best as I could.
 
@@ -114,51 +108,9 @@ Here's a record of my time spent these past weeks:
 - (day job project)
 - 10/6
   - 1.5h
-- (sick and burnout)
+- (feeling ill)
 - 10/20
   - 4h
-
-## Mental Framing and Information Management
-
-I know it's been a long time since my last post. I haven't stopped thinking about Learning Log or the mission I started in May of 2020, but also, a lot has changed. _I_ have changed. With those changes, my objectives have shifted in a way I could not have predicted.
-
-I've burnt out four times now over the past year. It may sound like an exaggeration, but believe me, I have been very deliberate and intentional about properly classifying burnout after my big one in December of 2020.
-
-Four bouts is needlessly _excessive_, and it has been exhausting, and frustrating, and hard on my physical health, and disastrous on my mental health. But it's also helped to form cracks and fissures in the processes I've been using, and reveal trends in my life that have been not ideal for a long time. This has pushed me to start over from scratch, so to speak, and build a new system for my life.
-
-It's a lot, so I won't go into it right now unless people are curious (please let me know in the comments or message me on [Twitter](https://twitter.com/MaxLepper)). It's been slow going as I learn about personal knowledge management and information management and classification systems, and many areas of my new system are still in their infancy, but it has already greatly lessened my stress just from how the information is presented, and for knowing that everything is in a good place.
-
-The key component of this new system is being mindful of the needs that drive motivation, and giving myself spaces to work in that are well defined, bite-sized, and targeted towards a themed objective. This makes it easier to summon the focus and context shift, depending on what needs are currently winning my motivation, and complimenting that natural disposition.
-
-This probably sounds a little babble-y out of context, but it's consumed most of my background thoughts for the past three months. I've completed detangling myself from Todoist, finally, after about 5 years and 60k completed tasks, with everything that was lingering moved to a new home or queued up to be processed into something more useful. I'm also looking to migrate a ton of data out of Trello, Evernote, OneNote, Airtable, and a few other apps (although Airtable is special and gets to keep some of the bigger pools of data, because it just handles everything so darn well).
-
-This space, reflection, and calm I'm able to experience during the less busy times has made me realize that my motivations for wanting to switch careers were, ultimately, not good motivations.
-
-I was trying to run from something that I perceived as harmful and a safety risk, and thanks to Twitter and the interviews and discussions I've had over the past year, I'm much more aware now that those risks won't magically go away. The grass isn't exactly greener on the other side of the career divide, just the less green spots are in different areas. I very likely might be trading physical safety for unachievable productivity expectations and unhealthy boundaries, or social safety for elitism and toxicity.
-
-If the motivation for switching was to satisfy a safety need, but if it is radically variable whether that career switch would actually satisfy that safety need (or perhaps worsen it), then the motivation loses most of the pull.
-
-I greatly enjoy creating art and the expression that comes with it, but impacting people is...variable. Someone may connect with a piece, but does it make their day easier? Their life more manageable? Connect them with needed resources? Feel connected to others? The sheer potential for positive utility through development is exciting and electric, and keeps me awake at night, thinking up new ways to look at problems. It pulls me to work at it and fills me with an eager excitement to grow and build.
-
-Development work, to me, feels like an ultimate form of expression, combining my existing hobbies of art, animation, automation, information management, and learning all into one. Honestly, it makes me happy!
-
-I have things I want to do - things I want to build and see out in the world. Yes, switching careers may theoretically fast-track that, but not if it means I end up working on something drastically unrelated, and not if it overrides my efforts to better manage my personal tasks and sends me right back to Burnout Town. Slower progress is _still_ progress. These are potential outcomes that I need to be seriously considering.
-
-Rather, I want to grow as a developer for myself, because it makes me happy, and may allow me to help make a difference in the lives of others.
-
-With this desire established, and the shift in targeted needs from safety over to esteem and self-actualization, an interesting thing happens - well, at least for me, mentally. The playing field levels out. What was originally an entropy state becomes multiple potential states. And perhaps most importantly for where I am right now, I don't feel beholden to exist in a certain definition.
-
-I am doing what I can, when I can, towards what makes me feel happy, and I'm going to enjoy that journey.
-
-## Gratitude - What is going well?
-
-I've made a huge effort to be kinder to myself these past months. Looking at my actions through the lens of need fulfillment has revolutionized how I perceive my motivation. I better understand why I feel drawn towards specific activities or tasks over others, especially if that draw feels irrational or frustrating at first. This allows me to be much more gentle with myself.
-
-I've also been doing positive affirmations! It seems silly, but my baseline kindness to myself internally has just ... risen? Without much effort beyond a few days of saying nice things, too. It's wild. I've been inconsistent about doing them for about a month as of this posting with everything going on, but I haven't experienced much of a degradation in the joviality of my internal voice, in reference to myself.
-
-I'm grateful for the help and and efforts to improve healthier and more realistic boundaries across my entire life these past few months - with work, with external obligations, family, and friends. People pleasing only leads to quietly hurting myself, and ultimately doesn't help the people I'm seeking to help. I feel like I've begun to better learn my limits and how far I can stretch beyond them before it's harmful.
-
-My spouse has joined in on the effort to overhaul our collective information management, and it has been transformative in how my daily life plays out. I'm grateful for their willingness to engage, and how they approach problems and processes, which is one of their major strengths. It's challenged me to change my thinking many times, and a big part of why I feel that our efforts these past few months have been largely successful.
 
 ## Tasklist
 

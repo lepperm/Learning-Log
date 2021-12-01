@@ -6,20 +6,18 @@ author: Max Lepper
 categories: [journal]
 tags: [python, "machine learning"]
 date: 2021-08-30 23:04:41 -0400
-modified_date:
+modified_date: 2021-12-01 14:05:12 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [python]
 references: ["https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html","https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html?highlight=iloc#pandas.DataFrame.iloc","https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.round.html?highlight=dataframe%20round#pandas.DataFrame.round","https://docs.python.org/3/library/datetime.html","https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html","https://scikit-learn.org/stable/modules/cross_validation.html"]
 timespent: 1860
-sleep: 0
-recreation: 0
-workout: 0
 ---
+
+This post is part two of a two-part thread on Kaggle's 30 Days of Machine Learning course. If you haven't read it already, check out part one at [Getting Started with 30 Days of ML]({% post_url journal/2021/08/2021-08-09-getting-started-with-30-days-of-ml %})!
 
 * TOC
 {: toc}
@@ -593,9 +591,7 @@ Here's the time I spent working on it, mostly with just JavaScript and CSS. This
 - 8/14
   - 6.5h
 
-## Gratitude
-
-### What is going well?
+## Mentality
 
 Do you ever get the feeling that you're on the verge of something that will change your life in ways that you can't yet quite predict? Like you're alllllmost there but your brain isn't sparking the critical connection just yet? That's what this month has progressively felt like for me.
 
@@ -603,17 +599,7 @@ I've been reading about psychology, philosophy, needs, goals, motivations, learn
 
 From this blog alone, I'm sure there are quite a few examples of me implementing process and optimization prematurely, and that's one of the habits I want to work to break with a new system. Before you call me a hypocrite, I am using the word "system" loosely to mean more of a rough framework to collect my thoughts, information, and tasks, in a way that I know it will be safe, and that I will come back to it.
 
-There is a lot more reading and thinking ahead of me, but I'm so excited to see where it takes me. Honestly if I have the bandwidth for it, I may prioritize it over web dev learning because of how much of a benefit I anticipate it could provide - if not in terms of productivity or clarity of thought, then at the very least in comfort and kindness to myself.
-
-My spouse secretly arranged for us to get away for a bit, too, and celebrate our relationship. It was an absolute whirlwind, but it captured so much of what I treasure about our bond - we stay kind and cheerful, work well as a team, roll with whatever happens, and find the fun anywhere we can. 😊
-
-### What could be better?
-
-I'm thinking that I could remove this section, which seems like an invite for negativity - not very appropriate for a "gratitude" section, is it?
-
-Honestly, there will always be things that could be better. For example, one of my biggest stressors right now is that I'm struggling to assert myself at work so that my own projects won't fail as I'm being loaded up to support many other engineers, and I can't get critical information from specific individuals. There's not much value produced by venting in this fashion, however, and I have faith in myself that I will continue following up and try my best to deliver the most accurate product that I can.
-
-Additionally, as part of my new process, I have logs and affirmations that I'm trying to perform daily, and it may make sense to keep that kind fo content to my own notes. My view of what Learning Log needs to be has shifted, certainly, but I think determining what comes next for this site will be an ongoing consideration. 
+There is a lot more reading and thinking ahead of me, but I'm so excited to see where it takes me. If I have the bandwidth for it, I may prioritize it temporarily because of how much of a benefit I anticipate it could provide - if not in terms of productivity or clarity of thought, then at the least in comfort and kindness to myself.
 
 ## Tasklist
 

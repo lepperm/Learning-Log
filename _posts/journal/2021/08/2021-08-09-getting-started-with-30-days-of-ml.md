@@ -6,11 +6,10 @@ author: Max Lepper
 categories: [journal]
 tags: [python, "machine learning", blackjack, obsidian]
 date: 2021-08-09 22:56:22 -0400
-modified_date: 2021-08-30 21:27:39 -0400
+modified_date: 2021-12-01 14:23:41 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [python]
@@ -24,10 +23,9 @@ references:
     "https://obsidian.md/"
   ]
 timespent: 990
-sleep: 0
-recreation: 0
-workout: 0
 ---
+
+This post is part one of a two-part thread on Kaggle's 30 Days of Machine Learning course. If you're looking for the second part, you can find it at [Digging in 30 Days of ML]({% post_url journal/2021/08/2021-08-30-digging-in-with-30-days-of-ml %})!
 
 * TOC
 {: toc}
@@ -36,29 +34,15 @@ workout: 0
 
 {% include focus-box.html focus="Study" theme="Python" %}
 
-### Task Management and Loss
-
 On a whim many weeks ago, I signed up to get into a limited-time free 30-day machine learning course, and to be totally transparent, promptly forgot about it until the day one email came in - whoops!!
 
 I have always been passionate about analyzing data and trying to uncover trends and patterns across individual samples, with this blog being a prime example (i.e. my statistics pages). Finding a way to elevate my technical capabilities in this personal thing that brings me curiosity and joy is something that I'm strongly motivated to do in general, so I am considerably excited for this course.
-
-The timing is a bit awkward, however, as I had just made myself ill and a little burnt for nearly two weeks pushing myself to to my physical limit launching a client site by a deadline. During my downtime, I've taken a hard look at why I've been burning out so frequently and how I approach challenges. The conclusion I have come to is that I have outgrown my own systems.
-
-To explain what I mean, let me provide some context. Five years ago around this time, my partner and I had been in wedding planning mode for the better part of a year and were coming up on the day. Over that time, I had become increasingly aware of different task management approaches and mechanisms, but was mostly using tiered checklists and calendars. You know, normie stuff 😛
-
-Then, I suddenly and unexpectedly lost my Dad in a terrible way. That task management knowledge quickly became a crutch and scaffold to hold life together and keep moving, as the unfeeling march of time does not wait for the ones we've lost.
-
-This system has grown and evolved drastically over the years, but at the core, checklists and due dates remained the chief driving force. Strings of ideas stitched along the passage of time, more plentiful than I should hope to realistically accomplish with a dedicated team, let alone by myself, persistently behind schedule, and breeding guilt, anxiety, panic, and overwhelm into my daily life and eventually my personal identity.
-
-So yeah, that's not great.
-
-Not like I fully realized all this, of course, until I started trying to smash things apart these past few days. I have new plans in motion, but that's a story for a different post (and more work on my end)! I have a few books to read on the matter, too. Migrating and building a new system will not be something that happens swiftly, this time, but I'm excited for the change and the journey ahead.
 
 ### Kaggle and ML
 
 I had never heard of Kaggle before, and admittedly as I write this before starting the course, I'm still ignorant about what it is - some kind of ML/data science site, and it sounds like it runs notebooks?? I have no idea. But the course starts out gentle - make an account, here's what terms mean, make these changes, etc.
 
-Reading the intro, it almost sounds like it's a data science bounty hunting site, which is...pretty badass. They also have datasets to pull from for data science projects, which would be very helpful - if I've heard one thing about data science, it's that it's 90% sanitizing data!
+Reading the intro, it almost sounds like it's a data science bounty hunting site, which is...pretty sweet. They also have datasets to pull from for data science projects, which would be very helpful - if I've heard one thing about data science, it's that it's 90% sanitizing data!
 
 Kaggle allows users to run notebooks in the browser, so there's zero work involved with setting up my local environment (at least for now). The challenge it's having me enter is, given a subset of information about Titanic passengers, I need to determine how many people from the remaining passenger list survived. Kind of morbid, but interesting nonetheless. There is information like economic class and family structure for each passenger, as well, and I'm immediately curious exactly how those would have influenced survival rates.
 
@@ -451,9 +435,9 @@ There are a few site projects I'm itching to ramp up in the near future. I've cr
 
 Most of the responses emphasized just creating wireframes by hand or digitally. Re-reading, I realize that I had worded my question poorly, as I specifically had meant more of the refinement-stage design. Regardless, this re-emphasis of wireframes was still helpful, and I was exposed to some new tools! I might sit on my designs while I'm busy with other things and then come back to them later with fresh eyes.
 
-From my own research, it does sound like Figma is probably going to have the most flexibility and transportability out of the options, so that's where I'm currently leaning, as much as I keep looking at Framer and InVision. I believe that there may be a great opportunity to learn these tools at my day job, as sending working prototypes to customers for vehicle HMIs would be well above-and-beyond anything else I've encountered in the industry, and provide for a more efficient feedback vehicle on the design.
+From my own research, it does sound like Figma is probably going to have the most flexibility and transportability out of the options, so that's where I'm currently leaning, as much as I keep looking at Framer and InVision. I believe that there may be a great opportunity to learn these tools for use in my day job, too, as sending working prototypes to customers for vehicle HMIs would be well above-and-beyond anything else I've encountered in the industry, and provide for a more efficient feedback vehicle on the design.
 
-I've also gotten into using [Obsidian.md]({{page.references[5]}}) in my day job and, currently to a lesser extent, in my personal life (mostly because my work day has a fairly rigid structure that I can only influence so much). It's a platform to encourage non-linear thought with an emphasis on owning your own data, and I'm enjoying it a lot! At work, I'm journaling daily to record my tasks, notes, and setting goals and affirmations for the day. It is extremely helpful to track day-to-day discoveries and challenges in context.
+I've also gotten into using [Obsidian.md]({{page.references[5]}}) for my day job and, currently to a lesser extent, in my personal life (mostly because my work day has a fairly rigid structure that I can only influence so much). It's a platform to encourage non-linear thought with an emphasis on owning your own data, and I'm enjoying it a lot! At work, I'm journaling daily to record my tasks, notes, and setting goals and affirmations for the day. It is extremely helpful to track day-to-day discoveries and challenges in context.
 
 Another huge benefit of Obsidian for personal use is that, after some work and patience, I can now use a combination of Obsidian, a community plugin, Calibre (my e-book manager), and my Kindle to be able to read on the go and then pull in all of my highlights and notes. This allows me to then take those notes and highlights and tag them, mark them for timed review, create flashcards, and generally help me to better recall and utilize the content I encounter. I'm incredibly excited to put my notes and reading to better use!
 
@@ -475,16 +459,6 @@ Here's a breakdown of my time over this past week:
   - 1.5h
 - 8/8
   - 2h
-
-## Gratitude
-
-### What is going well?
-
-August is going to be an extremely busy month, but we have most of our plans figured out and that is a definite source of comfort, with a short trip near the end of the month as something to look forward to. My new work process has been giving me a surprising sense of calm in my day-to-day, and I am loving the reduced stress, knock-on-wood.
-
-### What could be better?
-
-With processes broken apart and hanging in limbo, there are times where I certainly feel uneasy and stuck. My notes and tasks are a somewhat scattered across different platforms, and some information has been difficult to find or recall. I'm also having difficulty keeping on top of my life and project obligations while also pushing the needle forward on constructing my new processes, so it's been a slow process. But a good and forward-moving process, nonetheless! I'm excited to see what grows from these seeds.
 
 ## Tasklist
 

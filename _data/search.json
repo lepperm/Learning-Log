@@ -5,8 +5,8 @@
       "category"   : "journal",
       "tags"       : "wordpress, Silver is Gold",
       "datetime"   : "2021-11-30 22:41:07 -0500",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2021-12-01 13:26:50 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -14,18 +14,18 @@
       "references" : "",
       "timespent"  : "1770",
       "date"       : "Nov 30, 2021",
-      "moddate"    : "",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/journal/2021/11/30/tasks-and-time-with-silver-is-gold.html",
       "words"      : "728"
     },{
       "layout"     : "journal",
       "title"      : "Firming Up Silver is Gold",
-      "excerpt"    : "As more users join my client site and more talent joins the team, we work to add more structure to our workflow and more value to our customers. I also get into what I&#39;ve been up to these past weeks.",
+      "excerpt"    : "As more users join my client site and more talent joins the team, we work to add more structure to our workflow and more value to our customers.",
       "category"   : "journal",
-      "tags"       : "wordpress, airtable, Silver is Gold, motivation",
+      "tags"       : "wordpress, airtable, Silver is Gold",
       "datetime"   : "2021-10-20 23:50:21 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2021-12-01 13:43:55 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -33,9 +33,9 @@
       "references" : "",
       "timespent"  : "2460",
       "date"       : "Oct 20, 2021",
-      "moddate"    : "",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/journal/2021/10/20/firming-up-silver-is-gold.html",
-      "words"      : "2701"
+      "words"      : "1411"
     },{
       "layout"     : "journal",
       "title"      : "Digging In With 30 Days of Machine Learning",
@@ -43,8 +43,8 @@
       "category"   : "journal",
       "tags"       : "python, machine learning",
       "datetime"   : "2021-08-30 23:04:41 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2021-12-01 14:05:12 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -52,9 +52,9 @@
       "references" : "https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html?highlight=iloc#pandas.DataFrame.iloc, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.round.html?highlight=dataframe%20round#pandas.DataFrame.round, https://docs.python.org/3/library/datetime.html, https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html, https://scikit-learn.org/stable/modules/cross_validation.html",
       "timespent"  : "1860",
       "date"       : "Aug 30, 2021",
-      "moddate"    : "",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/journal/2021/08/30/digging-in-with-30-days-of-ml.html",
-      "words"      : "5526"
+      "words"      : "5310"
     },{
       "layout"     : "journal",
       "title"      : "Getting Started With 30 Days of Machine Learning",
@@ -62,8 +62,8 @@
       "category"   : "journal",
       "tags"       : "python, machine learning, blackjack, obsidian",
       "datetime"   : "2021-08-09 22:56:22 -0400",
-      "modified"   : "2021-08-30 21:27:39 -0400",
-      "status"     : "live",
+      "modified"   : "2021-12-01 14:23:41 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -71,9 +71,9 @@
       "references" : "https://github.com/kaggle/docker-python, https://yare.io/, https://realpython.com/null-in-python/, https://wizardofodds.com/ask-the-wizard/blackjack/probability/, https://stackoverflow.com/questions/63678723/is-there-a-python-equivalent-to-template-literals-in-javascript, https://obsidian.md/",
       "timespent"  : "990",
       "date"       : "Aug 9, 2021",
-      "moddate"    : "Aug 30, 2021",
+      "moddate"    : "Dec 1, 2021",
       "url"        : "/learning-log/journal/2021/08/09/getting-started-with-30-days-of-ml.html",
-      "words"      : "4738"
+      "words"      : "4267"
     },{
       "layout"     : "journal",
       "title"      : "Polish, CSS, SEO, and Production",

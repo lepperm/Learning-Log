@@ -6,9 +6,9 @@ author: Max Lepper
 categories: [journal]
 tags: [wordpress,"Silver is Gold"]
 date: 2021-11-30 23:41:07 -0400
-modified_date:
+modified_date: 2021-12-01 13:26:50 -0400
 published: true
-status: live
+status: finished
 confidence: log
 context: true
 comments: true
