@@ -19,7 +19,7 @@ My Bucket is a list of "Real Developer" activities, initially copied and inspire
 - [x] Get data from an API
 - [x] Post a question on Stack Overflow
 - [x] Push code to GitHub or GitLab or BitBucket
-- [ ] Write tests for your code
+- [x] Write tests for your code (Kind of? I want to get better at this!)
 - [x] Deploy a project
 - [ ] Ship your project to an app store
 - [ ] Make (another) Discord bot
@@ -32,11 +32,11 @@ My Bucket is a list of "Real Developer" activities, initially copied and inspire
 - [ ] Complete a technical interview
 - [ ] Get paid to code (electronic controls development doesn't count)
 - [ ] Attend a development conference
-- [ ] When people ask what you do, respond saying you’re a developer 😊
+- [x] When people ask what you do, respond saying you’re a developer 😊
 
 ## Project Bucket <a id="projects"></a>
 
-- [ ] Home bar management and drink queuing web platform with backend dashboard and frontend 'customer' interface, with inventory management, expense statistics, and forecasting
+- [ ] Home bar management and drink queuing web platform with backend dashboard and frontend 'customer' interface, with inventory management, expense statistics, and forecasting! (I like to mix drinks for people when entertaining guests)
 - [ ] Incremental idle resource management game
 - [ ] Revenue-generating online shop
 - [ ] Machine learning image classification model to transcribe my own handwriting

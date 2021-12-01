@@ -46,12 +46,6 @@ layout: default
       {% if page.confidence %}
         <span class="nobreak" title="Indicates the confidence in the accuracy of the beliefs expressed in the post, either as non-reflective ( log / emotional / fiction ), or expressed as Kesselman Estimative Words (ranging 0–100%: impossible / remote / highly unlikely / unlikely / possible / likely / highly likely / certain )">
           Confidence: {{ page.confidence | capitalize }}
-          <span>&nbsp;·&nbsp;</span>
-        </span>
-      {% endif %}
-      {% if page.importance %}
-        <span class="nobreak" title="1–10 rating of the estimated importance of the post to the reader.">
-          Importance: {{ page.importance }}
         </span>
       {% endif %}
     </p>

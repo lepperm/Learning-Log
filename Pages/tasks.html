@@ -19,10 +19,6 @@ Variables to control task collection
 {%- assign suggTaskSample = 4 -%}
 {%- assign suggSplitEven = true -%}
 
-{%- assign sleepTarget = 390 -%}
-{%- assign sleepMin = 360 -%}
-{%- assign sleepAveDays = 5 -%}
-
 {%- comment -%}
 =======================
 Checking for any skills without progression pages
@@ -66,9 +62,6 @@ Checking for any skills without progression pages
     <a href="#skills">Skills</a>
   </li>
   {% endif %}
-  <li>
-    <a href="#sleep-quality">Sleep Quality</a>
-  </li>
   <li>
     <a href="#improvements">Blog Improvements</a>
   </li>
@@ -372,54 +365,6 @@ Collect data from all skill pages
     {%- endfor -%}
   </ul>
 {% endif %}
-
-
-{%- assign sleepSum = 0 -%}
-{%- assign sleepEntryDays = 0 -%}
-{%- assign sleepAve = 0 -%}
-{%- assign prettySleepTime = 0 -%}
-
-{% for entry in site.data.search limit:sleepAveDays %}
-  {%- assign sleepVal = entry.sleep | plus:0 -%}
-  {%- if sleepVal > 0 -%}
-    {%- if entry.datetime != "" -%}
-      {%- assign sleepSum = sleepSum | plus: sleepVal -%}
-      {%- assign sleepEntryDays = sleepEntryDays | plus: 1 -%}
-    {%- endif -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{%- if sleepEntryDays > 0 and sleepSum > 0 -%}
-  {%- assign sleepSum = sleepSum | times: 1.0 -%}
-  {%- assign sleepAve = sleepSum | divided_by: sleepEntryDays | round -%}
-
-  {%- capture prettySleepTime -%}
-    {%- include min-to-time.html timeVal=sleepAve verbose=true -%}
-  {%- endcapture -%}
-{%- endif -%}
-
-{%- capture prettySleepTarget -%}
-  {%- include min-to-time.html timeVal=sleepTarget verbose=true -%}
-{%- endcapture -%}
-
-{% if sleepAve > 0 %}
-  <h2 id="sleep-quality">
-    Sleep Quality
-    {%- include return-to-top.html target="toc" -%}
-  </h2>
-  <ul>
-    <li>Your current sleep quality goals are for an average of {{prettySleepTarget}} of sleep across {{sleepAveDays}} days.</li>
-    <li>As of the latest journal post, your sleep average was <strong>{{prettySleepTime}}</strong> (from {{sleepEntryDays}} time logs). </li>
-    {%- if sleepAve >= sleepTarget -%}
-      <li>You are meeting or exceeding your target! Please keep it up! 😊</li>
-    {%- elsif sleepAve >= sleepMin -%}
-      <li>You are currently under your average sleep target. Be sure to make time to get a proper night's sleep!</li>
-    {%- else -%}
-      <li><strong>You are under your minimum sleep threshold!</strong> Please make an effort to get to bed early, and remember that you will not learn as effectively or retain information efficiently while tired.</li>
-    {%- endif -%}
-  </ul>
-{% endif %}
-
 
 <div id="improvements">
   {%- capture bTodo -%}

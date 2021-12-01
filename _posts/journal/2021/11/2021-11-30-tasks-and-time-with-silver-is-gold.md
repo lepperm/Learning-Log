@@ -10,15 +10,11 @@ modified_date:
 published: true
 status: live
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [wordpress]
 references: []
 timespent: 1770
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal

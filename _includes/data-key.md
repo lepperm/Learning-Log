@@ -50,8 +50,6 @@ Values are presented in the following format:
     - likely (56%-70%, most common)
     - highly likely (71%-85%)
     - certain (86+%)
-- **importance**: 4
-  - 1-10 integer value ranking the estimated importance to the reader
 - **context**: false
   - Boolean that specifies if the current post requires some context outside of the post content ("true" means "needs context")
 
@@ -63,10 +61,6 @@ Values are presented in the following format:
   - An array of URLs as strings for supporting or notable external links that support the post content
 - **timespent**: 120
   - The time, in minutes, attributed to skill development being captured with this post
-- **sleep**: 395
-  - The time, in minutes, representing the amount of sleep from the previous night
-- **workout**: 30
-  - The time, in minutes, devoted to physical exercise being captured with this post
 
 ### Learning Items
 

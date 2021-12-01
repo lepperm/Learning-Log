@@ -22,9 +22,9 @@ Phase 1 should conclude January, 2021.
 
 ### Projects
 
-- [ ] [AGWSU](https://agwsu.org/) (intern developer, project management)
-- [ ] [TD Collection](https://tdcollection.net/) (junior developer, project management)
-- [ ] FreeCodeCamp HTML/CSS projects (fundamentals)
+- [x?] [AGWSU](https://agwsu.org/) (intern developer, project management)
+- [x?] [TD Collection](https://tdcollection.net/) (junior developer, project management)
+- [x] FreeCodeCamp HTML/CSS projects (fundamentals)
 - [ ] FreeCodeCamp Javascript projects (fundamentals)
 
 ### Events
@@ -32,7 +32,7 @@ Phase 1 should conclude January, 2021.
 Events to attend that fall within this phase:
 
 - [ ] Hacktoberfest 2020 (open source event)
-- [ ] Scrimmage Product Lab (rapid launch workshop)
+- [x] Scrimmage Product Lab (rapid launch workshop)
 
 ### Key Progression Objectives
 
