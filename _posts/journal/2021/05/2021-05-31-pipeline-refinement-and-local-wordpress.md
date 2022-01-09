@@ -6,19 +6,15 @@ author: Max Lepper
 categories: [journal]
 tags: [wordpress,docker,"Silver is Gold"]
 date: 2021-05-31 23:52:33 -0400
-modified_date:
+modified_date: 2022-01-08 20:52:37 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [wordpress,docker]
 references: ["https://www.silverisgold.org/","https://wpjobboard.net/","https://localwp.com/","https://snapcreek.com/duplicator/duplicator-free/","https://roots.io/bedrock/","https://github.com/urre/wordpress-nginx-docker-compose","https://community.chocolatey.org/courses"]
 timespent: 975
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal
@@ -34,7 +30,7 @@ My immediate goals for this week are to:
 
 Once those key tasks are completed (and ideally documented so that I don't forget how to do it if it ends up being pretty manual at first), I'll move forward with the plugin replacement to [WP Job Board]({{page.references[1]}}). I'll focus on _just_ the job board functionality and pages, then work towards implementing the branding.
 
-I have probably said this a bunch, but I feel bad restarting like this on the client. Everything I've done with this project has been unfamiliar territory, so there's been a lot of screwing around and finding out, if you know what I mean, sometimes with site-breaking consequences. Having some proper software versioning to catch me instead of relying on backups will give me a little more confidence to charge forward and make bigger changes.
+I have probably said this a bunch, but I feel bad restarting like this on the client. Everything I've done with this project has been unfamiliar territory, so there's been a lot of "screwing around" and "finding out", sometimes with site-breaking consequences. Having some proper software versioning to catch me instead of relying on backups will give me a little more confidence to charge forward and make bigger changes.
 
 But enough about all that, let's get into it!
 
@@ -114,7 +110,7 @@ Overall, I feel more confident in this approach. It will take some discipline to
 
 Getting away for a few days from Thursday to Sunday was amazing, and much needed. It's been so long since my spouse and I had time where we didn't have anything in our environment that needed to be addressed or was stressing us out. We spent nearly 3 days just chatting, resting, playing, and exploring - it was the best!
 
-The mental buzzing from the stress of trying to keep everything together lessened and the tension drained from my neck and shoulders. You can tell that we are both burnt out, as we ended up sleeping over 10 hours a day, and I still feel like I could sleep more.
+The mental buzzing from the stress of trying to keep everything together lessened and the tension drained from my neck and shoulders. You can tell that we are both worn out, as we ended up sleeping over 10 hours a day, and I still feel like I could sleep more.
 
 Returning home, while we were greeted by all our home comforts, we were also greeted with multiple new issues and new pests that had invaded the space while we were gone, so that sobered us up from the delights of vacation pretty quickly. It's Labor Day as I write this, and we've spent the time since we returned yesterday cleaning, researching house issues, calling contractors, doing yard work, and making plans with family for help.
 
@@ -167,11 +163,13 @@ Same as last post, here's a breakdown of my time:
 
 ### What is going well?
 
-Taking time away with my spouse was great for our spirits, relationship, and general feelings of hope. Being physically distant from our responsibilities helped me to be more present.
+Taking time away with my spouse was great for our spirits. Being physically distant from our responsibilities helped me to be more present.
 
 ### What could be better?
 
-I feel like I'm spinning my wheels too much with this site, and like I'm slightly out of my depth considering that there's a time crunch. There is a definite sense that I'm chewing through time as I dig into things like Docker and wp-cli and all of this. Until I expand my network to include people with WordPress experience, without a clear sense of what the bigger picture looks like or how a proper WordPress site comes together, I'm not sure how else to get there but to stumble forward through things and change my mind as I go.
+I feel like I'm spinning my wheels more than I would prefer with this site, and that I'm out of my depth considering that there's a time crunch. There is a definite sense that I'm chewing through time as I dig into things such as Docker and wp-cli and all of this. Until I expand my network to include people with WordPress experience, without a clear sense of what the bigger picture looks like or how a proper WordPress site comes together, I'm not sure how else to get there but to stumble forward through things and change my mind as I go.
+
+I realize that in a few weeks, all of this will make much more sense, and I need to just keep pushing through and learning more. Writing a blog post about "what I've learned" while feeling like I've mostly just stumbled into deeper questions is sort of awkward, but a regular occurrence when learning anything new!
 
 ## Tasklist
 

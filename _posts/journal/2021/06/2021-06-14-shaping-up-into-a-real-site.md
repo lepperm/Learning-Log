@@ -6,26 +6,22 @@ author: Max Lepper
 categories: [journal]
 tags: [wordpress,css,"Silver is Gold"]
 date: 2021-06-14 23:49:15 -0400
-modified_date: 2021-06-15 21:51:11 -0400
+modified_date: 2022-01-08 20:47:24 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [wordpress,css]
 references: ["https://www.silverisgold.org/","https://wpjobboard.net/","https://css-tricks.com/keep-math-in-the-css/","https://kinsta.com/blog/is-wordpress-secure/","https://www.wpsecurity.press/how-secure-is-the-wordpress-passwords-algorithm/","https://stackoverflow.com/questions/40315561/how-to-ignore-parents-width-limit-in-css","https://wordpress.org/plugins/custom-fonts/"]
 timespent: 2340
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal
 
 {% include focus-box.html focus="WordPress" theme="Client Projects" %}
 
-After wrestling with it for a while, I just couldn't seem to get the WordPress console wp-cli working in Docker, which is where I left things in the previous blog post. Reaching out to a few networks, no one had any advice for me, and no one I've talked with in my circle has worked with it before. It sounds like I can't (or shouldn't) add Duplicator until I can do things safely, meaning my goal of a local development build is dead in the water for now. My new plan is to go ahead and make the changes just on the staging site to get something functional up and running for now.
+After wrestling with it for a while, I just couldn't seem to get the WordPress console wp-cli working in Docker, which is where I left things in the previous blog post. Reaching out to a few networks, no one had any advice for me, and no one I've talked with in my circle has worked with it before. It sounds like I can't (or shouldn't) add Duplicator until I can do things safely, meaning my goal of a local development build is dead in the water for now. My new plan is to go ahead and make the changes just on the staging site to get something functional up and running.
 
 Taking some screenshots for reference, I reconfigured the old job board plugin to clean up some of it's pages, roles, and artifacts on uninstall, and then removed it completely from the staging site. Next, I purchased the [new plugin]({{page.references[1]}}) license and moved forward with getting it installed.
 
@@ -39,7 +35,7 @@ The next day, I had a status meeting with the client to show how things were goi
 
 I ended up working through the night tweaking CSS and troubleshooting issues from demo. Creating multiple accounts, memberships to employer and talent groups seem to apply correctly, but some things are not acting quite how I would expect. The visibility features are also acting strangely, and I'm strongly suspecting that all these issues are related.
 
-Although, I'm _also_ borderline delirious from getting less than 5 hours of sleep total over the past three nights, between trying to manage the house issues that popped up while we were out of town and also deliver a successful demo on time. I have family obligations and home concerns to attend to tomorrow, so depending on what engagement is like from the plugin developer, I may change gears for the next few days to catch up on sleep and hopefully make some headway in other life areas.
+Although, I'm _also_ not operating at peak performance thanks to reduced sleep over the past few nights, between trying to manage the house issues that popped up while we were out of town and also deliver a successful demo on time. I have family obligations and home concerns to attend to tomorrow, so depending on what engagement is like from the plugin developer, I may change gears for the next few days to catch up on sleep and hopefully make some headway in other life areas.
 
 A few days later, I did hear back! The plugin developer wrote me a great email full of troubleshooting steps. Following along, I evaluated performance each step of the way across multiple accounts and browsers, but unfortunately there was no improvement. I tried making new accounts, using a different computer, tried a phone - all were the same. I compiled and responded to the developer with screenshots to explain what I'm seeing.
 
@@ -217,15 +213,11 @@ Now that my spouse and I are vaccinated against COVID-19, we have started to see
 
 I feel like we're struggling to move things with the house forward, and that it's more like treading water. Many of the remaining issues are larger challenges, and any free time and energy I have in the evenings for mental work goes to the site, which is a top priority.
 
-It's hard to say what to expect from the coming months, between the site launch and large projects with field startups at work, so I'd like to give myself the permission to rest a little bit more frequently, and not just sprinting in different directions. As the bugs get massaged out of the site, I'm thinking that there will maybe be a bit more time in my schedule to catch up on rest, too.
+It's hard to say what to expect from the coming months, between the site launch and large projects with field startups at work, so I'd like to give myself the permission to rest a little bit more frequently, and not just sprinting in different directions. As the bugs get massaged out of the site, my hope is that there will maybe be a bit more time in my schedule to catch up on rest, too.
 
 ## Tangential Thoughts
 
-If I can be a bit more openly honest for a moment, I feel a little discouraged at times that I haven't made more progress in this career transition. Not having enough bandwidth to push everything forward in my life consistently while burnt out feels like an intense personal failing. It feels like no matter how hard or much I actually work, I should be able to give more, to accomplish more, to move forward more, and not doing so makes me feel stuck. The little wins feel hollow, like it's too little too late. I'm trying to internalize that this is very much not a fair or constructive judgment to submit on myself. I know where these trappings come from, but that doesn't make them totally powerless, either.
-
-In a similar vein, the tech Twitter community is super supportive, but also makes me anxious, as I read about more and more horror stories over time - stories of employer and coworker abuse, of grossly unfair treatment, and of destructive expectations. I'm sure that there's a degree of amplification, being social media and all, but I've heard echoes of similar stories from real life friends, and _that's_ what concerns me. In my current role, I'm in a senior position and regarded favorably within my field. The thought of sacrificing everything I've achieved so far to potentially end up in a cycle of harmful and unstable (and unsustainable) situations is... concerning, to say the least.
-
-I love this journey that I've been on this past year, with its ups and downs. I've been bitten enough by the development bug that I don't think I'll ever give it up now, regardless where it leads me in life and my career. The people I've met and gotten to know along the way have opened up my whole world, and constantly challenge me to do better. I realize that I'm rambling quite a bit and getting into some heavy topics, but I feel like these reflections are helpful to record in context.
+I love this journey that I've been on this past year, with its ups and downs. I've been bitten enough by the development bug that I don't think I'll ever give it up now, regardless where it leads me in life and my career. The people I've met and gotten to know along the way have opened up my whole world, and constantly challenge me to do better.
 
 ## Tasklist
 

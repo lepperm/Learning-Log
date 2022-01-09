@@ -10,15 +10,11 @@ modified_date:
 published: true
 status: live
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [javascript]
 references: ["https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/","https://ghibliapi.herokuapp.com/","https://www.taniarascia.com/how-to-use-the-javascript-fetch-api-to-get-json-data/","https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API","https://www.tjvantoll.com/2015/09/13/fetch-and-errors/#comment-2254295840"]
 timespent: 135
-sleep: 280
-recreation: 0
-workout: 0
 ---
 
 ## Journal

@@ -33,7 +33,7 @@ A few days later, Airtable rolled out new interfaces! I dug into this same-day a
 
 {% include blog-img.html source="/assets/images/posts/2021\11\30\sig_statistics_interface.png" alt="An interface built in Airtable showing statistics and the current distribution of tasks for Silver is Gold" %}
 
-The team had their first community event on 11/16, and it went well! Sixty-five people came out for two hours to talk with members of the team and participate in a workshop. Interestingly, however, there were no additional sign-ups for talent profiles in the days following the event! I'm curious to look at the analytics and try to see if I can gain any insights. Our suspicion is that the profile creation process might be too lengthy or intimidating, so we're looking to change up some wording and reorder elements to be a bit easier to follow.
+The team had their first community event on 11/16, and it went well! Fifty-four people came out for two hours to talk with members of the team and participate in a workshop. Interestingly, however, there were no additional sign-ups for talent profiles in the days following the event! I'm curious to look at the analytics and try to see if I can gain any insights. Our suspicion is that the profile creation process might be too lengthy or intimidating, so we're looking to change up some wording and reorder elements to be a bit easier to follow.
 
 After thinking through things and while managing some challenges in my personal life, I reached out to a mentor to both catch up and get some advice. I've been busy spinning many plates these past few months, and need to redistribute my time commitments to better adapt to life's challenges, and I knew that they would be the best person I know to talk to about this.
 

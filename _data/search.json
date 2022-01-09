@@ -1,5 +1,24 @@
 [{
       "layout"     : "journal",
+      "title"      : "Next Steps For The New Year",
+      "excerpt"    : "The client site continues to gain traction and attention, and the team takes a little break over the holidays.",
+      "category"   : "journal",
+      "tags"       : "wordpress, Silver is Gold",
+      "datetime"   : "2021-12-30 15:23:58 -0500",
+      "modified"   : "2022-01-02 19:18:40 -0400",
+      "status"     : "finished",
+      "confidence" : "log",
+      "context"    : "true",
+      "comments"   : "true",
+      "skills"     : "wordpress",
+      "references" : "",
+      "timespent"  : "690",
+      "date"       : "Dec 30, 2021",
+      "moddate"    : "Jan 2, 2022",
+      "url"        : "/learning-log/journal/2021/12/30/next-steps-for-the-new-year.html",
+      "words"      : "665"
+    },{
+      "layout"     : "journal",
       "title"      : "Tasks and Time with Silver is Gold",
       "excerpt"    : "Continuing to refine my client site, building new interfaces in Airtable, and improving balance.",
       "category"   : "journal",
@@ -43,7 +62,7 @@
       "category"   : "journal",
       "tags"       : "python, machine learning",
       "datetime"   : "2021-08-30 23:04:41 -0400",
-      "modified"   : "2021-12-01 14:05:12 -0400",
+      "modified"   : "2022-01-08 20:31:12 -0400",
       "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
@@ -52,9 +71,9 @@
       "references" : "https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html?highlight=iloc#pandas.DataFrame.iloc, https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.round.html?highlight=dataframe%20round#pandas.DataFrame.round, https://docs.python.org/3/library/datetime.html, https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html, https://scikit-learn.org/stable/modules/cross_validation.html",
       "timespent"  : "1860",
       "date"       : "Aug 30, 2021",
-      "moddate"    : "Dec 1, 2021",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/08/30/digging-in-with-30-days-of-ml.html",
-      "words"      : "5310"
+      "words"      : "5307"
     },{
       "layout"     : "journal",
       "title"      : "Getting Started With 30 Days of Machine Learning",
@@ -81,8 +100,8 @@
       "category"   : "journal",
       "tags"       : "wordpress, css, seo, Silver is Gold",
       "datetime"   : "2021-07-25 17:51:50 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 20:39:48 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -90,9 +109,9 @@
       "references" : "https://www.silverisgold.org/, https://www.udemy.com/course/whiteboard-seo/, https://rankmath.com/kb/score-100-in-tests/, https://sproutsocial.com/insights/social-media-image-sizes-guide/, https://www.w3schools.com/cssref/trysel.asp, https://neumorphism.io/, https://webaim.org/resources/evalquickref/, https://wave.webaim.org/, https://material-ui.com/customization/breakpoints/, https://gist.github.com/MichaelCurrin/f8d908596276bdbb2044f04c352cb7c7, https://undsgn.com/jpg-vs-png/",
       "timespent"  : "4260",
       "date"       : "Jul 25, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/07/25/polish-css-seo-and-production.html",
-      "words"      : "5112"
+      "words"      : "4401"
     },{
       "layout"     : "journal",
       "title"      : "Get a Job - Interactive Discussion",
@@ -119,8 +138,8 @@
       "category"   : "journal",
       "tags"       : "wordpress, css, Silver is Gold",
       "datetime"   : "2021-06-29 23:29:23 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 20:44:48 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -128,9 +147,9 @@
       "references" : "https://www.silverisgold.org/, https://complianz.io/, https://courses.joshwcomeau.com/css-for-js, https://material-ui.com/customization/breakpoints/, https://rankmath.com/kb/score-100-in-tests/",
       "timespent"  : "1650",
       "date"       : "Jun 29, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/06/29/prepping-for-launch.html",
-      "words"      : "2511"
+      "words"      : "2564"
     },{
       "layout"     : "journal",
       "title"      : "Shaping Up Into a Real Site",
@@ -138,8 +157,8 @@
       "category"   : "journal",
       "tags"       : "wordpress, css, Silver is Gold",
       "datetime"   : "2021-06-14 23:49:15 -0400",
-      "modified"   : "2021-06-15 21:51:11 -0400",
-      "status"     : "live",
+      "modified"   : "2022-01-08 20:47:24 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -147,9 +166,9 @@
       "references" : "https://www.silverisgold.org/, https://wpjobboard.net/, https://css-tricks.com/keep-math-in-the-css/, https://kinsta.com/blog/is-wordpress-secure/, https://www.wpsecurity.press/how-secure-is-the-wordpress-passwords-algorithm/, https://stackoverflow.com/questions/40315561/how-to-ignore-parents-width-limit-in-css, https://wordpress.org/plugins/custom-fonts/",
       "timespent"  : "2340",
       "date"       : "Jun 14, 2021",
-      "moddate"    : "Jun 15, 2021",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/06/14/shaping-up-into-a-real-site.html",
-      "words"      : "2644"
+      "words"      : "2372"
     },{
       "layout"     : "journal",
       "title"      : "Pipeline Refinement and Local WordPress",
@@ -157,8 +176,8 @@
       "category"   : "journal",
       "tags"       : "wordpress, docker, Silver is Gold",
       "datetime"   : "2021-05-31 23:52:33 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 20:52:37 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -166,9 +185,9 @@
       "references" : "https://www.silverisgold.org/, https://wpjobboard.net/, https://localwp.com/, https://snapcreek.com/duplicator/duplicator-free/, https://roots.io/bedrock/, https://github.com/urre/wordpress-nginx-docker-compose, https://community.chocolatey.org/courses",
       "timespent"  : "975",
       "date"       : "May 31, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/05/31/pipeline-refinement-and-local-wordpress.html",
-      "words"      : "2770"
+      "words"      : "2817"
     },{
       "layout"     : "journal",
       "title"      : "Delving into Docker and Local WordPress Development",
@@ -176,8 +195,8 @@
       "category"   : "journal",
       "tags"       : "docker, wordpress, Silver is Gold",
       "datetime"   : "2021-05-23 18:58:24 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 22:32:41 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -185,9 +204,9 @@
       "references" : "https://www.silverisgold.org/, https://wpjobboard.net/, https://roots.io/bedrock/",
       "timespent"  : "1260",
       "date"       : "May 23, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/05/23/delving-into-docker-and-local-wordpress-development.html",
-      "words"      : "1974"
+      "words"      : "1697"
     },{
       "layout"     : "journal",
       "title"      : "WordPress Progress for Silver is Gold",
@@ -195,8 +214,8 @@
       "category"   : "journal",
       "tags"       : "WordPress, Silver is Gold",
       "datetime"   : "2021-05-02 23:02:41 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 22:37:22 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -204,9 +223,9 @@
       "references" : "https://openweathermap.org/api/one-call-api",
       "timespent"  : "1455",
       "date"       : "May 2, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/05/02/wordpress-progress-for-silver-is-gold.html",
-      "words"      : "2627"
+      "words"      : "2016"
     },{
       "layout"     : "journal",
       "title"      : "Diving into WordPress",
@@ -214,8 +233,8 @@
       "category"   : "journal",
       "tags"       : "WordPress, Silver is Gold",
       "datetime"   : "2021-04-25 22:37:50 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 22:44:53 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -223,9 +242,9 @@
       "references" : "https://sarahbgillam.medium.com/how-to-use-google-domains-with-dreamhost-and-how-to-get-free-email-for-your-domain-799775bd4703",
       "timespent"  : "810",
       "date"       : "Apr 25, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/04/25/diving-into-wordpress.html",
-      "words"      : "935"
+      "words"      : "793"
     },{
       "layout"     : "journal",
       "title"      : "Refocusing and the Future of this Blog",
@@ -233,8 +252,8 @@
       "category"   : "journal",
       "tags"       : "schedule",
       "datetime"   : "2021-04-06 17:51:20 -0400",
-      "modified"   : "",
-      "status"     : "live",
+      "modified"   : "2022-01-08 22:53:07 -0400",
+      "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
       "comments"   : "true",
@@ -242,9 +261,9 @@
       "references" : "https://css-for-js.dev/",
       "timespent"  : "0",
       "date"       : "Apr 6, 2021",
-      "moddate"    : "",
+      "moddate"    : "Jan 8, 2022",
       "url"        : "/learning-log/journal/2021/04/06/refocusing-and-the-future-of-this-blog.html",
-      "words"      : "2321"
+      "words"      : "2286"
     },{
       "layout"     : "journal",
       "title"      : "Moving Forward",

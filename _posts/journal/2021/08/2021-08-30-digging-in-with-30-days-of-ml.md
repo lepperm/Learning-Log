@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [python, "machine learning"]
 date: 2021-08-30 23:04:41 -0400
-modified_date: 2021-12-01 14:05:12 -0400
+modified_date: 2022-01-08 20:31:12 -0400
 published: true
 status: finished
 confidence: log
@@ -597,7 +597,7 @@ Do you ever get the feeling that you're on the verge of something that will chan
 
 I've been reading about psychology, philosophy, needs, goals, motivations, learning, and biases trying to understand how the systems I've been using to help organize my life are underperforming, and it all begins with my thinking while building them. While, yes, I might be able to get stuff done and push towards goals, there is also a LOT of guilt and quiet failure in there, and that has a price that gets paid in many different ways.
 
-From this blog alone, I'm sure there are quite a few examples of me implementing process and optimization prematurely, and that's one of the habits I want to work to break with a new system. Before you call me a hypocrite, I am using the word "system" loosely to mean more of a rough framework to collect my thoughts, information, and tasks, in a way that I know it will be safe, and that I will come back to it.
+From this blog alone, I'm sure there are quite a few examples of me implementing process and optimization prematurely, and that's one of the habits I want to work to break with a new system. TO clarify, I am using the word "system" loosely to mean more of a rough framework to collect my thoughts, information, and tasks, in a way that I know the information will be safe, and that I will come back to it.
 
 There is a lot more reading and thinking ahead of me, but I'm so excited to see where it takes me. If I have the bandwidth for it, I may prioritize it temporarily because of how much of a benefit I anticipate it could provide - if not in terms of productivity or clarity of thought, then at the least in comfort and kindness to myself.
 

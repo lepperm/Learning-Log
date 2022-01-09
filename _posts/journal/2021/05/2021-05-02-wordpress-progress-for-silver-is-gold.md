@@ -6,19 +6,15 @@ author: Max Lepper
 categories: [journal]
 tags: [WordPress,"Silver is Gold"]
 date: 2021-05-02 23:02:41 -0400
-modified_date:
+modified_date: 2022-01-08 22:37:22 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [wordpress]
 references: ["https://openweathermap.org/api/one-call-api"]
 timespent: 1455
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal
@@ -33,9 +29,9 @@ Next up was determining which site builder engine to go with. I had played aroun
 
 Honestly, if I had one core takeaway from using WordPress so far, it's "bring a budget." It seems that you can't type anything in the plugin search bar without tripping over $40 yearly subscription plugins!
 
-This makes sense - WordPress seems like a great platform to develop fully-featured sites that can be run by people who won't have to write a line of code, and that's opening up the consumer market drastically. Once you're familiar with plugins in the ecosystem, I could see being able to launch a site that could generate revenue comfortably in a single day. That'd make plugins a prime area for developers to try and get a cut of that business, and with so many paid plugins already on the market, ther be little need to justify charging for them. But I digress!
+This makes sense - WordPress seems like a great platform to develop fully-featured sites that can be run by people who won't have to write a line of code, and that's opening up the consumer market drastically. Once you're familiar with plugins in the ecosystem, I could see being able to launch a site that could generate revenue comfortably in a single day. That'd make plugins a prime area for developers to try and get a cut of that business, and with so many paid plugins already on the market, there would be little need to justify charging for them. But I digress!
 
-This time around, I grabbed the Neve theme, as it looks like it has a decent selection of themes that are available for multiple site builder plugins. Ideally, this would mean that maybe it'd be easier to switch things up in the future, if needed. WP Job Manager will be the underlying engine for the job board again, as the free offering seems to be enough to get something that can show the general functionality, and expandability and support seems to be solid (although the plugins add up extremely quickly - at least $100 to start generating revenue).
+This time around, I tried the Neve theme, as it looks like it has a decent selection of themes that are available for multiple site builder plugins. Ideally, this would mean that maybe it'd be easier to switch things up in the future, if needed. WP Job Manager will be the underlying engine for the job board again, as the free offering seems to be enough to get something that can show the general functionality, and expandability and support seems to be solid (although the plugins add up extremely quickly - at least $100 to start generating revenue).
 
 Immediately after writing this, though, I decided to perform more exhaustive research. I've summarized my notes below:
 
@@ -118,23 +114,11 @@ We had some additional fields to add to the opportunity postings, and I did find
 
 {% include blog-img.html source="/assets/images/posts/2021/05/02/silverisgold_lighthouse.png" alt="Lighthouse test results showing scores of 85 for performance, 80 for accessibility, 100 for best practices, and 85 for SEO." %}
 
-I woke up the next morning sick with a terrible fever and hardly coherent. Somehow, I managed to call off work and immediately conked back out _hard_. Unfortunately, I slept through all of the emails and a text from the client that came in an hour later! 😱 I managed to bolt awake at 10:33 AM and literally dragged myself over to the computer to follow up with the client, sending out password resets, disabling "coming soon" mode, and sending all the information that seemed relevant. The stakeholder meeting had already started, though, and I was too late. Darn! I know that I can't help being sick necessarily, but this was still very disappointing, as I was eager both to get more specific feedback about the project and to make a good impression with the first real demo of my work.
+I woke up the next morning sick with a terrible fever and hardly coherent. Somehow, I managed to call off work and immediately conked back out _hard_. Unfortunately, I slept through all of the emails and a text from the client that came in an hour later! 😱 I managed to bolt awake three minutes after their meeting had started and literally dragged myself over to the computer to follow up with the client, sending out password resets, disabling "coming soon" mode, and sending all the information that seemed relevant. The stakeholder meeting had already started, though, and I was too late. Darn! I know that I can't help being sick necessarily, but this was still very disappointing, as I was eager both to get more specific feedback about the project and to make a good impression with the first real demo of my work.
 
 Thankfully, my one-on-one demo with the client this weekend went well, and they were engaging positively with my changes and offering great feedback and clarification on wording. We discussed the business objectives and the motivations for both businesses and talent, as well as how to achieve the monetization objectives. I have some great notes, and probably I should start creating some kind of documentation distilling these meeting notes into one knowledge base.
 
 There will be another demo in two weeks, and I got clearance to switch to WP Job Board as our primary job board plugin. To move forward, I think the next step is to switch from making changes directly to the live site to making changes on my local machine and _then_ pushing those changes live. I'll need to research this, as off the top of my head, I don't know how exporting and importing backups would impact data that could be generated by users or moderators once the site is live, or what the typical workflow would be. In the meantime, the site that we have up now has some good bones to help illustrate what we're going for, and I'll adjust the wording per client feedback.
-
-### Renovation Updates
-
-The house repairs front has been _relentless_! Everyone I've spoken with has told me to "get used to it" so it sounds like this is a common experience for new homeowners, haha. My big push this past week has been focused on our main bathroom.
-
-The shower cold water wasn't working and the fan blower was burnt out and disconnected, so it's unravelled into this sprawling multi-step process of adding roof vents, adding ducting, creating access points in the attic, getting a custom-made blower motor since we'd have to modify the roof structure to accommodate a modern ceiling unit, fixing the electrical, and on and on and on. I'm learning a ton and getting more comfortable with digging into the house, but it'd be nice to actually check something off the list instead of adding two or three more steps every time I mark one step off! Thankfully, we were able to get the balancing check valve loose and replaced in the shower _without_ having to drill and extract it, which is what I was anticipating needing to do with how things have gone so far!
-
-I know we'll get there, and in terms of percent complete-ness, the house it honestly most of the way there! The remaining tasks are either high-complexity items with a good deal of unknowns we are slowly solving, logistics problems (like how to rebuild our closets to get items out of boxes and into functional storage), or large projects that will just take time and materials (like acquiring, painting, and installing trim throughout the entire house).
-
-We did manage to knock out all the tasks in the main bathroom this week, thank goodness! Now I can work on fixing issues in the other bathroom with less fear of having zero functional showers, haha. I was able to add ducts in the attic and get everything hooked and sealed up, so that was a neat experience, and I believe that should resolve our attic issues for now. We also acquired most of the tools and equipment needed to tackle other outstanding issues, and just need to coordinate a few more resources that are far too big for our tiny cars.
-
-Our yard is overrun with weeds, so there's been lots of gardening education on the agenda. We're slowly making headway in that battle, but mostly it has been fascinating to see how the whole yard changes and responds to what we do and the weather. I've never had much of a "green thumb" so the fact that we've been able to keep pansies alive for a few weeks has me feeling excited and hopeful! When there's some more bandwidth, we'd love to try growing some herbs and vegetables. The data-centric part of me grabbed a free key for the [OpenWeatherMap API]({{page.references[0]}}) to mess around with and call through HomeAssistant to track rainfall for significant rain events, and someday I'd love to get it to automatically determine our watering schedule for us!
 
 ### Time Breakdown
 
@@ -157,13 +141,11 @@ That ended up being a decent chunk of time that I was able to devote to the site
 
 ### What is going well?
 
-Making some wins on the house is a HUGE relief! I'm feeling increasingly comfortable diving into repairs around the house, and a few of the contractors who have come by have been very friendly and offered valuable tips. Working on the yard with my spouse has become a great way for us to get some sunshine and exercise while making progress on the exterior, and it's something we enjoy tackling together specifically.
-
-I'm glad that I was able to rebuild the site and have a good discussion with the client. They are very enthusiastic and patient, and their positivity is a welcome and appreciated energy in my professional life. I notice that I am mentally conditioned to receive a certain type of negative feedback, and it's... almost jarring to not have experienced that during this project so far. Hopefully that continues to be the case! The productive and positive communication has become a motivator, and I'm sure it seems obvious but I'm still processing it, as it's a very different experience from what I'm used to.
+I'm glad that I was able to rebuild the site and have a good discussion with the client. They are very enthusiastic and patient, and their positivity is a welcome and appreciated energy in my professional life. The productive and positive communication has become a huge motivator, as it's a different experience from what I'm used to.
 
 ### What could be better?
 
-I had some late nights this past week, and that probably contributed to my feeling sick on Thursday. I'm feeling a lot of self-imposed pressure to show results quickly, but making myself sick and messing up the stakeholder demo is a direct example of why I should pace myself and prioritize consistent self-care.
+I had some late nights working on getting things ready this past week, and that probably contributed to my feeling sick on Thursday. I'm feeling a lot of self-imposed pressure to show results quickly, but missing the stakeholder demo is a direct example of why I should pace myself and prioritize consistent self-care.
 
 ## Tasklist
 

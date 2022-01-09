@@ -10,15 +10,11 @@ modified_date:
 published: true
 status: live
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [general]
 references: ["https://calibre-ebook.com/"]
 timespent: 0
-sleep: 322
-recreation: 30
-workout: 40
 ---
 
 ## Journal

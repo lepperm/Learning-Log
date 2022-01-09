@@ -6,19 +6,15 @@ author: Max Lepper
 categories: [journal]
 tags: [WordPress,"Silver is Gold"]
 date: 2021-04-25 22:37:50 -0400
-modified_date:
+modified_date: 2022-01-08 22:44:53 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [wordpress]
 references: ["https://sarahbgillam.medium.com/how-to-use-google-domains-with-dreamhost-and-how-to-get-free-email-for-your-domain-799775bd4703"]
 timespent: 810
-sleep: 410
-recreation: 30
-workout: 0
 ---
 
 ## Journal
@@ -57,17 +53,7 @@ For these digest posts, I'll be rolling all of my time into a single post. The w
 
 ### What is going well?
 
-It's awesome actually having a site live and to be doing some web work again, even if it's nothing like any of the studies I've done so far. I'm really excited to hopefully make something happen, and ideally something that the client is happy with.
-
-It also is really nice writing about my experiences. Blogging has been such a nice outlet and self-reflection space.
-
-### What could be better?
-
-Between increasingly complex and visible issues around the house, my workload at work ramping up, and trying to get moving on this project, my burnout from December has come back in a big way.
-
-The increased stress has brought back my insomnia and bad nightmares when I do manage to fall asleep, and I feel a bit hopeless quite often. I'm hoping that by trying to be mindful and identify things for what they are, I can at least temper my internal expectations and keep things that can't wait inching forward.
-
-Now that we're fully vaccinated, we're planning to try and get out of town and unplug for a few days sometime soon, and I suspect that will help tremendously.
+It's awesome actually having a site live and to be doing some web work again, even if it's nothing like any of the studies I've done so far. I'm really excited to hopefully make something happen, and ideally something that will be able to help people.
 
 ## Tasklist
 

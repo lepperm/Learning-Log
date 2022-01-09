@@ -6,19 +6,15 @@ author: Max Lepper
 categories: [journal]
 tags: [docker, wordpress,"Silver is Gold"]
 date: 2021-05-23 18:58:24 -0400
-modified_date:
+modified_date: 2022-01-08 22:32:41 -0400
 published: true
-status: live
+status: finished
 confidence: log
-importance: 1
 context: true
 comments: true
 skills: [docker,wordpress]
 references: ["https://www.silverisgold.org/","https://wpjobboard.net/","https://roots.io/bedrock/"]
 timespent: 1260
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal
@@ -27,9 +23,7 @@ workout: 0
 
 So far, for [Silver is Gold]({{page.references[0]}}), I have been making all my edits to the live site behind a "coming soon" landing page. This has been quick and easy for getting my bearings and trying to learn WordPress, but probably won't be the best approach long-term for a production site. Since I'm looking to switch our core job board plugin to [WP Job Board]({{page.references[1]}}) and rework the theme, now is a great time to make a change!
 
-My computer has also been struggling lately with intermittent crashes and storage issues. My C drive is an old and tiny 128GB drive, so between Windows updates and the pagefile, all of my free space gets sucked up after a few days. Cleaning up some applications and processes that were running on boot from old projects has also been long overdue. I ordered the new drive last weekend and got it towards the end of the week, and was able to clone my old drive over and shuffle things around without too much trouble. Now my computer is zipping along with no major issues!
-
-Back to the topic at hand, I figure there are really two related but separate issues I need to research - how to implement a WordPress development lifecycle, and how to develop for WordPress locally.
+I figure there are really two related but separate issues I need to research - how to implement a WordPress development lifecycle, and how to develop for WordPress locally.
 
 ### WordPress Lifecycle
 
@@ -77,7 +71,7 @@ To run WordPress, we'll need PHP and MySQL, and some way to host the server loca
 - [WordPress Local Development For Beginners: From Setup To Deployment](https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/)
 - [How to Move a Live WordPress Site to Local Server](https://www.wpbeginner.com/wp-tutorials/how-to-move-live-wordpress-site-to-local-server/)
 
-I am a little concerned, as I have old projects running on localhost with Apache that are already a little wonky, and I don't want to spend more time on this than I have to - I'm already behind where I'd like to be. I could use VMs, but that seems like it's over-complicating things, too, and I'm not entirely sure how that'd work with networking.
+I am a little concerned, as I have old projects running on localhost with Apache that are already a little wonky, and I don't want to spend more time on this than I have to. I could use VMs, but that seems like it's over-complicating things, too, and I'm not entirely sure how that'd work with networking.
 
 Local by Flywheel looks very interesting, but I'm a little confused by some of the wording. It seems like moving files around may have a dependency on Flywheel or WP Engine, which are paid services, but maybe not? I may grab it to play around with. If it works, then that'll be awesome, but I should dig further as I'm sure this issue has been solved without relying on a tool that is so specific.
 
@@ -121,7 +115,7 @@ Exposure to new options, concepts, and honestly just learning what's out there h
 
 Over the past few weeks, work has been exceptionally busy with multiple projects and customers with downed systems in the field, so I ended up pulling a few late nights. We also experienced a loss in the family and have been helping and supporting where we could. Between work, family commitments, and time-sensitive plumbing issues, I have been mentally tapped out.
 
-Not having the bandwidth to make progress is frustrating, because then I was also beating myself for having to cut something that is extremely important to my goals and commitments, but ultimately a secondary task. The landscape of my time looks completely alien to what it was like a year ago, with many more competing priorities in different areas of my life. It will be nice to get back to actually just working on the site itself, and not the production pipeline, as helpful as it will be to have in place.
+Not having the bandwidth to make progress is frustrating, as it forces me to to confront that while this is something that is extremely important to my goals and commitments, it is ultimately a secondary task. The landscape of my time looks completely alien to what it was like a year ago, with many more competing priorities in different areas of my life. It will be nice to get back to actually just working on the site itself, and not the production pipeline, as helpful as it will be to have in place.
 
 We're taking a quick trip away soon to try and decompress a little. My personal goal is to have something in place before we head out.
 
@@ -139,16 +133,6 @@ Same as last post, here's a breakdown of my time:
    - 1h
 - 5/23
    - 5h
-
-## Gratitude
-
-### What is going well?
-
-I'm excited to be learning Docker, and already see how helpful it could have been on other projects. Things are also (knocking on wood) calming down slightly around the house, as the urgent safety-related tasks are getting whittled away and mostly just the long-term and complex tasks remain. I'm grateful to be able to interact with our families in-person again with much less fear that we're putting them in danger.
-
-### What could be better?
-
-I do feel guilty when there literally isn't enough time for me to address everything that needs to get done. It's a cumulative effect when I'm too tired to properly delegate and prioritize my time, as well. Getting good sleep, staying hydrated, eating healthily, and being active with yardwork has helped me deal with everything so far, and my hope is that any lulls in the demands required of me will be that much more productive when I get the chance.
 
 ## Tasklist
 

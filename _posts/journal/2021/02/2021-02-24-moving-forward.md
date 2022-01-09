@@ -10,15 +10,11 @@ modified_date:
 published: true
 status: live
 confidence: emotional
-importance: 2
 context: false
 comments: true
 skills: []
 references: []
 timespent: 0
-sleep: 410
-recreation: 50
-workout: 115
 ---
 
 ## Journal

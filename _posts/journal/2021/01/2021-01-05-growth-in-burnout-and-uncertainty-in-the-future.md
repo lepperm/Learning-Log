@@ -10,15 +10,11 @@ modified_date: 2021-01-05 20:51:20 -0400
 published: true
 status: live
 confidence: emotional
-importance: 1
 context: true
 comments: true
 skills: [general]
 references: []
 timespent: 0
-sleep: 0
-recreation: 0
-workout: 0
 ---
 
 ## Journal
