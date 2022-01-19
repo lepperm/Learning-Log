@@ -5,7 +5,7 @@
       "category"   : "journal",
       "tags"       : "angular",
       "datetime"   : "2022-01-13 19:39:26 -0500",
-      "modified"   : "",
+      "modified"   : "2022-01-18 21:27:44 -0400",
       "status"     : "finished",
       "confidence" : "log",
       "context"    : "true",
@@ -14,9 +14,9 @@
       "references" : "https://material.angular.io/components/categories, https://rxjs.dev/api/index/class/BehaviorSubject",
       "timespent"  : "165",
       "date"       : "Jan 13, 2022",
-      "moddate"    : "",
+      "moddate"    : "Jan 18, 2022",
       "url"        : "/learning-log/journal/2022/01/13/assessing-angular.html",
-      "words"      : "2219"
+      "words"      : "2217"
     },{
       "layout"     : "journal",
       "title"      : "Next Steps For The New Year",

@@ -6,7 +6,7 @@ author: Max Lepper
 categories: [journal]
 tags: [angular]
 date: 2022-01-13 20:39:26 -0400
-modified_date:
+modified_date: 2022-01-18 21:27:44 -0400
 published: true
 status: finished
 confidence: log
@@ -39,7 +39,7 @@ From the text, I identified 7 key user stories:
 
 1. The primary form will be a single page (US01)
 2. The contents of the form can be saved (US02)
-3. The form answers can be recalled from memory in a on a second "review" page (US03)
+3. The form answers can be recalled from memory on a second "review" page (US03)
 4. The form needs to support drop down questions (US04)
 5. The form needs to support boolean questions (US05)
 6. The form needs to support  radio group questions (US06)
