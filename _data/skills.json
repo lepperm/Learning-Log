@@ -3,6 +3,18 @@
   
   
   {
+      "name"         : "angular",
+      "entries"      : "1",
+      "time"         : "1350",
+      "dateslogged"  : "2022-01-29 12:12:07 -0500",
+      "lastlogged"   : "2022-01-29 12:12:07 -0500"
+    },{
+      "name"         : "typescript",
+      "entries"      : "1",
+      "time"         : "1350",
+      "dateslogged"  : "2022-01-29 12:12:07 -0500",
+      "lastlogged"   : "2022-01-29 12:12:07 -0500"
+    },{
       "name"         : "general",
       "entries"      : "42",
       "time"         : "6565",
