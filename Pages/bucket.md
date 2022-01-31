@@ -29,7 +29,7 @@ My Bucket is a list of "Real Developer" activities, initially copied and inspire
 - [ ] Make a process that routinely collects data from the internet
 - [ ] Make a machine learning image classification model
 - [ ] Participate in a hackathon
-- [ ] Complete a technical interview
+- [x] Complete a technical interview
 - [ ] Get paid to code (electronic controls development doesn't count)
 - [ ] Attend a development conference
 - [x] When people ask what you do, respond saying you’re a developer 😊
