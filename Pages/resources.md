@@ -47,6 +47,15 @@ As a quick disclaimer, be mindful to not confuse aesthetics with functional desi
 
 ## Utilities
 
+### Code Sharing Sites
+
+When sharing snippets of code or error messages with others, it can often be hard to efficiently parse when shared through message boards or instant message clients. The following are great ways to share your code for a more pleasant developer experience:
+
+- <https://codepen.io/>
+- <https://replit.com/>
+- <https://codesandbox.io/>
+- <http://pastebin.com/>
+
 ### Design Applications
 
 - <https://framer.com>
@@ -134,6 +143,10 @@ Compress JPEG and PNG files, has an API for automated compression
 - <https://app.brandmark.io/>
 
 ## APIs
+
+- <https://jsonplaceholder.typicode.com/> is a free resource to quickly make fetch requests for placeholder data!
+
+### Learning
 
 If you want to get some hands-on learning with APIs, the [Noops Challenge](https://noopschallenge.com/) is a great place to get started!
 

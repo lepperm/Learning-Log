@@ -286,6 +286,20 @@ progressionEntries:
     relprojlink:
     datecomp: 12/16/20
     datelink:
+  - 
+    id: 
+    status: OK
+    name: Learn Regex
+    item: https://regexlearn.com/
+    type: Course
+    price: 0.0
+    est-duration: 30
+    est-benefit: 10
+    act-benefit: 10
+    relproj:
+    relprojlink:
+    datecomp: 02/03/22
+    datelink:
 resources: 
   - 
     refname: Web Design in 4 minutes
