@@ -6,10 +6,10 @@ author: Max Lepper
 categories: [journal]
 tags: ["clean code"]
 date: 2022-01-30 19:31:28 -0400
-modified_date:
+modified_date: 2022-02-19 14:52:17 -0400
 published: true
 status: live
-confidence: log
+confidence: likely
 context: true
 comments: true
 skills: [general]
@@ -131,7 +131,7 @@ I've been dialing back my scope on blog posts lately, as they grew to be bigger 
 
 One change is that I will be removing my focus blocks for posts moving forward, as my blogs tend to be focused on a specific topic or project, and not the sort of daily changing routine that I originally created them to handle.
 
-I'm also going to be counting Silver is Gold time as "general" from here forward, until I get into more true development work with the site.
+I'm also going to be either not rolling up Silver is Gold time or counting it as "general" from here forward, until further notice.
 
 ## Time Summary
 

@@ -6,10 +6,10 @@ author: Max Lepper
 categories: [journal]
 tags: [regex]
 date: 2022-02-18 22:07:46 -0400
-modified_date:
+modified_date: 2022-02-19 14:49:21 -0400
 published: true
-status: live
-confidence: log
+status: finished
+confidence: certain
 context: false
 comments: true
 skills: [general]
@@ -19,7 +19,7 @@ timespent: 60
 
 ## Journal
 
-Regex is one of those things where I know enough to piece together a solution, but it's traditionally been a bit of a trial-and-error process. Luckily, I happened across [Regex Learn]({{page.references[0]}}), which is a site that provides learning resources, cheat sheets, and a playground for learning and working with Regex! The lessons are great bite-sized chunks, with reviews at regularly paced intervals.
+Regex has been an area where I've known enough to piece together a solution, but up until now, it's been a bit of a trial-and-error process. Luckily, I happened across [Regex Learn]({{page.references[0]}}), which is a site that provides learning resources, cheat sheets, and a playground for learning and working with Regex! The lessons are great bite-sized chunks, with reviews at regularly paced intervals.
 
 * TOC
 {: toc}
@@ -28,7 +28,7 @@ Regex is one of those things where I know enough to piece together a solution, b
 
 Regex, or regular expressions, are a way of expressing a search pattern. The content of a regex describes a string or set of strings that should match the pattern. This is particularly useful in operations like filtering, input validation, and extracting important information from text.
 
-Over the next few sections, I will explain the meaning behind each regex symbol, and provide some examples as we go.
+Over the next few sections, I will explain the meaning behind each regex command, and provide some examples as we go.
 
 ### Framing
 
@@ -97,7 +97,7 @@ While we can express many characters as part of a character set, there are some 
 
 Lookarounds evaluate the context in which our matches are found while excluding that context in our returned match.
 
-That sentence is a bit confusing without context, so to give an example, let's say we have a URL which has a unique number at the end of the string, and we want to grab that number and do something with it. Maybe know it will only be numbers, but we have no idea how many numbers long it may be.
+That sentence is a bit confusing without context, so to give an example, let's say we have a URL which has a unique number at the end of the string, and we want to grab that number and do something with it. Maybe we know it will only be numbers, but we have no idea how many numbers long it may be.
 
 Let's say that one such URL would be: `https://www.mysite.com/50351`
 
@@ -109,8 +109,8 @@ Notice that in this case, we don't care if the URL is `http` or `https` or if th
 
 - `target(?=text)` ► Positive lookahead, only matches if the text after the `=` in our group immediately follows the target
 - `target(?!text)` ► Negative lookahead, only matches if the text after the `=` in our group is NOT immediately following the target
-- `(?<=text)target` ► Positive lookbehind, only matches if the text after the `=` in our group immediately proceeds the target
-- `(?<!text)target` ► Negative lookbehind, only matches if the text after the `!` in our group does NOT immediately proceed the target
+- `(?<=text)target` ► Positive lookbehind, only matches if the text after the `=` in our group immediately precedes the target
+- `(?<!text)target` ► Negative lookbehind, only matches if the text after the `!` in our group does NOT immediately precede the target
 
 ### Greedy and Lazy Matches
 
